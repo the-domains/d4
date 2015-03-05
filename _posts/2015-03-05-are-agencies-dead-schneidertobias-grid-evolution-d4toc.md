@@ -38,7 +38,7 @@
   app_links: []
   isBasedOnUrl: "https://twitter.com/wertandcompany/status/572476221860278272"
   datePublished: "2015-03-05T20:46:19.775Z"
-  dateModified: "2015-03-05T20:46:19.775Z"
+  dateModified: "2015-03-05T20:46:38.673Z"
   sourcePath: "_posts/2015-03-05-are-agencies-dead-schneidertobias-grid-evolution-d4toc.md"
   published: true
   _type: "Comment"
