@@ -1,409 +1,399 @@
 <!DOCTYPE html>
-<html lang="en" class="gss-not-ready">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
-      GSS_CONFIG = {
-        worker: "http://the-grid-templates.s3-website-us-west-1.amazonaws.com/gss/dist/worker.js",
-        useWorker: false,
-        fractionalPixels: false,
-        processBeforeSet: function (vars) {
+<html id="u57">
 
-          // Multiline ellipsis
-          (function (vars) {
-            var idx, id, h, lh, y, delta;
-            for (key in vars) {
-              idx = key.indexOf('[--is_multi_ellipse]');
-              if (idx > 0) {
-                id = key.substring(1,idx);
-
-                // adjust height of mutli-line ellispsis wrapper
-                h = vars["$"+id+"[height]"];
-                lh = vars["$"+id+"[line-height]"];
-                if (!lh) {throw new Error("line-height not set for ellipsis, id: " + id)}
-                delta = (h % lh);
-                h = h - delta;
-                vars["$"+id+"[height]"] = h;
-
-                // adjust bottom of ellispsis
-                y = vars["$"+id+"-ellipsis[y]"];
-                vars["$"+id+"-ellipsis[y]"] = y - delta;
-              }
-            }
-          })(vars);
-
-          return vars;
-        }
-      };
-    </script>
-    <!-- fonts -->
-          <script>
-        WebFontConfig = {
-          typekit: {
-                          id: 'pqa5whp'                      },
-          custom: {
-                                        families: ['Founders Grotesk Light: n2, i2', 'Founders Grotesk Regular: n4, i4'],
-              urls: ['http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Light/n2/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Light/i2/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Regular/n4/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Regular/i4/font.css']
-                      },
-          active: function() {
-            var gssScript = document.createElement('script');
-            gssScript.src = 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/gss/dist/gss.js';
-            gssScript.onload = function() { GSS.boot(); };
-
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(gssScript, firstScript);
-          }
-        };
-      </script>
-      <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-        <!-- styles -->
-    <style type="text/css">
-      .gss-not-ready {
+  <head id="u22">
+    <meta charset="utf-8" id="u0" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7920754/764286/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/National/National-Thin.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/National/National-Light.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/National/National-Medium.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/Newzald/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" /><style type="text/css">
+  html:not(.gss-ready) {
   opacity: 0;
 }
 
-body {
-  background: hsl(220, 4%, 13%);
-}
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed {
-  overflow: hidden;
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background {
-  
-      
-    background-position: center;
-  
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(100%, hsla(0, 0%, 0%, 0.75))),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ef38d0bb2eeca43a71dd473d993ed3f9/gradientmap?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&color1=%23082A30&color2=%23FFE799&srgb=true&opacity=0.8');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -moz-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ef38d0bb2eeca43a71dd473d993ed3f9/gradientmap?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&color1=%23082A30&color2=%23FFE799&srgb=true&opacity=0.8');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -webkit-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ef38d0bb2eeca43a71dd473d993ed3f9/gradientmap?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&color1=%23082A30&color2=%23FFE799&srgb=true&opacity=0.8');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -o-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ef38d0bb2eeca43a71dd473d993ed3f9/gradientmap?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&color1=%23082A30&color2=%23FFE799&srgb=true&opacity=0.8');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -ms-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ef38d0bb2eeca43a71dd473d993ed3f9/gradientmap?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&color1=%23082A30&color2=%23FFE799&srgb=true&opacity=0.8');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ef38d0bb2eeca43a71dd473d993ed3f9/gradientmap?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&color1=%23082A30&color2=%23FFE799&srgb=true&opacity=0.8');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-  
-  -webkit-transform: skewY(4deg);
-  -moz-transform: skewY(4deg);
-  -ms-transform: skewY(4deg);
-  -o-transform: skewY(4deg);
-  transform: skewY(4deg);
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background:before {
-  background: hsla(0, 0%, 0%, .3);
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-}
-
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0 {
-  fill: hsla(46, 96%, 81%, 0.2);
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1 {
-  fill: hsl(46, 96%, 81%);
-}
-
-
-
-
-
-
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery {
-    background-color: hsla(172, 24%, 18%, 0.7);
-  }
-
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery >:before {
-    background: hsla(0, 0%, 0%, .15);
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-
-    -webkit-transition: background .2s;
-    transition: background .2s;
-  }
-
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery >:hover:before {
-    background: hsla(0, 0%, 0%, 0);
-  }
-
-
-
-
-    </style>
-    <style type="text/gss">
-      @v .main-section gap(0);
-
-section {
-  left: >= 0 !require;
-  top: >= 0 !require;
-}
-
-
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  outline: none;
+}
+</style>
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/layout.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variables.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/debug.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+inner-gap-top >= inner-gap-vertical !require;
+inner-gap-bottom == inner-gap-top !require;
+inner-gap-top == inner-gap;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
+inner-gap-right == inner-gap-left !require;
+outer-gap-right == outer-gap-left !require;
+inner-gap-left >= inner-gap-horizontal !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss">
+
+
+.cover {
+  left: == ^left;
+  width: == 4md;
+  width: <= 4md;   
+  height: == 4md !require;
 }
 
-
-[baseline] == 15 !require;
-
-#grid {
-  height: >= ::window[height] !require;
-  width: <= 1300 !require;
-
-  top: == 0 !require;
-  left: >= 0 !require;
-  center-x: == ::window[center-x] !require;
-
-  $outer-gap: == ::window[width] / 16;
-$outer-gap: >= 20 !require;  @h |-[::]-| outer-gap(::[$outer-gap]) in(::window) !require;
-
-
-  
-  @grid-cols "c1-c2-c3-c4-c5-c6-c7-c8-c9-c10-c11-c12-c13-c14-c15-c16"    chain-width(::[$col-width]!require) gap(20) !require;
-
-      [c1-left] == "c1"[left] !require;    [c1-right] == "c1"[right] !require;      [c2-left] == "c2"[left] !require;    [c2-right] == "c2"[right] !require;      [c3-left] == "c3"[left] !require;    [c3-right] == "c3"[right] !require;      [c4-left] == "c4"[left] !require;    [c4-right] == "c4"[right] !require;      [c5-left] == "c5"[left] !require;    [c5-right] == "c5"[right] !require;      [c6-left] == "c6"[left] !require;    [c6-right] == "c6"[right] !require;      [c7-left] == "c7"[left] !require;    [c7-right] == "c7"[right] !require;      [c8-left] == "c8"[left] !require;    [c8-right] == "c8"[right] !require;      [c9-left] == "c9"[left] !require;    [c9-right] == "c9"[right] !require;      [c10-left] == "c10"[left] !require;    [c10-right] == "c10"[right] !require;      [c11-left] == "c11"[left] !require;    [c11-right] == "c11"[right] !require;      [c12-left] == "c12"[left] !require;    [c12-right] == "c12"[right] !require;      [c13-left] == "c13"[left] !require;    [c13-right] == "c13"[right] !require;      [c14-left] == "c14"[left] !require;    [c14-right] == "c14"[right] !require;      [c15-left] == "c15"[left] !require;    [c15-right] == "c15"[right] !require;      [c16-left] == "c16"[left] !require;    [c16-right] == "c16"[right] !require;  }
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section {
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-
-
-  @virtual "header"
-  "header"[top] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section[top];
-  "header"[width] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[width];
-
-  /* Arbitrary value that works for skew value of 4 */
-  "header"[height] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$outer-gap-offset] + ("header"[width] / 18);
-
-
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0,#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1 {
-    width: == ::[height];
-  }
-
-  @v |-[#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0][#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1]-|
-    outer-gap("header"[height] / 4)
-    in("header")
-    chain-left(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$left])
-    chain-width;
+img {
+  width: == ^(.cover)[width];
+  width: <= ^(.cover)[width];
+  height: == ^(.cover)[width];
 }
 
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed {
-  position: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[position];
-  size: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[size];
-  skew-y: == 0 - 4;
+.title{
+  left: == (.cover)[left] !medium100;
+  top: <= ^(.cover)[top];
+  width: <= ^(.cover)[width] !require;
+  center: == ^(.cover)[center] !medium100;
+  right: <= ^(.cover)[right] !medium100;
 }
 
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background {
-  top: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[skewed-top];
-  left: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[left];
-  width: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[width];
-  height: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[skewed-height];
-  skew-y: == 4;
+//.title[center-y] == &[center-y] !require;
+.description[center-y] == &[center-y] !require;
+
+.description {
+  top: >= ^top !medium100;
+  width: >= 2md !require;
 }
 
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content {
-  $left: == [c1-left];
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 6) + ::[$padding-offset];
-
-  $outer-gap-offset: == [baseline] * 2;
-  $outer-gap: == ::[$outer-gap-offset] + ::[$padding-offset];
-
-  @h |[::]| in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section);
-  @v |-[::]| in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section) outer-gap(::[$outer-gap]);
+.attribution{
+  width: == ^width;
+  height: == &intrinsic-height;
+  top: >= ^(.title)[bottom] + 1g;
+  left: >= ^left;
+  center-x: == ^(.title)[center-x];
 }
 
+//TODO - work out attribution options for same variation
+// .attribution{
+//   left: >= ^left;
+//   width: == &intrinsic-width;
+//   height: == &intrinsic-height;
+//   top: == ^(.html)[bottom] + 1g;
+// }
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss">
+@v |-[inner-gap-top]-(.cover)-[inner-gap-bottom]-| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss">
+@h |-[inner-gap-left]-(.cover)-[inner-gap]-(.description)-[inner-gap-right]-| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
+.title {
+  z-index: 1;
+  font-size: = 6g;
+  height: == &intrinsic-height !require;
+}
+
+.source {
+  z-index: = 1;
+  font-size: = 2.2g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+
+.name {
+  font-size: = 2.2g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+
+.cta-text {
+  font-size: = 2.3g;
+}
+.cta-deco {
+  font-size: = 17.5g;
+}
+
+.description {
+  font-size: = 2.5g;
+  height: == &intrinsic-height !require;
+}
+
+.text {
+  font-size: = 2.5g;
+  height: == &intrinsic-height !require;
+}
+
+.quote{
+  font-size: = 5g;
+  height: == &intrinsic-height !require;
+}
+
+a {
+  font-size: = 2.2g;
+  height: == &intrinsic-height !require;
+}
+
+p {
+  height: == &intrinsic-height !require;
+}
+
+h1 {
+  font-size: = 6g;
+  height: == &intrinsic-height !require;
+}
+
+h2 {
+  font-size: = 6g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
+width: == intrinsic-width !require;
+top: == 0 !require;
+
+.block {
+  :first[top]   ==           ^block-gap-top     !require;
+  :next[top]    == &bottom + ^block-gap         !require;
+  :last[bottom] == ^height - ^block-gap-bottom  !require;
+
+  &outer-gap-left == 0;
+  &outer-gap-right == 0;
+
+  left:  ==          ^block-gap-left  + &outer-gap-left  !strong100;
+  right: == ^width - ^block-gap-right - &outer-gap-right !strong100;
+
+  outer-gap-left >= 0 !require;
+  outer-gap-right >= 0 !require;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
+block-gap-top == block-gap-vertical;
+block-gap-top >= block-gap-vertical !require;
+block-gap-top == block-gap-bottom !require;
+
+
+block-gap     == block-gap-between;
+
+block-gap     == block-gap-top !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
+block-gap-left == block-gap-right !require;
+block-gap-left >= block-gap-horizontal !require;
+block-gap-left == block-gap-horizontal !require;
+</script></head>
+
+  <body id="u56">
+    <div id="grid">
+      <div class="col1"></div>
+      <div class="col2"></div>
+      <div class="col3"></div>
+      <div class="col4"></div>
+      <div class="col5"></div>
+      <div class="col6"></div>
+      <div class="col7"></div>
+      <div class="col8"></div>
+      <div class="col9"></div>
+      <div class="col10"></div>
+      <div class="col11"></div>
+      <div class="col12"></div>
+      <div class="col13"></div>
+      <div class="col15"></div>
+      <div class="col16"></div>
+      <div class="col17"></div>
+      <div class="col18"></div>
+      <div class="col19"></div>
+      <div class="col20"></div>
+      <div class="row1"></div>
+      <div class="row2"></div>
+      <div class="row3"></div>
+      <div class="row4"></div>
+      <div class="row5"></div>
+      <div class="row6"></div>
+      <div class="row7"></div>
+      <div class="row8"></div>
+      <div class="row9"></div>
+      <div class="row10"></div>
+      <div class="row11"></div>
+      <div class="row12"></div>
+      <div class="row13"></div>
+      <div class="row15"></div>
+      <div class="row16"></div>
+      <div class="row17"></div>
+      <div class="row18"></div>
+      <div class="row19"></div>
+      <div class="row20"></div>
+      <div class="row21"></div>
+      <div class="row22"></div>
+      <div class="row23"></div>
+      <div class="row24"></div>
+      <div class="row25"></div>
+      <div class="row26"></div>
+      <div class="row27"></div>
+      <div class="row28"></div>
+      <div class="row29"></div>
+      <div class="row30"></div>
+    </div>
+    <div class="layout-system user artistic-d4 w-assets sections" id="u52">
+      <div class="layout two-columns bricks" style="position:relative" id="u51"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u25">section {
+  width: <= $taylorW / 2;
+}
+
+displace-x = 1md;
+displace-y = 0.5md;
+
+v-gutter-min: = 1md;
+v-gutter-max: = 1md;
+
+h-gutter: = 0;
+
+h-gutter-left == h-gutter / 8;
+h-gutter-right == h-gutter-left;
+h-gutter-middle == h-gutter;
+
+    @if ::window[width] <= $taylorW/2 {
+      v-gutter-min: = .5md;
+      v-gutter-max = 0md;
 
 
 
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery[$gap] == 8;
-
-      @h <[c1-left]>[#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery]<[c16-right]>;
-  
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_media_0 {
-    
-    height: == (::[width] * 9) / 21;
-  }
-
-  @h |-[#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_media_0]-|
-    gap(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery[$gap])
-    outer-gap(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery[$gap])
-    in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery)
-    chain-top
-    chain-width
-    chain-height !strong;
-
-  @v |-[#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_media_0]-|
-    outer-gap(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery[$gap])
-    in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery);
-
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$ctas-highlights-margin-top] == [baseline] * 4;
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$gallery-margin-top] == [baseline] * 3;
-
-
-
-
-  @v |-[#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery] outer-gap(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$padding-top]) in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content);
-  @v [#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery]~-~| outer-gap(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$padding-bottom]) in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content);
-
-
-
-
-
-    </style>
-    <!-- js -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div id="grid"></div>
-    
-<section id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section" class="main-section">
-
-      
-    <svg id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="1px" height="1px" viewBox="0 0 1 1">
-      <polygon points=".5,0 1,.5 .5,1 0,.5"/>
-    </svg>
-      
-    <svg id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="1px" height="1px" viewBox="0 0 1 1">
-      <polygon points=".5,0 1,.5 .5,1 0,.5"/>
-    </svg>
-  
-  <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed">
-    <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background"></div>
-  </div>
-
-  <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content">
-    
-    
-              
-      <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_gallery">
-                            
-
-      <style type="text/css">
-      #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_media_0 {
-        background-color: hsl(0, 0%, 0%);
-        background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/ef38d0bb2eeca43a71dd473d993ed3f9/gradientmap?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&color1=%23082A30&color2=%23FFE799&srgb=true&opacity=0.8');
-        background-position: center;
-        background-size: cover;
+      section, aside {
+        height == 0;
+        // make section want to be small
+        // stack sections vertically
+        :first[top] == ^top !require;
+        :last[bottom] == ^height !require;
+        :next[top] == &bottom + ^v-gutter-min !require;
       }
-    </style>
-  
-  
+
+      section {
+        height: == article[height] !require;
 
 
-<a id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_media_0" href="http://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?_r=2&" target="_blank">
+        // offset horizontally
+        left: == ^left + ^h-gutter-left !require;
+        right: == ^right - ^h-gutter-right !require;
+      }
+    } @else {
+      h-gutter: = 4md;
+
+//col2
+
+    section.left {
+      left: == ^left + ^h-gutter-left;
+      right: == ^center-x - ^h-gutter-middle / 2;
+    }
+    section.right {
+      left: == ^center-x + ^h-gutter-middle / 2;
+      right: == ^right - ^h-gutter-right;
+    }
+
+    //rowtop    top: == 0 !require left: == 0 !require;
 
 
+    section {
 
+      height: == article[height] !require;
+      
+      top: >= ^top !require;
+      bottom: <= ^bottom !require;
 
+      slack-gap: >= ^v-gutter-min !require;
+      slack-gap: <= ^v-gutter-max !strong;
 
+     }
+    section.left {
+      + section.right {
+        top: == ^top !require;
+      }
+      + aside + section.right {
+        top: == ^top !require;
+      }
+    }
 
+    section.left {
+      top: == :previous[bottom] + &slack-gap !require;
+    }
+    section.right {
+      top: == :previous[bottom] + &slack-gap !require;
+    }
 
+    //last row bottom
+    section.left {
+      :last[bottom] == ^bottom !strong;
+    }
+    section.right {
+      :last[bottom] == ^bottom !strong;
+    }
 
-</a>
+    .shift-x-1 {
+      margin-left: = ^shift-x;
+    }
+    .shift-x--1 {
+      margin-left: = ^shift-x * -1;
+    }
+    .shift-y-1 {
+      margin-top: = ^shift-y;
+    }
+    .shift-y--1 {
+      margin-top: = ^shift-y * -1;
+    }
+}</style>
+        <section class="repost-cover-desc section left" id="u50">
+          <article class="repost post" id="ud210e2bb-dce7-4c7c-801e-7e5628c853de" style="position:relative"><style type="text/gss" scoped="scoped" id="u28">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+</style>
+            <div class="block wrapper" id="u48"><style type="text/gss" scoped="scoped" id="u31">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/cover-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/alignC.css;
+inner-gap = 1.5g;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <h1 class="title text" id="u33">And Then Steve Said, 'Let There Be an iPhone'</h1>
+              <p class="description text" id="u35">The 55 miles from Campbell to San Francisco make for one of the nicest commutes anywhere. The journey mostly zips along the Junipero Serra Freeway, a grand and remarkably empty highway that abuts the east side of the Santa Cruz Mountains.</p>
+              <div class="cover image" id="u43"><style type="text/gss" scoped="scoped" id="u37">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
 
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
 
-  
-        
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 600 !require;
+img[height] == img[width] * (338/600) !require;
+
+/* enforce minimum scale*/
+img[height] >= 338 * image-min-scale !strong100;</style>
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/27e4b19031ae24ed3fb998b742b30df8/passthrough?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&width=600&height=338" sizes="sizes='100vw'" id="u38" /><style type="text/gss" scoped="scoped" id="u40">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 315 * image-scale !require;
+"space"[width] ==  754 * image-scale !require;
+"space"[height] == 700 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u42">/* define  area of importance */
+"scene"[x] == img[x] + 149 * image-scale !require;
+"scene"[y] == img[y] + 124 * image-scale !require;
+"scene"[width] ==  162 * image-scale !require;
+"scene"[height] == 327 * image-scale !require;
+
+/* Keep face towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u47">
+                <div class="publisher source" id="u46">
+                  <a href="http://www.nytimes.com" id="u45">Nytimes</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
-    
+    </div><script src="https://rawgit.com/gss/document/ranges2/dist/gss.document.parser.js" id="u53"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/assets/gss-init.js" id="u54"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u55"></script></body>
 
-    
-
-      </div>
-
-</section>
-     <script>
-      document.body.addEventListener('solved', function() {
-        // Provide metrics for vertical skewing
-        (function (vars) {
-          var suggestIfNeeded = function(id, property, value) {
-            var key, roundedVarValue, roundedValue;
-            key = '$' + id + '[' + property + ']';
-            roundedVarValue =  (Math.round(parseFloat(vars[key]) * 100) / 100);
-            roundedValue =  (Math.round(parseFloat(value) * 100) / 100);
-
-            if (roundedVarValue !== roundedValue) {
-              var suggest = window.GSS.engines.root.commander.suggest;
-              suggest('suggest', key, ['number', value]);
-            }
-          };
-
-          for (key in vars) {
-            var propertyName, property;
-            propertyName = 'skew-y';
-            property = '[' + propertyName + ']';
-
-            if (key.slice(property.length * -1) === property) {
-              var id, element;
-              id = key.replace('$', '').replace(property, '');
-              element = document.getElementById(id);
-
-              var y, width, height, skewY;
-              y = vars["$"+id+"[y]"];
-              width = vars["$"+id+"[width]"];
-              height = vars["$"+id+"[height]"];
-              skewY = vars["$"+id+"[skew-y]"];
-
-              var degrees, delta;
-              degrees = Math.abs(skewY) * (Math.PI / 180);
-              delta = Math.tan(degrees) * width;
-
-              // Assumes origin is center point
-              var skewedTop, skewedHeight, skewedBottom;
-              skewedTop = y - (delta / 2);
-              skewedHeight = height + delta;
-              skewedBottom = skewedTop + skewedHeight;
-
-              suggestIfNeeded(id, 'skewed-top', skewedTop);
-              suggestIfNeeded(id, 'skewed-height', skewedHeight);
-              suggestIfNeeded(id, 'skewed-bottom', skewedBottom);
-            }
-          }
-        })(window.GSS.vars);
-      });
-    </script>
-  </body>
 </html>
