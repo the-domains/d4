@@ -1,2165 +1,822 @@
 <!DOCTYPE html>
-<html lang="en" class="gss-not-ready">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <script>
-      GSS_CONFIG = {
-        worker: "http://the-grid-templates.s3-website-us-west-1.amazonaws.com/gss/dist/worker.js",
-        useWorker: false,
-        fractionalPixels: false,
-        processBeforeSet: function (vars) {
+<html id="u207">
 
-          // Multiline ellipsis
-          (function (vars) {
-            var idx, id, h, lh, y, delta;
-            for (key in vars) {
-              idx = key.indexOf('[--is_multi_ellipse]');
-              if (idx > 0) {
-                id = key.substring(1,idx);
-
-                // adjust height of mutli-line ellispsis wrapper
-                h = vars["$"+id+"[height]"];
-                lh = vars["$"+id+"[line-height]"];
-                if (!lh) {throw new Error("line-height not set for ellipsis, id: " + id)}
-                delta = (h % lh);
-                h = h - delta;
-                vars["$"+id+"[height]"] = h;
-
-                // adjust bottom of ellispsis
-                y = vars["$"+id+"-ellipsis[y]"];
-                vars["$"+id+"-ellipsis[y]"] = y - delta;
-              }
-            }
-          })(vars);
-
-          return vars;
-        }
-      };
-    </script>
-    <!-- fonts -->
-          <script>
-        WebFontConfig = {
-          typekit: {
-                          id: 'pqa5whp'                      },
-          custom: {
-                                        families: ['Founders Grotesk Light: n2, i2', 'Founders Grotesk Regular: n4, i4'],
-              urls: ['http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Light/n2/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Light/i2/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Regular/n4/font.css', 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/fonts/Founders Grotesk Regular/i4/font.css']
-                      },
-          active: function() {
-            var gssScript = document.createElement('script');
-            gssScript.src = 'http://the-grid-templates.s3-website-us-west-1.amazonaws.com/gss/dist/gss.js';
-            gssScript.onload = function() { GSS.boot(); };
-
-            var firstScript = document.getElementsByTagName('script')[0];
-            firstScript.parentNode.insertBefore(gssScript, firstScript);
-          }
-        };
-      </script>
-      <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-        <!-- styles -->
-    <style type="text/css">
-      .gss-not-ready {
+  <head id="u31">
+    <meta charset="utf-8" id="u0" />
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7920754/764286/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/National/National-Thin.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/National/National-Light.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/National/National-Medium.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/Newzald/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" /><style type="text/css">
+  html:not(.gss-ready) {
   opacity: 0;
 }
 
-body {
-  background: hsl(220, 4%, 13%);
-}
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed {
-  overflow: hidden;
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background {
-  
-      
-    background-position: center;
-  
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, hsla(0, 0%, 0%, 0)), color-stop(100%, hsla(0, 0%, 0%, 0.75))),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3123cd56e5769038e6ff12bd38316bf5/gradientmap?input=https%3A%2F%2Fs3.amazonaws.com%2Fvice_asset_uploader%2Ffiles%2F14230914871422278764_barbora_balkova_01.gif&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -moz-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3123cd56e5769038e6ff12bd38316bf5/gradientmap?input=https%3A%2F%2Fs3.amazonaws.com%2Fvice_asset_uploader%2Ffiles%2F14230914871422278764_barbora_balkova_01.gif&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -webkit-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3123cd56e5769038e6ff12bd38316bf5/gradientmap?input=https%3A%2F%2Fs3.amazonaws.com%2Fvice_asset_uploader%2Ffiles%2F14230914871422278764_barbora_balkova_01.gif&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -o-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3123cd56e5769038e6ff12bd38316bf5/gradientmap?input=https%3A%2F%2Fs3.amazonaws.com%2Fvice_asset_uploader%2Ffiles%2F14230914871422278764_barbora_balkova_01.gif&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: -ms-linear-gradient(top, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3123cd56e5769038e6ff12bd38316bf5/gradientmap?input=https%3A%2F%2Fs3.amazonaws.com%2Fvice_asset_uploader%2Ffiles%2F14230914871422278764_barbora_balkova_01.gif&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-      background-image: linear-gradient(to bottom, hsla(0, 0%, 0%, 0) 0%, hsla(0, 0%, 0%, 0.75) 100%),url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3123cd56e5769038e6ff12bd38316bf5/gradientmap?input=https%3A%2F%2Fs3.amazonaws.com%2Fvice_asset_uploader%2Ffiles%2F14230914871422278764_barbora_balkova_01.gif&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');    /*
-    background-repeat: no-repeat, repeat, no-repeat;
-    background-size: auto, auto, cover;
-    */
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-  
-  -webkit-transform: skewY(4deg);
-  -moz-transform: skewY(4deg);
-  -ms-transform: skewY(4deg);
-  -o-transform: skewY(4deg);
-  transform: skewY(4deg);
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background:before {
-  background: hsla(0, 0%, 0%, .3);
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-}
-
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0 {
-  fill: hsla(46, 96%, 81%, 0.2);
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1 {
-  fill: hsl(46, 96%, 81%);
-}
-
-
-
-
-
-
-
-
-
-
-#cross-over-post-quote-2_heading-false_media-false_1_skewed {
-  overflow: hidden;
-}
-
-#cross-over-post-quote-2_heading-false_media-false_1_background {
-  background: hsl(220, 4%, 13%);
-}
-
-  #cross-over-post-quote-2_heading-false_media-false_1_divider_1 {
-    background: hsla(46, 96%, 81%, .1);
-    z-index: 1;
-  }
-
-
-#cross-over-post-quote-2_heading-false_media-false_1_post_0_background,#cross-over-post-quote-2_heading-false_media-false_1_post_1_background {
-  background: hsl(220, 4%, 13%);
-}
-
-.source-url #cross-over-post-quote-2_heading-false_media-false_1_post_0_background:before, .source-url #cross-over-post-quote-2_heading-false_media-false_1_post_1_background:before {
-  background: hsla(0, 100%, 100%, 0);
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-
-  -webkit-transition: background .2s;
-  transition: background .2s;
-}
-
-.source-url:hover #cross-over-post-quote-2_heading-false_media-false_1_post_0_background:before, .source-url:hover #cross-over-post-quote-2_heading-false_media-false_1_post_1_background:before {
-  background: hsla(0, 100%, 100%, .03);
-}
-
-
-  #cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar,#cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar {
-    background-position: center;
-    background-size: cover;
-
-    clip-path: url(#cross-over-post-quote-2_heading-false_media-false_1_diamond);
-    -ms-clip-path: url(#cross-over-post-quote-2_heading-false_media-false_1_diamond);
-    -o-clip-path: url(#cross-over-post-quote-2_heading-false_media-false_1_diamond);
-    -webkit-clip-path: url(#cross-over-post-quote-2_heading-false_media-false_1_diamond);
-  }
-
-
-  #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading,#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading {
-    color: hsl(46, 96%, 81%);
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-
-#cross-over-post-quote-2_heading-false_media-false_1_post_0_content,#cross-over-post-quote-2_heading-false_media-false_1_post_1_content {
-  color: hsl(0, 0%, 100%);
-  font-family: 'Founders Grotesk Light', sans-serif;
-  text-align: center;
-
-      font-size: 24px;
-    font-style: italic;
-    line-height: 30px;
-  }
-
-#cross-over-post-quote-2_heading-false_media-false_1_post_0_content a, #cross-over-post-quote-2_heading-false_media-false_1_post_1_content a {
-  color: hsl(46, 96%, 81%);
-  position: relative;
-  text-decoration: none;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_skewed {
-  overflow: hidden;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_background {
-      
-    background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d52dc310a649d523226a4d893e30f68d/gradientmap?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&color1=%230A2A2F&color2=%23FDE7A0&srgb=true&opacity=0.9');    background-repeat: no-repeat;    background-size: cover;
-    background-position: center;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_background:before {
-    
-          background: hsla(48, 55%, 72%, .8);
-    
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(220, 4%, 0%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--moz-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--ms-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--o-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-      }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content {
-    font-family: 'Founders Grotesk Regular', sans-serif;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(220, 4%, 13%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--moz-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--ms-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--o-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-      }
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_skewed {
-  overflow: hidden;
-}
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_background {
-      
-    background-image: url('https://pbs.twimg.com/media/B_JC-fUVIAA9xHz.png:large');    background-repeat: no-repeat;    background-size: cover;
-    background-position: center;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_background:before {
-    
-          background: hsla(0, 0%, 0%, .2);
-    
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(46, 96%, 81%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--moz-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--ms-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--o-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-      }
-
-
-#cross-over-post-quote-1_heading-false_media-false_1_skewed {
-  overflow: hidden;
-}
-
-#cross-over-post-quote-1_heading-false_media-false_1_background {
-  background: hsl(220, 4%, 13%);
-}
-
-
-
-#cross-over-post-quote-1_heading-false_media-false_1_post_0_background {
-  background: hsl(220, 4%, 13%);
-}
-
-.source-url #cross-over-post-quote-1_heading-false_media-false_1_post_0_background:before {
-  background: hsla(0, 100%, 100%, 0);
-  content: "";
-  position: absolute;
-  left: 0%;
-  top: 0%;
-  width: 100%;
-  height: 100%;
-
-  -webkit-transition: background .2s;
-  transition: background .2s;
-}
-
-.source-url:hover #cross-over-post-quote-1_heading-false_media-false_1_post_0_background:before {
-  background: hsla(0, 100%, 100%, .03);
-}
-
-
-  #cross-over-post-quote-1_heading-false_media-false_1_post_0_avatar {
-    background-position: center;
-    background-size: cover;
-
-    clip-path: url(#cross-over-post-quote-1_heading-false_media-false_1_diamond);
-    -ms-clip-path: url(#cross-over-post-quote-1_heading-false_media-false_1_diamond);
-    -o-clip-path: url(#cross-over-post-quote-1_heading-false_media-false_1_diamond);
-    -webkit-clip-path: url(#cross-over-post-quote-1_heading-false_media-false_1_diamond);
-  }
-
-
-  #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading {
-    color: hsl(46, 96%, 81%);
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-
-#cross-over-post-quote-1_heading-false_media-false_1_post_0_content {
-  color: hsl(0, 0%, 100%);
-  font-family: 'Founders Grotesk Light', sans-serif;
-  text-align: center;
-
-      font-size: 30px;
-    line-height: 50px;
-  }
-
-#cross-over-post-quote-1_heading-false_media-false_1_post_0_content a {
-  color: hsl(46, 96%, 81%);
-  position: relative;
-  text-decoration: none;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_2_skewed {
-  overflow: hidden;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_2_background {
-      
-    background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/5393d25ea63bdce71397f3625a309f03/gradientmap?input=https%3A%2F%2Fs3.amazonaws.com%2Fvice_asset_uploader%2Ffiles%2F14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif&color1=%230A2A2F&color2=%23FDE7A0&srgb=true&opacity=0.9');    background-repeat: no-repeat;    background-size: cover;
-    background-position: center;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_background:before {
-    
-          background: hsla(48, 55%, 72%, .2);
-    
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-  }
-
-
-
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_skewed {
-  overflow: hidden;
-}
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_background {
-      
-    background-image: url('https://d262ilb51hltx0.cloudfront.net/max/800/1*1I-PNso0E8oXXywbN7bAIQ.jpeg');    background-repeat: no-repeat;    background-size: cover;
-    background-position: center;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_background:before {
-    
-          background: hsla(0, 0%, 0%, .8);
-    
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-  }
-
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_media iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content {
-    font-family: 'Founders Grotesk Regular', sans-serif;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(0, 0%, 100%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--moz-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--ms-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--o-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-      }
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_skewed {
-  overflow: hidden;
-}
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_background {
-      
-    background-image: url('http://i0.wp.com/venturebeat.com/wp-content/uploads/2015/03/The-Grid-layouts.jpg?fit=1200%2C1200');    background-repeat: no-repeat;    background-size: cover;
-    background-position: center;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_background:before {
-    
-          background: hsla(0, 0%, 0%, .8);
-    
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(46, 96%, 81%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--moz-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--ms-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--o-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-      }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content {
-    font-family: 'Founders Grotesk Regular', sans-serif;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(0, 0%, 100%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--moz-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--ms-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
--o-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, .5));
-      }
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_skewed {
-  overflow: hidden;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_background {
-      
-    background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/27bbad2cc83d55d3ada2541e5135bc7a/gradientmap?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB-tXzkBUsAAf1Co.png%3Alarge&color1=%230A2A2F&color2=%23FDE7A0&srgb=true&opacity=0.9');    background-repeat: no-repeat;    background-size: cover;
-    background-position: center;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_background:before {
-    
-          background: hsla(48, 55%, 72%, .2);
-    
-    content: "";
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 100%;
-    height: 100%;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading {
-    font-family: 'proxima-nova', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(220, 4%, 0%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--moz-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--ms-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--o-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-      }
-
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content {
-    font-family: 'Founders Grotesk Regular', sans-serif;
-    font-size: 30px;
-    line-height: 40px;
-    text-align: center;
-    text-transform: uppercase;
-
-          color: hsl(220, 4%, 13%);
-    
-                
--webkit-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--moz-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--ms-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
--o-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-filter: drop-shadow(0 0 5px hsl(71, 13%, 49%));
-      }
-#cross-over-footer-ctas-0_1_background {
-  background: hsl(220, 4%, 13%);
-}
-
-    </style>
-    <style type="text/gss">
-      @v .main-section gap(0);
-
-section {
-  left: >= 0 !require;
-  top: >= 0 !require;
-}
-
-
 * {
-  padding: 0;
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  outline: none;
+}
+</style>
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/layout.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variables.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/debug.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+inner-gap-top >= inner-gap-vertical !require;
+inner-gap-bottom == inner-gap-top !require;
+inner-gap-top == inner-gap;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
+inner-gap-right == inner-gap-left !require;
+outer-gap-right == outer-gap-left !require;
+inner-gap-left >= inner-gap-horizontal !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss">
+
+
+.cover {
+  left: == ^left;
+  width: == 4md;
+  width: <= 4md;   
+  height: == 4md !require;
+}
+
+img {
+  width: == ^(.cover)[width];
+  width: <= ^(.cover)[width];
+  height: == ^(.cover)[width];
+}
+
+.title{
+  left: == (.cover)[left] !medium100;
+  top: <= ^(.cover)[top];
+  width: <= ^(.cover)[width] !require;
+  center: == ^(.cover)[center] !medium100;
+  right: <= ^(.cover)[right] !medium100;
+}
+
+//.title[center-y] == &[center-y] !require;
+.description[center-y] == &[center-y] !require;
+
+.description {
+  top: >= ^top !medium100;
+  width: >= 2md !require;
+}
+
+.attribution{
+  width: == ^width;
+  height: == &intrinsic-height;
+  top: >= ^(.title)[bottom] + 1g;
+  left: >= ^left;
+  center-x: == ^(.title)[center-x];
+}
+
+//TODO - work out attribution options for same variation
+// .attribution{
+//   left: >= ^left;
+//   width: == &intrinsic-width;
+//   height: == &intrinsic-height;
+//   top: == ^(.html)[bottom] + 1g;
+// }
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss">
+@v |-[inner-gap-top]-(.cover)-[inner-gap-bottom]-| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss">
+@h |-[inner-gap-left]-(.cover)-[inner-gap]-(.description)-[inner-gap-right]-| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
+.title {
+  z-index: 1;
+  font-size: = 6g;
+  height: == &intrinsic-height !require;
+}
+
+.source {
+  z-index: = 1;
+  font-size: = 2.2g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+
+.name {
+  font-size: = 2.2g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+
+.cta-text {
+  font-size: = 2.3g;
+}
+.cta-deco {
+  font-size: = 17.5g;
+}
+
+.description {
+  font-size: = 2.5g;
+  height: == &intrinsic-height !require;
+}
+
+.text {
+  font-size: = 2.5g;
+  height: == &intrinsic-height !require;
+}
+
+.quote{
+  font-size: = 5g;
+  height: == &intrinsic-height !require;
+}
+
+a {
+  font-size: = 2.2g;
+  height: == &intrinsic-height !require;
+}
+
+p {
+  height: == &intrinsic-height !require;
+}
+
+h1 {
+  font-size: = 6g;
+  height: == &intrinsic-height !require;
+}
+
+h2 {
+  font-size: = 6g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
+width: == intrinsic-width !require;
+top: == 0 !require;
+
+.block {
+  :first[top]   ==           ^block-gap-top     !require;
+  :next[top]    == &bottom + ^block-gap         !require;
+  :last[bottom] == ^height - ^block-gap-bottom  !require;
+
+  &outer-gap-left == 0;
+  &outer-gap-right == 0;
+
+  left:  ==          ^block-gap-left  + &outer-gap-left  !strong100;
+  right: == ^width - ^block-gap-right - &outer-gap-right !strong100;
+
+  outer-gap-left >= 0 !require;
+  outer-gap-right >= 0 !require;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
+block-gap-top == block-gap-vertical;
+block-gap-top >= block-gap-vertical !require;
+block-gap-top == block-gap-bottom !require;
+
+
+block-gap     == block-gap-between;
+
+block-gap     == block-gap-top !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
+block-gap-left == block-gap-right !require;
+block-gap-left >= block-gap-horizontal !require;
+block-gap-left == block-gap-horizontal !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/quote.gss">
+.quote[center-y] == &[center-y] !require;
+
+.quote {
+  top: >= ^top !medium100;
+  left: >= ^left;
+  width: >= ^width !require;
+}
+
+.attribution {
+  width: == ^width;
+  height: == &intrinsic-height;
+  bottom: == ^(.quote)[top] + -3g;
+  left: >= ^(.quote)[left]; 
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss">
+.source {
+  left: == ^(.attribution)[left]; 
+  top: == ^(.attribution)[center-y];
+}
+
+.name {
+  top: == ^(.attribution)[center-y];
+  left: == ^(.source)[right] + 1g;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss">
+.attribution{
+  width: == ^width;
+  height: == &intrinsic-height;
+  top: == ^bottom -3g; 
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-right.gss">
+inner-gap-left >= inner-gap-horizontal !require;
+inner-gap-right == inner-gap-horizontal !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/media/bg_media.gss">
+// Auto-stretch BG when centering content 
+img {
+  top: >= 1md;
+  height: == 5md !medium100;
+  opacity: == ^bg_media-opacity;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
+@v |(.cover)| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss">
+@h |(.cover)| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/title.gss">
+.title {
+  width: == ^width;
+  height: <= ^height !medium100;
+  center-x: == ^center-x !medium100;
+  center-y: == ^center-y !medium100;
+  top: >= 0 !medium100;
+}
+
+.attribution {
+  width: == ^width;
+  height: == &intrinsic-height;  
+  top: == ^(.title)[bottom] + 1g;
+  center-x: >= ^(.title)[center-x]; 
 }
 
 
-[baseline] == 15 !require;
-
-#grid {
-  height: >= ::window[height] !require;
-  width: <= 1300 !require;
-
-  top: == 0 !require;
-  left: >= 0 !require;
-  center-x: == ::window[center-x] !require;
-
-  $outer-gap: == ::window[width] / 16;
-$outer-gap: >= 20 !require;  @h |-[::]-| outer-gap(::[$outer-gap]) in(::window) !require;
-
-
-  
-  @grid-cols "c1-c2-c3-c4-c5-c6-c7-c8-c9-c10-c11-c12-c13-c14-c15-c16"    chain-width(::[$col-width]!require) gap(20) !require;
-
-      [c1-left] == "c1"[left] !require;    [c1-right] == "c1"[right] !require;      [c2-left] == "c2"[left] !require;    [c2-right] == "c2"[right] !require;      [c3-left] == "c3"[left] !require;    [c3-right] == "c3"[right] !require;      [c4-left] == "c4"[left] !require;    [c4-right] == "c4"[right] !require;      [c5-left] == "c5"[left] !require;    [c5-right] == "c5"[right] !require;      [c6-left] == "c6"[left] !require;    [c6-right] == "c6"[right] !require;      [c7-left] == "c7"[left] !require;    [c7-right] == "c7"[right] !require;      [c8-left] == "c8"[left] !require;    [c8-right] == "c8"[right] !require;      [c9-left] == "c9"[left] !require;    [c9-right] == "c9"[right] !require;      [c10-left] == "c10"[left] !require;    [c10-right] == "c10"[right] !require;      [c11-left] == "c11"[left] !require;    [c11-right] == "c11"[right] !require;      [c12-left] == "c12"[left] !require;    [c12-right] == "c12"[right] !require;      [c13-left] == "c13"[left] !require;    [c13-right] == "c13"[right] !require;      [c14-left] == "c14"[left] !require;    [c14-right] == "c14"[right] !require;      [c15-left] == "c15"[left] !require;    [c15-right] == "c15"[right] !require;      [c16-left] == "c16"[left] !require;    [c16-right] == "c16"[right] !require;  }
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section {
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-
-
-  @virtual "header"
-  "header"[top] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section[top];
-  "header"[width] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[width];
-
-  /* Arbitrary value that works for skew value of 4 */
-  "header"[height] == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$outer-gap-offset] + ("header"[width] / 18);
-
-
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0,#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1 {
-    width: == ::[height];
-  }
-
-  @v |-[#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0][#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1]-|
-    outer-gap("header"[height] / 4)
-    in("header")
-    chain-left(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$left])
-    chain-width;
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed {
-  position: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[position];
-  size: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background {
-  top: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[skewed-top];
-  left: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[left];
-  width: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[width];
-  height: == #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content {
-  $left: == [c1-left];
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 6) + ::[$padding-offset];
-
-  $outer-gap-offset: == [baseline] * 2;
-  $outer-gap: == ::[$outer-gap-offset] + ::[$padding-offset];
-
-  @h |[::]| in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section);
-  @v |-[::]| in(#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section) outer-gap(::[$outer-gap]);
+//todo move elsewhere
+.source,
+.title,
+.name,
+.description{
+  z-index: 1;
 }
 
 
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss">
+@v |-[inner-gap-top]-(.title)-[inner-gap-bottom]-| !require;
+</script></head>
 
-
-
-
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$ctas-highlights-margin-top] == [baseline] * 4;
-#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[$gallery-margin-top] == [baseline] * 3;
-
-
-
-
-  #cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content[height] == (#cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section[width] * 9) / 21;
-
-
-
-
-
-#cross-over-post-quote-2_heading-false_media-false_1_section {
-  $padding-offset: == ::[width] / 30;
-  $vertical-padding: == ([baseline] * 6) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
+  <body id="u206">
+    <div id="grid">
+      <div class="col1"></div>
+      <div class="col2"></div>
+      <div class="col3"></div>
+      <div class="col4"></div>
+      <div class="col5"></div>
+      <div class="col6"></div>
+      <div class="col7"></div>
+      <div class="col8"></div>
+      <div class="col9"></div>
+      <div class="col10"></div>
+      <div class="col11"></div>
+      <div class="col12"></div>
+      <div class="col13"></div>
+      <div class="col15"></div>
+      <div class="col16"></div>
+      <div class="col17"></div>
+      <div class="col18"></div>
+      <div class="col19"></div>
+      <div class="col20"></div>
+      <div class="row1"></div>
+      <div class="row2"></div>
+      <div class="row3"></div>
+      <div class="row4"></div>
+      <div class="row5"></div>
+      <div class="row6"></div>
+      <div class="row7"></div>
+      <div class="row8"></div>
+      <div class="row9"></div>
+      <div class="row10"></div>
+      <div class="row11"></div>
+      <div class="row12"></div>
+      <div class="row13"></div>
+      <div class="row15"></div>
+      <div class="row16"></div>
+      <div class="row17"></div>
+      <div class="row18"></div>
+      <div class="row19"></div>
+      <div class="row20"></div>
+      <div class="row21"></div>
+      <div class="row22"></div>
+      <div class="row23"></div>
+      <div class="row24"></div>
+      <div class="row25"></div>
+      <div class="row26"></div>
+      <div class="row27"></div>
+      <div class="row28"></div>
+      <div class="row29"></div>
+      <div class="row30"></div>
+    </div>
+    <div class="layout-system user artistic-d4 w-assets sections" id="u202">
+      <div class="layout two-columns bricks" style="position:relative" id="u201"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u34">section {
+  width: <= $taylorW / 2;
 }
 
-#cross-over-post-quote-2_heading-false_media-false_1_skewed {
-  position: == #cross-over-post-quote-2_heading-false_media-false_1_section[position];
-  size: == #cross-over-post-quote-2_heading-false_media-false_1_section[size];
-  skew-y: == 0 - 4;
-}
+displace-x = 1md;
+displace-y = 0.5md;
 
-#cross-over-post-quote-2_heading-false_media-false_1_background {
-  top: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[skewed-top];
-  left: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[left];
-  width: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[width];
-  height: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[skewed-height];
-  skew-y: == 4;
-}
+v-gutter-min: = 1md;
+v-gutter-max: = 1md;
 
-#cross-over-post-quote-2_heading-false_media-false_1_section {
-  $divider-width: == 1 !require;
+h-gutter: = 0;
 
-  @virtual "posts";
-  "posts"[left] == ::[left];
-  "posts"[right] == ::[right];
-  $posts-background-offset: == (#cross-over-post-quote-2_heading-false_media-false_1_skewed[top] - #cross-over-post-quote-2_heading-false_media-false_1_skewed[skewed-top]);
+h-gutter-left == h-gutter / 8;
+h-gutter-right == h-gutter-left;
+h-gutter-middle == h-gutter;
 
-  @v |-["posts"]-|
-    outer-gap(::[$vertical-padding])
-    in(::);
+    @if ::window[width] <= $taylorW/2 {
+      v-gutter-min: = .5md;
+      v-gutter-max = 0md;
 
-  @h |[#cross-over-post-quote-2_heading-false_media-false_1_post_0]-[#cross-over-post-quote-2_heading-false_media-false_1_post_1]|
-    gap(::[$divider-width])
-    in("posts")
-    chain-top
-    chain-width;
 
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_0]~-~|
-      outer-gap(0)
-      in("posts");
 
-    #cross-over-post-quote-2_heading-false_media-false_1_post_0_background {
-      top: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[top] - (((#cross-over-post-quote-2_heading-false_media-false_1_section[$posts-background-offset] * 2) / 2) * 0) + ((#cross-over-post-quote-2_heading-false_media-false_1_section[$posts-background-offset] / 2) * (2 - 1));
+      section, aside {
+        height == 0;
+        // make section want to be small
+        // stack sections vertically
+        :first[top] == ^top !require;
+        :last[bottom] == ^height !require;
+        :next[top] == &bottom + ^v-gutter-min !require;
+      }
 
-      left: == #cross-over-post-quote-2_heading-false_media-false_1_post_0[left];
-      width: == #cross-over-post-quote-2_heading-false_media-false_1_post_0[width];
-      height: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[height];
-      skew-y: == 0 - 4;
+      section {
+        height: == article[height] !require;
+
+
+        // offset horizontally
+        left: == ^left + ^h-gutter-left !require;
+        right: == ^right - ^h-gutter-right !require;
+      }
+    } @else {
+      h-gutter: = 4md;
+
+//col2
+
+    section.left {
+      left: == ^left + ^h-gutter-left;
+      right: == ^center-x - ^h-gutter-middle / 2;
+    }
+    section.right {
+      left: == ^center-x + ^h-gutter-middle / 2;
+      right: == ^right - ^h-gutter-right;
     }
 
+    //rowtop    top: == 0 !require left: == 0 !require;
 
-    
-          #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading {
-        center-x: == #cross-over-post-quote-2_heading-false_media-false_1_post_0[center-x];
-        width: == #cross-over-post-quote-2_heading-false_media-false_1_post_0[width] / 4  !require;
-      }
 
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_text {
-        center-x: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading[center-x];
-        height: == ::[intrinsic-height];
-        width: <= #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading[width];
-        width: == ::[intrinsic-width];
-      }
+    section {
 
-      @v |[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_text]| in(#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading);
-
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_prefix,
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_suffix {
-        size: == ::[intrinsic-size];
-      }
-
-      @h [#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_prefix]-[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_text]-[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_suffix]
-        gap(10)
-        in(#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading)
-        chain-center-y;
-
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_prefix]~-~| outer-gap(0) in(#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading);
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_text]~-~| outer-gap(0) in(#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading);
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_suffix]~-~| outer-gap(0) in(#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading);
-    
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_1]~-~|
-      outer-gap(0)
-      in("posts");
-
-    #cross-over-post-quote-2_heading-false_media-false_1_post_1_background {
-      top: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[top] - (((#cross-over-post-quote-2_heading-false_media-false_1_section[$posts-background-offset] * 2) / 2) * 1) + ((#cross-over-post-quote-2_heading-false_media-false_1_section[$posts-background-offset] / 2) * (2 - 1));
-
-      left: == #cross-over-post-quote-2_heading-false_media-false_1_post_1[left];
-      width: == #cross-over-post-quote-2_heading-false_media-false_1_post_1[width];
-      height: == #cross-over-post-quote-2_heading-false_media-false_1_skewed[height];
-      skew-y: == 0 - 4;
-    }
-
-
-    
-          #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading {
-        center-x: == #cross-over-post-quote-2_heading-false_media-false_1_post_1[center-x];
-        width: == #cross-over-post-quote-2_heading-false_media-false_1_post_1[width] / 4  !require;
-      }
-
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_text {
-        center-x: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading[center-x];
-        height: == ::[intrinsic-height];
-        width: <= #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading[width];
-        width: == ::[intrinsic-width];
-      }
-
-      @v |[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_text]| in(#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading);
-
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_prefix,
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_suffix {
-        size: == ::[intrinsic-size];
-      }
-
-      @h [#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_prefix]-[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_text]-[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_suffix]
-        gap(10)
-        in(#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading)
-        chain-center-y;
-
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_prefix]~-~| outer-gap(0) in(#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading);
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_text]~-~| outer-gap(0) in(#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading);
-      @v |~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_suffix]~-~| outer-gap(0) in(#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading);
-    
-  
-      @h|-[#cross-over-post-quote-2_heading-false_media-false_1_divider_1]-|
-      gap(#cross-over-post-quote-2_heading-false_media-false_1_post_0[width])
-      outer-gap(#cross-over-post-quote-2_heading-false_media-false_1_post_0[width])
-      in("posts")
-      chain-top
-      chain-width
-      chain-height;
-
-    #cross-over-post-quote-2_heading-false_media-false_1_divider_1 {
-      top: == #cross-over-post-quote-2_heading-false_media-false_1_section[top];
-      width: == #cross-over-post-quote-2_heading-false_media-false_1_section[$divider-width];
-      height: == #cross-over-post-quote-2_heading-false_media-false_1_section[height];
-    }
-  }
-
-  #cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar,#cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar {
-    width: == ::[height] == [baseline] * 6 !require;
-  }
-
-#cross-over-post-quote-2_heading-false_media-false_1_post_0_content,#cross-over-post-quote-2_heading-false_media-false_1_post_1_content {
-  height: == ::[intrinsic-height];
-}
-
-#cross-over-post-quote-2_heading-false_media-false_1_post_0,#cross-over-post-quote-2_heading-false_media-false_1_post_1 {
-  $padding: == ::[width] / 4;
-}
-
-  
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar {
-      $margin: == [baseline] * 2;
-      center-x: == #cross-over-post-quote-2_heading-false_media-false_1_post_0[center-x];
-    }
-  
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading[$margin] == [baseline];
-    @h |-[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading]-| outer-gap(#cross-over-post-quote-2_heading-false_media-false_1_post_0[$padding]) in(#cross-over-post-quote-2_heading-false_media-false_1_post_0);
-  
-  
-
-  
-    @v |[#cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar]~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading] gap(#cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar[$margin]) in(#cross-over-post-quote-2_heading-false_media-false_1_post_0);
-    @v [#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading]~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_0_content] gap(#cross-over-post-quote-2_heading-false_media-false_1_post_0_heading[$margin]);
-
-  
-
-  @h |-[#cross-over-post-quote-2_heading-false_media-false_1_post_0_content]-|
-    outer-gap(#cross-over-post-quote-2_heading-false_media-false_1_post_0[$padding])
-    in(#cross-over-post-quote-2_heading-false_media-false_1_post_0);
-
-  @v [#cross-over-post-quote-2_heading-false_media-false_1_post_0_content]| in(#cross-over-post-quote-2_heading-false_media-false_1_post_0);
-  
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar {
-      $margin: == [baseline] * 2;
-      center-x: == #cross-over-post-quote-2_heading-false_media-false_1_post_1[center-x];
-    }
-  
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading[$margin] == [baseline];
-    @h |-[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading]-| outer-gap(#cross-over-post-quote-2_heading-false_media-false_1_post_1[$padding]) in(#cross-over-post-quote-2_heading-false_media-false_1_post_1);
-  
-  
-
-  
-    @v |[#cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar]~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading] gap(#cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar[$margin]) in(#cross-over-post-quote-2_heading-false_media-false_1_post_1);
-    @v [#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading]~-~[#cross-over-post-quote-2_heading-false_media-false_1_post_1_content] gap(#cross-over-post-quote-2_heading-false_media-false_1_post_1_heading[$margin]);
-
-  
-
-  @h |-[#cross-over-post-quote-2_heading-false_media-false_1_post_1_content]-|
-    outer-gap(#cross-over-post-quote-2_heading-false_media-false_1_post_1[$padding])
-    in(#cross-over-post-quote-2_heading-false_media-false_1_post_1);
-
-  @v [#cross-over-post-quote-2_heading-false_media-false_1_post_1_content]| in(#cross-over-post-quote-2_heading-false_media-false_1_post_1);
-
-  #cross-over-post-quote-2_heading-false_media-false_1_post_0_content[top] == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content[top];
-  #cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar[top] == #cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar[top];
-  #cross-over-post-quote-2_heading-false_media-false_1_post_0_heading[center-y] == #cross-over-post-quote-2_heading-false_media-false_1_post_1_heading[center-y];
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section {
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 4) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_skewed {
-  position: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[position];
-  size: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_background {
-  top: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_skewed[skewed-top];
-  left: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_skewed[left];
-  width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_skewed[width];
-  height: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading {
-    center-x: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[center-x];
-    width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[width] / 4  !require;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingText {
-    center-x: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading[center-x];
-    height: == ::[intrinsic-height];
-    width: <= #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading[width];
-    width: == ::[intrinsic-width];
-  }
-
-  @v |[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingText]| in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading);
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingPrefix,
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingSuffix {
-    size: == ::[intrinsic-size];
-  }
-
-  @h [#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingPrefix]-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingText]-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingSuffix]
-    gap(10)
-    in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading)
-    chain-center-y;
-
-  @v |~-~[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingPrefix]~-~| outer-gap(0) in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading);
-  @v |~-~[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingText]~-~| outer-gap(0) in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading);
-  @v |~-~[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingSuffix]~-~| outer-gap(0) in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading);
-
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media {
-        $margin: == [baseline] * 3;
-    $max-width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[width] / 2;
-    center-x: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[center-x];
-
-    
-          width: == ::[$max-width];
-    
-    height: == (::[width] * 9) / 16;
-
-    width: <= #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[width] / 2;
-    height: <= ::window[height] / 2;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content {
-    center-x: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[center-x];
-    height: == ::[intrinsic-height];
-    width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[width] / 4;
-  }
-
-
-
-  @v |-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading]-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media]
-    gap(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media[$margin])
-    outer-gap(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[$padding-top])
-    in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section);
-
-  @v [#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media]-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content] gap(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media[$margin]);
-
-  @v [#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content]-|
-    outer-gap(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section[$padding-bottom])
-    in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section);
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section {
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 4) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_skewed {
-  position: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section[position];
-  size: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_background {
-  top: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_skewed[skewed-top];
-  left: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_skewed[left];
-  width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_skewed[width];
-  height: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading {
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section[center-x];
-    width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section[width] / 4  !require;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingText {
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading[center-x];
-    height: == ::[intrinsic-height];
-    width: <= #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading[width];
-    width: == ::[intrinsic-width];
-  }
-
-  @v |[#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingText]| in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading);
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingPrefix,
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingSuffix {
-    size: == ::[intrinsic-size];
-  }
-
-  @h [#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingPrefix]-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingText]-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingSuffix]
-    gap(10)
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading)
-    chain-center-y;
-
-  @v |~-~[#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingPrefix]~-~| outer-gap(0) in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading);
-  @v |~-~[#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingText]~-~| outer-gap(0) in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading);
-  @v |~-~[#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingSuffix]~-~| outer-gap(0) in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading);
-
-
-
-
-
-
-  @v |-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading]
-    outer-gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section[$padding-top])
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section);
-
-  @v [#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading]-|
-    outer-gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section[$padding-bottom])
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section);
-
-#cross-over-post-quote-1_heading-false_media-false_1_section {
-  $padding-offset: == ::[width] / 30;
-  $vertical-padding: == ([baseline] * 6) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-#cross-over-post-quote-1_heading-false_media-false_1_skewed {
-  position: == #cross-over-post-quote-1_heading-false_media-false_1_section[position];
-  size: == #cross-over-post-quote-1_heading-false_media-false_1_section[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-post-quote-1_heading-false_media-false_1_background {
-  top: == #cross-over-post-quote-1_heading-false_media-false_1_skewed[skewed-top];
-  left: == #cross-over-post-quote-1_heading-false_media-false_1_skewed[left];
-  width: == #cross-over-post-quote-1_heading-false_media-false_1_skewed[width];
-  height: == #cross-over-post-quote-1_heading-false_media-false_1_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-#cross-over-post-quote-1_heading-false_media-false_1_section {
-  $divider-width: == 1 !require;
-
-  @virtual "posts";
-  "posts"[left] == ::[left];
-  "posts"[right] == ::[right];
-  $posts-background-offset: == (#cross-over-post-quote-1_heading-false_media-false_1_skewed[top] - #cross-over-post-quote-1_heading-false_media-false_1_skewed[skewed-top]);
-
-  @v |-["posts"]-|
-    outer-gap(::[$vertical-padding])
-    in(::);
-
-  @h |[#cross-over-post-quote-1_heading-false_media-false_1_post_0]|
-    gap(::[$divider-width])
-    in("posts")
-    chain-top
-    chain-width;
-
-      @v |~-~[#cross-over-post-quote-1_heading-false_media-false_1_post_0]~-~|
-      outer-gap(0)
-      in("posts");
-
-    #cross-over-post-quote-1_heading-false_media-false_1_post_0_background {
-      top: == #cross-over-post-quote-1_heading-false_media-false_1_skewed[top] - (((#cross-over-post-quote-1_heading-false_media-false_1_section[$posts-background-offset] * 2) / 1) * 0) + ((#cross-over-post-quote-1_heading-false_media-false_1_section[$posts-background-offset] / 1) * (1 - 1));
-
-      left: == #cross-over-post-quote-1_heading-false_media-false_1_post_0[left];
-      width: == #cross-over-post-quote-1_heading-false_media-false_1_post_0[width];
-      height: == #cross-over-post-quote-1_heading-false_media-false_1_skewed[height];
-      skew-y: == 0 - 4;
-    }
-
-
-    
-          #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading {
-        center-x: == #cross-over-post-quote-1_heading-false_media-false_1_post_0[center-x];
-        width: == #cross-over-post-quote-1_heading-false_media-false_1_post_0[width] / 4  !require;
-      }
-
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_text {
-        center-x: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading[center-x];
-        height: == ::[intrinsic-height];
-        width: <= #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading[width];
-        width: == ::[intrinsic-width];
-      }
-
-      @v |[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_text]| in(#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading);
-
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_prefix,
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_suffix {
-        size: == ::[intrinsic-size];
-      }
-
-      @h [#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_prefix]-[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_text]-[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_suffix]
-        gap(10)
-        in(#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading)
-        chain-center-y;
-
-      @v |~-~[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_prefix]~-~| outer-gap(0) in(#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading);
-      @v |~-~[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_text]~-~| outer-gap(0) in(#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading);
-      @v |~-~[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_suffix]~-~| outer-gap(0) in(#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading);
-    
-  
-  }
-
-  #cross-over-post-quote-1_heading-false_media-false_1_post_0_avatar {
-    width: == ::[height] == [baseline] * 6 !require;
-  }
-
-#cross-over-post-quote-1_heading-false_media-false_1_post_0_content {
-  height: == ::[intrinsic-height];
-}
-
-#cross-over-post-quote-1_heading-false_media-false_1_post_0 {
-  $padding: == ::[width] / 4;
-}
-
-  
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_avatar {
-      $margin: == [baseline] * 2;
-      center-x: == #cross-over-post-quote-1_heading-false_media-false_1_post_0[center-x];
-    }
-  
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_heading[$margin] == [baseline];
-    @h |-[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading]-| outer-gap(#cross-over-post-quote-1_heading-false_media-false_1_post_0[$padding]) in(#cross-over-post-quote-1_heading-false_media-false_1_post_0);
-  
-  
-
-  
-    @v |[#cross-over-post-quote-1_heading-false_media-false_1_post_0_avatar]~-~[#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading] gap(#cross-over-post-quote-1_heading-false_media-false_1_post_0_avatar[$margin]) in(#cross-over-post-quote-1_heading-false_media-false_1_post_0);
-    @v [#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading]~-~[#cross-over-post-quote-1_heading-false_media-false_1_post_0_content] gap(#cross-over-post-quote-1_heading-false_media-false_1_post_0_heading[$margin]);
-
-  
-
-  @h |-[#cross-over-post-quote-1_heading-false_media-false_1_post_0_content]-|
-    outer-gap(#cross-over-post-quote-1_heading-false_media-false_1_post_0[$padding])
-    in(#cross-over-post-quote-1_heading-false_media-false_1_post_0);
-
-  @v [#cross-over-post-quote-1_heading-false_media-false_1_post_0_content]| in(#cross-over-post-quote-1_heading-false_media-false_1_post_0);
-
-
-
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_2_section {
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 4) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_2_skewed {
-  position: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_section[position];
-  size: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_section[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_2_background {
-  top: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_skewed[skewed-top];
-  left: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_skewed[left];
-  width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_skewed[width];
-  height: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-
-
-
-
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_section[height] == #cross-over-excerpt-filtered_content-false_heading-false_media-true_2_section[width] / 5;
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section {
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 4) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_skewed {
-  position: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[position];
-  size: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_background {
-  top: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_skewed[skewed-top];
-  left: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_skewed[left];
-  width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_skewed[width];
-  height: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_media {
-        $margin: == [baseline] * 3;
-    $max-width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[width] / 2;
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[center-x];
-
-    
-          width: == ::[$max-width];
-    
-    height: == (::[width] * 9) / 16;
-
-    width: <= #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[width] / 2;
-    height: <= ::window[height] / 2;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content {
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[center-x];
-    height: == ::[intrinsic-height];
-    width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[width] / 4;
-  }
-
-
-
-  @v |-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_media]-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content]
-    gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_media[$margin])
-    outer-gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[$padding-top])
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section);
-
-  @v [#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content]-|
-    outer-gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section[$padding-bottom])
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section);
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section {
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 4) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_skewed {
-  position: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[position];
-  size: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_background {
-  top: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_skewed[skewed-top];
-  left: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_skewed[left];
-  width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_skewed[width];
-  height: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading {
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[center-x];
-    width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[width] / 4  !require;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingText {
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading[center-x];
-    height: == ::[intrinsic-height];
-    width: <= #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading[width];
-    width: == ::[intrinsic-width];
-  }
-
-  @v |[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingText]| in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading);
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingPrefix,
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingSuffix {
-    size: == ::[intrinsic-size];
-  }
-
-  @h [#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingPrefix]-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingText]-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingSuffix]
-    gap(10)
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading)
-    chain-center-y;
-
-  @v |~-~[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingPrefix]~-~| outer-gap(0) in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading);
-  @v |~-~[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingText]~-~| outer-gap(0) in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading);
-  @v |~-~[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingSuffix]~-~| outer-gap(0) in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading);
-
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media {
-        $margin: == [baseline] * 3;
-    $max-width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[width] / 2;
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[center-x];
-
-    
-          width: == ::[$max-width];
-    
-    height: == (::[width] * 9) / 16;
-
-    width: <= #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[width] / 2;
-    height: <= ::window[height] / 2;
-  }
-
-  #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content {
-    center-x: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[center-x];
-    height: == ::[intrinsic-height];
-    width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[width] / 4;
-  }
-
-
-
-  @v |-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading]-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media]
-    gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media[$margin])
-    outer-gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[$padding-top])
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section);
-
-  @v [#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media]-[#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content] gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media[$margin]);
-
-  @v [#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content]-|
-    outer-gap(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section[$padding-bottom])
-    in(#cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section);
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section {
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ([baseline] * 6) + ::[$padding-offset];
-  $padding-bottom: == ([baseline] * 4) + ::[$padding-offset];
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_skewed {
-  position: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[position];
-  size: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[size];
-  skew-y: == 0 - 4;
-}
-
-#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_background {
-  top: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_skewed[skewed-top];
-  left: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_skewed[left];
-  width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_skewed[width];
-  height: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_skewed[skewed-height];
-  skew-y: == 4;
-}
-
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading {
-    center-x: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[center-x];
-    width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[width] / 4  !require;
-  }
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingText {
-    center-x: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading[center-x];
-    height: == ::[intrinsic-height];
-    width: <= #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading[width];
-    width: == ::[intrinsic-width];
-  }
-
-  @v |[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingText]| in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading);
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingPrefix,
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingSuffix {
-    size: == ::[intrinsic-size];
-  }
-
-  @h [#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingPrefix]-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingText]-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingSuffix]
-    gap(10)
-    in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading)
-    chain-center-y;
-
-  @v |~-~[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingPrefix]~-~| outer-gap(0) in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading);
-  @v |~-~[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingText]~-~| outer-gap(0) in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading);
-  @v |~-~[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingSuffix]~-~| outer-gap(0) in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading);
-
-
-
-  #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content {
-    center-x: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[center-x];
-    height: == ::[intrinsic-height];
-    width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[width] / 4;
-  }
-
-
-
-  @v |-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading]-[#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content]
-    gap([baseline])
-    outer-gap(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[$padding-top])
-    in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section);
-
-  @v [#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content]-|
-    outer-gap(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section[$padding-bottom])
-    in(#cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section);
-
-#cross-over-footer-ctas-0_1_section {
-  $padding-offset: == ::[width] / 30;
-  $padding-top: == ::[$padding-offset];
-  $padding-bottom: == ::[$padding-offset] / 2;
-
-  left: == ::window[left] !strong;
-  width: == ::window[width] !strong;
-}
-
-#cross-over-footer-ctas-0_1_background {
-  size: == #cross-over-footer-ctas-0_1_section[size];
-  position: == #cross-over-footer-ctas-0_1_section[position];
-  skew-y: == 0 - 4;
-}
-
-    </style>
-    <!-- js -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div id="grid"></div>
-    
-<section id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_section" class="main-section">
-
+      height: == article[height] !require;
       
-    <svg id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_0" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="1px" height="1px" viewBox="0 0 1 1">
-      <polygon points=".5,0 1,.5 .5,1 0,.5"/>
-    </svg>
-      
-    <svg id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_diamond_1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       width="1px" height="1px" viewBox="0 0 1 1">
-      <polygon points=".5,0 1,.5 .5,1 0,.5"/>
-    </svg>
-  
-  <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_skewed">
-    <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_background"></div>
-  </div>
+      top: >= ^top !require;
+      bottom: <= ^bottom !require;
 
-  <div id="cross-over-header-backgroundImage-false_ctas-0_heading-false_highlights-0_media-1_1_content">
-    
-    
-        
+      slack-gap: >= ^v-gutter-min !require;
+      slack-gap: <= ^v-gutter-max !strong;
 
-    
+     }
+    section.left {
+      + section.right {
+        top: == ^top !require;
+      }
+      + aside + section.right {
+        top: == ^top !require;
+      }
+    }
 
-      </div>
+    section.left {
+      top: == :previous[bottom] + &slack-gap !require;
+    }
+    section.right {
+      top: == :previous[bottom] + &slack-gap !require;
+    }
 
-</section>
+    //last row bottom
+    section.left {
+      :last[bottom] == ^bottom !strong;
+    }
+    section.right {
+      :last[bottom] == ^bottom !strong;
+    }
 
-<section id="cross-over-post-quote-2_heading-false_media-false_1_section" class="main-section">
+    .shift-x-1 {
+      margin-left: = ^shift-x;
+    }
+    .shift-x--1 {
+      margin-left: = ^shift-x * -1;
+    }
+    .shift-y-1 {
+      margin-top: = ^shift-y;
+    }
+    .shift-y--1 {
+      margin-top: = ^shift-y * -1;
+    }
+}</style>
+        <section class="repost-cover-desc section left" id="u60">
+          <article class="repost post" id="ufe330a10-e482-4901-9bb7-8e76adcb5aa7" style="position:relative"><style type="text/gss" scoped="scoped" id="u37">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+</style>
+            <div class="block wrapper" id="u58"><style type="text/gss" scoped="scoped" id="u40">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/cover-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/alignC.css;
+inner-gap = 1.5g;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <h1 class="title text" id="u42">Musk Issues Big Warning About Artificial Intelligence</h1>
+              <p class="description text" id="u44">Elon Musk is no Luddite, but that doesn't mean he's eager to embrace all new technology. "I think we should be very careful about artificial intelligence," the CEO of both SpaceX and Tesla, said Friday in a talk at MIT in Cambridge, Mass.</p>
+              <div class="cover image" id="u50"><style type="text/gss" scoped="scoped" id="u46">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
 
-  <div id="cross-over-post-quote-2_heading-false_media-false_1_skewed">
-    <div id="cross-over-post-quote-2_heading-false_media-false_1_background"></div>
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
 
-                                                  <div id="cross-over-post-quote-2_heading-false_media-false_1_divider_1"></div>
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 2000 !require;
+img[height] == img[width] * (1000/2000) !require;
+
+/* enforce minimum scale*/
+img[height] >= 1000 * image-min-scale !strong100;</style>
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c25a24bcff5678c2207835a1d922bc0d/passthrough?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000" sizes="sizes='100vw'" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/726d2ac835014e67a820eca8df03ead0/passthrough?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=720&height=360 720w" id="u47" /><style type="text/gss" scoped="scoped" id="u49">/* define  area of importance */
+"face"[x] == img[x] + 684.7102155317807 * image-scale !require;
+"face"[y] == img[y] + 285.58758980490865 * image-scale !require;
+"face"[width] ==  342.60510776589035 * image-scale !require;
+"face"[height] == 342.60510776589035 * image-scale !require;
+
+/* Keep face towards original position */
+"face"[center-x] == "viewport"[center-x];
+"face"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u57">
+                <div class="author" id="u53">
+                  <a class="name text" text="Macrina Cooper-White" href="http://www.huffingtonpost.com/macrinac-white/" id="u52">Macrina Cooper-White</a>
+                </div>
+                <div class="publisher source" id="u56">
+                  <a href="http://www.huffingtonpost.com" id="u55">The Huffington Post</a>
+                </div>
+              </div>
             </div>
+          </article>
+        </section>
+        <section class="repost-social-quote tilt section right" id="u79">
+          <article class="repost post" id="u17aab240-44ed-4bb6-94b8-c8d4b04b0b53" block="[object Object]" style="position:relative"><style type="text/gss" scoped="scoped" id="u63">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = .5md;
+block-gap-vertical = 1md;
+block-gap-between = 0;
+</style>
+            <div class="block wrapper" id="u77"><style type="text/gss" scoped="scoped" id="u66">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/quote.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+inner-gap == 1g;
+avatar-width == 8g;
+avatar-height == 8g;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <p class="quote text" id="u68">Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.</p>
+              <div class="attribution" id="u76">
+                <div class="author" id="u72">
+                  <a class="name text" text="elonmusk" href="http://twitter.com/elonmusk" id="u70">elonmusk</a>
+                  <a class="avatar image" breakpoints="720" href="http://twitter.com/elonmusk" style="background-image:url(https://pbs.twimg.com/profile_images/420314816444502016/xj5TnUsx_bigger.jpeg)" id="u71"></a>
+                </div>
+                <div class="publisher source" id="u75">
+                  <a href="http://twitter.com" id="u74">Twitter</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="repost-image section left" id="u104">
+          <article class="repost post" id="u2f4afb84-83fd-4fd2-a8db-1e801cdea62f" style="position:relative"><style type="text/gss" scoped="scoped" id="u82">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+bg_media-opacity == .7;
+</style>
+            <div class="block wrapper" id="u102"><style type="text/gss" scoped="scoped" id="u85">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/bg_media.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-right.gss;
+image-height == 1md;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <div class="cover image" id="u93"><style type="text/gss" scoped="scoped" id="u87">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
 
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-      <clipPath id="cross-over-post-quote-2_heading-false_media-false_1_diamond" clipPathUnits="objectBoundingBox">
-        <polygon points=".5,0 1,.5 .5,1 0,.5" />
-      </clipPath>
-    </defs>
-  </svg>
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
 
-  
-      
-          <section id="cross-over-post-quote-2_heading-false_media-false_1_post_0" class="source-url">
-        <a id="cross-over-post-quote-2_heading-false_media-false_1_post_0_background" href="https://twitter.com/elonmusk/status/495759307346952192" target="_blank"></a>
-    
-                      <style type="text/css">
-          #cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar {
-            background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/a5a457be2ecaa49b544a7093a18a725f/gradientmap?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');
-          }
-        </style>
-        <figure id="cross-over-post-quote-2_heading-false_media-false_1_post_0_avatar"></figure>
-      
-                      <h1 id="cross-over-post-quote-2_heading-false_media-false_1_post_0_heading">
-          <span id="cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_prefix"></span>
-          <span id="cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_text">elonmusk</span>
-          <span id="cross-over-post-quote-2_heading-false_media-false_1_post_0_heading_suffix"></span>
-        </h1>
-      
-      
-            
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 1023 !require;
+img[height] == img[width] * (682/1023) !require;
 
-  <style type="text/css">
-    #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_mask {
-      overflow: hidden;
-    }
-  </style>
+/* enforce minimum scale*/
+img[height] >= 682 * image-min-scale !strong100;</style>
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/df50fa7084c0eaa1b7e6f0be53a3c1e6/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=1023&height=682" sizes="sizes='100vw'" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/2301aac54f13abc06ad24f13ed311cb4/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=720&height=480 720w" id="u88" /><style type="text/gss" scoped="scoped" id="u90">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 0 * image-scale !require;
+"space"[width] ==  360 * image-scale !require;
+"space"[height] == 899 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u92">/* define  area of importance */
+"scene"[x] == img[x] + 386 * image-scale !require;
+"scene"[y] == img[y] + 214 * image-scale !require;
+"scene"[width] ==  295 * image-scale !require;
+"scene"[height] == 808 * image-scale !require;
 
-  <style type="text/gss">
-    #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_mask {
-      position: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content[position];
-      width: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content[width] + #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_ellipses[width];
-      height: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_guide[height];
-    }
+/* Keep face towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u101">
+                <div class="author" id="u97">
+                  <a class="name text" text="d4tocchini" href="http://twitter.com/d4tocchini" id="u95">d4tocchini</a>
+                  <a class="avatar image" breakpoints="720" href="http://twitter.com/d4tocchini" style="background-image:url(https://pbs.twimg.com/profile_images/536229475680522240/FmTU1D6I_bigger.jpeg)" id="u96"></a>
+                </div>
+                <div class="publisher source" id="u100">
+                  <a href="http://twitter.com" id="u99">Twitter</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="repost-image section right" id="u120">
+          <article class="repost post" id="uee2dc798-bddb-4531-9e00-45d8ad862eea" style="position:relative"><style type="text/gss" scoped="scoped" id="u107">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+bg_media-opacity == .7;
+</style>
+            <div class="block wrapper" id="u118"><style type="text/gss" scoped="scoped" id="u110">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/bg_media.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-right.gss;
+image-height == 1md;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <div class="cover image" id="u114"><style type="text/gss" scoped="scoped" id="u112">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
 
-    #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_guide {
-      position: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_mask[position];
-      width: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_mask[width];
-      height: == ::[intrinsic-height];
-    }
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
 
-    #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_ellipses {
-      size: == ::[intrinsic-size];
-      bottom: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_guide[bottom];
-      right: == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_mask[right];
-    }
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 686 !require;
+img[height] == img[width] * (859/686) !require;
 
-    @if #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_guide[height] < #cross-over-post-quote-2_heading-false_media-false_1_post_0_content[intrinsic-height] {
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_content[height] == #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_mask[height];
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_ellipses[opacity] == 1;
-    }
-    @else {
-      #cross-over-post-quote-2_heading-false_media-false_1_post_0_content_ellipses[opacity] == 0;
-    }
-  </style>
+/* enforce minimum scale*/
+img[height] >= 859 * image-min-scale !strong100;</style>
+                <img src="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" sizes="sizes='100vw'" id="u113" />
+              </div>
+              <div class="attribution" id="u117">
+                <div class="publisher source" id="u116">s3.amazonaws.com</div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="repost-cover-desc section left" id="u147">
+          <article class="repost post" id="u9c484406-057d-4c15-9d8c-ea3dd3bc0313" style="position:relative"><style type="text/gss" scoped="scoped" id="u123">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+</style>
+            <div class="block wrapper" id="u145"><style type="text/gss" scoped="scoped" id="u126">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/cover-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/alignC.css;
+inner-gap = 1.5g;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <h1 class="title text" id="u128">The Gridâ¬`-â¬`an unconventional startup</h1>
+              <p class="description text" id="u130">I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional.</p>
+              <div class="cover image" id="u140"><style type="text/gss" scoped="scoped" id="u132">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
 
-  <div id="cross-over-post-quote-2_heading-false_media-false_1_post_0_content_mask">
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
 
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 800 !require;
+img[height] == img[width] * (450/800) !require;
 
+/* enforce minimum scale*/
+img[height] >= 450 * image-min-scale !strong100;</style>
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b1d8c63dd2feac8f57bc40402c7b9cdb/passthrough?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=800&height=450" sizes="sizes='100vw'" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/351d46386ca14adf78cc6d07e8529650/passthrough?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=720&height=405 720w" id="u133" /><style type="text/gss" scoped="scoped" id="u135">/* define  area of importance */
+"face"[x] == img[x] + 570.5 * image-scale !require;
+"face"[y] == img[y] + 172.5 * image-scale !require;
+"face"[width] ==  24.5 * image-scale !require;
+"face"[height] == 24.5 * image-scale !require;
 
-<div id="cross-over-post-quote-2_heading-false_media-false_1_post_0_content">
+/* Keep face towards original position */
+"face"[center-x] == "viewport"[center-x];
+"face"[center-y] == "viewport"[center-y];</style><style type="text/gss" scoped="scoped" id="u137">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 0 * image-scale !require;
+"space"[width] ==  242 * image-scale !require;
+"space"[height] == 300 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u139">/* define  area of importance */
+"scene"[x] == img[x] + 198 * image-scale !require;
+"scene"[y] == img[y] + 1 * image-scale !require;
+"scene"[width] ==  229 * image-scale !require;
+"scene"[height] == 601 * image-scale !require;
 
+/* Keep face towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u144">
+                <div class="publisher source" id="u143">
+                  <a href="https://medium.com" id="u142">Medium</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="repost-title-desc section right" id="u173">
+          <article class="repost post" id="u69f468dc-8acf-48fb-91cd-2500ff567a0a" style="position:relative"><style type="text/gss" scoped="scoped" id="u150">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+bg_media-opacity == .8;
+</style>
+            <div class="block wrapper" id="u171"><style type="text/gss" scoped="scoped" id="u153">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/variations/title.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+inner-gap = 1.5g;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+outer-gap-left >= 1md !require;
+outer-gap-top >= 1md !require;
+</style>
+              <h1 class="title text" id="u155">Website builder The Grid gets Chrome extension, iOS app, & automatic image cropping</h1>
+              <div class="cover image" id="u163"><style type="text/gss" scoped="scoped" id="u157">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
 
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
 
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 1200 !require;
+img[height] == img[width] * (927/1200) !require;
 
+/* enforce minimum scale*/
+img[height] >= 927 * image-min-scale !strong100;</style>
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/bf1de6b97de51129a4362f433cf91873/passthrough?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927" sizes="sizes='100vw'" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/639ac97432790f3a5527a1d19bce987a/passthrough?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=720&height=556.1999999999999 720w" id="u158" /><style type="text/gss" scoped="scoped" id="u160">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 0 * image-scale !require;
+"space"[width] ==  580 * image-scale !require;
+"space"[height] == 204 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u162">/* define  area of importance */
+"scene"[x] == img[x] + 49 * image-scale !require;
+"scene"[y] == img[y] + 207 * image-scale !require;
+"scene"[width] ==  877 * image-scale !require;
+"scene"[height] == 992 * image-scale !require;
 
-<span id="cross-over-post-quote-2_heading-false_media-false_1_post_0_content_guide"><br/><br/><br/></span>
-<span id="cross-over-post-quote-2_heading-false_media-false_1_post_0_content_ellipses">&hellip;</span>
+/* Keep face towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u170">
+                <div class="author" id="u166">
+                  <a class="name text" text="Jordan Novet" href="http://venturebeat.com/author/jordan-novet/" id="u165">Jordan Novet</a>
+                </div>
+                <div class="publisher source" id="u169">
+                  <a href="http://venturebeat.com" id="u168">VentureBeat</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="repost-image section left" id="u200">
+          <article class="repost post" id="u0cefd9bc-5f03-480c-81fa-e85f788eec86" style="position:relative"><style type="text/gss" scoped="scoped" id="u176">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+bg_media-opacity == .7;
+</style>
+            <div class="block wrapper" id="u198"><style type="text/gss" scoped="scoped" id="u179">@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/css/bg_media.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/blocks/align-right.gss;
+image-height == 1md;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <div class="cover image" id="u189"><style type="text/gss" scoped="scoped" id="u181">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
 
-Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
 
-</div>
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 637 !require;
+img[height] == img[width] * (355/637) !require;
 
+/* enforce minimum scale*/
+img[height] >= 355 * image-min-scale !strong100;</style>
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/16f3f123a85a0dec4d2331041f7aa04c/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB-tXzkBUsAAf1Co.png%3Alarge&width=637&height=355" sizes="sizes='100vw'" id="u182" /><style type="text/gss" scoped="scoped" id="u184">/* define  area of importance */
+"face"[x] == img[x] + 366.8109378747019 * image-scale !require;
+"face"[y] == img[y] + 47.71038302247381 * image-scale !require;
+"face"[width] ==  64.73550140271324 * image-scale !require;
+"face"[height] == 64.73550140271324 * image-scale !require;
 
-  </div>
+/* Keep face towards original position */
+"face"[center-x] == "viewport"[center-x];
+"face"[center-y] == "viewport"[center-y];</style><style type="text/gss" scoped="scoped" id="u186">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 322 * image-scale !require;
+"space"[width] ==  1015 * image-scale !require;
+"space"[height] == 345 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u188">/* define  area of importance */
+"scene"[x] == img[x] + 28 * image-scale !require;
+"scene"[y] == img[y] + 131 * image-scale !require;
+"scene"[width] ==  279 * image-scale !require;
+"scene"[height] == 393 * image-scale !require;
 
-    </section>
-
-      
-          <section id="cross-over-post-quote-2_heading-false_media-false_1_post_1" class="source-url">
-        <a id="cross-over-post-quote-2_heading-false_media-false_1_post_1_background" href="https://twitter.com/jasonfried/status/522492212144525312" target="_blank"></a>
-    
-                      <style type="text/css">
-          #cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar {
-            background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/4c07847162a3dd44b69d6ae93ec59ba9/gradientmap?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F3413742921%2F0e9ef95e76c4a965b9b177fa2267d6c1_bigger.png&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');
-          }
-        </style>
-        <figure id="cross-over-post-quote-2_heading-false_media-false_1_post_1_avatar"></figure>
-      
-                      <h1 id="cross-over-post-quote-2_heading-false_media-false_1_post_1_heading">
-          <span id="cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_prefix"></span>
-          <span id="cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_text">jasonfried</span>
-          <span id="cross-over-post-quote-2_heading-false_media-false_1_post_1_heading_suffix"></span>
-        </h1>
-      
-      
-            
-
-  <style type="text/css">
-    #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_mask {
-      overflow: hidden;
-    }
-  </style>
-
-  <style type="text/gss">
-    #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_mask {
-      position: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content[position];
-      width: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content[width] + #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_ellipses[width];
-      height: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_guide[height];
-    }
-
-    #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_guide {
-      position: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_mask[position];
-      width: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_mask[width];
-      height: == ::[intrinsic-height];
-    }
-
-    #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_ellipses {
-      size: == ::[intrinsic-size];
-      bottom: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_guide[bottom];
-      right: == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_mask[right];
-    }
-
-    @if #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_guide[height] < #cross-over-post-quote-2_heading-false_media-false_1_post_1_content[intrinsic-height] {
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_content[height] == #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_mask[height];
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_ellipses[opacity] == 1;
-    }
-    @else {
-      #cross-over-post-quote-2_heading-false_media-false_1_post_1_content_ellipses[opacity] == 0;
-    }
-  </style>
-
-  <div id="cross-over-post-quote-2_heading-false_media-false_1_post_1_content_mask">
-
-
-
-<div id="cross-over-post-quote-2_heading-false_media-false_1_post_1_content">
-
-
-
-
-
-<span id="cross-over-post-quote-2_heading-false_media-false_1_post_1_content_guide"><br/><br/><br/></span>
-<span id="cross-over-post-quote-2_heading-false_media-false_1_post_1_content_ellipses">&hellip;</span>
-
-<a class="link" href="https://thegrid.io" target="_blank">thegrid.io</a> - "AI" website design. Conceptually feels very next level, an obvious, natural progression just waiting to happen.
-
-</div>
-
-
-  </div>
-
-    </section>
-
-  
-</section>
-
-<section id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_section" class="main-section source-url">
-
-  <div id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_skewed">
-          <a id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_background" href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" target="_blank"></a>
+/* Keep face towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u197">
+                <div class="author" id="u193">
+                  <a class="name text" text="thegridio" href="http://twitter.com/thegridio" id="u191">thegridio</a>
+                  <a class="avatar image" breakpoints="720" href="http://twitter.com/thegridio" style="background-image:url(https://pbs.twimg.com/profile_images/509869928695230464/sob_gOga_normal.jpeg)" id="u192"></a>
+                </div>
+                <div class="publisher source" id="u196">
+                  <a href="http://twitter.com" id="u195">Twitter</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
       </div>
+    </div><script src="https://rawgit.com/gss/document/ranges2/dist/gss.document.parser.js" id="u203"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/assets/gss-init.js" id="u204"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.11/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u205"></script></body>
 
-          <h1 id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_heading">
-      <span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingPrefix"></span>
-      <span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingText">Macrina Cooper-White</span>
-      <span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_headingSuffix"></span>
-    </h1>
-  
-          
-
-      <style type="text/css">
-      #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media {
-        background-color: hsl(0, 0%, 0%);
-        background-image: url('http://i.huffpost.com/gen/2211142/thumbs/o-ELON-MUSK-facebook.jpg');
-        background-position: center;
-        background-size: cover;
-      }
-    </style>
-  
-  
-
-
-<a id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_media" href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" target="_blank">
-
-
-
-
-
-
-
-
-</a>
-
-
-  
-  
-          
-
-  <style type="text/css">
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_mask {
-      overflow: hidden;
-    }
-  </style>
-
-  <style type="text/gss">
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_mask {
-      position: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content[position];
-      width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content[width] + #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_ellipses[width];
-      height: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_guide[height];
-    }
-
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_guide {
-      position: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_mask[position];
-      width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_mask[width];
-      height: == ::[intrinsic-height];
-    }
-
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_ellipses {
-      size: == ::[intrinsic-size];
-      bottom: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_guide[bottom];
-      right: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_mask[right];
-    }
-
-    @if #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_guide[height] < #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content[intrinsic-height] {
-      #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content[height] == #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_mask[height];
-      #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_ellipses[opacity] == 1;
-    }
-    @else {
-      #cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_ellipses[opacity] == 0;
-    }
-  </style>
-
-  <div id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_mask">
-
-
-
-<div id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content">
-
-
-
-
-
-<span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_guide"><br/><br/><br/></span>
-<span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_1_content_ellipses">&hellip;</span>
-Elon Musk is no Luddite, but that doesn't mean he's eager to embrace all new technology. "I think we should be very careful about artificial intelligence," the CEO of both SpaceX and Tesla, said Friday in a talk at MIT in Cambridge, Mass.
-
-</div>
-
-
-  </div>
-
-  
-</section>
-
-<section id="cross-over-excerpt-patterned_content-false_heading-false_media-true_1_section" class="main-section source-url">
-
-  <div id="cross-over-excerpt-patterned_content-false_heading-false_media-true_1_skewed">
-          <a id="cross-over-excerpt-patterned_content-false_heading-false_media-true_1_background" href="https://twitter.com/d4tocchini/status/572593744517595136" target="_blank"></a>
-      </div>
-
-          <h1 id="cross-over-excerpt-patterned_content-false_heading-false_media-true_1_heading">
-      <span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingPrefix"></span>
-      <span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingText">d4tocchini</span>
-      <span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_1_headingSuffix"></span>
-    </h1>
-  
-  
-  
-</section>
-
-<section id="cross-over-post-quote-1_heading-false_media-false_1_section" class="main-section">
-
-  <div id="cross-over-post-quote-1_heading-false_media-false_1_skewed">
-    <div id="cross-over-post-quote-1_heading-false_media-false_1_background"></div>
-
-                              </div>
-
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-      <clipPath id="cross-over-post-quote-1_heading-false_media-false_1_diamond" clipPathUnits="objectBoundingBox">
-        <polygon points=".5,0 1,.5 .5,1 0,.5" />
-      </clipPath>
-    </defs>
-  </svg>
-
-  
-      
-          <section id="cross-over-post-quote-1_heading-false_media-false_1_post_0" class="source-url">
-        <a id="cross-over-post-quote-1_heading-false_media-false_1_post_0_background" href="https://twitter.com/wertandcompany/status/572476221860278272" target="_blank"></a>
-    
-                      <style type="text/css">
-          #cross-over-post-quote-1_heading-false_media-false_1_post_0_avatar {
-            background-image: url('https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/09e2b0a4669e5a32546327129e6fd93f/gradientmap?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F521470116928561152%2FxEThWIeR_bigger.jpeg&color1=%230A2A2F&color2=%23FDE7A0&srgb=true');
-          }
-        </style>
-        <figure id="cross-over-post-quote-1_heading-false_media-false_1_post_0_avatar"></figure>
-      
-                      <h1 id="cross-over-post-quote-1_heading-false_media-false_1_post_0_heading">
-          <span id="cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_prefix"></span>
-          <span id="cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_text">wertandcompany</span>
-          <span id="cross-over-post-quote-1_heading-false_media-false_1_post_0_heading_suffix"></span>
-        </h1>
-      
-      
-            
-
-  <style type="text/css">
-    #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_mask {
-      overflow: hidden;
-    }
-  </style>
-
-  <style type="text/gss">
-    #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_mask {
-      position: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content[position];
-      width: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content[width] + #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_ellipses[width];
-      height: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_guide[height];
-    }
-
-    #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_guide {
-      position: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_mask[position];
-      width: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_mask[width];
-      height: == ::[intrinsic-height];
-    }
-
-    #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_ellipses {
-      size: == ::[intrinsic-size];
-      bottom: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_guide[bottom];
-      right: == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_mask[right];
-    }
-
-    @if #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_guide[height] < #cross-over-post-quote-1_heading-false_media-false_1_post_0_content[intrinsic-height] {
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_content[height] == #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_mask[height];
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_ellipses[opacity] == 1;
-    }
-    @else {
-      #cross-over-post-quote-1_heading-false_media-false_1_post_0_content_ellipses[opacity] == 0;
-    }
-  </style>
-
-  <div id="cross-over-post-quote-1_heading-false_media-false_1_post_0_content_mask">
-
-
-
-<div id="cross-over-post-quote-1_heading-false_media-false_1_post_0_content">
-
-
-
-
-
-<span id="cross-over-post-quote-1_heading-false_media-false_1_post_0_content_guide"><br/><br/><br/></span>
-<span id="cross-over-post-quote-1_heading-false_media-false_1_post_0_content_ellipses">&hellip;</span>
-
-Are agencies dead ? @schneidertobias + Grid evolution @D4TOCCHINI. A non-conference in Lake Tahoe. Invite only. <a class="link" href="https://epicurrence.com/" target="_blank">epicurrence.com/</a>
-
-</div>
-
-
-  </div>
-
-    </section>
-
-  
-</section>
-
-<section id="cross-over-excerpt-filtered_content-false_heading-false_media-true_2_section" class="main-section source-url">
-
-  <div id="cross-over-excerpt-filtered_content-false_heading-false_media-true_2_skewed">
-          <a id="cross-over-excerpt-filtered_content-false_heading-false_media-true_2_background" href="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" target="_blank"></a>
-      </div>
-
-  
-  
-  
-</section>
-
-<section id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_section" class="main-section source-url">
-
-  <div id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_skewed">
-          <a id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_background" href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" target="_blank"></a>
-      </div>
-
-  
-          
-
-      <style type="text/css">
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_media {
-        background-color: hsl(0, 0%, 0%);
-        background-image: url('https://d262ilb51hltx0.cloudfront.net/max/800/1*1I-PNso0E8oXXywbN7bAIQ.jpeg');
-        background-position: center;
-        background-size: cover;
-      }
-    </style>
-  
-  
-
-
-<a id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_media" href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" target="_blank">
-
-
-
-
-
-
-
-
-</a>
-
-
-  
-  
-          
-
-  <style type="text/css">
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_mask {
-      overflow: hidden;
-    }
-  </style>
-
-  <style type="text/gss">
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_mask {
-      position: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content[position];
-      width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content[width] + #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_ellipses[width];
-      height: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_guide[height];
-    }
-
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_guide {
-      position: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_mask[position];
-      width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_mask[width];
-      height: == ::[intrinsic-height];
-    }
-
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_ellipses {
-      size: == ::[intrinsic-size];
-      bottom: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_guide[bottom];
-      right: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_mask[right];
-    }
-
-    @if #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_guide[height] < #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content[intrinsic-height] {
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content[height] == #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_mask[height];
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_ellipses[opacity] == 1;
-    }
-    @else {
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_ellipses[opacity] == 0;
-    }
-  </style>
-
-  <div id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_mask">
-
-
-
-<div id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content">
-
-
-
-
-
-<span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_guide"><br/><br/><br/></span>
-<span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_2_content_ellipses">&hellip;</span>
-I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional.
-
-</div>
-
-
-  </div>
-
-  
-</section>
-
-<section id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_section" class="main-section source-url">
-
-  <div id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_skewed">
-          <a id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_background" href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" target="_blank"></a>
-      </div>
-
-          <h1 id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_heading">
-      <span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingPrefix"></span>
-      <span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingText">Jordan Novet</span>
-      <span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_headingSuffix"></span>
-    </h1>
-  
-          
-
-      <style type="text/css">
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media {
-        background-color: hsl(0, 0%, 0%);
-        background-image: url('http://i0.wp.com/venturebeat.com/wp-content/uploads/2015/03/The-Grid-layouts.jpg?fit=1200%2C1200');
-        background-position: center;
-        background-size: cover;
-      }
-    </style>
-  
-  
-
-
-<a id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_media" href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" target="_blank">
-
-
-
-
-
-
-
-
-</a>
-
-
-  
-  
-          
-
-  <style type="text/css">
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_mask {
-      overflow: hidden;
-    }
-  </style>
-
-  <style type="text/gss">
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_mask {
-      position: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content[position];
-      width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content[width] + #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_ellipses[width];
-      height: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_guide[height];
-    }
-
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_guide {
-      position: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_mask[position];
-      width: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_mask[width];
-      height: == ::[intrinsic-height];
-    }
-
-    #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_ellipses {
-      size: == ::[intrinsic-size];
-      bottom: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_guide[bottom];
-      right: == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_mask[right];
-    }
-
-    @if #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_guide[height] < #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content[intrinsic-height] {
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content[height] == #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_mask[height];
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_ellipses[opacity] == 1;
-    }
-    @else {
-      #cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_ellipses[opacity] == 0;
-    }
-  </style>
-
-  <div id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_mask">
-
-
-
-<div id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content">
-
-
-
-
-
-<span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_guide"><br/><br/><br/></span>
-<span id="cross-over-excerpt-patterned_content-false_heading-false_media-true_3_content_ellipses">&hellip;</span>
-You don't necessarily have to be a good designer in order to craft a slick-looking website. New tools and features from website-building startup The Grid make it easier to build a handsome site even if you lack design skills.
-
-</div>
-
-
-  </div>
-
-  
-</section>
-
-<section id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_section" class="main-section source-url">
-
-  <div id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_skewed">
-          <a id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_background" href="https://twitter.com/thegridio/status/570646321750626304" target="_blank"></a>
-      </div>
-
-          <h1 id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_heading">
-      <span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingPrefix"></span>
-      <span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingText">thegridio</span>
-      <span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_headingSuffix"></span>
-    </h1>
-  
-  
-          
-
-  <style type="text/css">
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_mask {
-      overflow: hidden;
-    }
-  </style>
-
-  <style type="text/gss">
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_mask {
-      position: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content[position];
-      width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content[width] + #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_ellipses[width];
-      height: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_guide[height];
-    }
-
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_guide {
-      position: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_mask[position];
-      width: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_mask[width];
-      height: == ::[intrinsic-height];
-    }
-
-    #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_ellipses {
-      size: == ::[intrinsic-size];
-      bottom: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_guide[bottom];
-      right: == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_mask[right];
-    }
-
-    @if #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_guide[height] < #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content[intrinsic-height] {
-      #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content[height] == #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_mask[height];
-      #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_ellipses[opacity] == 1;
-    }
-    @else {
-      #cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_ellipses[opacity] == 0;
-    }
-  </style>
-
-  <div id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_mask">
-
-
-
-<div id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content">
-
-
-
-
-
-<span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_guide"><br/><br/><br/></span>
-<span id="cross-over-excerpt-filtered_content-false_heading-false_media-true_3_content_ellipses">&hellip;</span>
-Watch @d4tocchini's presentation at #SMWNYC + get a sneak peek of The Grid (starting at 1:20) http://new.livestream.com/accounts/7237173/events/3834360 ...
-
-</div>
-
-
-  </div>
-
-  
-</section>
-
-<section id="cross-over-footer-ctas-0_1_section" class="main-section">
-
-  <div id="cross-over-footer-ctas-0_1_background"></div>
-
-  
-</section>
-     <script>
-      document.body.addEventListener('solved', function() {
-        // Provide metrics for vertical skewing
-        (function (vars) {
-          var suggestIfNeeded = function(id, property, value) {
-            var key, roundedVarValue, roundedValue;
-            key = '$' + id + '[' + property + ']';
-            roundedVarValue =  (Math.round(parseFloat(vars[key]) * 100) / 100);
-            roundedValue =  (Math.round(parseFloat(value) * 100) / 100);
-
-            if (roundedVarValue !== roundedValue) {
-              var suggest = window.GSS.engines.root.commander.suggest;
-              suggest('suggest', key, ['number', value]);
-            }
-          };
-
-          for (key in vars) {
-            var propertyName, property;
-            propertyName = 'skew-y';
-            property = '[' + propertyName + ']';
-
-            if (key.slice(property.length * -1) === property) {
-              var id, element;
-              id = key.replace('$', '').replace(property, '');
-              element = document.getElementById(id);
-
-              var y, width, height, skewY;
-              y = vars["$"+id+"[y]"];
-              width = vars["$"+id+"[width]"];
-              height = vars["$"+id+"[height]"];
-              skewY = vars["$"+id+"[skew-y]"];
-
-              var degrees, delta;
-              degrees = Math.abs(skewY) * (Math.PI / 180);
-              delta = Math.tan(degrees) * width;
-
-              // Assumes origin is center point
-              var skewedTop, skewedHeight, skewedBottom;
-              skewedTop = y - (delta / 2);
-              skewedHeight = height + delta;
-              skewedBottom = skewedTop + skewedHeight;
-
-              suggestIfNeeded(id, 'skewed-top', skewedTop);
-              suggestIfNeeded(id, 'skewed-height', skewedHeight);
-              suggestIfNeeded(id, 'skewed-bottom', skewedBottom);
-            }
-          }
-        })(window.GSS.vars);
-      });
-    </script>
-  </body>
 </html>
