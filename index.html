@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html id="u211">
+<html id="u241">
 
-  <head id="u36">
+  <head id="u39">
     <title id="u1">D4</title>
     <meta charset="utf-8" id="u2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" id="u3" /><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js" id="u4"></script><script id="u6">WebFont.load({"google":{"families":["Playfair Display:n4,n7","Roboto:300,300italic,700,700italic"]}});</script><style type="text/css" id="u8">html {font-family: 'Roboto';font-weight: 300;}
@@ -249,6 +249,58 @@ block-gap     == block-gap-top !require;
 block-gap-left == block-gap-right !require;
 block-gap-left >= block-gap-horizontal !require;
 block-gap-left == block-gap-horizontal !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/title-cover-desc.gss">
+
+
+.cover {
+  left: == ^left;
+  width: == 4md;
+  width: <= 4md;   
+  height: == 4md !require;
+}
+
+img {
+  left: == ^left;
+}
+
+.title{
+  left: == (.cover)[left] !medium100;
+  top: <= ^(.cover)[top];
+  width: <= ^(.cover)[width] !require;
+  center: == ^(.cover)[center] !medium100;
+  right: <= ^(.cover)[right] !medium100;
+}
+
+//.title[center-y] == &[center-y] !require;
+.description[center-y] == &[center-y] !require;
+
+.description {
+  top: >= ^top !medium100;
+  width: >= 2md !require;
+}
+
+.attribution{
+  width: == 2md !require;
+  height: == &intrinsic-height;
+  top: >= ^(.description)[bottom] + 1g;
+  left: == ^(.description)[left];
+}
+
+//TODO - work out attribution options for same variation
+// .attribution{
+//   left: >= ^left;
+//   width: == &intrinsic-width;
+//   height: == &intrinsic-height;
+//   top: == ^(.html)[bottom] + 1g;
+// }
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss">
+.attribution{
+  width: == ^width;
+  height: == &intrinsic-height;
+  top: == ^bottom; 
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss">
+@h |-[inner-gap-left]-(.cover)-[inner-gap]-(.description)-[inner-gap-right]-| !require;
 </script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss">
 .title {
   width: == ^width;
@@ -334,7 +386,7 @@ img {
 @h |(.cover)| !require;
 </script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
 @v |(.cover)| !require;
-</script><script id="u34">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+</script><script id="u37">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -445,134 +497,160 @@ div.layout section { display: inline-block; }
 
 #grid>div:nth-of-type(48){width: 7.2rem; height: 1px; position: absolute; top: 20.87rem;;font-size: 0.16rem;}
 
-#u206{font-size: 0.16rem;}
-#u206:before{content: "76,90,105,470,784,801"; display: none;}
-#u142{position: relative; width: 7.2rem; top: 0rem; left: 0rem; height: 14.89rem;;font-size: 0.16rem;}
-#u69{width: 7.2rem; height: 0rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u85c06800-65dc-4b3e-bc61-05f5330a3c62{position: relative; height: 0rem; top: 0rem;;font-size: 0.16rem;}
-#u67{width: 7.2rem; height: 0rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u67 .name { color: rgb(95, 77, 95); }
-#u67 .source { display: inline-block; }
+#u236{font-size: 0.16rem;}
+#u236:before{content: "83,93,109,119,129,139,419,429,433,444,499,514,532,548,561,578,596,613,628,642,657,662,676,691,695,1053,1367,1384"; display: none;}
+#u172{position: relative; width: 7.2rem; top: 0rem; left: 0rem; height: 23.17rem;;font-size: 0.16rem;}
+#u67{width: 7.2rem; height: 3.6rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u19997a62-eeb3-4b7a-be04-a1fe25a5e05c{position: relative; height: 3.6rem; top: 0rem;;font-size: 0.16rem;}
+#u65{width: 7.2rem; height: 3.6rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u65 .source { display: inline-block; }
+#u65 .title { z-index: 1; }
+#u65 .title { z-index: 1; }
 
-#u67 .author { display: inline-block; }
-#u67 .title { z-index: 1; }
-#u67 .title { z-index: 1; }
+#u51{font-size: 0.176rem;;font-size: 0.176rem;}
+#u50{font-size: 0.48rem; width: 3.6rem; position: absolute; top: 0.29rem; left: 0rem;;font-size: 0.48rem;}
 
-#u48{font-size: 0.176rem;;font-size: 0.176rem;}
-#u47{font-size: 0.48rem; width: 3.6rem; position: absolute; top: -0.79rem; left: 0rem;;font-size: 0.48rem;}
+#u60{overflow: hidden; height: 3.6rem; width: 3.6rem; position: absolute; top: 0rem; left: 3.6rem;;font-size: 0.16rem;}
+#u55{font-size: 0.176rem;;font-size: 0.176rem;}
+#u54{height: 6.3764rem; width: 6.3764rem; position: absolute; left: -1.3882rem; top: -2.6064rem;;font-size: 0.176rem;}
 
-#u59{overflow: hidden; height: 0rem; width: 3.6rem; position: absolute; top: 0rem; left: 3.6rem;;font-size: 0.16rem;}
-#u52{font-size: 0.176rem;;font-size: 0.176rem;}
-#u51{height: 2.025rem; width: 3.6rem; position: absolute; left: 0rem; top: -1.1867rem;;font-size: 0.176rem;}
+#u64{position: absolute; top: 3.56rem; left: 1.6rem;;font-size: 0.16rem;}
+#u63{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u62{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u66{position: absolute; top: 1.04rem; left: 0.965rem;;font-size: 0.16rem;}
-#u62{font-size: 0.16rem;}
-#u61{font-size: 0.176rem;;font-size: 0.176rem;}
+#u99{width: 7.2rem; height: 4.32rem; position: absolute; top: 3.96rem; left: 0rem;;font-size: 0.16rem;}
+#u85c06800-65dc-4b3e-bc61-05f5330a3c62{position: relative; height: 4.32rem; top: 0rem;;font-size: 0.16rem;}
+#u97{text-align: center; height: 4.32rem; width: 5.88rem; position: absolute; left: 0.66rem; top: 0rem;;font-size: 0.16rem;}
+#u97 .description { color: rgb(95, 77, 95); text-align: left; }
 
-#u65{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u64{font-size: 0.176rem;;font-size: 0.176rem;}
+#u97 .name { color: rgb(95, 77, 95); }
+#u97 .cover img { margin-left: -55px; opacity: 0.5; }
+#u97 .title { color: rgb(102, 204, 192); }
 
-#u94{width: 7.2rem; height: 2.4rem; position: absolute; top: 0.36rem; left: 0rem;;font-size: 0.16rem;}
-#ud210e2bb-dce7-4c7c-801e-7e5628c853de{position: relative; height: 2.4rem; top: 0rem;;font-size: 0.16rem;}
-#u92{width: 5.76rem; height: 2.4rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.16rem;}
-#u92 .source { display: inline-block; }
-#u92 .title { z-index: 1; }
+#u97 .description { color: rgb(95, 77, 95); text-align: left; }
 
-#u78{font-size: 0.176rem;;font-size: 0.176rem;}
-#u77{font-size: 0.48rem; width: 5.76rem; position: absolute; top: 0.89rem; left: 0rem;;font-size: 0.48rem;}
+#u97 .name { color: blue; }
 
-#u87{overflow: hidden; height: 2.4rem; width: 5.76rem; position: absolute; top: 5.6317rem; left: 0rem;;font-size: 0.16rem;}
+#u97 .attribution, #u97 .source { text-align: left ! important; }
+#u97 .title { z-index: 1; }
+
+#u76{font-size: 0.176rem;;font-size: 0.176rem;}
+#u75{font-size: 0.48rem; width: 2.88rem; position: absolute; top: 1.13rem; left: -2.22rem;;font-size: 0.48rem;}
+
+#u78{font-size: 0.2rem; width: 1.44rem; position: absolute; left: 3.72rem; top: 0.24rem;;font-size: 0.2rem;}
+
+#u89{overflow: hidden; height: 2.88rem; width: 2.88rem; position: absolute; top: 0.72rem; left: 0.72rem;;font-size: 0.16rem;}
 #u82{font-size: 0.176rem;;font-size: 0.176rem;}
-#u81{height: 8.0317rem; width: 14.2574rem; position: absolute; top: -5.4617rem; left: -2.5854rem;;font-size: 0.176rem;}
+#u81{height: 2.88rem; width: 5.12rem; position: absolute; left: -2.16rem; top: 0.17rem;;font-size: 0.176rem;}
 
-#u91{position: absolute; top: 1.92rem; left: 2.495rem;;font-size: 0.16rem;}
-#u90{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u89{font-size: 0.176rem;;font-size: 0.176rem;}
+#u96{width: 1.44rem; position: absolute; top: 4.32rem; left: 3.72rem;;font-size: 0.16rem;}
+#u92{font-size: 0.16rem;}
+#u91{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u120{width: 7.2rem; height: 7.36rem; position: absolute; top: 3.12rem; left: 0rem;;font-size: 0.16rem;}
-#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 7.36rem; top: 0rem;;font-size: 0.16rem;}
-#u118{width: 7.2rem; height: 5.2rem; position: absolute; top: 1.08rem; left: 0rem;;font-size: 0.16rem;}
-#u118 .source { display: inline-block; }
+#u95{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u94{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u118 .author { display: inline-block; }
-#u118 .title { z-index: 1; }
+#u124{width: 7.2rem; height: 2.4rem; position: absolute; top: 8.64rem; left: 0rem;;font-size: 0.16rem;}
+#ud210e2bb-dce7-4c7c-801e-7e5628c853de{position: relative; height: 2.4rem; top: 0rem;;font-size: 0.16rem;}
+#u122{width: 5.76rem; height: 2.4rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.16rem;}
+#u122 .source { display: inline-block; }
+#u122 .title { z-index: 1; }
 
-#u103{font-size: 0.176rem;;font-size: 0.176rem;}
-#u102{font-size: 0.48rem; width: 5.4rem; position: absolute; left: 0.9rem; top: 0.89rem;;font-size: 0.48rem;}
+#u108{font-size: 0.176rem;;font-size: 0.176rem;}
+#u107{font-size: 0.48rem; width: 5.76rem; position: absolute; top: 0.89rem; left: 0rem;;font-size: 0.48rem;}
 
-#u110{overflow: hidden; height: 2.16rem; width: 3.6rem; position: absolute; top: 2.32rem; left: 1.8rem;;font-size: 0.16rem;}
-#u107{font-size: 0.176rem;;font-size: 0.176rem;}
-#u106{height: 4rem; width: 8rem; position: absolute; left: -1.624rem; top: -0.5776rem;;font-size: 0.176rem;}
-
-#u117{position: absolute; top: 0.18rem; left: 1.49rem;;font-size: 0.16rem;}
-#u113{font-size: 0.16rem;}
+#u117{overflow: hidden; height: 2.4rem; width: 5.76rem; position: absolute; top: 5.6317rem; left: 0rem;;font-size: 0.16rem;}
 #u112{font-size: 0.176rem;;font-size: 0.176rem;}
+#u111{height: 8.0317rem; width: 14.2574rem; position: absolute; top: -5.4617rem; left: -2.5854rem;;font-size: 0.176rem;}
 
-#u116{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u115{font-size: 0.176rem;;font-size: 0.176rem;}
+#u121{position: absolute; top: 1.92rem; left: 2.495rem;;font-size: 0.16rem;}
+#u120{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u119{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u141{width: 7.2rem; height: 4.05rem; position: absolute; top: 10.84rem; left: 0rem;;font-size: 0.16rem;}
-#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 4.05rem; top: 0rem;;font-size: 0.16rem;}
-#u139{width: 7.2rem; height: 4.05rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u139 .source { display: inline-block; }
+#u150{width: 7.2rem; height: 7.36rem; position: absolute; top: 11.4rem; left: 0rem;;font-size: 0.16rem;}
+#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 7.36rem; top: 0rem;;font-size: 0.16rem;}
+#u148{width: 7.2rem; height: 5.2rem; position: absolute; top: 1.08rem; left: 0rem;;font-size: 0.16rem;}
+#u148 .source { display: inline-block; }
 
-#u139 .author { display: inline-block; }
+#u148 .author { display: inline-block; }
+#u148 .title { z-index: 1; }
 
-#u131{overflow: hidden; height: 3.81rem; width: 7.2rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
-#u130{font-size: 0.176rem;;font-size: 0.176rem;}
-#u129{height: 4.05rem; width: 7.2rem; position: absolute; top: -0.07rem; left: 0rem;;font-size: 0.176rem;}
-
-#u138{position: absolute; top: 4.09rem; left: 0rem;;font-size: 0.16rem;}
-#u134{font-size: 0.16rem;}
 #u133{font-size: 0.176rem;;font-size: 0.176rem;}
+#u132{font-size: 0.48rem; width: 5.4rem; position: absolute; left: 0.9rem; top: 0.89rem;;font-size: 0.48rem;}
 
-#u137{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u136{font-size: 0.176rem;;font-size: 0.176rem;}
+#u140{overflow: hidden; height: 2.16rem; width: 3.6rem; position: absolute; top: 2.32rem; left: 1.8rem;;font-size: 0.16rem;}
+#u137{font-size: 0.176rem;;font-size: 0.176rem;}
+#u136{height: 4rem; width: 8rem; position: absolute; left: -1.624rem; top: -0.5776rem;;font-size: 0.176rem;}
 
-#u160{position:relative;font-size: 0.16rem;}
-#u159{font-size: 0.16rem;}
+#u147{position: absolute; top: 0.18rem; left: 1.49rem;;font-size: 0.16rem;}
+#u143{font-size: 0.16rem;}
+#u142{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u146{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u145{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u171{width: 7.2rem; height: 4.05rem; position: absolute; top: 19.12rem; left: 0rem;;font-size: 0.16rem;}
+#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 4.05rem; top: 0rem;;font-size: 0.16rem;}
+#u169{width: 7.2rem; height: 4.05rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u169 .source { display: inline-block; }
+
+#u169 .author { display: inline-block; }
+
+#u161{overflow: hidden; height: 3.81rem; width: 7.2rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
+#u160{font-size: 0.176rem;;font-size: 0.176rem;}
+#u159{height: 4.05rem; width: 7.2rem; position: absolute; top: -0.07rem; left: 0rem;;font-size: 0.176rem;}
+
+#u168{position: absolute; top: 4.09rem; left: 0rem;;font-size: 0.16rem;}
+#u164{font-size: 0.16rem;}
+#u163{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u167{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u166{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u190{position:relative;font-size: 0.16rem;}
+#u189{font-size: 0.16rem;}
 #u17aab240-44ed-4bb6-94b8-c8d4b04b0b53{position: relative; height: 0rem; top: 0rem;;font-size: 0.16rem;}
-#u157{width: 10.8rem; position: absolute; left: 1.8rem; top: 0.72rem;;font-size: 0.16rem;}
-#u157 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+#u187{width: 10.8rem; position: absolute; left: 1.8rem; top: 0.72rem;;font-size: 0.16rem;}
+#u187 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
 
-#u156{font-size: 0.16rem;}
-#u152{font-size: 0.16rem;}
-#u150{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u151{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u155{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u154{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u187{position:relative;font-size: 0.16rem;}
 #u186{font-size: 0.16rem;}
+#u182{font-size: 0.16rem;}
+#u180{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u181{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u185{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u184{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u217{position:relative;font-size: 0.16rem;}
+#u216{font-size: 0.16rem;}
 #u2f4afb84-83fd-4fd2-a8db-1e801cdea62f{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
-#u184{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.72rem; left: 4.5rem;;font-size: 0.16rem;}
-#u184 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+#u214{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.72rem; left: 4.5rem;;font-size: 0.16rem;}
+#u214 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
 
-#u174{font-size: 0.16rem;}
-#u170{font-size: 0.16rem;}
-#u168{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u169{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u173{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u172{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u183{overflow: hidden; height: 3.6rem; width: 5.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u178{font-size: 0.176rem;;font-size: 0.176rem;}
-#u177{height: 3.6rem; width: 5.4rem; position: absolute; left: 0rem; top: 0.17rem;;font-size: 0.176rem;}
-
-#u205{position:relative;font-size: 0.16rem;}
 #u204{font-size: 0.16rem;}
-#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
-#u202{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.72rem; left: 5.7625rem;;font-size: 0.16rem;}
-#u196{font-size: 0.16rem;}
-#u195{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u200{font-size: 0.16rem;}
+#u198{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u201{overflow: hidden; height: 3.6rem; width: 2.875rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u200{font-size: 0.176rem;;font-size: 0.176rem;}
-#u199{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.17rem; left: 0rem;;font-size: 0.176rem;}
+#u199{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u203{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u202{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u213{overflow: hidden; height: 3.6rem; width: 5.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u208{font-size: 0.176rem;;font-size: 0.176rem;}
+#u207{height: 3.6rem; width: 5.4rem; position: absolute; left: 0rem; top: 0.17rem;;font-size: 0.176rem;}
+
+#u235{position:relative;font-size: 0.16rem;}
+#u234{font-size: 0.16rem;}
+#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
+#u232{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.72rem; left: 5.7625rem;;font-size: 0.16rem;}
+#u226{font-size: 0.16rem;}
+#u225{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u231{overflow: hidden; height: 3.6rem; width: 2.875rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u230{font-size: 0.176rem;;font-size: 0.176rem;}
+#u229{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.17rem; left: 0rem;;font-size: 0.176rem;}
 
 }
 @media (min-width: 721px) {
@@ -679,138 +757,164 @@ div.layout section { display: inline-block; }
 
 #grid>div:nth-of-type(48){width: 14.4rem; height: 1px; position: absolute; top: 20.87rem;;font-size: 0.16rem;}
 
-#u206{font-size: 0.16rem;}
-#u206:before{content: "76,90,105,470,784,801"; display: none;}
-#u142{position: relative; width: 14.4rem; top: 0rem; left: 0rem; height: 11.82rem;;font-size: 0.16rem;}
-#u69{width: 7.2rem; height: 3.74rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u85c06800-65dc-4b3e-bc61-05f5330a3c62{position: relative; height: 3.74rem; top: 0rem;;font-size: 0.16rem;}
-#u67{width: 7.2rem; height: 3.74rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u67 .name { color: rgb(95, 77, 95); }
-#u67 .source { display: inline-block; }
+#u236{font-size: 0.16rem;}
+#u236:before{content: "83,93,109,119,129,139,419,429,433,444,499,514,532,548,561,578,596,613,628,642,657,662,676,691,695,1053,1367,1384"; display: none;}
+#u172{position: relative; width: 14.4rem; top: 0rem; left: 0rem; height: 14.51rem;;font-size: 0.16rem;}
+#u67{width: 7.2rem; height: 3.84rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u19997a62-eeb3-4b7a-be04-a1fe25a5e05c{position: relative; height: 3.84rem; top: 0rem;;font-size: 0.16rem;}
+#u65{width: 7.2rem; height: 3.84rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u65 .source { display: inline-block; }
+#u65 .title { z-index: 1; }
+#u65 .title { z-index: 1; }
 
-#u67 .author { display: inline-block; }
-#u67 .title { z-index: 1; }
-#u67 .title { z-index: 1; }
+#u51{font-size: 0.176rem;;font-size: 0.176rem;}
+#u50{font-size: 0.48rem; width: 3.6rem; position: absolute; top: 0.41rem; left: 0rem;;font-size: 0.48rem;}
 
-#u48{font-size: 0.176rem;;font-size: 0.176rem;}
-#u47{font-size: 0.48rem; width: 3.6rem; position: absolute; top: 1.08rem; left: 0rem;;font-size: 0.48rem;}
+#u60{overflow: hidden; height: 3.6rem; width: 3.6rem; position: absolute; top: 0.12rem; left: 3.6rem;;font-size: 0.16rem;}
+#u55{font-size: 0.176rem;;font-size: 0.176rem;}
+#u54{height: 6.3764rem; width: 6.3764rem; position: absolute; left: -1.3882rem; top: -2.6064rem;;font-size: 0.176rem;}
 
-#u59{overflow: hidden; height: 3.5rem; width: 3.6rem; position: absolute; top: 0.12rem; left: 3.6rem;;font-size: 0.16rem;}
-#u52{font-size: 0.176rem;;font-size: 0.176rem;}
-#u51{height: 3.5rem; width: 6.2222rem; position: absolute; left: -2.6222rem; top: 0.17rem;;font-size: 0.176rem;}
+#u64{position: absolute; top: 3.68rem; left: 1.6rem;;font-size: 0.16rem;}
+#u63{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u62{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u66{position: absolute; top: 2.91rem; left: 0.965rem;;font-size: 0.16rem;}
-#u62{font-size: 0.16rem;}
-#u61{font-size: 0.176rem;;font-size: 0.176rem;}
+#u99{width: 7.2rem; height: 4.32rem; position: absolute; top: 2.11rem; left: 7.2rem;;font-size: 0.16rem;}
+#u85c06800-65dc-4b3e-bc61-05f5330a3c62{position: relative; height: 4.32rem; top: 0rem;;font-size: 0.16rem;}
+#u97{text-align: center; height: 4.32rem; width: 5.88rem; position: absolute; left: 0.66rem; top: 0rem;;font-size: 0.16rem;}
+#u97 .description { color: rgb(95, 77, 95); text-align: left; }
 
-#u65{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u64{font-size: 0.176rem;;font-size: 0.176rem;}
+#u97 .name { color: rgb(95, 77, 95); }
+#u97 .cover img { margin-left: -55px; opacity: 0.5; }
+#u97 .title { color: rgb(102, 204, 192); }
 
-#u94{width: 7.2rem; height: 5.18rem; position: absolute; top: 1.87rem; left: 7.2rem;;font-size: 0.16rem;}
-#ud210e2bb-dce7-4c7c-801e-7e5628c853de{position: relative; height: 5.18rem; top: 0rem;;font-size: 0.16rem;}
-#u92{width: 5.76rem; height: 5.18rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.16rem;}
-#u92 .source { display: inline-block; }
-#u92 .title { z-index: 1; }
+#u97 .description { color: rgb(95, 77, 95); text-align: left; }
 
-#u78{font-size: 0.176rem;;font-size: 0.176rem;}
-#u77{font-size: 0.48rem; width: 5.76rem; position: absolute; top: 2.28rem; left: 0rem;;font-size: 0.48rem;}
+#u97 .name { color: blue; }
 
-#u87{overflow: hidden; height: 1.2647rem; width: 5.76rem; position: absolute; top: 2.9676rem; left: 0rem;;font-size: 0.16rem;}
+#u97 .attribution, #u97 .source { text-align: left ! important; }
+#u97 .title { z-index: 1; }
+
+#u76{font-size: 0.176rem;;font-size: 0.176rem;}
+#u75{font-size: 0.48rem; width: 2.88rem; position: absolute; top: 1.13rem; left: -2.22rem;;font-size: 0.48rem;}
+
+#u78{font-size: 0.2rem; width: 1.44rem; position: absolute; left: 3.72rem; top: 0.24rem;;font-size: 0.2rem;}
+
+#u89{overflow: hidden; height: 2.88rem; width: 2.88rem; position: absolute; top: 0.72rem; left: 0.72rem;;font-size: 0.16rem;}
 #u82{font-size: 0.176rem;;font-size: 0.176rem;}
-#u81{height: 4.2324rem; width: 7.513rem; position: absolute; top: -2.7976rem; left: 0rem;;font-size: 0.176rem;}
+#u81{height: 2.88rem; width: 5.12rem; position: absolute; left: -2.16rem; top: 0.17rem;;font-size: 0.176rem;}
 
-#u91{position: absolute; top: 3.31rem; left: 2.495rem;;font-size: 0.16rem;}
-#u90{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u89{font-size: 0.176rem;;font-size: 0.176rem;}
+#u96{width: 1.44rem; position: absolute; top: 4.32rem; left: 3.72rem;;font-size: 0.16rem;}
+#u92{font-size: 0.16rem;}
+#u91{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u120{width: 7.2rem; height: 7.36rem; position: absolute; top: 4.46rem; left: 0rem;;font-size: 0.16rem;}
-#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 7.36rem; top: 0rem;;font-size: 0.16rem;}
-#u118{width: 7.2rem; height: 5.2rem; position: absolute; top: 1.08rem; left: 0rem;;font-size: 0.16rem;}
-#u118 .source { display: inline-block; }
+#u95{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u94{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u118 .author { display: inline-block; }
-#u118 .title { z-index: 1; }
+#u124{width: 7.2rem; height: 5.18rem; position: absolute; top: 4.56rem; left: 0rem;;font-size: 0.16rem;}
+#ud210e2bb-dce7-4c7c-801e-7e5628c853de{position: relative; height: 5.18rem; top: 0rem;;font-size: 0.16rem;}
+#u122{width: 5.76rem; height: 5.18rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.16rem;}
+#u122 .source { display: inline-block; }
+#u122 .title { z-index: 1; }
 
-#u103{font-size: 0.176rem;;font-size: 0.176rem;}
-#u102{font-size: 0.48rem; width: 5.4rem; position: absolute; left: 0.9rem; top: 0.89rem;;font-size: 0.48rem;}
+#u108{font-size: 0.176rem;;font-size: 0.176rem;}
+#u107{font-size: 0.48rem; width: 5.76rem; position: absolute; top: 2.28rem; left: 0rem;;font-size: 0.48rem;}
 
-#u110{overflow: hidden; height: 2.16rem; width: 3.6rem; position: absolute; top: 2.32rem; left: 1.8rem;;font-size: 0.16rem;}
-#u107{font-size: 0.176rem;;font-size: 0.176rem;}
-#u106{height: 4rem; width: 8rem; position: absolute; left: -1.624rem; top: -0.5776rem;;font-size: 0.176rem;}
-
-#u117{position: absolute; top: 0.18rem; left: 1.49rem;;font-size: 0.16rem;}
-#u113{font-size: 0.16rem;}
+#u117{overflow: hidden; height: 1.2647rem; width: 5.76rem; position: absolute; top: 2.9676rem; left: 0rem;;font-size: 0.16rem;}
 #u112{font-size: 0.176rem;;font-size: 0.176rem;}
+#u111{height: 4.2324rem; width: 7.513rem; position: absolute; top: -2.7976rem; left: 0rem;;font-size: 0.176rem;}
 
-#u116{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u115{font-size: 0.176rem;;font-size: 0.176rem;}
+#u121{position: absolute; top: 3.31rem; left: 2.495rem;;font-size: 0.16rem;}
+#u120{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u119{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u141{width: 7.2rem; height: 4.05rem; position: absolute; top: 7.77rem; left: 7.2rem;;font-size: 0.16rem;}
-#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 4.05rem; top: 0rem;;font-size: 0.16rem;}
-#u139{width: 7.2rem; height: 4.05rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u139 .source { display: inline-block; }
+#u150{width: 7.2rem; height: 7.36rem; position: absolute; top: 7.15rem; left: 7.2rem;;font-size: 0.16rem;}
+#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 7.36rem; top: 0rem;;font-size: 0.16rem;}
+#u148{width: 7.2rem; height: 5.2rem; position: absolute; top: 1.08rem; left: 0rem;;font-size: 0.16rem;}
+#u148 .source { display: inline-block; }
 
-#u139 .author { display: inline-block; }
+#u148 .author { display: inline-block; }
+#u148 .title { z-index: 1; }
 
-#u131{overflow: hidden; height: 3.81rem; width: 7.2rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
-#u130{font-size: 0.176rem;;font-size: 0.176rem;}
-#u129{height: 4.05rem; width: 7.2rem; position: absolute; top: -0.07rem; left: 0rem;;font-size: 0.176rem;}
-
-#u138{position: absolute; top: 4.09rem; left: 0rem;;font-size: 0.16rem;}
-#u134{font-size: 0.16rem;}
 #u133{font-size: 0.176rem;;font-size: 0.176rem;}
+#u132{font-size: 0.48rem; width: 5.4rem; position: absolute; left: 0.9rem; top: 0.89rem;;font-size: 0.48rem;}
 
-#u137{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u136{font-size: 0.176rem;;font-size: 0.176rem;}
+#u140{overflow: hidden; height: 2.16rem; width: 3.6rem; position: absolute; top: 2.32rem; left: 1.8rem;;font-size: 0.16rem;}
+#u137{font-size: 0.176rem;;font-size: 0.176rem;}
+#u136{height: 4rem; width: 8rem; position: absolute; left: -1.624rem; top: -0.5776rem;;font-size: 0.176rem;}
 
-#u160{position:relative;font-size: 0.16rem;}
-#u159{font-size: 0.16rem;}
+#u147{position: absolute; top: 0.18rem; left: 1.49rem;;font-size: 0.16rem;}
+#u143{font-size: 0.16rem;}
+#u142{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u146{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u145{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u171{width: 7.2rem; height: 4.05rem; position: absolute; top: 10.46rem; left: 0rem;;font-size: 0.16rem;}
+#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 4.05rem; top: 0rem;;font-size: 0.16rem;}
+#u169{width: 7.2rem; height: 4.05rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u169 .source { display: inline-block; }
+
+#u169 .author { display: inline-block; }
+
+#u161{overflow: hidden; height: 3.81rem; width: 7.2rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
+#u160{font-size: 0.176rem;;font-size: 0.176rem;}
+#u159{height: 4.05rem; width: 7.2rem; position: absolute; top: -0.07rem; left: 0rem;;font-size: 0.176rem;}
+
+#u168{position: absolute; top: 4.09rem; left: 0rem;;font-size: 0.16rem;}
+#u164{font-size: 0.16rem;}
+#u163{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u167{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u166{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u190{position:relative;font-size: 0.16rem;}
+#u189{font-size: 0.16rem;}
 #u17aab240-44ed-4bb6-94b8-c8d4b04b0b53{position: relative; height: 0rem; top: 0rem;;font-size: 0.16rem;}
-#u157{width: 10.8rem; position: absolute; left: 1.8rem; top: 0.72rem;;font-size: 0.16rem;}
-#u157 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+#u187{width: 10.8rem; position: absolute; left: 1.8rem; top: 0.72rem;;font-size: 0.16rem;}
+#u187 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
 
-#u156{font-size: 0.16rem;}
-#u152{font-size: 0.16rem;}
-#u150{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u151{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u155{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u154{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u187{position:relative;font-size: 0.16rem;}
 #u186{font-size: 0.16rem;}
+#u182{font-size: 0.16rem;}
+#u180{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u181{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u185{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u184{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u217{position:relative;font-size: 0.16rem;}
+#u216{font-size: 0.16rem;}
 #u2f4afb84-83fd-4fd2-a8db-1e801cdea62f{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
-#u184{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.72rem; left: 4.5rem;;font-size: 0.16rem;}
-#u184 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+#u214{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.72rem; left: 4.5rem;;font-size: 0.16rem;}
+#u214 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
 
-#u174{font-size: 0.16rem;}
-#u170{font-size: 0.16rem;}
-#u168{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u169{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u173{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
-#u172{font-size: 0.176rem;;font-size: 0.176rem;}
-
-#u183{overflow: hidden; height: 3.6rem; width: 5.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u178{font-size: 0.176rem;;font-size: 0.176rem;}
-#u177{height: 3.6rem; width: 5.4rem; position: absolute; left: 0rem; top: 0.17rem;;font-size: 0.176rem;}
-
-#u205{position:relative;font-size: 0.16rem;}
 #u204{font-size: 0.16rem;}
-#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
-#u202{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.72rem; left: 5.7625rem;;font-size: 0.16rem;}
-#u196{font-size: 0.16rem;}
-#u195{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u200{font-size: 0.16rem;}
+#u198{font-size: 0.176rem;;font-size: 0.176rem;}
 
-#u201{overflow: hidden; height: 3.6rem; width: 2.875rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
-#u200{font-size: 0.176rem;;font-size: 0.176rem;}
-#u199{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.17rem; left: 0rem;;font-size: 0.176rem;}
+#u199{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u203{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u202{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u213{overflow: hidden; height: 3.6rem; width: 5.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u208{font-size: 0.176rem;;font-size: 0.176rem;}
+#u207{height: 3.6rem; width: 5.4rem; position: absolute; left: 0rem; top: 0.17rem;;font-size: 0.176rem;}
+
+#u235{position:relative;font-size: 0.16rem;}
+#u234{font-size: 0.16rem;}
+#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
+#u232{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.72rem; left: 5.7625rem;;font-size: 0.16rem;}
+#u226{font-size: 0.16rem;}
+#u225{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u231{overflow: hidden; height: 3.6rem; width: 2.875rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u230{font-size: 0.176rem;;font-size: 0.176rem;}
+#u229{height: 3.6rem; width: 2.875rem; position: absolute; top: 0.17rem; left: 0rem;;font-size: 0.176rem;}
 
 }</style></head>
 
-  <body id="u210">
+  <body id="u240">
     <div id="grid">
       <div class="col1"></div>
       <div class="col2"></div>
@@ -861,8 +965,8 @@ div.layout section { display: inline-block; }
       <div class="row29"></div>
       <div class="row30"></div>
     </div>
-    <div class="layout-system user artistic-d4 w-assets sections" id="u206">
-      <div class="layout two-columns bricks" style="position:relative" id="u142"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u39">section {
+    <div class="layout-system user artistic-d4 w-assets sections" id="u236">
+      <div class="layout two-columns bricks" style="position:relative" id="u172"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u42">section {
   width: <= $taylorW / 2;
 }
 
@@ -964,15 +1068,15 @@ h-gutter-middle == h-gutter;
       margin-top: = ^shift-y * -1;
     }
 }</style>
-        <section class="repost-title-cover section left" id="u69">
-          <article class="repost post" id="u85c06800-65dc-4b3e-bc61-05f5330a3c62" style="position:relative"><style type="text/gss" scoped="scoped" id="u42">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+        <section class="repost-title-cover section left" id="u67">
+          <article class="repost post" id="u19997a62-eeb3-4b7a-be04-a1fe25a5e05c" style="position:relative"><style type="text/gss" scoped="scoped" id="u45">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0;
 block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u67"><style type="text/gss" scoped="scoped" id="u45">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+            <div class="block wrapper" id="u65"><style type="text/gss" scoped="scoped" id="u48">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
@@ -985,10 +1089,76 @@ picture-gap == 1md /4;
 inner-gap-vertical: = 0;
 inner-gap-horizontal: = 0;
 </style>
-              <a href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u48">
-                <h1 class="title text" id="u47">The Gridâ¬`-â¬`an unconventional startup</h1>
+              <a href="https://vine.co/v/OUnPWge7Jnj" id="u51">
+                <h1 class="title text" id="u50">Trampoline dodgeball championship is coming... Practice, practice, practice</h1>
               </a>
-              <div class="cover image" id="u59"><style type="text/gss" scoped="scoped" id="u50">overflow: hidden;
+              <div class="cover image" id="u60"><style type="text/gss" scoped="scoped" id="u53">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
+
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
+
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 480 !require;
+img[height] == img[width] * (480/480) !require;
+
+/* enforce minimum scale*/
+img[height] >= 480 * image-min-scale !strong100;</style>
+                <a href="https://vine.co/v/OUnPWge7Jnj" id="u55">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/99f8154f76e3a83b1e880763a5bf7d3f/passthrough.Fgi0Si1bem68tBlk?input=https%3A%2F%2Fv.cdn.vine.co%2Fr%2Fvideos%2FB5B06468B91176403722801139712_342c9a1c624.1.5.15775156368984795444.mp4.jpg%3FversionId%3DedU_LrAtIFsGvZj.Fgi0Si1bem68tBlk&width=480&height=480" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/99f8154f76e3a83b1e880763a5bf7d3f/passthrough.Fgi0Si1bem68tBlk?input=https%3A%2F%2Fv.cdn.vine.co%2Fr%2Fvideos%2FB5B06468B91176403722801139712_342c9a1c624.1.5.15775156368984795444.mp4.jpg%3FversionId%3DedU_LrAtIFsGvZj.Fgi0Si1bem68tBlk&width=480&height=480 480w" sizes="sizes='100vw'" id="u54" />
+                </a><style type="text/gss" scoped="scoped" id="u57">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 0 * image-scale !require;
+"space"[width] ==  464 * image-scale !require;
+"space"[height] == 208 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u59">/* define  area of importance */
+"scene"[x] == img[x] + 1 * image-scale !require;
+"scene"[y] == img[y] + 210 * image-scale !require;
+"scene"[width] ==  478 * image-scale !require;
+"scene"[height] == 269 * image-scale !require;
+
+/* Keep face towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u64">
+                <div class="publisher source" id="u63">
+                  <a href="https://vine.co" id="u62">Vine</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="repost-title-cover-desc section right" id="u99">
+          <article class="repost post" id="u85c06800-65dc-4b3e-bc61-05f5330a3c62" style="position:relative"><style type="text/gss" scoped="scoped" id="u70">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+</style>
+            <div class="block wrapper" id="u97"><style type="text/gss" scoped="scoped" id="u73">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/title-cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/css/cover-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/css/cover-desc-filter.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/css/alignC.css;
+inner-gap = 1.5g;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+</style>
+              <a href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u76">
+                <h1 class="title text" id="u75">The Gridâ¬`-â¬`an unconventional startup</h1>
+              </a>
+              <p class="description text" id="u78">I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional.</p>
+              <div class="cover image" id="u89"><style type="text/gss" scoped="scoped" id="u80">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -1004,9 +1174,9 @@ img[height] == img[width] * (450/800) !require;
 
 /* enforce minimum scale*/
 img[height] >= 450 * image-min-scale !strong100;</style>
-                <a href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u52">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3464b644aea9966576dae25a3973d512/passthrough.jpeg?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=800&height=450" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7b8d668271beba15a381d4bffdf233b7/passthrough.jpeg?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=720&height=405 720w" sizes="sizes='100vw'" id="u51" />
-                </a><style type="text/gss" scoped="scoped" id="u54">/* define  area of importance */
+                <a href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u82">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3464b644aea9966576dae25a3973d512/passthrough.jpeg?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=800&height=450" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7b8d668271beba15a381d4bffdf233b7/passthrough.jpeg?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=720&height=405 720w" sizes="sizes='100vw'" id="u81" />
+                </a><style type="text/gss" scoped="scoped" id="u84">/* define  area of importance */
 "face"[x] == img[x] + 570.5 * image-scale !require;
 "face"[y] == img[y] + 172.5 * image-scale !require;
 "face"[width] ==  24.5 * image-scale !require;
@@ -1014,11 +1184,11 @@ img[height] >= 450 * image-min-scale !strong100;</style>
 
 /* Keep face towards original position */
 "face"[center-x] == "viewport"[center-x];
-"face"[center-y] == "viewport"[center-y];</style><style type="text/gss" scoped="scoped" id="u56">/* define  blank spot */
+"face"[center-y] == "viewport"[center-y];</style><style type="text/gss" scoped="scoped" id="u86">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  189 * image-scale !require;
-"space"[height] == 435 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u58">/* define  area of importance */
+"space"[height] == 435 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u88">/* define  area of importance */
 "scene"[x] == img[x] + 198 * image-scale !require;
 "scene"[y] == img[y] + 1 * image-scale !require;
 "scene"[width] ==  229 * image-scale !require;
@@ -1027,26 +1197,26 @@ img[height] >= 450 * image-min-scale !strong100;</style>
 /* Keep face towards original position */
 "scene"[center-x] == "viewport"[center-x];
 "scene"[center-y] == "viewport"[center-y];</style></div>
-              <div class="attribution" id="u66">
-                <div class="author" id="u62">
-                  <a class="name text" href="https://medium.com/@brianaxe" id="u61">Brian Axe</a>
+              <div class="attribution" id="u96">
+                <div class="author" id="u92">
+                  <a class="name text" href="https://medium.com/@brianaxe" id="u91">Brian Axe</a>
                 </div>
-                <div class="publisher source" id="u65">
-                  <a href="https://medium.com" id="u64">Medium</a>
+                <div class="publisher source" id="u95">
+                  <a href="https://medium.com" id="u94">Medium</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
-        <section class="repost-bgmedia-title section right" id="u94">
-          <article class="repost post" id="ud210e2bb-dce7-4c7c-801e-7e5628c853de" style="position:relative"><style type="text/gss" scoped="scoped" id="u72">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+        <section class="repost-bgmedia-title section left" id="u124">
+          <article class="repost post" id="ud210e2bb-dce7-4c7c-801e-7e5628c853de" style="position:relative"><style type="text/gss" scoped="scoped" id="u102">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0;
 block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u92"><style type="text/gss" scoped="scoped" id="u75">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss;
+            <div class="block wrapper" id="u122"><style type="text/gss" scoped="scoped" id="u105">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
@@ -1059,10 +1229,10 @@ outer-gap-left >= 1md !require;
 outer-gap-top >= 1md !require;
 bg_media-opacity == .8;
 </style>
-              <a href="http://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?_r=2&" id="u78">
-                <h1 class="title text" id="u77">And Then Steve Said, 'Let There Be an iPhone'</h1>
+              <a href="http://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?_r=2&" id="u108">
+                <h1 class="title text" id="u107">And Then Steve Said, 'Let There Be an iPhone'</h1>
               </a>
-              <div class="cover image" id="u87"><style type="text/gss" scoped="scoped" id="u80">overflow: hidden;
+              <div class="cover image" id="u117"><style type="text/gss" scoped="scoped" id="u110">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -1078,13 +1248,13 @@ img[height] == img[width] * (338/600) !require;
 
 /* enforce minimum scale*/
 img[height] >= 338 * image-min-scale !strong100;</style>
-                <a href="http://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?_r=2&" id="u82">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c407bffbbb04dd914354ae37aced4d43/passthrough.jpg?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&width=600&height=338" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c407bffbbb04dd914354ae37aced4d43/passthrough.jpg?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&width=600&height=338 600w" sizes="sizes='100vw'" id="u81" />
-                </a><style type="text/gss" scoped="scoped" id="u84">/* define  blank spot */
+                <a href="http://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?_r=2&" id="u112">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c407bffbbb04dd914354ae37aced4d43/passthrough.jpg?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&width=600&height=338" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c407bffbbb04dd914354ae37aced4d43/passthrough.jpg?input=http%3A%2F%2Fgraphics8.nytimes.com%2Fimages%2F2013%2F10%2F06%2Fmagazine%2Fiphone_ss-slide-WXU1%2Fiphone_ss-slide-WXU1-videoSixteenByNine600.jpg&width=600&height=338 600w" sizes="sizes='100vw'" id="u111" />
+                </a><style type="text/gss" scoped="scoped" id="u114">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 315 * image-scale !require;
 "space"[width] ==  754 * image-scale !require;
-"space"[height] == 700 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u86">/* define  area of importance */
+"space"[height] == 700 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u116">/* define  area of importance */
 "scene"[x] == img[x] + 149 * image-scale !require;
 "scene"[y] == img[y] + 124 * image-scale !require;
 "scene"[width] ==  162 * image-scale !require;
@@ -1093,23 +1263,23 @@ img[height] >= 338 * image-min-scale !strong100;</style>
 /* Keep face towards original position */
 "scene"[center-x] == "viewport"[center-x];
 "scene"[center-y] == "viewport"[center-y];</style></div>
-              <div class="attribution" id="u91">
-                <div class="publisher source" id="u90">
-                  <a href="http://www.nytimes.com" id="u89">Nytimes</a>
+              <div class="attribution" id="u121">
+                <div class="publisher source" id="u120">
+                  <a href="http://www.nytimes.com" id="u119">Nytimes</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
-        <section class="repost-title-image section left" id="u120">
-          <article class="repost post" id="ufe330a10-e482-4901-9bb7-8e76adcb5aa7" style="position:relative"><style type="text/gss" scoped="scoped" id="u97">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+        <section class="repost-title-image section right" id="u150">
+          <article class="repost post" id="ufe330a10-e482-4901-9bb7-8e76adcb5aa7" style="position:relative"><style type="text/gss" scoped="scoped" id="u127">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0md;
 block-gap-vertical = 1.5md;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u118"><style type="text/gss" scoped="scoped" id="u100">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/title-image.gss;
+            <div class="block wrapper" id="u148"><style type="text/gss" scoped="scoped" id="u130">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/title-image.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-title-image.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
@@ -1123,10 +1293,10 @@ picture-gap = 0;
 image-width = 5md;
 image-height = 3md;
 </style>
-              <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u103">
-                <h1 class="title text" id="u102">Musk Issues Big Warning About Artificial Intelligence</h1>
+              <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u133">
+                <h1 class="title text" id="u132">Musk Issues Big Warning About Artificial Intelligence</h1>
               </a>
-              <div class="cover image" id="u110"><style type="text/gss" scoped="scoped" id="u105">overflow: hidden;
+              <div class="cover image" id="u140"><style type="text/gss" scoped="scoped" id="u135">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -1142,9 +1312,9 @@ img[height] == img[width] * (1000/2000) !require;
 
 /* enforce minimum scale*/
 img[height] >= 1000 * image-min-scale !strong100;</style>
-                <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u107">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/389544c432a03ef9f440d2da6f535940/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cc3681d839aaaa5690321654773784e5/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=720&height=360 720w" sizes="sizes='100vw'" id="u106" />
-                </a><style type="text/gss" scoped="scoped" id="u109">/* define  area of importance */
+                <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u137">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/389544c432a03ef9f440d2da6f535940/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cc3681d839aaaa5690321654773784e5/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=720&height=360 720w" sizes="sizes='100vw'" id="u136" />
+                </a><style type="text/gss" scoped="scoped" id="u139">/* define  area of importance */
 "face"[x] == img[x] + 684.7102155317807 * image-scale !require;
 "face"[y] == img[y] + 285.58758980490865 * image-scale !require;
 "face"[width] ==  342.60510776589035 * image-scale !require;
@@ -1153,26 +1323,26 @@ img[height] >= 1000 * image-min-scale !strong100;</style>
 /* Keep face towards original position */
 "face"[center-x] == "viewport"[center-x];
 "face"[center-y] == "viewport"[center-y];</style></div>
-              <div class="attribution" id="u117">
-                <div class="author" id="u113">
-                  <a class="name text" href="http://www.huffingtonpost.com/macrinac-white/" id="u112">Macrina Cooper-White</a>
+              <div class="attribution" id="u147">
+                <div class="author" id="u143">
+                  <a class="name text" href="http://www.huffingtonpost.com/macrinac-white/" id="u142">Macrina Cooper-White</a>
                 </div>
-                <div class="publisher source" id="u116">
-                  <a href="http://www.huffingtonpost.com" id="u115">The Huffington Post</a>
+                <div class="publisher source" id="u146">
+                  <a href="http://www.huffingtonpost.com" id="u145">The Huffington Post</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
-        <section class="repost-cover section right" id="u141">
-          <article class="repost post" id="ue6e93dd1-0837-41ea-a316-1685da184b1c" style="position:relative"><style type="text/gss" scoped="scoped" id="u123">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+        <section class="repost-cover section left" id="u171">
+          <article class="repost post" id="ue6e93dd1-0837-41ea-a316-1685da184b1c" style="position:relative"><style type="text/gss" scoped="scoped" id="u153">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0;
 block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u139"><style type="text/gss" scoped="scoped" id="u126">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/cover.gss;
+            <div class="block wrapper" id="u169"><style type="text/gss" scoped="scoped" id="u156">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/variations/cover.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
@@ -1185,7 +1355,7 @@ outer-gap-left >= 0 !require;
 outer-gap-top >= 0 !require;
 bg_media-opacity == .8;
 </style>
-              <div class="cover image" id="u131"><style type="text/gss" scoped="scoped" id="u128">overflow: hidden;
+              <div class="cover image" id="u161"><style type="text/gss" scoped="scoped" id="u158">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -1201,32 +1371,32 @@ img[height] == img[width] * (720/1280) !require;
 
 /* enforce minimum scale*/
 img[height] >= 720 * image-min-scale !strong100;</style>
-                <a href="http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself" id="u130">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/472ca30425eb8360374ff29ad425a2b4/passthrough.jpg?input=http%3A%2F%2Fg.fastcompany.net%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F1280%2Fposter%2F2014%2F10%2F3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg&width=1280&height=720" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/618e95fd3b2c2f8f6584f678b6e6c0ac/passthrough.jpg?input=http%3A%2F%2Fg.fastcompany.net%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F1280%2Fposter%2F2014%2F10%2F3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg&width=720&height=405 720w" sizes="sizes='100vw'" id="u129" />
+                <a href="http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself" id="u160">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/472ca30425eb8360374ff29ad425a2b4/passthrough.jpg?input=http%3A%2F%2Fg.fastcompany.net%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F1280%2Fposter%2F2014%2F10%2F3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg&width=1280&height=720" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/618e95fd3b2c2f8f6584f678b6e6c0ac/passthrough.jpg?input=http%3A%2F%2Fg.fastcompany.net%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F1280%2Fposter%2F2014%2F10%2F3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg&width=720&height=405 720w" sizes="sizes='100vw'" id="u159" />
                 </a>
               </div>
-              <div class="attribution" id="u138">
-                <div class="author" id="u134">
-                  <a class="name text" href="http://www.fastcolabs.com/user/tyler-hayes" id="u133">Tyler Hayes</a>
+              <div class="attribution" id="u168">
+                <div class="author" id="u164">
+                  <a class="name text" href="http://www.fastcolabs.com/user/tyler-hayes" id="u163">Tyler Hayes</a>
                 </div>
-                <div class="publisher source" id="u137">
-                  <a href="http://www.fastcolabs.com" id="u136">Co.Labs</a>
+                <div class="publisher source" id="u167">
+                  <a href="http://www.fastcolabs.com" id="u166">Co.Labs</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
       </div>
-      <div style="position:relative" id="u160">
-        <section class="simple section" id="u159">
-          <article class="post" id="u17aab240-44ed-4bb6-94b8-c8d4b04b0b53" style="position:relative"><style type="text/gss" scoped="scoped" id="u145">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+      <div style="position:relative" id="u190">
+        <section class="simple section" id="u189">
+          <article class="post" id="u17aab240-44ed-4bb6-94b8-c8d4b04b0b53" style="position:relative"><style type="text/gss" scoped="scoped" id="u175">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 2.5md;
 block-gap-vertical = 1md;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u157"><style type="text/gss" scoped="scoped" id="u148">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+            <div class="block wrapper" id="u187"><style type="text/gss" scoped="scoped" id="u178">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
@@ -1238,29 +1408,29 @@ inner-gap-vertical: = 1md;
 inner-gap-horizontal: = 1md;
 outer-gap-top = 1md;
 </style>
-              <div class="attribution" id="u156">
-                <div class="author" id="u152">
-                  <a class="name text" href="http://twitter.com/elonmusk" id="u150">elonmusk</a>
-                  <a class="avatar image" href="http://twitter.com/elonmusk" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73)" id="u151"></a>
+              <div class="attribution" id="u186">
+                <div class="author" id="u182">
+                  <a class="name text" href="http://twitter.com/elonmusk" id="u180">elonmusk</a>
+                  <a class="avatar image" href="http://twitter.com/elonmusk" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73)" id="u181"></a>
                 </div>
-                <div class="publisher source" id="u155">
-                  <a href="http://twitter.com" id="u154">Twitter</a>
+                <div class="publisher source" id="u185">
+                  <a href="http://twitter.com" id="u184">Twitter</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
       </div>
-      <div style="position:relative" id="u187">
-        <section class="simple section" id="u186">
-          <article class="post" id="u2f4afb84-83fd-4fd2-a8db-1e801cdea62f" style="position:relative"><style type="text/gss" scoped="scoped" id="u163">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+      <div style="position:relative" id="u217">
+        <section class="simple section" id="u216">
+          <article class="post" id="u2f4afb84-83fd-4fd2-a8db-1e801cdea62f" style="position:relative"><style type="text/gss" scoped="scoped" id="u193">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 2.5md;
 block-gap-vertical = 1md;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u184"><style type="text/gss" scoped="scoped" id="u166">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+            <div class="block wrapper" id="u214"><style type="text/gss" scoped="scoped" id="u196">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
@@ -1272,16 +1442,16 @@ inner-gap-vertical: = 1md;
 inner-gap-horizontal: = 1md;
 outer-gap-top = 1md;
 </style>
-              <div class="attribution" id="u174">
-                <div class="author" id="u170">
-                  <a class="name text" href="http://twitter.com/d4tocchini" id="u168">d4tocchini</a>
-                  <a class="avatar image" href="http://twitter.com/d4tocchini" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73)" id="u169"></a>
+              <div class="attribution" id="u204">
+                <div class="author" id="u200">
+                  <a class="name text" href="http://twitter.com/d4tocchini" id="u198">d4tocchini</a>
+                  <a class="avatar image" href="http://twitter.com/d4tocchini" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73)" id="u199"></a>
                 </div>
-                <div class="publisher source" id="u173">
-                  <a href="http://twitter.com" id="u172">Twitter</a>
+                <div class="publisher source" id="u203">
+                  <a href="http://twitter.com" id="u202">Twitter</a>
                 </div>
               </div>
-              <div class="cover image" id="u183"><style type="text/gss" scoped="scoped" id="u176">overflow: hidden;
+              <div class="cover image" id="u213"><style type="text/gss" scoped="scoped" id="u206">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -1297,13 +1467,13 @@ img[height] == img[width] * (682/1023) !require;
 
 /* enforce minimum scale*/
 img[height] >= 682 * image-min-scale !strong100;</style>
-                <a href="https://twitter.com/d4tocchini/status/572593744517595136" id="u178">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/167be45c74d8d0f99c7a9895a3017933/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=1023&height=682" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/deb17afe356ff35f8192e8caabaf7bde/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=720&height=480 720w" sizes="sizes='100vw'" id="u177" />
-                </a><style type="text/gss" scoped="scoped" id="u180">/* define  blank spot */
+                <a href="https://twitter.com/d4tocchini/status/572593744517595136" id="u208">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/167be45c74d8d0f99c7a9895a3017933/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=1023&height=682" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/deb17afe356ff35f8192e8caabaf7bde/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=720&height=480 720w" sizes="sizes='100vw'" id="u207" />
+                </a><style type="text/gss" scoped="scoped" id="u210">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  360 * image-scale !require;
-"space"[height] == 899 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u182">/* define  area of importance */
+"space"[height] == 899 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u212">/* define  area of importance */
 "scene"[x] == img[x] + 386 * image-scale !require;
 "scene"[y] == img[y] + 214 * image-scale !require;
 "scene"[width] ==  295 * image-scale !require;
@@ -1316,16 +1486,16 @@ img[height] >= 682 * image-min-scale !strong100;</style>
           </article>
         </section>
       </div>
-      <div style="position:relative" id="u205">
-        <section class="simple section" id="u204">
-          <article class="post" id="uee2dc798-bddb-4531-9e00-45d8ad862eea" style="position:relative"><style type="text/gss" scoped="scoped" id="u190">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+      <div style="position:relative" id="u235">
+        <section class="simple section" id="u234">
+          <article class="post" id="uee2dc798-bddb-4531-9e00-45d8ad862eea" style="position:relative"><style type="text/gss" scoped="scoped" id="u220">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 2.5md;
 block-gap-vertical = 1md;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u202"><style type="text/gss" scoped="scoped" id="u193">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+            <div class="block wrapper" id="u232"><style type="text/gss" scoped="scoped" id="u223">@import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
@@ -1337,10 +1507,10 @@ inner-gap-vertical: = 1md;
 inner-gap-horizontal: = 1md;
 outer-gap-top = 1md;
 </style>
-              <div class="attribution" id="u196">
-                <div class="publisher source" id="u195">s3.amazonaws.com</div>
+              <div class="attribution" id="u226">
+                <div class="publisher source" id="u225">s3.amazonaws.com</div>
               </div>
-              <div class="cover image" id="u201"><style type="text/gss" scoped="scoped" id="u198">overflow: hidden;
+              <div class="cover image" id="u231"><style type="text/gss" scoped="scoped" id="u228">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -1356,14 +1526,14 @@ img[height] == img[width] * (859/686) !require;
 
 /* enforce minimum scale*/
 img[height] >= 859 * image-min-scale !strong100;</style>
-                <a href="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" id="u200">
-                  <img src="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" srcset="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif 686w" sizes="sizes='100vw'" id="u199" />
+                <a href="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" id="u230">
+                  <img src="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" srcset="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif 686w" sizes="sizes='100vw'" id="u229" />
                 </a>
               </div>
             </div>
           </article>
         </section>
       </div>
-    </div><script src="//rawgit.com/gss/document/ranges2/dist/gss.document.parser.js" id="u207"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/assets/gss-init.js" id="u208"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u209"></script></body>
+    </div><script src="//rawgit.com/gss/document/ranges2/dist/gss.document.parser.js" id="u237"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/assets/gss-init.js" id="u238"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.21/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u239"></script></body>
 
 </html>
