@@ -45,7 +45,7 @@
   title: "The Grid
 -
 an unconventional startup"
-  dateModified: "2015-04-23T17:29:14.595Z"
+  dateModified: "2015-04-23T17:44:25.970Z"
   sourcePath: "_posts/2015-02-26-the-grid-an-unconventional-startup.md"
   published: true
   _context: "http://schema.org"
