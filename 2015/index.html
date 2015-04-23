@@ -1,21 +1,125 @@
 <!DOCTYPE html>
-<html id="u213">
+<html id="u220">
 
-  <head id="u38">
+  <head id="u34">
     <title id="u1">D4</title>
     <meta charset="utf-8" id="u2" />
     <meta name="viewport" content="width=device-width, initial-scale=1" id="u3" />
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7920754/764286/css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/main.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/font/National/National-Thin.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/font/National/National-Light.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/font/National/National-Medium.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/font/Newzald/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" /><style type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/font/National/National-Thin.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/font/National/National-Light.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/font/National/National-Medium.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/font/Newzald/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" /><style type="text/css">
+  @font-face {
+  font-family: "Bodoni 72 Bold";
+  src: url("/src/layouts/artistic/D4/assets/css/font/Bodoni/Bodoni-Bold-72.otf") format("opentype");
+}
+@font-face {
+  font-family: "Senitel Medium Italic";
+  src: url("/src/layouts/artistic/D4/assets/css/font/HFJ_Sentinel/Sentinel-MediumItal.otf") format("opentype");
+}
+@font-face {
+  font-family: "Sentinel Bold";
+  src: url("/src/layouts/artistic/D4/assets/css/font/HFJ_Sentinel/Sentinel-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Obsidian Roman";
+  src: url("/src/layouts/artistic/D4/assets/css/font/Obsidian/Obsidian-Roman.otf") format("opentype");
+}
+html {
+  width: 100%;
+}
+body {
+  width: 100%;
+  background: #eeeeee;
+  color: #bbbbbb;
+  overflow-x: hidden;
+}
+body:after {
+  content: "";
+  position: fixed;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  border-right: 1px solid #dddddd;
+  opacity: .2;
+  z-index: -1;
+}
+body a,
+body .cta {
+  color: #cccccc;
+  word-wrap: break-word;
+  text-decoration: none;
+}
+*,
+*:before,
+*:after {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: normal;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.center-line {
+  position: fixed;
+  left: 50%;
+  height: 100%;
+  border-left: 1px solid #dddddd;
+  opacity: .3;
+  top: 0;
+}
+article.post .cover img {
+  background-size: contain;
+  background-position: center;
+}
+article.post .title {
+  color: #aaaaaa;
+  text-align: center;
+  font-family: "Bodoni 72 Bold";
+  line-height: 1em;
+}
+article.post .description {
+  color: #bbbbbb;
+  font-family: "Senitel Medium Italic" !important;
+}
+article.post .attribution .source {
+  text-align: center;
+  font-family: "Bodoni 72 Bold";
+  color: #dddddd;
+}
+article.post .attribution .author {
+  text-align: center;
+  font-family: "Bodoni 72 Bold";
+}
+article.post .attribution .name {
+  text-align: center;
+  font-family: "Bodoni 72 Bold";
+  color: #bbbbbb;
+}
+article.post .attribution .avatar {
+  background-size: cover;
+  border-radius: 30px;
+  opacity: .6;
+}
+article.post .text {
+  text-align: center;
+}
+article.post .quote {
+  font-family: "Sentinel Bold";
+}
+
+</style><style type="text/css">
   html:not(.gss-ready) {
   opacity: 0;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,69 +127,48 @@
   outline: none;
 }
 </style>
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/layout.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variables.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/debug.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/layout.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variables.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/debug.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
 inner-gap-top >= inner-gap-vertical !require;
 inner-gap-bottom == inner-gap-top !require;
 inner-gap-top == inner-gap;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
 inner-gap-right == inner-gap-left !require;
 outer-gap-right == outer-gap-left !require;
 inner-gap-left >= inner-gap-horizontal !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss">
-
-
-.cover {
-  left: == ^left;
-  width: == 4md;
-  width: <= 4md;   
-  height: == 4md !require;
-}
-
-img {
-  width: == ^(.cover)[width];
-  width: <= ^(.cover)[width];
-  height: == ^(.cover)[width];
-}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss">
+left: == ^left;
 
 .title{
-  left: == (.cover)[left] !medium100;
-  top: <= ^(.cover)[top];
-  width: <= ^(.cover)[width] !require;
-  center: == ^(.cover)[center] !medium100;
-  right: <= ^(.cover)[right] !medium100;
+  width: == (^ .cover)[width];
+  left: == ^left;
+  right: == (^ .cover)[left];
+  center-y: == (^ .cover)[center-y] !medium100;
+  z-index: 1;
 }
 
-//.title[center-y] == &[center-y] !require;
-.description[center-y] == &[center-y] !require;
-
-.description {
-  top: >= ^top !medium100;
-  width: >= 2md !require;
+.cover{
+  width: == 5md;
+  width: <= 5md;   
+  height: == 5md;
 }
 
 .attribution{
-  width: == ^width;
+  width: == &intrinsic-width;
   height: == &intrinsic-height;
-  top: >= ^(.title)[bottom] + 1g;
-  left: >= ^left;
-  center-x: == ^(.title)[center-x];
+  
+  top: == ^(.title)[bottom] + 1g;
+  left: >= ^(.title)[left];
+  center-x: == ^(.title)[center-x]; 
 }
-
-//TODO - work out attribution options for same variation
-// .attribution{
-//   left: >= ^left;
-//   width: == &intrinsic-width;
-//   height: == &intrinsic-height;
-//   top: == ^(.html)[bottom] + 1g;
-// }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss">
 @v |-[inner-gap-top]-(.cover)-[inner-gap-bottom]-| !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss">
-@h |-[inner-gap-left]-(.cover)-[inner-gap]-(.description)-[inner-gap-right]-| !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-title-cover.gss">
+@h |(.title)-[negative-gap]-(.cover)| !require;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
 .title {
   z-index: 1;
   font-size: = 6g;
@@ -151,7 +234,7 @@ h2 {
   width: == &intrinsic-width;
   height: == &intrinsic-height !require;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
 width: == intrinsic-width !require;
 top: == 0 !require;
 
@@ -169,7 +252,7 @@ top: == 0 !require;
   outer-gap-left >= 0 !require;
   outer-gap-right >= 0 !require;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
 block-gap-top == block-gap-vertical;
 block-gap-top >= block-gap-vertical !require;
 block-gap-top == block-gap-bottom !require;
@@ -178,11 +261,11 @@ block-gap-top == block-gap-bottom !require;
 block-gap     == block-gap-between;
 
 block-gap     == block-gap-top !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
 block-gap-left == block-gap-right !require;
 block-gap-left >= block-gap-horizontal !require;
 block-gap-left == block-gap-horizontal !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/quote.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/quote.gss">
 .quote[center-y] == &[center-y] !require;
 
 .quote {
@@ -192,98 +275,1125 @@ block-gap-left == block-gap-horizontal !require;
 }
 
 .attribution {
-  width: == ^width;
+  width: == &intrinsic-width;
   height: == &intrinsic-height;
-  bottom: == ^(.quote)[top] + -3g;
+  top: == ^(.quote)[bottom] + 2g;
   left: >= ^(.quote)[left]; 
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss">
-.source {
-  left: == ^(.attribution)[left]; 
-  top: == ^(.attribution)[center-y];
-}
-
-.name {
-  top: == ^(.attribution)[center-y];
-  left: == ^(.source)[right] + 1g;
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss">
-.attribution{
-  width: == ^width;
-  height: == &intrinsic-height;
-  top: == ^bottom -3g; 
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-right.gss">
-inner-gap-left >= inner-gap-horizontal !require;
-inner-gap-right == inner-gap-horizontal !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/media/bg_media.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss">
+@h |-[inner-gap-left]-(.cover)-[inner-gap]-(.description)-[inner-gap-right]-| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/media/bg_media.gss">
 // Auto-stretch BG when centering content 
 img {
   top: >= 1md;
   height: == 5md !medium100;
   opacity: == ^bg_media-opacity;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
-@v |(.cover)| !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss">
 @h |(.cover)| !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/post/title-description.gss">
-.title{
-  width: == ^width;
-}
-
-.text{  
-  width: == ^width;
-}
-
-.attribution {
-  width: == ^width;
-  height: == &intrinsic-height;
-  bottom: == ^top + -3g;
-  left: >= ^left; 
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-title-text.gss">
-
-@v |-[inner-gap-top]-(.title)-[inner-gap]-(.description)-[inner-gap-bottom]-| !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/title.gss">
-.title {
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
+@v |(.cover)| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/cover.gss">
+.cover {
+  left: >= ^left;
   width: == ^width;
   height: <= ^height !medium100;
-  center-x: == ^center-x !medium100;
-  center-y: == ^center-y !medium100;
-  top: >= 0 !medium100;
+}
+
+img {
+  left: == ^left;
+  width: == ^width;
+  height: <= ^height !medium100;
+  opacity: == ^bg_media-opacity;
 }
 
 .attribution {
-  width: == ^width;
-  height: == &intrinsic-height;  
-  top: == ^(.title)[bottom] + 1g;
-  center-x: >= ^(.title)[center-x]; 
+  width: == &intrinsic-width;
+  height: == &intrinsic-height;
+  top: == ^(.cover)[bottom] + 2g;
+  left: >= ^(.cover)[left]; 
 }
-
-
-//todo move elsewhere
-.source,
-.title,
-.name,
-.description{
-  z-index: 1;
-}
-
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss">
-@v |-[inner-gap-top]-(.title)-[inner-gap-bottom]-| !require;
-</script><script id="u37">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+</script><script id="u32">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-61994900-1', 'auto');
-ga('send', 'pageview');</script></head>
+ga('send', 'pageview');</script><style id="gss-precomputed">
+@media (max-width: 720px) {
+#u34 div.layout { overflow-x: hidden; display: inline-block; }
 
-  <body id="u212">
-    <div class="layout-system user artistic-d4 w-assets sections" id="u208">
-      <div class="layout two-columns bricks" style="position:relative" id="u114"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u40">section {
+#u34 div.layout section { display: inline-block; }
+#u34 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col17, .col18, .col19, .col20 { background: none repeat scroll 0% 0% rgba(22, 22, 22, 0.05); }
+
+#u34 .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12, .row13, .row14, .row15, .row16, .row17, .row18, .row19, .row20, .row21, .row22, .row23, .row24, .row25, .row26, .row27, .row28, .row29, .row30 { background: none repeat scroll 0% 0% rgba(22, 22, 22, 0.05); }
+#grid{width: 7.2rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#grid>div:nth-of-type(1){width: 1px; height: 24.4rem; position: absolute; left: 0.71rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(2){width: 1px; height: 24.4rem; position: absolute; left: 1.43rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(3){width: 1px; height: 24.4rem; position: absolute; left: 2.15rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(4){width: 1px; height: 24.4rem; position: absolute; left: 2.87rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(5){width: 1px; height: 24.4rem; position: absolute; left: 3.59rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(6){width: 1px; height: 24.4rem; position: absolute; left: 4.31rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(7){width: 1px; height: 24.4rem; position: absolute; left: 5.03rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(8){width: 1px; height: 24.4rem; position: absolute; left: 5.75rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(9){width: 1px; height: 24.4rem; position: absolute; left: 6.47rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(10){width: 1px; height: 24.4rem; position: absolute; left: 7.19rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(11){width: 1px; height: 24.4rem; position: absolute; left: 7.91rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(12){width: 1px; height: 24.4rem; position: absolute; left: 8.63rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(13){width: 1px; height: 24.4rem; position: absolute; left: 9.35rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(14){width: 1px; height: 24.4rem; position: absolute; left: 10.07rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(15){width: 1px; height: 24.4rem; position: absolute; left: 10.79rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(16){width: 1px; height: 24.4rem; position: absolute; left: 11.51rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(17){width: 1px; height: 24.4rem; position: absolute; left: 12.23rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(18){width: 1px; height: 24.4rem; position: absolute; left: 12.95rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(19){height: 24.4rem; width: 1px; position: absolute; left: 13.67rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(20){height: 1px; width: 7.2rem; position: absolute; top: 0.71rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(21){height: 1px; width: 7.2rem; position: absolute; top: 1.43rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(22){height: 1px; width: 7.2rem; position: absolute; top: 2.15rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(23){height: 1px; width: 7.2rem; position: absolute; top: 2.87rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(24){height: 1px; width: 7.2rem; position: absolute; top: 3.59rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(25){height: 1px; width: 7.2rem; position: absolute; top: 4.31rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(26){height: 1px; width: 7.2rem; position: absolute; top: 5.03rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(27){height: 1px; width: 7.2rem; position: absolute; top: 5.75rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(28){height: 1px; width: 7.2rem; position: absolute; top: 6.47rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(29){height: 1px; width: 7.2rem; position: absolute; top: 7.19rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(30){height: 1px; width: 7.2rem; position: absolute; top: 7.91rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(31){height: 1px; width: 7.2rem; position: absolute; top: 8.63rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(32){height: 1px; width: 7.2rem; position: absolute; top: 9.35rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(33){height: 1px; width: 7.2rem; position: absolute; top: 10.07rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(34){height: 1px; width: 7.2rem; position: absolute; top: 10.79rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(35){height: 1px; width: 7.2rem; position: absolute; top: 11.51rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(36){height: 1px; width: 7.2rem; position: absolute; top: 12.23rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(37){height: 1px; width: 7.2rem; position: absolute; top: 12.95rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(38){height: 1px; width: 7.2rem; position: absolute; top: 13.67rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(39){height: 1px; width: 7.2rem; position: absolute; top: 14.39rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(40){height: 1px; width: 7.2rem; position: absolute; top: 15.11rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(41){height: 1px; width: 7.2rem; position: absolute; top: 15.83rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(42){height: 1px; width: 7.2rem; position: absolute; top: 16.55rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(43){height: 1px; width: 7.2rem; position: absolute; top: 17.27rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(44){height: 1px; width: 7.2rem; position: absolute; top: 17.99rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(45){height: 1px; width: 7.2rem; position: absolute; top: 18.71rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(46){height: 1px; width: 7.2rem; position: absolute; top: 19.43rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(47){height: 1px; width: 7.2rem; position: absolute; top: 20.15rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(48){width: 7.2rem; height: 1px; position: absolute; top: 20.87rem;;font-size: 0.16rem;}
+
+#u215{font-size: 0.16rem;}
+#u215:before{content: "84,96,102,113,478,508,536,562,1401,1413,1415,1428"; display: none;}
+#u83{position: relative; width: 7.2rem; top: 0rem; left: 0rem; height: 4.2rem;;font-size: 0.16rem;}
+#u63{width: 7.2rem; height: 0rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 0rem; top: 0rem;;font-size: 0.16rem;}
+#u61{width: 7.2rem; height: 0rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u61 #u61 .name { color: rgb(95, 77, 95); }
+#u61 #u61 .source { display: inline-block; }
+
+#u61 #u61 .author { display: inline-block; }
+#u61 #u61 .title { z-index: 1; }
+#u61 #u61 .title { z-index: 1; }
+
+#u46{font-size: 0.176rem;;font-size: 0.176rem;}
+#u45{font-size: 0.48rem; width: 3.6rem; position: absolute; top: -1.03rem; left: 0rem;;font-size: 0.48rem;}
+
+#u53{overflow: hidden; height: 0rem; width: 3.6rem; position: absolute; top: 0rem; left: 3.6rem;;font-size: 0.16rem;}
+#u50{font-size: 0.176rem;;font-size: 0.176rem;}
+#u49{height: 4rem; width: 8rem; position: absolute; left: -1.624rem; top: -1.6576rem;;font-size: 0.176rem;}
+
+#u60{position: absolute; top: 1.28rem; left: -0.12rem;;font-size: 0.16rem;}
+#u56{font-size: 0.16rem;}
+#u55{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u59{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u58{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u82{width: 7.2rem; height: 3.84rem; position: absolute; top: 0.36rem; left: 0rem;;font-size: 0.16rem;}
+#u17aab240-44ed-4bb6-94b8-c8d4b04b0b53{position: relative; height: 3.84rem; top: 0rem;;font-size: 0.16rem;}
+#u80{height: 2.4rem; width: 6.48rem; position: absolute; top: 0.72rem; left: 0.36rem;;font-size: 0.16rem;}
+#u80 #u80 .quote { color: rgb(95, 77, 95); text-align: left; }
+
+#u80 #u80 .name { color: rgb(95, 77, 95); text-align: left; }
+#u80 #u80 .source { display: inline-block; }
+
+#u80 #u80 .author { display: inline-block; }
+
+#u71{font-size: 0.4rem; width: 6.48rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.4rem;}
+
+#u79{position: absolute; top: 2.56rem; left: 0rem;;font-size: 0.16rem;}
+#u75{font-size: 0.16rem;}
+#u73{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u74{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u78{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u77{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u110{position:relative;font-size: 0.16rem;}
+#u109{font-size: 0.16rem;}
+#u2f4afb84-83fd-4fd2-a8db-1e801cdea62f{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
+#u107{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.72rem; left: 4.5rem;;font-size: 0.16rem;}
+#u107 #u107 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+
+#u97{font-size: 0.16rem;}
+#u93{font-size: 0.16rem;}
+#u91{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u92{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u96{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u95{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u106{overflow: hidden; height: 3.6rem; width: 5.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u101{font-size: 0.176rem;;font-size: 0.176rem;}
+#u100{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.17rem; left: 0rem;;font-size: 0.176rem;}
+
+#u157{position: relative; width: 7.2rem; top: 0rem; left: 0rem; height: 0.36rem;;font-size: 0.16rem;}
+#u129{width: 7.2rem; height: 0rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 0rem; top: 0rem;;font-size: 0.16rem;}
+#u127{width: 6.86rem; height: 0rem; position: absolute; top: 0rem; left: 3.6rem;;font-size: 0.16rem;}
+#u127 #u127 .source { display: inline-block; }
+
+#u123{overflow: hidden; height: 8.35rem; width: 6.86rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
+#u122{font-size: 0.176rem;;font-size: 0.176rem;}
+#u121{height: 0rem; width: 6.86rem; position: absolute; top: -0.07rem; left: 0rem;;font-size: 0.176rem;}
+
+#u126{position: absolute; top: 0.04rem; left: 0rem;;font-size: 0.16rem;}
+#u125{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u156{width: 7.2rem; height: 0rem; position: absolute; top: 0.36rem; left: 0rem;;font-size: 0.16rem;}
+#u9c484406-057d-4c15-9d8c-ea3dd3bc0313{position: relative; height: 0rem; top: 0rem;;font-size: 0.16rem;}
+#u154{width: 7.2rem; height: 0rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u154 #u154 .source { display: inline-block; }
+#u154 #u154 .title { z-index: 1; }
+#u154 #u154 .title { z-index: 1; }
+
+#u138{font-size: 0.176rem;;font-size: 0.176rem;}
+#u137{font-size: 0.48rem; width: 3.6rem; position: absolute; top: -1.03rem; left: 0rem;;font-size: 0.48rem;}
+
+#u149{overflow: hidden; height: 0rem; width: 3.6rem; position: absolute; top: 0rem; left: 3.6rem;;font-size: 0.16rem;}
+#u142{font-size: 0.176rem;;font-size: 0.176rem;}
+#u141{height: 2.025rem; width: 3.6rem; position: absolute; left: -5.68434e-0.14rem; top: -1.1867rem;;font-size: 0.176rem;}
+
+#u153{position: absolute; top: 1.28rem; left: 1.435rem;;font-size: 0.16rem;}
+#u152{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u151{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u183{position:relative;font-size: 0.16rem;}
+#u182{font-size: 0.16rem;}
+#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
+#u180{height: 3.6rem; width: 4.6602rem; position: absolute; top: 0.72rem; left: 4.8699rem;;font-size: 0.16rem;}
+#u180 #u180 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+
+#u170{font-size: 0.16rem;}
+#u166{font-size: 0.16rem;}
+#u165{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u169{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u168{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u179{overflow: hidden; height: 3.6rem; width: 4.6602rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u174{font-size: 0.176rem;;font-size: 0.176rem;}
+#u173{height: 3.6rem; width: 4.6602rem; position: absolute; left: 0rem; top: 0.17rem;;font-size: 0.176rem;}
+
+#u214{position: relative; width: 7.2rem; top: 0rem; left: 0rem; height: 7.10543e-0.14rem;;font-size: 0.16rem;}
+#u213{width: 7.2rem; height: 7.10543e-0.14rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u0cefd9bc-5f03-480c-81fa-e85f788eec86{position: relative; height: 7.10543e-0.14rem; top: 0rem;;font-size: 0.16rem;}
+#u211{width: 1.38105e-0.14rem; height: 7.10543e-0.14rem; position: absolute; top: 0rem; left: 3.6rem;;font-size: 0.16rem;}
+#u211 #u211 .source { display: inline-block; }
+
+#u211 #u211 .author { display: inline-block; }
+
+#u202{overflow: hidden; height: 0.5179rem; width: 1.06581e-0.13rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
+#u195{font-size: 0.176rem;;font-size: 0.176rem;}
+#u194{height: 7.10543e-0.14rem; width: 1.06581e-0.13rem; position: absolute; top: 0.05rem; left: 0rem;;font-size: 0.176rem;}
+
+#u210{position: absolute; top: 0.04rem; left: 0rem;;font-size: 0.16rem;}
+#u206{font-size: 0.16rem;}
+#u204{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u205{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/2e28826f78020778e9a3789bd3915d08/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F509869928695230464%2Fsob_gOga_normal.jpeg&width=48&height=48"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u209{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u208{font-size: 0.176rem;;font-size: 0.176rem;}
+@keyframes appearance-u63-0-0-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+50% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+100% {opacity:0;}
+}
+.appearance-u63-0-0-720 #u63 {
+animation: appearance-u63-0-0-720 128ms forwards;
+animation-play-state: paused;
+}
+.appearance-u63-0-0-720-running #u63 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u63-0-0-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+50% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+100% {opacity:0;}
+}
+.appearance-u63-0-0-720 #u63 {
+-webkit-animation: appearance-u63-0-0-720 128ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u63-0-0-720-running #u63 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes appearance-u82-157-14-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);}
+7.692% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);}
+15.385% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);}
+23.077% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,170.87,0,0,1);opacity:0.209;}
+30.769% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,104.65,0,0,1);opacity:0.516;}
+38.462% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,56.11,0,0,1);opacity:0.74;}
+46.154% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,27.39,0,0,1);opacity:0.873;}
+53.846% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,12.33,0,0,1);opacity:0.943;}
+61.538% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5.11,0,0,1);opacity:0.976;}
+69.231% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,1.91,0,0,1);opacity:0.991;}
+76.923% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.62,0,0,1);opacity:0.997;}
+84.615% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+92.308% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u82-157-14-720 #u82 {
+animation: appearance-u82-157-14-720 832ms forwards;
+animation-play-state: paused;
+}
+.appearance-u82-157-14-720-running #u82 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u82-157-14-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);}
+7.692% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);}
+15.385% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);}
+23.077% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,170.87,0,0,1);opacity:0.209;}
+30.769% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,104.65,0,0,1);opacity:0.516;}
+38.462% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,56.11,0,0,1);opacity:0.74;}
+46.154% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,27.39,0,0,1);opacity:0.873;}
+53.846% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,12.33,0,0,1);opacity:0.943;}
+61.538% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5.11,0,0,1);opacity:0.976;}
+69.231% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,1.91,0,0,1);opacity:0.991;}
+76.923% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.62,0,0,1);opacity:0.997;}
+84.615% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+92.308% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u82-157-14-720 #u82 {
+-webkit-animation: appearance-u82-157-14-720 832ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u82-157-14-720-running #u82 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes appearance-u129-0-380-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+7.692% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+15.385% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+23.077% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-170.87,0,0,1);opacity:0.209;}
+30.769% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-104.65,0,0,1);opacity:0.516;}
+38.462% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-56.11,0,0,1);opacity:0.74;}
+46.154% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-27.39,0,0,1);opacity:0.873;}
+53.846% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-12.33,0,0,1);opacity:0.943;}
+61.538% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-5.11,0,0,1);opacity:0.976;}
+69.231% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-1.91,0,0,1);opacity:0.991;}
+76.923% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.62,0,0,1);opacity:0.997;}
+84.615% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+92.308% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u129-0-380-720 #u129 {
+animation: appearance-u129-0-380-720 832ms forwards;
+animation-play-state: paused;
+}
+.appearance-u129-0-380-720-running #u129 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u129-0-380-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+7.692% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+15.385% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);}
+23.077% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-170.87,0,0,1);opacity:0.209;}
+30.769% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-104.65,0,0,1);opacity:0.516;}
+38.462% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-56.11,0,0,1);opacity:0.74;}
+46.154% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-27.39,0,0,1);opacity:0.873;}
+53.846% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-12.33,0,0,1);opacity:0.943;}
+61.538% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-5.11,0,0,1);opacity:0.976;}
+69.231% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-1.91,0,0,1);opacity:0.991;}
+76.923% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.62,0,0,1);opacity:0.997;}
+84.615% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+92.308% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u129-0-380-720 #u129 {
+-webkit-animation: appearance-u129-0-380-720 832ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u129-0-380-720-running #u129 {
+-webkit-animation-play-state: running;
+}
+
+.appearance-u156-0-395-720 #u156 {
+animation: appearance-u82-157-14-720 832ms forwards;
+animation-play-state: paused;
+}
+.appearance-u156-0-395-720-running #u156 {
+animation-play-state: running;
+}
+
+.appearance-u156-0-395-720 #u156 {
+-webkit-animation: appearance-u82-157-14-720 832ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u156-0-395-720-running #u156 {
+-webkit-animation-play-state: running;
+}
+
+.appearance-u213-0-609-720 #u213 {
+animation: appearance-u129-0-380-720 832ms forwards;
+animation-play-state: paused;
+}
+.appearance-u213-0-609-720-running #u213 {
+animation-play-state: running;
+}
+
+.appearance-u213-0-609-720 #u213 {
+-webkit-animation: appearance-u129-0-380-720 832ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u213-0-609-720-running #u213 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u82-157-14-720 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,44.95,0,0,1);opacity:0.792;}
+10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,111.2,0,0,1);opacity:0.485;}
+20% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,159.79,0,0,1);opacity:0.26;}
+30% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,188.56,0,0,1);opacity:0.127;}
+40% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,203.64,0,0,1);opacity:0.057;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,210.88,0,0,1);opacity:0.024;}
+60% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,214.08,0,0,1);opacity:0.009;}
+70% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.38,0,0,1);opacity:0.003;}
+80% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+90% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);opacity:0;}
+}
+.disappearance-u82-157-14-720 #u82 {
+animation: disappearance-u82-157-14-720 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u82-157-14-720-running #u82 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u82-157-14-720 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,44.95,0,0,1);opacity:0.792;}
+10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,111.2,0,0,1);opacity:0.485;}
+20% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,159.79,0,0,1);opacity:0.26;}
+30% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,188.56,0,0,1);opacity:0.127;}
+40% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,203.64,0,0,1);opacity:0.057;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,210.88,0,0,1);opacity:0.024;}
+60% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,214.08,0,0,1);opacity:0.009;}
+70% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.38,0,0,1);opacity:0.003;}
+80% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+90% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);opacity:0;}
+}
+.disappearance-u82-157-14-720 #u82 {
+-webkit-animation: disappearance-u82-157-14-720 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u82-157-14-720-running #u82 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u129-0-380-720 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-44.95,0,0,1);opacity:0.792;}
+10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-111.2,0,0,1);opacity:0.485;}
+20% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-159.79,0,0,1);opacity:0.26;}
+30% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-188.56,0,0,1);opacity:0.127;}
+40% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-203.64,0,0,1);opacity:0.057;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-210.88,0,0,1);opacity:0.024;}
+60% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-214.08,0,0,1);opacity:0.009;}
+70% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.38,0,0,1);opacity:0.003;}
+80% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+90% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);opacity:0;}
+}
+.disappearance-u129-0-380-720 #u129 {
+animation: disappearance-u129-0-380-720 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u129-0-380-720-running #u129 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u129-0-380-720 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-44.95,0,0,1);opacity:0.792;}
+10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-111.2,0,0,1);opacity:0.485;}
+20% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-159.79,0,0,1);opacity:0.26;}
+30% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-188.56,0,0,1);opacity:0.127;}
+40% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-203.64,0,0,1);opacity:0.057;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-210.88,0,0,1);opacity:0.024;}
+60% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-214.08,0,0,1);opacity:0.009;}
+70% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.38,0,0,1);opacity:0.003;}
+80% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+90% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);opacity:0;}
+}
+.disappearance-u129-0-380-720 #u129 {
+-webkit-animation: disappearance-u129-0-380-720 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u129-0-380-720-running #u129 {
+-webkit-animation-play-state: running;
+}
+
+.disappearance-u156-0-395-720 #u156 {
+animation: disappearance-u82-157-14-720 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u156-0-395-720-running #u156 {
+animation-play-state: running;
+}
+
+.disappearance-u156-0-395-720 #u156 {
+-webkit-animation: disappearance-u82-157-14-720 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u156-0-395-720-running #u156 {
+-webkit-animation-play-state: running;
+}
+
+.disappearance-u213-0-609-720 #u213 {
+animation: disappearance-u129-0-380-720 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u213-0-609-720-running #u213 {
+animation-play-state: running;
+}
+
+.disappearance-u213-0-609-720 #u213 {
+-webkit-animation: disappearance-u129-0-380-720 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u213-0-609-720-running #u213 {
+-webkit-animation-play-state: running;
+}
+
+
+}
+@media (min-width: 721px) {
+#u34 div.layout { overflow-x: hidden; display: inline-block; }
+
+#u34 div.layout section { display: inline-block; }
+#u34 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col17, .col18, .col19, .col20 { background: none repeat scroll 0% 0% rgba(22, 22, 22, 0.05); }
+
+#u34 .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12, .row13, .row14, .row15, .row16, .row17, .row18, .row19, .row20, .row21, .row22, .row23, .row24, .row25, .row26, .row27, .row28, .row29, .row30 { background: none repeat scroll 0% 0% rgba(22, 22, 22, 0.05); }
+#grid{width: 14.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#grid>div:nth-of-type(1){width: 1px; height: 24.4rem; position: absolute; left: 0.71rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(2){width: 1px; height: 24.4rem; position: absolute; left: 1.43rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(3){width: 1px; height: 24.4rem; position: absolute; left: 2.15rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(4){width: 1px; height: 24.4rem; position: absolute; left: 2.87rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(5){width: 1px; height: 24.4rem; position: absolute; left: 3.59rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(6){width: 1px; height: 24.4rem; position: absolute; left: 4.31rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(7){width: 1px; height: 24.4rem; position: absolute; left: 5.03rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(8){width: 1px; height: 24.4rem; position: absolute; left: 5.75rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(9){width: 1px; height: 24.4rem; position: absolute; left: 6.47rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(10){width: 1px; height: 24.4rem; position: absolute; left: 7.19rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(11){width: 1px; height: 24.4rem; position: absolute; left: 7.91rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(12){width: 1px; height: 24.4rem; position: absolute; left: 8.63rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(13){width: 1px; height: 24.4rem; position: absolute; left: 9.35rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(14){width: 1px; height: 24.4rem; position: absolute; left: 10.07rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(15){width: 1px; height: 24.4rem; position: absolute; left: 10.79rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(16){width: 1px; height: 24.4rem; position: absolute; left: 11.51rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(17){width: 1px; height: 24.4rem; position: absolute; left: 12.23rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(18){width: 1px; height: 24.4rem; position: absolute; left: 12.95rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(19){height: 24.4rem; width: 1px; position: absolute; left: 13.67rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(20){height: 1px; width: 14.4rem; position: absolute; top: 0.71rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(21){height: 1px; width: 14.4rem; position: absolute; top: 1.43rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(22){height: 1px; width: 14.4rem; position: absolute; top: 2.15rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(23){height: 1px; width: 14.4rem; position: absolute; top: 2.87rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(24){height: 1px; width: 14.4rem; position: absolute; top: 3.59rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(25){height: 1px; width: 14.4rem; position: absolute; top: 4.31rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(26){height: 1px; width: 14.4rem; position: absolute; top: 5.03rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(27){height: 1px; width: 14.4rem; position: absolute; top: 5.75rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(28){height: 1px; width: 14.4rem; position: absolute; top: 6.47rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(29){height: 1px; width: 14.4rem; position: absolute; top: 7.19rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(30){height: 1px; width: 14.4rem; position: absolute; top: 7.91rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(31){height: 1px; width: 14.4rem; position: absolute; top: 8.63rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(32){height: 1px; width: 14.4rem; position: absolute; top: 9.35rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(33){height: 1px; width: 14.4rem; position: absolute; top: 10.07rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(34){height: 1px; width: 14.4rem; position: absolute; top: 10.79rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(35){height: 1px; width: 14.4rem; position: absolute; top: 11.51rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(36){height: 1px; width: 14.4rem; position: absolute; top: 12.23rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(37){height: 1px; width: 14.4rem; position: absolute; top: 12.95rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(38){height: 1px; width: 14.4rem; position: absolute; top: 13.67rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(39){height: 1px; width: 14.4rem; position: absolute; top: 14.39rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(40){height: 1px; width: 14.4rem; position: absolute; top: 15.11rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(41){height: 1px; width: 14.4rem; position: absolute; top: 15.83rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(42){height: 1px; width: 14.4rem; position: absolute; top: 16.55rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(43){height: 1px; width: 14.4rem; position: absolute; top: 17.27rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(44){height: 1px; width: 14.4rem; position: absolute; top: 17.99rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(45){height: 1px; width: 14.4rem; position: absolute; top: 18.71rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(46){height: 1px; width: 14.4rem; position: absolute; top: 19.43rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(47){height: 1px; width: 14.4rem; position: absolute; top: 20.15rem;;font-size: 0.16rem;}
+
+#grid>div:nth-of-type(48){width: 14.4rem; height: 1px; position: absolute; top: 20.87rem;;font-size: 0.16rem;}
+
+#u215{font-size: 0.16rem;}
+#u215:before{content: "84,96,102,113,478,508,536,562,1401,1413,1415,1428"; display: none;}
+#u83{position: relative; width: 14.4rem; top: 0rem; left: 0rem; height: 7.68rem;;font-size: 0.16rem;}
+#u63{width: 7.2rem; height: 7.68rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 7.68rem; top: 0rem;;font-size: 0.16rem;}
+#u61{width: 7.2rem; height: 7.68rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u61 #u61 .name { color: rgb(95, 77, 95); }
+#u61 #u61 .source { display: inline-block; }
+
+#u61 #u61 .author { display: inline-block; }
+#u61 #u61 .title { z-index: 1; }
+#u61 #u61 .title { z-index: 1; }
+
+#u46{font-size: 0.176rem;;font-size: 0.176rem;}
+#u45{font-size: 0.48rem; width: 3.6rem; position: absolute; top: 2.81rem; left: 0rem;;font-size: 0.48rem;}
+
+#u53{overflow: hidden; height: 3.6rem; width: 3.6rem; position: absolute; top: 2.04rem; left: 3.6rem;;font-size: 0.16rem;}
+#u50{font-size: 0.176rem;;font-size: 0.176rem;}
+#u49{height: 4rem; width: 8rem; position: absolute; left: -1.624rem; top: 0.1424rem;;font-size: 0.176rem;}
+
+#u60{position: absolute; top: 5.12rem; left: -0.12rem;;font-size: 0.16rem;}
+#u56{font-size: 0.16rem;}
+#u55{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u59{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u58{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u82{width: 7.2rem; height: 3.84rem; position: absolute; top: 3.84rem; left: 7.2rem;;font-size: 0.16rem;}
+#u17aab240-44ed-4bb6-94b8-c8d4b04b0b53{position: relative; height: 3.84rem; top: 0rem;;font-size: 0.16rem;}
+#u80{height: 2.4rem; width: 6.48rem; position: absolute; top: 0.72rem; left: 0.36rem;;font-size: 0.16rem;}
+#u80 #u80 .quote { color: rgb(95, 77, 95); text-align: left; }
+
+#u80 #u80 .name { color: rgb(95, 77, 95); text-align: left; }
+#u80 #u80 .source { display: inline-block; }
+
+#u80 #u80 .author { display: inline-block; }
+
+#u71{font-size: 0.4rem; width: 6.48rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.4rem;}
+
+#u79{position: absolute; top: 2.56rem; left: 0rem;;font-size: 0.16rem;}
+#u75{font-size: 0.16rem;}
+#u73{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u74{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u78{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u77{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u110{position:relative;font-size: 0.16rem;}
+#u109{font-size: 0.16rem;}
+#u2f4afb84-83fd-4fd2-a8db-1e801cdea62f{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
+#u107{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.72rem; left: 4.5rem;;font-size: 0.16rem;}
+#u107 #u107 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+
+#u97{font-size: 0.16rem;}
+#u93{font-size: 0.16rem;}
+#u91{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u92{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u96{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u95{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u106{overflow: hidden; height: 3.6rem; width: 5.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u101{font-size: 0.176rem;;font-size: 0.176rem;}
+#u100{height: 3.6rem; width: 5.4rem; position: absolute; top: 0.17rem; left: 0rem;;font-size: 0.176rem;}
+
+#u157{position: relative; width: 14.4rem; top: 0rem; left: 0rem; height: 9.0157rem;;font-size: 0.16rem;}
+#u129{width: 7.2rem; height: 9.0157rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 9.0157rem; top: 0rem;;font-size: 0.16rem;}
+#u127{width: 7.2rem; height: 9.0157rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u127 #u127 .source { display: inline-block; }
+
+#u123{overflow: hidden; height: 8.7757rem; width: 7.2rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
+#u122{font-size: 0.176rem;;font-size: 0.176rem;}
+#u121{height: 9.0157rem; width: 7.2rem; position: absolute; top: -0.07rem; left: 0rem;;font-size: 0.176rem;}
+
+#u126{position: absolute; top: 9.0557rem; left: 0rem;;font-size: 0.16rem;}
+#u125{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u156{width: 7.2rem; height: 4.5079rem; position: absolute; top: 4.5079rem; left: 7.2rem;;font-size: 0.16rem;}
+#u9c484406-057d-4c15-9d8c-ea3dd3bc0313{position: relative; height: 4.5079rem; top: 0rem;;font-size: 0.16rem;}
+#u154{width: 7.2rem; height: 4.5079rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u154 #u154 .source { display: inline-block; }
+#u154 #u154 .title { z-index: 1; }
+#u154 #u154 .title { z-index: 1; }
+
+#u138{font-size: 0.176rem;;font-size: 0.176rem;}
+#u137{font-size: 0.48rem; width: 3.6rem; position: absolute; top: 1.2239rem; left: 0rem;;font-size: 0.48rem;}
+
+#u149{overflow: hidden; height: 3.6rem; width: 3.6rem; position: absolute; top: 0.4539rem; left: 3.6rem;;font-size: 0.16rem;}
+#u142{font-size: 0.176rem;;font-size: 0.176rem;}
+#u141{height: 3.6rem; width: 6.4rem; position: absolute; left: -2.8rem; top: 0.17rem;;font-size: 0.176rem;}
+
+#u153{position: absolute; top: 3.5339rem; left: 1.435rem;;font-size: 0.16rem;}
+#u152{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u151{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u183{position:relative;font-size: 0.16rem;}
+#u182{font-size: 0.16rem;}
+#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position: relative; height: 5.04rem; top: 0rem;;font-size: 0.16rem;}
+#u180{height: 3.6rem; width: 4.6602rem; position: absolute; top: 0.72rem; left: 4.8699rem;;font-size: 0.16rem;}
+#u180 #u180 .text { text-align: center ! important; letter-spacing: 0.05em; font-weight: normal; color: rgb(96, 96, 96); }
+
+#u170{font-size: 0.16rem;}
+#u166{font-size: 0.16rem;}
+#u165{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u169{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u168{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u179{overflow: hidden; height: 3.6rem; width: 4.6602rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u174{font-size: 0.176rem;;font-size: 0.176rem;}
+#u173{height: 3.6rem; width: 4.6602rem; position: absolute; left: 0rem; top: 0.17rem;;font-size: 0.176rem;}
+
+#u214{position: relative; width: 14.4rem; top: 0rem; left: 0rem; height: 4.0126rem;;font-size: 0.16rem;}
+#u213{width: 7.2rem; height: 4.0126rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u0cefd9bc-5f03-480c-81fa-e85f788eec86{position: relative; height: 4.0126rem; top: 0rem;;font-size: 0.16rem;}
+#u211{width: 7.2rem; height: 4.0126rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u211 #u211 .source { display: inline-block; }
+
+#u211 #u211 .author { display: inline-block; }
+
+#u202{overflow: hidden; height: 3.7726rem; width: 7.2rem; position: absolute; top: 0.12rem; left: 0rem;;font-size: 0.16rem;}
+#u195{font-size: 0.176rem;;font-size: 0.176rem;}
+#u194{height: 4.0126rem; width: 7.2rem; position: absolute; top: -0.07rem; left: 0rem;;font-size: 0.176rem;}
+
+#u210{position: absolute; top: 4.0526rem; left: 0rem;;font-size: 0.16rem;}
+#u206{font-size: 0.16rem;}
+#u204{font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u205{background-image: url("https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/2e28826f78020778e9a3789bd3915d08/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F509869928695230464%2Fsob_gOga_normal.jpeg&width=48&height=48"); font-size: 0.176rem;;font-size: 0.176rem;}
+
+#u209{z-index: 1; font-size: 0.176rem;;font-size: 0.176rem;}
+#u208{font-size: 0.176rem;;font-size: 0.176rem;}
+@keyframes appearance-u63-248-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-104.65,0,0,1);opacity:0.516;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-56.11,0,0,1);opacity:0.74;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-27.39,0,0,1);opacity:0.873;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-12.33,0,0,1);opacity:0.943;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-5.11,0,0,1);opacity:0.976;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-1.91,0,0,1);opacity:0.991;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.62,0,0,1);opacity:0.997;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u63-248-0-1440 #u63 {
+animation: appearance-u63-248-0-1440 576ms forwards;
+animation-play-state: paused;
+}
+.appearance-u63-248-0-1440-running #u63 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u63-248-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-104.65,0,0,1);opacity:0.516;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-56.11,0,0,1);opacity:0.74;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-27.39,0,0,1);opacity:0.873;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-12.33,0,0,1);opacity:0.943;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-5.11,0,0,1);opacity:0.976;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-1.91,0,0,1);opacity:0.991;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.62,0,0,1);opacity:0.997;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u63-248-0-1440 #u63 {
+-webkit-animation: appearance-u63-248-0-1440 576ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u63-248-0-1440-running #u63 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes appearance-u82-124-124-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);opacity:0;}
+10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,104.65,0,0,1);opacity:0.516;}
+20% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,56.11,0,0,1);opacity:0.74;}
+30% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,27.39,0,0,1);opacity:0.873;}
+40% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,12.33,0,0,1);opacity:0.943;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5.11,0,0,1);opacity:0.976;}
+60% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,1.91,0,0,1);opacity:0.991;}
+70% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.62,0,0,1);opacity:0.997;}
+80% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+90% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u82-124-124-1440 #u82 {
+animation: appearance-u82-124-124-1440 640ms forwards;
+animation-play-state: paused;
+}
+.appearance-u82-124-124-1440-running #u82 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u82-124-124-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);opacity:0;}
+10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,104.65,0,0,1);opacity:0.516;}
+20% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,56.11,0,0,1);opacity:0.74;}
+30% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,27.39,0,0,1);opacity:0.873;}
+40% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,12.33,0,0,1);opacity:0.943;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,5.11,0,0,1);opacity:0.976;}
+60% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,1.91,0,0,1);opacity:0.991;}
+70% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.62,0,0,1);opacity:0.997;}
+80% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+90% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u82-124-124-1440 #u82 {
+-webkit-animation: appearance-u82-124-124-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u82-124-124-1440-running #u82 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes appearance-u129-291-412-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);opacity:0;}
+10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-104.65,0,0,1);opacity:0.516;}
+20% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-56.11,0,0,1);opacity:0.74;}
+30% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-27.39,0,0,1);opacity:0.873;}
+40% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-12.33,0,0,1);opacity:0.943;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-5.11,0,0,1);opacity:0.976;}
+60% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-1.91,0,0,1);opacity:0.991;}
+70% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.62,0,0,1);opacity:0.997;}
+80% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+90% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u129-291-412-1440 #u129 {
+animation: appearance-u129-291-412-1440 640ms forwards;
+animation-play-state: paused;
+}
+.appearance-u129-291-412-1440-running #u129 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u129-291-412-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);opacity:0;}
+10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-104.65,0,0,1);opacity:0.516;}
+20% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-56.11,0,0,1);opacity:0.74;}
+30% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-27.39,0,0,1);opacity:0.873;}
+40% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-12.33,0,0,1);opacity:0.943;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-5.11,0,0,1);opacity:0.976;}
+60% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-1.91,0,0,1);opacity:0.991;}
+70% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.62,0,0,1);opacity:0.997;}
+80% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+90% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-0.14,0,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u129-291-412-1440 #u129 {
+-webkit-animation: appearance-u129-291-412-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u129-291-412-1440-running #u129 {
+-webkit-animation-play-state: running;
+}
+
+.appearance-u156-145-558-1440 #u156 {
+animation: appearance-u82-124-124-1440 640ms forwards;
+animation-play-state: paused;
+}
+.appearance-u156-145-558-1440-running #u156 {
+animation-play-state: running;
+}
+
+.appearance-u156-145-558-1440 #u156 {
+-webkit-animation: appearance-u82-124-124-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u156-145-558-1440-running #u156 {
+-webkit-animation-play-state: running;
+}
+
+.appearance-u213-129-868-1440 #u213 {
+animation: appearance-u129-291-412-1440 640ms forwards;
+animation-play-state: paused;
+}
+.appearance-u213-129-868-1440-running #u213 {
+animation-play-state: running;
+}
+
+.appearance-u213-129-868-1440 #u213 {
+-webkit-animation: appearance-u129-291-412-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u213-129-868-1440-running #u213 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u63-248-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-44.95,0,0,1);opacity:0.792;}
+10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-111.2,0,0,1);opacity:0.485;}
+20% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-159.79,0,0,1);opacity:0.26;}
+30% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-188.56,0,0,1);opacity:0.127;}
+40% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-203.64,0,0,1);opacity:0.057;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-210.88,0,0,1);opacity:0.024;}
+60% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-214.08,0,0,1);opacity:0.009;}
+70% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.38,0,0,1);opacity:0.003;}
+80% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+90% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);opacity:0;}
+}
+.disappearance-u63-248-0-1440 #u63 {
+animation: disappearance-u63-248-0-1440 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u63-248-0-1440-running #u63 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u63-248-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-44.95,0,0,1);opacity:0.792;}
+10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-111.2,0,0,1);opacity:0.485;}
+20% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-159.79,0,0,1);opacity:0.26;}
+30% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-188.56,0,0,1);opacity:0.127;}
+40% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-203.64,0,0,1);opacity:0.057;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-210.88,0,0,1);opacity:0.024;}
+60% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-214.08,0,0,1);opacity:0.009;}
+70% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.38,0,0,1);opacity:0.003;}
+80% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+90% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-215.86,0,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,-216,0,0,1);opacity:0;}
+}
+.disappearance-u63-248-0-1440 #u63 {
+-webkit-animation: disappearance-u63-248-0-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u63-248-0-1440-running #u63 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u82-124-124-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,44.95,0,0,1);opacity:0.792;}
+10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,111.2,0,0,1);opacity:0.485;}
+20% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,159.79,0,0,1);opacity:0.26;}
+30% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,188.56,0,0,1);opacity:0.127;}
+40% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,203.64,0,0,1);opacity:0.057;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,210.88,0,0,1);opacity:0.024;}
+60% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,214.08,0,0,1);opacity:0.009;}
+70% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.38,0,0,1);opacity:0.003;}
+80% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+90% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);opacity:0;}
+}
+.disappearance-u82-124-124-1440 #u82 {
+animation: disappearance-u82-124-124-1440 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u82-124-124-1440-running #u82 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u82-124-124-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,44.95,0,0,1);opacity:0.792;}
+10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,111.2,0,0,1);opacity:0.485;}
+20% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,159.79,0,0,1);opacity:0.26;}
+30% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,188.56,0,0,1);opacity:0.127;}
+40% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,203.64,0,0,1);opacity:0.057;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,210.88,0,0,1);opacity:0.024;}
+60% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,214.08,0,0,1);opacity:0.009;}
+70% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.38,0,0,1);opacity:0.003;}
+80% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+90% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,215.86,0,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,216,0,0,1);opacity:0;}
+}
+.disappearance-u82-124-124-1440 #u82 {
+-webkit-animation: disappearance-u82-124-124-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u82-124-124-1440-running #u82 {
+-webkit-animation-play-state: running;
+}
+
+.disappearance-u129-291-412-1440 #u129 {
+animation: disappearance-u63-248-0-1440 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u129-291-412-1440-running #u129 {
+animation-play-state: running;
+}
+
+.disappearance-u129-291-412-1440 #u129 {
+-webkit-animation: disappearance-u63-248-0-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u129-291-412-1440-running #u129 {
+-webkit-animation-play-state: running;
+}
+
+.disappearance-u156-145-558-1440 #u156 {
+animation: disappearance-u82-124-124-1440 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u156-145-558-1440-running #u156 {
+animation-play-state: running;
+}
+
+.disappearance-u156-145-558-1440 #u156 {
+-webkit-animation: disappearance-u82-124-124-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u156-145-558-1440-running #u156 {
+-webkit-animation-play-state: running;
+}
+
+.disappearance-u213-129-868-1440 #u213 {
+animation: disappearance-u63-248-0-1440 640ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u213-129-868-1440-running #u213 {
+animation-play-state: running;
+}
+
+.disappearance-u213-129-868-1440 #u213 {
+-webkit-animation: disappearance-u63-248-0-1440 640ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u213-129-868-1440-running #u213 {
+-webkit-animation-play-state: running;
+}
+
+
+}</style></head>
+
+  <body id="u219">
+    <div id="grid">
+      <div class="col1"></div>
+      <div class="col2"></div>
+      <div class="col3"></div>
+      <div class="col4"></div>
+      <div class="col5"></div>
+      <div class="col6"></div>
+      <div class="col7"></div>
+      <div class="col8"></div>
+      <div class="col9"></div>
+      <div class="col10"></div>
+      <div class="col11"></div>
+      <div class="col12"></div>
+      <div class="col13"></div>
+      <div class="col15"></div>
+      <div class="col16"></div>
+      <div class="col17"></div>
+      <div class="col18"></div>
+      <div class="col19"></div>
+      <div class="col20"></div>
+      <div class="row1"></div>
+      <div class="row2"></div>
+      <div class="row3"></div>
+      <div class="row4"></div>
+      <div class="row5"></div>
+      <div class="row6"></div>
+      <div class="row7"></div>
+      <div class="row8"></div>
+      <div class="row9"></div>
+      <div class="row10"></div>
+      <div class="row11"></div>
+      <div class="row12"></div>
+      <div class="row13"></div>
+      <div class="row15"></div>
+      <div class="row16"></div>
+      <div class="row17"></div>
+      <div class="row18"></div>
+      <div class="row19"></div>
+      <div class="row20"></div>
+      <div class="row21"></div>
+      <div class="row22"></div>
+      <div class="row23"></div>
+      <div class="row24"></div>
+      <div class="row25"></div>
+      <div class="row26"></div>
+      <div class="row27"></div>
+      <div class="row28"></div>
+      <div class="row29"></div>
+      <div class="row30"></div>
+    </div>
+    <div class="layout-system user artistic-d4 w-assets sections" id="u215">
+      <div class="layout two-columns bricks" style="position:relative" id="u83"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u37">section {
   width: <= $taylorW / 2;
 }
 
@@ -323,7 +1433,7 @@ h-gutter-middle == h-gutter;
         right: == ^right - ^h-gutter-right !require;
       }
     } @else {
-      h-gutter: = 4md;
+      h-gutter: = 1md;
 
 //col2
 
@@ -336,35 +1446,33 @@ h-gutter-middle == h-gutter;
       right: == ^right - ^h-gutter-right;
     }
 
-    //rowtop    top: == 0 !require left: == 0 !require;
+    //rowtop   bricks stagger
 
 
-    section {
+     section {
+       top: >= ^top !require;
+       bottom: <= ^bottom !require;
+       
+       :next[top] == &center-y;
 
-      height: == article[height] !require;
-      
-      top: >= ^top !require;
-      bottom: <= ^bottom !require;
+       slack-gap: >= ^v-gutter-min !require;
+       slack-gap: <= ^v-gutter-max !require;
 
-      slack-gap: >= ^v-gutter-min !require;
-      slack-gap: <= ^v-gutter-max !strong;
+       //background: rgba(0,0,0, 0.1);
 
+       height: == article[height] !require;
      }
-    section.left {
-      + section.right {
-        top: == ^top !require;
-      }
-      + aside + section.right {
-        top: == ^top !require;
-      }
-    }
 
-    section.left {
-      top: == :previous[bottom] + &slack-gap !require;
-    }
-    section.right {
-      top: == :previous[bottom] + &slack-gap !require;
-    }
+     section.detached {
+       slack-gap: == ^v-gutter-max !strong;
+     }
+
+     section.left {
+       top: == :previous[bottom] + &slack-gap !require;
+     }
+     section.right {
+       top: == :previous[bottom] + &slack-gap !require;
+     }
 
     //last row bottom
     section.left {
@@ -387,32 +1495,31 @@ h-gutter-middle == h-gutter;
       margin-top: = ^shift-y * -1;
     }
 }</style>
-        <section class="repost-cover-desc section left" id="u68">
-          <article class="repost post" id="ufe330a10-e482-4901-9bb7-8e76adcb5aa7" style="position:relative"><style type="text/gss" scoped="scoped" id="u43">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+        <section class="repost-title-cover section left" id="u63">
+          <article class="repost post" id="ufe330a10-e482-4901-9bb7-8e76adcb5aa7" style="position:relative"><style type="text/gss" scoped="scoped" id="u40">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0;
 block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u66"><style type="text/gss" scoped="scoped" id="u46">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/cover-desc.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/alignC.css;
+            <div class="block wrapper" id="u61"><style type="text/gss" scoped="scoped" id="u43">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/source-name.css;
 inner-gap = 1.5g;
-inner-gap-vertical: = 1md;
-inner-gap-horizontal: = 1md;
+picture-gap == 1md /4;
+inner-gap-vertical: = 0;
+inner-gap-horizontal: = 0;
 </style>
-              <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u49">
-                <h1 class="title text" _text="Musk Issues Big Warning About Artificial Intelligence" _isBasedOnUrl="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u48">Musk Issues Big Warning About Artificial Intelligence</h1>
+              <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u46">
+                <h1 class="title text" id="u45">Musk Issues Big Warning About Artificial Intelligence</h1>
               </a>
-              <p class="description text" _text="Elon Musk is no Luddite, but that doesn't mean he's eager to embrace all new technology. " I think we should be very careful about artificial intelligence, " the CEO of both SpaceX and Tesla, said Friday in a talk at MIT in Cambridge, Mass." id="u51">Elon Musk is no Luddite, but that doesn't mean he's eager to embrace all new technology. "I think we should be very careful about artificial intelligence," the CEO of both SpaceX and Tesla, said Friday in a talk at MIT in Cambridge, Mass.</p>
-              <div class="cover image" _breakpoints="720" _isBasedOnUrl="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u58"><style type="text/gss" scoped="scoped" id="u53">overflow: hidden;
+              <div class="cover image" id="u53"><style type="text/gss" scoped="scoped" id="u48">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -428,9 +1535,9 @@ img[height] == img[width] * (1000/2000) !require;
 
 /* enforce minimum scale*/
 img[height] >= 1000 * image-min-scale !strong100;</style>
-                <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u55">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/c25a24bcff5678c2207835a1d922bc0d/passthrough?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000" sizes="sizes='100vw'" id="u54" />
-                </a><style type="text/gss" scoped="scoped" id="u57">/* define  area of importance */
+                <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u50">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/389544c432a03ef9f440d2da6f535940/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cc3681d839aaaa5690321654773784e5/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=720&height=360 720w" sizes="sizes='100vw'" id="u49" />
+                </a><style type="text/gss" scoped="scoped" id="u52">/* define  area of importance */
 "face"[x] == img[x] + 684.7102155317807 * image-scale !require;
 "face"[y] == img[y] + 285.58758980490865 * image-scale !require;
 "face"[width] ==  342.60510776589035 * image-scale !require;
@@ -439,76 +1546,84 @@ img[height] >= 1000 * image-min-scale !strong100;</style>
 /* Keep face towards original position */
 "face"[center-x] == "viewport"[center-x];
 "face"[center-y] == "viewport"[center-y];</style></div>
-              <div class="attribution" id="u65">
-                <div class="author" id="u61">
-                  <a class="name text" _text="Macrina Cooper-White" href="http://www.huffingtonpost.com/macrinac-white/" id="u60">Macrina Cooper-White</a>
+              <div class="attribution" id="u60">
+                <div class="author" id="u56">
+                  <a class="name text" href="http://www.huffingtonpost.com/macrinac-white/" id="u55">Macrina Cooper-White</a>
                 </div>
-                <div class="publisher source" id="u64">
-                  <a href="http://www.huffingtonpost.com" id="u63">The Huffington Post</a>
+                <div class="publisher source" id="u59">
+                  <a href="http://www.huffingtonpost.com" id="u58">The Huffington Post</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
-        <section class="repost-social-quote tilt section right" id="u87">
-          <article class="repost post" id="u17aab240-44ed-4bb6-94b8-c8d4b04b0b53" _block="[object Object]" style="position:relative"><style type="text/gss" scoped="scoped" id="u71">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+        <section class="repost-social-quote section right" id="u82">
+          <article class="repost post" id="u17aab240-44ed-4bb6-94b8-c8d4b04b0b53" style="position:relative"><style type="text/gss" scoped="scoped" id="u66">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = .5md;
 block-gap-vertical = 1md;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u85"><style type="text/gss" scoped="scoped" id="u74">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/quote.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+            <div class="block wrapper" id="u80"><style type="text/gss" scoped="scoped" id="u69">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/quote.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/source-name.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/repost-social-quote.css;
 inner-gap == 1g;
 avatar-width == 8g;
 avatar-height == 8g;
-inner-gap-vertical: = 1md;
-inner-gap-horizontal: = 1md;
+inner-gap-vertical: = 0;
+inner-gap-horizontal: = 0;
 </style>
-              <p class="quote text" _text="Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes." id="u76">Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.</p>
-              <div class="attribution" id="u84">
-                <div class="author" id="u80">
-                  <a class="name text" _text="elonmusk" href="http://twitter.com/elonmusk" id="u78">elonmusk</a>
-                  <a class="avatar image" _breakpoints="720" href="http://twitter.com/elonmusk" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73)" id="u79"></a>
+              <p class="quote text" id="u71">Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.</p>
+              <div class="attribution" id="u79">
+                <div class="author" id="u75">
+                  <a class="name text" href="http://twitter.com/elonmusk" id="u73">elonmusk</a>
+                  <a class="avatar image" href="http://twitter.com/elonmusk" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/e06fe7a9aa62c45328192d589f6f8328/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F420314816444502016%2Fxj5TnUsx_bigger.jpeg&width=73&height=73)" id="u74"></a>
                 </div>
-                <div class="publisher source" id="u83">
-                  <a href="http://twitter.com" id="u82">Twitter</a>
+                <div class="publisher source" id="u78">
+                  <a href="http://twitter.com" id="u77">Twitter</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
-        <section class="repost-image section left" id="u113">
-          <article class="repost post" id="u2f4afb84-83fd-4fd2-a8db-1e801cdea62f" style="position:relative"><style type="text/gss" scoped="scoped" id="u90">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
-block-gap-horizontal = 0;
-block-gap-vertical = 0;
+      </div>
+      <div style="position:relative" id="u110">
+        <section class="simple section" id="u109">
+          <article class="post" id="u2f4afb84-83fd-4fd2-a8db-1e801cdea62f" style="position:relative"><style type="text/gss" scoped="scoped" id="u86">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 2.5md;
+block-gap-vertical = 1md;
 block-gap-between = 0;
-bg_media-opacity == .7;
 </style>
-            <div class="block wrapper" id="u111"><style type="text/gss" scoped="scoped" id="u93">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/asides/attribution/attribution.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/bg_media.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-right.gss;
-image-height == 1md;
+            <div class="block wrapper" id="u107"><style type="text/gss" scoped="scoped" id="u89">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/title-text.css;
+inner-gap = 5g;
 inner-gap-vertical: = 1md;
 inner-gap-horizontal: = 1md;
+outer-gap-top = 1md;
 </style>
-              <div class="cover image" _breakpoints="720" _isBasedOnUrl="https://twitter.com/d4tocchini/status/572593744517595136" id="u102"><style type="text/gss" scoped="scoped" id="u95">overflow: hidden;
+              <div class="attribution" id="u97">
+                <div class="author" id="u93">
+                  <a class="name text" href="http://twitter.com/d4tocchini" id="u91">d4tocchini</a>
+                  <a class="avatar image" href="http://twitter.com/d4tocchini" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73)" id="u92"></a>
+                </div>
+                <div class="publisher source" id="u96">
+                  <a href="http://twitter.com" id="u95">Twitter</a>
+                </div>
+              </div>
+              <div class="cover image" id="u106"><style type="text/gss" scoped="scoped" id="u99">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -524,13 +1639,13 @@ img[height] == img[width] * (682/1023) !require;
 
 /* enforce minimum scale*/
 img[height] >= 682 * image-min-scale !strong100;</style>
-                <a href="https://twitter.com/d4tocchini/status/572593744517595136" id="u97">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/df50fa7084c0eaa1b7e6f0be53a3c1e6/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=1023&height=682" sizes="sizes='100vw'" id="u96" />
-                </a><style type="text/gss" scoped="scoped" id="u99">/* define  blank spot */
+                <a href="https://twitter.com/d4tocchini/status/572593744517595136" id="u101">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/167be45c74d8d0f99c7a9895a3017933/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=1023&height=682" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/deb17afe356ff35f8192e8caabaf7bde/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB_JC-fUVIAA9xHz.png%3Alarge&width=720&height=480 720w" sizes="sizes='100vw'" id="u100" />
+                </a><style type="text/gss" scoped="scoped" id="u103">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  360 * image-scale !require;
-"space"[height] == 899 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u101">/* define  area of importance */
+"space"[height] == 899 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u105">/* define  area of importance */
 "scene"[x] == img[x] + 386 * image-scale !require;
 "scene"[y] == img[y] + 214 * image-scale !require;
 "scene"[width] ==  295 * image-scale !require;
@@ -539,47 +1654,11 @@ img[height] >= 682 * image-min-scale !strong100;</style>
 /* Keep face towards original position */
 "scene"[center-x] == "viewport"[center-x];
 "scene"[center-y] == "viewport"[center-y];</style></div>
-              <div class="attribution" id="u110">
-                <div class="author" id="u106">
-                  <a class="name text" _text="d4tocchini" href="http://twitter.com/d4tocchini" id="u104">d4tocchini</a>
-                  <a class="avatar image" _breakpoints="720" href="http://twitter.com/d4tocchini" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/137bad5d3be2ce19d912c8771ac6779d/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F536229475680522240%2FFmTU1D6I_bigger.jpeg&width=73&height=73)" id="u105"></a>
-                </div>
-                <div class="publisher source" id="u109">
-                  <a href="http://twitter.com" id="u108">Twitter</a>
-                </div>
-              </div>
             </div>
           </article>
         </section>
       </div>
-      <div style="position:relative" id="u127">
-        <section class="text2 section" id="u126">
-          <article class="post" id="uee2dc798-bddb-4531-9e00-45d8ad862eea" style="position:relative"><style type="text/gss" scoped="scoped" id="u117">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
-block-gap-horizontal = 2.5md;
-block-gap-vertical = 1md;
-block-gap-between = 0;
-</style>
-            <div class="block wrapper" id="u124"><style type="text/gss" scoped="scoped" id="u120">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/post/title-description.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-title-text.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/title-text.css;
-inner-gap = 5g;
-inner-gap-vertical: = 1md;
-inner-gap-horizontal: = 1md;
-outer-gap-top = 1md;
-</style>
-              <div class="attribution" id="u123">
-                <div class="publisher source" id="u122">s3.amazonaws.com</div>
-              </div>
-            </div>
-          </article>
-        </section>
-      </div>
-      <div class="layout two-columns bricks" style="position:relative" id="u187"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u129">section {
+      <div class="layout two-columns bricks" style="position:relative" id="u157"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u112">section {
   width: <= $taylorW / 2;
 }
 
@@ -619,7 +1698,7 @@ h-gutter-middle == h-gutter;
         right: == ^right - ^h-gutter-right !require;
       }
     } @else {
-      h-gutter: = 4md;
+      h-gutter: = 1md;
 
 //col2
 
@@ -632,35 +1711,33 @@ h-gutter-middle == h-gutter;
       right: == ^right - ^h-gutter-right;
     }
 
-    //rowtop    top: == 0 !require left: == 0 !require;
+    //rowtop   bricks stagger
 
 
-    section {
+     section {
+       top: >= ^top !require;
+       bottom: <= ^bottom !require;
+       
+       :next[top] == &center-y;
 
-      height: == article[height] !require;
-      
-      top: >= ^top !require;
-      bottom: <= ^bottom !require;
+       slack-gap: >= ^v-gutter-min !require;
+       slack-gap: <= ^v-gutter-max !require;
 
-      slack-gap: >= ^v-gutter-min !require;
-      slack-gap: <= ^v-gutter-max !strong;
+       //background: rgba(0,0,0, 0.1);
 
+       height: == article[height] !require;
      }
-    section.left {
-      + section.right {
-        top: == ^top !require;
-      }
-      + aside + section.right {
-        top: == ^top !require;
-      }
-    }
 
-    section.left {
-      top: == :previous[bottom] + &slack-gap !require;
-    }
-    section.right {
-      top: == :previous[bottom] + &slack-gap !require;
-    }
+     section.detached {
+       slack-gap: == ^v-gutter-max !strong;
+     }
+
+     section.left {
+       top: == :previous[bottom] + &slack-gap !require;
+     }
+     section.right {
+       top: == :previous[bottom] + &slack-gap !require;
+     }
 
     //last row bottom
     section.left {
@@ -683,32 +1760,78 @@ h-gutter-middle == h-gutter;
       margin-top: = ^shift-y * -1;
     }
 }</style>
-        <section class="repost-cover-desc section right" id="u158">
-          <article class="repost post" id="u9c484406-057d-4c15-9d8c-ea3dd3bc0313" style="position:relative"><style type="text/gss" scoped="scoped" id="u132">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+        <section class="repost-cover section left" id="u129">
+          <article class="repost post" id="uee2dc798-bddb-4531-9e00-45d8ad862eea" style="position:relative"><style type="text/gss" scoped="scoped" id="u115">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0;
 block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u156"><style type="text/gss" scoped="scoped" id="u135">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/cover-desc.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/h-cover-desc.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/cover-desc.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/alignC.css;
+            <div class="block wrapper" id="u127"><style type="text/gss" scoped="scoped" id="u118">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/source-name.css;
 inner-gap = 1.5g;
-inner-gap-vertical: = 1md;
-inner-gap-horizontal: = 1md;
+inner-gap-vertical: = 0;
+inner-gap-horizontal: = 0;
+outer-gap-left >= 0 !require;
+outer-gap-top >= 0 !require;
+bg_media-opacity == .8;
+</style>
+              <div class="cover image" id="u123"><style type="text/gss" scoped="scoped" id="u120">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
+
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
+
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 686 !require;
+img[height] == img[width] * (859/686) !require;
+
+/* enforce minimum scale*/
+img[height] >= 859 * image-min-scale !strong100;</style>
+                <a href="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" id="u122">
+                  <img src="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" srcset="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif 686w" sizes="sizes='100vw'" id="u121" />
+                </a>
+              </div>
+              <div class="attribution" id="u126">
+                <div class="publisher source" id="u125">s3.amazonaws.com</div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="repost-title-cover section right" id="u156">
+          <article class="repost post" id="u9c484406-057d-4c15-9d8c-ea3dd3bc0313" style="position:relative"><style type="text/gss" scoped="scoped" id="u132">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
+block-gap-between = 0;
+</style>
+            <div class="block wrapper" id="u154"><style type="text/gss" scoped="scoped" id="u135">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/title-cover-source-name-desc.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/source-name.css;
+inner-gap = 1.5g;
+picture-gap == 1md /4;
+inner-gap-vertical: = 0;
+inner-gap-horizontal: = 0;
 </style>
               <a href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u138">
-                <h1 class="title text" _text="The Gridâ¬`-â¬`an unconventional startup" _isBasedOnUrl="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u137">The Gridâ¬`-â¬`an unconventional startup</h1>
+                <h1 class="title text" id="u137">The Gridâ¬`-â¬`an unconventional startup</h1>
               </a>
-              <p class="description text" _text="I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional." id="u140">I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional.</p>
-              <div class="cover image" _breakpoints="720" _isBasedOnUrl="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u151"><style type="text/gss" scoped="scoped" id="u142">overflow: hidden;
+              <div class="cover image" id="u149"><style type="text/gss" scoped="scoped" id="u140">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -724,9 +1847,9 @@ img[height] == img[width] * (450/800) !require;
 
 /* enforce minimum scale*/
 img[height] >= 450 * image-min-scale !strong100;</style>
-                <a href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u144">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b1d8c63dd2feac8f57bc40402c7b9cdb/passthrough?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=800&height=450" sizes="sizes='100vw'" id="u143" />
-                </a><style type="text/gss" scoped="scoped" id="u146">/* define  area of importance */
+                <a href="https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d" id="u142">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/3464b644aea9966576dae25a3973d512/passthrough.jpeg?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=800&height=450" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/7b8d668271beba15a381d4bffdf233b7/passthrough.jpeg?input=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*1I-PNso0E8oXXywbN7bAIQ.jpeg&width=720&height=405 720w" sizes="sizes='100vw'" id="u141" />
+                </a><style type="text/gss" scoped="scoped" id="u144">/* define  area of importance */
 "face"[x] == img[x] + 570.5 * image-scale !require;
 "face"[y] == img[y] + 172.5 * image-scale !require;
 "face"[width] ==  24.5 * image-scale !require;
@@ -734,11 +1857,11 @@ img[height] >= 450 * image-min-scale !strong100;</style>
 
 /* Keep face towards original position */
 "face"[center-x] == "viewport"[center-x];
-"face"[center-y] == "viewport"[center-y];</style><style type="text/gss" scoped="scoped" id="u148">/* define  blank spot */
+"face"[center-y] == "viewport"[center-y];</style><style type="text/gss" scoped="scoped" id="u146">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  242 * image-scale !require;
-"space"[height] == 300 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u150">/* define  area of importance */
+"space"[height] == 300 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u148">/* define  area of importance */
 "scene"[x] == img[x] + 198 * image-scale !require;
 "scene"[y] == img[y] + 1 * image-scale !require;
 "scene"[width] ==  229 * image-scale !require;
@@ -747,42 +1870,45 @@ img[height] >= 450 * image-min-scale !strong100;</style>
 /* Keep face towards original position */
 "scene"[center-x] == "viewport"[center-x];
 "scene"[center-y] == "viewport"[center-y];</style></div>
-              <div class="attribution" id="u155">
-                <div class="publisher source" id="u154">
-                  <a href="https://medium.com" id="u153">Medium</a>
+              <div class="attribution" id="u153">
+                <div class="publisher source" id="u152">
+                  <a href="https://medium.com" id="u151">Medium</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
-        <section class="repost-title-desc section left" id="u186">
-          <article class="repost post" id="u69f468dc-8acf-48fb-91cd-2500ff567a0a" style="position:relative"><style type="text/gss" scoped="scoped" id="u161">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
-block-gap-horizontal = 0;
-block-gap-vertical = 0;
+      </div>
+      <div style="position:relative" id="u183">
+        <section class="simple section" id="u182">
+          <article class="post" id="u69f468dc-8acf-48fb-91cd-2500ff567a0a" style="position:relative"><style type="text/gss" scoped="scoped" id="u160">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 2.5md;
+block-gap-vertical = 1md;
 block-gap-between = 0;
-bg_media-opacity == .8;
 </style>
-            <div class="block wrapper" id="u184"><style type="text/gss" scoped="scoped" id="u164">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/title.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/asides/attribution/source-name.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-inner-gap = 1.5g;
+            <div class="block wrapper" id="u180"><style type="text/gss" scoped="scoped" id="u163">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/media/bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/title-text.css;
+inner-gap = 5g;
 inner-gap-vertical: = 1md;
 inner-gap-horizontal: = 1md;
-outer-gap-left >= 1md !require;
-outer-gap-top >= 1md !require;
+outer-gap-top = 1md;
 </style>
-              <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u167">
-                <h1 class="title text" _text="Website builder The Grid gets Chrome extension, iOS app, & automatic image cropping" _isBasedOnUrl="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u166">Website builder The Grid gets Chrome extension, iOS app, & automatic image cropping</h1>
-              </a>
-              <div class="cover image" _breakpoints="720" _isBasedOnUrl="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u176"><style type="text/gss" scoped="scoped" id="u169">overflow: hidden;
+              <div class="attribution" id="u170">
+                <div class="author" id="u166">
+                  <a class="name text" href="http://venturebeat.com/author/jordan-novet/" id="u165">Jordan Novet</a>
+                </div>
+                <div class="publisher source" id="u169">
+                  <a href="http://venturebeat.com" id="u168">VentureBeat</a>
+                </div>
+              </div>
+              <div class="cover image" id="u179"><style type="text/gss" scoped="scoped" id="u172">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -798,13 +1924,13 @@ img[height] == img[width] * (927/1200) !require;
 
 /* enforce minimum scale*/
 img[height] >= 927 * image-min-scale !strong100;</style>
-                <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u171">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/bf1de6b97de51129a4362f433cf91873/passthrough?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927" sizes="sizes='100vw'" id="u170" />
-                </a><style type="text/gss" scoped="scoped" id="u173">/* define  blank spot */
+                <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u174">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/87479409ba8cd48d1da4d2702153cebb/passthrough.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/91b7aa0e034359ee691cf0a9a369756b/passthrough.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=720&height=556.2 720w" sizes="sizes='100vw'" id="u173" />
+                </a><style type="text/gss" scoped="scoped" id="u176">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  580 * image-scale !require;
-"space"[height] == 204 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u175">/* define  area of importance */
+"space"[height] == 204 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u178">/* define  area of importance */
 "scene"[x] == img[x] + 49 * image-scale !require;
 "scene"[y] == img[y] + 207 * image-scale !require;
 "scene"[width] ==  877 * image-scale !require;
@@ -813,54 +1939,185 @@ img[height] >= 927 * image-min-scale !strong100;</style>
 /* Keep face towards original position */
 "scene"[center-x] == "viewport"[center-x];
 "scene"[center-y] == "viewport"[center-y];</style></div>
-              <div class="attribution" id="u183">
-                <div class="author" id="u179">
-                  <a class="name text" _text="Jordan Novet" href="http://venturebeat.com/author/jordan-novet/" id="u178">Jordan Novet</a>
-                </div>
-                <div class="publisher source" id="u182">
-                  <a href="http://venturebeat.com" id="u181">VentureBeat</a>
-                </div>
-              </div>
             </div>
           </article>
         </section>
       </div>
-      <div style="position:relative" id="u207">
-        <section class="text2 section" id="u206">
-          <article class="post" id="u0cefd9bc-5f03-480c-81fa-e85f788eec86" style="position:relative"><style type="text/gss" scoped="scoped" id="u190">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
-block-gap-horizontal = 2.5md;
-block-gap-vertical = 1md;
+      <div class="layout two-columns bricks" style="position:relative" id="u214"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u185">section {
+  width: <= $taylorW / 2;
+}
+
+displace-x = 1md;
+displace-y = 0.5md;
+
+v-gutter-min: = 1md;
+v-gutter-max: = 1md;
+
+h-gutter: = 0;
+
+h-gutter-left == h-gutter / 8;
+h-gutter-right == h-gutter-left;
+h-gutter-middle == h-gutter;
+
+    @if ::window[width] <= $taylorW/2 {
+      v-gutter-min: = .5md;
+      v-gutter-max = 0md;
+
+
+
+      section, aside {
+        height == 0;
+        // make section want to be small
+        // stack sections vertically
+        :first[top] == ^top !require;
+        :last[bottom] == ^height !require;
+        :next[top] == &bottom + ^v-gutter-min !require;
+      }
+
+      section {
+        height: == article[height] !require;
+
+
+        // offset horizontally
+        left: == ^left + ^h-gutter-left !require;
+        right: == ^right - ^h-gutter-right !require;
+      }
+    } @else {
+      h-gutter: = 1md;
+
+//col2
+
+    section.left {
+      left: == ^left + ^h-gutter-left;
+      right: == ^center-x - ^h-gutter-middle / 2;
+    }
+    section.right {
+      left: == ^center-x + ^h-gutter-middle / 2;
+      right: == ^right - ^h-gutter-right;
+    }
+
+    //rowtop   bricks stagger
+
+
+     section {
+       top: >= ^top !require;
+       bottom: <= ^bottom !require;
+       
+       :next[top] == &center-y;
+
+       slack-gap: >= ^v-gutter-min !require;
+       slack-gap: <= ^v-gutter-max !require;
+
+       //background: rgba(0,0,0, 0.1);
+
+       height: == article[height] !require;
+     }
+
+     section.detached {
+       slack-gap: == ^v-gutter-max !strong;
+     }
+
+     section.left {
+       top: == :previous[bottom] + &slack-gap !require;
+     }
+     section.right {
+       top: == :previous[bottom] + &slack-gap !require;
+     }
+
+    //last row bottom
+    section.left {
+      :last[bottom] == ^bottom !strong;
+    }
+    section.right {
+      :last[bottom] == ^bottom !strong;
+    }
+
+    .shift-x-1 {
+      margin-left: = ^shift-x;
+    }
+    .shift-x--1 {
+      margin-left: = ^shift-x * -1;
+    }
+    .shift-y-1 {
+      margin-top: = ^shift-y;
+    }
+    .shift-y--1 {
+      margin-top: = ^shift-y * -1;
+    }
+}</style>
+        <section class="repost-cover section left" id="u213">
+          <article class="repost post" id="u0cefd9bc-5f03-480c-81fa-e85f788eec86" style="position:relative"><style type="text/gss" scoped="scoped" id="u188">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+block-gap-horizontal = 0;
+block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u204"><style type="text/gss" scoped="scoped" id="u193">@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/variations/post/title-description.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/vfl/v-title-text.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/css/title-text.css;
-inner-gap = 5g;
-inner-gap-vertical: = 1md;
-inner-gap-horizontal: = 1md;
-outer-gap-top = 1md;
+            <div class="block wrapper" id="u211"><style type="text/gss" scoped="scoped" id="u191">@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/variations/cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/css/source-name.css;
+inner-gap = 1.5g;
+inner-gap-vertical: = 0;
+inner-gap-horizontal: = 0;
+outer-gap-left >= 0 !require;
+outer-gap-top >= 0 !require;
+bg_media-opacity == .8;
 </style>
-              <div class="attribution" id="u201">
-                <div class="author" id="u197">
-                  <a class="name text" _text="thegridio" href="http://twitter.com/thegridio" id="u195">thegridio</a>
-                  <a class="avatar image" _breakpoints="720" href="http://twitter.com/thegridio" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/2e28826f78020778e9a3789bd3915d08/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F509869928695230464%2Fsob_gOga_normal.jpeg&width=48&height=48)" id="u196"></a>
+              <div class="cover image" id="u202"><style type="text/gss" scoped="scoped" id="u193">overflow: hidden;
+"viewport"[top] == &top  !require;
+"viewport"[left] == &left  !require;
+"viewport"[height] == &height  !require;
+"viewport"[width] == &width  !require;
+
+@v |~("viewport")~| in(img) !require;
+@h |~("viewport")~| in(img) !require;
+
+image-min-scale == 0.4;
+/* Define image dimensions and ratio */
+image-scale == img[width] / 637 !require;
+img[height] == img[width] * (355/637) !require;
+
+/* enforce minimum scale*/
+img[height] >= 355 * image-min-scale !strong100;</style>
+                <a href="https://twitter.com/thegridio/status/570646321750626304" id="u195">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d6dce0b2384f2a44895c04f9f667145f/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB-tXzkBUsAAf1Co.png%3Alarge&width=637&height=355" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/d6dce0b2384f2a44895c04f9f667145f/passthrough.png?input=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FB-tXzkBUsAAf1Co.png%3Alarge&width=637&height=355 637w" sizes="sizes='100vw'" id="u194" />
+                </a><style type="text/gss" scoped="scoped" id="u197">/* define  area of importance */
+"face"[x] == img[x] + 366.8109378747019 * image-scale !require;
+"face"[y] == img[y] + 47.71038302247381 * image-scale !require;
+"face"[width] ==  64.73550140271324 * image-scale !require;
+"face"[height] == 64.73550140271324 * image-scale !require;
+
+/* Keep face towards original position */
+"face"[center-x] == "viewport"[center-x];
+"face"[center-y] == "viewport"[center-y];</style><style type="text/gss" scoped="scoped" id="u199">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 322 * image-scale !require;
+"space"[width] ==  1015 * image-scale !require;
+"space"[height] == 345 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u201">/* define  area of importance */
+"scene"[x] == img[x] + 28 * image-scale !require;
+"scene"[y] == img[y] + 131 * image-scale !require;
+"scene"[width] ==  279 * image-scale !require;
+"scene"[height] == 393 * image-scale !require;
+
+/* Keep face towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];</style></div>
+              <div class="attribution" id="u210">
+                <div class="author" id="u206">
+                  <a class="name text" href="http://twitter.com/thegridio" id="u204">thegridio</a>
+                  <a class="avatar image" href="http://twitter.com/thegridio" style="background-image:url(https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/2e28826f78020778e9a3789bd3915d08/passthrough?input=https%3A%2F%2Fpbs.twimg.com%2Fprofile_images%2F509869928695230464%2Fsob_gOga_normal.jpeg&width=48&height=48)" id="u205"></a>
                 </div>
-                <div class="publisher source" id="u200">
-                  <a href="http://twitter.com" id="u199">Twitter</a>
+                <div class="publisher source" id="u209">
+                  <a href="http://twitter.com" id="u208">Twitter</a>
                 </div>
               </div>
-              <p class="description text" _text="Watch @d4tocchini's presentation at #SMWNYC + get a sneak peek of The Grid (starting at 1:20) http://new.livestream.com/accounts/7237173/events/3834360 ..." id="u203">Watch
-                <a href="https://twitter.com/d4tocchini" class="linker linker-twitter">@d4tocchini</a>'s presentation at #SMWNYC + get a sneak peek of The Grid (starting at 1:20)
-                <a href="http://new.livestream.com/accounts/7237173/events/3834360" class="linker linker-url">new.livest..</a> ...</p>
             </div>
           </article>
         </section>
       </div>
-    </div><script src="https://rawgit.com/gss/document/ranges2/dist/gss.document.parser.js" id="u209"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/assets/gss-init.js" id="u210"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.12/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u211"></script></body>
+    </div><script src="//cdn.rawgit.com/gss/document/ranges2/dist/gss.document.parser.js" id="u216"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/assets/gss-init.js" id="u217"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.17/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u218"></script></body>
 
 </html>
