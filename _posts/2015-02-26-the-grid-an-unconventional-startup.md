@@ -1,5 +1,9 @@
 ---
-  author: []
+  author: 
+    - 
+      name: "Brian Axe"
+      url: "https://medium.com/@brianaxe"
+      avatar: {}
   related: 
     - 
       score: 0.6292323470115662
@@ -35,17 +39,17 @@
       app_name: "Medium"
       app_store_id: "828256236"
     - 
-      url: "https://medium.comhttps://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d"
+      url: "https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d"
       type: "web"
   isBasedOnUrl: "https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d"
   title: "The Grid
 -
 an unconventional startup"
-  dateModified: "2015-03-05T20:46:19.788Z"
+  dateModified: "2015-04-23T17:11:29.383Z"
   sourcePath: "_posts/2015-02-26-the-grid-an-unconventional-startup.md"
   published: true
   _context: "http://schema.org"
-  _type: "Article"
+  _type: "MediaObject"
 
 ---
 <article style=""><h1>The Grid
