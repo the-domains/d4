@@ -1,5 +1,12 @@
 name: D4
 layout_spectrum: 0.8
-typography_spectrum: 0.7
+typography_spectrum: 0.8
+color:
+  brandColors: 
+    - "#66ccc0"
+    - "#5f4d5f"
+    - "#d12164"
+    - "#dbc6bc"
+    - "#faefda"
 analytics:
   google: UA-61994900-1
