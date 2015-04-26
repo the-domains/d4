@@ -8,5 +8,9 @@ color:
     - "#d12164"
     - "#dbc6bc"
     - "#faefda"
+purpose: 
+  - 
+    name: "follow"
+    item: "2f4afb84-83fd-4fd2-a8db-1e801cdea62f"
 analytics:
   google: UA-61994900-1
