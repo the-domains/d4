@@ -1,4 +1,18 @@
 ---
+isBasedOnUrl: "http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself"
+inLanguage: English
+starred: false
+keywords:
+  - grid
+  - tocchini
+  - design
+  - gss
+  - layout
+  - website
+  - content
+  - cassowary
+  - css
+  - taylor
 author:
   - name: Tyler Hayes
     url: "http://www.fastcolabs.com/user/tyler-hayes"
@@ -18,33 +32,21 @@ related:
     thumbnail_height: 560
     thumbnail_url: "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2014/12/webdesign.jpg"
     thumbnail_width: 1460
-publisher:
-  url: "http://www.fastcolabs.com"
-  name: Co.Labs
-  favicon: "http://www.fastcolabs.com/favicon.ico"
-  domain: www.fastcolabs.com
-keywords:
-  - grid
-  - tocchini
-  - design
-  - gss
-  - layout
-  - website
-  - content
-  - cassowary
-  - css
-  - taylor
 description: "Making the process of building websites less complicated is a growth industry. Just look at the success of WordPress and Squarespace. Yet with all the templates and customization available from these platforms, it still leaves humans to do most of the decision-making-should you put that checkout button in the middle or top right?"
-inLanguage: English
 datePublished: "2014-10-20T13:00:00.000Z"
 app_links: []
-isBasedOnUrl: "http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself"
 title: "The Grid Is The Website Of The Future: It Builds Itself"
-dateModified: "2015-04-27T19:11:29.455Z"
+dateModified: "2015-04-27T22:56:39.319Z"
 sourcePath: _posts/2014-10-20-the-grid-is-the-website-of-the-future-it-builds-itself.md
 published: true
+authors: []
+publisher:
+  name: Co.Labs
+  domain: www.fastcolabs.com
+  url: "http://www.fastcolabs.com"
+  favicon: "http://www.fastcolabs.com/favicon.ico"
+_type: MediaObject
 _context: "http://schema.org"
-_type: Article
 
 ---
 <article style=""><h1>The Grid Is The Website Of The Future: It Builds Itself</h1><p>Making the process of building websites less complicated is a growth industry. Just look at the success of WordPress and Squarespace. Yet with all the templates and customization available from these platforms, it still leaves humans to do most of the decision-making-should you put that checkout button in the middle or top right?</p><img src="http://g.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/10/3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg" /></article>
