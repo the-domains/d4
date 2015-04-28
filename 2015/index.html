@@ -15,11 +15,11 @@
  .attribution {font-family: 'Open Sans';font-weight: 300;text-transform: uppercase;letter-spacing: .03em;}
  .layout-system .quote {font-family: 'Playfair Display';font-weight: 400;font-style: normal;}
  .layout-system .title {text-transform: inherit;}</style>
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" /><style type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" /><style type="text/css">
   html {
   width: 100%;
 }
@@ -115,21 +115,20 @@ html:not(.gss-ready) {
   outline: none;
 }
 </style>
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/layout.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/variables.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/debug.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss">
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/layout.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/variables.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/debug.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss">
 .title {
-  width: == ^width;
+  width: == ^width - 1md;
   height: <= ^height !medium100;
   center-x: == ^center-x !medium100;
-  center-y: == ^center-y !medium100;
   top: >= 0 !medium100;
 }
 
 .cover {
   left: >= ^left;
-  width: == ^width;
+  width: == ^width !medium100;
   height: == ^height !medium100;
 }
 
@@ -141,21 +140,21 @@ html:not(.gss-ready) {
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss">
 @v |-[inner-gap-top]-(.title)-[inner-gap-bottom]-| !require;
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
 @v |(.cover)| !strong;
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
 inner-gap-top >= inner-gap-vertical !require;
 inner-gap-bottom == inner-gap-top !require;
 inner-gap-top == inner-gap;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
 inner-gap-right == inner-gap-left !require;
 outer-gap-right == outer-gap-left !require;
 inner-gap-left >= inner-gap-horizontal !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
 .title {
   z-index: 1;
   font-size: = 6g;
@@ -217,7 +216,7 @@ p {
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
 width: == intrinsic-width !require;
 top: == 0 !require;
 
@@ -235,7 +234,7 @@ top: == 0 !require;
   outer-gap-left >= 0 !require;
   outer-gap-right >= 0 !require;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
 block-gap-top == block-gap-vertical;
 block-gap-top >= block-gap-vertical !require;
 block-gap-top == block-gap-bottom !require;
@@ -245,7 +244,7 @@ block-gap     == block-gap-between;
 
 block-gap     == block-gap-top !require;
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
 block-gap-left == block-gap-right !require;
 block-gap-left >= block-gap-horizontal !require;
 block-gap-left == block-gap-horizontal !require;
@@ -491,7 +490,7 @@ div.layout section { display: inline-block; }
 
 #u77{font-size: 0.99rem;}
 #u77:before{content: "176,193,215,231"; display: none;}
-#u76{position: relative; width: 14.4rem; left: 0rem; top: 0rem; height: 4.24rem;;font-size: 0.99rem;}
+#u76{position: relative; width: 14.4rem; left: 0rem; top: 0rem; height: 5.68rem;;font-size: 0.99rem;}
 #u76 .cta .cta-deco { text-align: center; }
 
 #u47{width: 1.68rem; height: 1.68rem; position: absolute; left: 6.36rem; top: 2.76rem;;font-size: 0.99rem;}
@@ -502,28 +501,28 @@ div.layout section { display: inline-block; }
 
 #u45{font-size: 1.44rem; width: 1.68rem; position: absolute; left: 0rem; top: -0.19rem;;font-size: 1.44rem;}
 
-#u75{width: 6.3rem; height: 4.24rem; position: absolute; top: 0rem; left: 0.18rem;;font-size: 0.99rem;}
-#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position: relative; height: 4.24rem; top: 0rem;;font-size: 0.99rem;}
-#u73{height: 4.24rem; width: 4.86rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.99rem;}
+#u75{width: 5.76rem; height: 5.68rem; position: absolute; top: 0rem; left: 0.72rem;;font-size: 0.99rem;}
+#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position: relative; height: 5.68rem; top: 0rem;;font-size: 0.99rem;}
+#u73{height: 5.68rem; width: 5.76rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
 #u73 .source { display: inline-block; }
 
 #u73 .author { display: inline-block; }
 #u73 .title { z-index: 1; }
 
 #u56{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u55{font-size: 0.48rem; line-height: 0.56rem; width: 4.86rem; position: absolute; top: -0.34rem; left: 0rem;;font-size: 0.48rem;}
+#u55{font-size: 0.48rem; line-height: 0.56rem; width: 5.04rem; position: absolute; top: 0.38rem; left: 0.36rem;;font-size: 0.48rem;}
 
-#u65{overflow: hidden; height: 4.24rem; width: 4.86rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u65{overflow: hidden; height: 5.68rem; width: 5.76rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
 #u60{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u59{height: 4.24rem; width: 5.4887rem; position: absolute; left: -0.4241rem; top: -1.06rem;;font-size: 0.16rem;}
+#u59{height: 5.68rem; width: 7.3527rem; position: absolute; left: -0.9434rem; top: -1.06rem;;font-size: 0.16rem;}
 
-#u72{z-index: 1; font-size: 0.16rem; line-height: 0.24rem; position: absolute; top: 3.76rem; left: 1.17rem;;font-size: 0.16rem;}
+#u72{z-index: 1; font-size: 0.16rem; line-height: 0.24rem; position: absolute; top: 4.48rem; left: 1.62rem;;font-size: 0.16rem;}
 #u68{font-size: 0.16rem;}
 #u67{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
 
 #u71{z-index: 1; font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
 #u70{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-@keyframes appearance-u75-173-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
+@keyframes appearance-u75-232-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 2.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.08,0,1);opacity:0.303;}
 5.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.23,0,1);opacity:0.438;}
 7.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,16.32,0,1);opacity:0.547;}
@@ -563,15 +562,15 @@ div.layout section { display: inline-block; }
 97.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u75-173-0-1440 #u75 {
-animation: appearance-u75-173-0-1440 2432ms forwards;
+.appearance-u75-232-0-1440 #u75 {
+animation: appearance-u75-232-0-1440 2432ms forwards;
 animation-play-state: paused;
 }
-.appearance-u75-173-0-1440-running #u75 {
+.appearance-u75-232-0-1440-running #u75 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes appearance-u75-173-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
+@-webkit-keyframes appearance-u75-232-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 2.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.08,0,1);opacity:0.303;}
 5.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.23,0,1);opacity:0.438;}
 7.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,16.32,0,1);opacity:0.547;}
@@ -611,15 +610,15 @@ animation-play-state: running;
 97.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u75-173-0-1440 #u75 {
--webkit-animation: appearance-u75-173-0-1440 2432ms forwards;
+.appearance-u75-232-0-1440 #u75 {
+-webkit-animation: appearance-u75-232-0-1440 2432ms forwards;
 -webkit-animation-play-state: paused;
 }
-.appearance-u75-173-0-1440-running #u75 {
+.appearance-u75-232-0-1440-running #u75 {
 -webkit-animation-play-state: running;
 }
 
-@keyframes disappearance-u75-173-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
+@keyframes disappearance-u75-232-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
 2.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.91,0,1);opacity:0.697;}
 5.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.76,0,1);opacity:0.562;}
 7.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.67,0,1);opacity:0.454;}
@@ -659,15 +658,15 @@ animation-play-state: running;
 97.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
 100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u75-173-0-1440 #u75 {
-animation: disappearance-u75-173-0-1440 2432ms forwards;
+.disappearance-u75-232-0-1440 #u75 {
+animation: disappearance-u75-232-0-1440 2432ms forwards;
 animation-play-state: paused;
 }
-.disappearance-u75-173-0-1440-running #u75 {
+.disappearance-u75-232-0-1440-running #u75 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes disappearance-u75-173-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
+@-webkit-keyframes disappearance-u75-232-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
 2.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.91,0,1);opacity:0.697;}
 5.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.76,0,1);opacity:0.562;}
 7.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.67,0,1);opacity:0.454;}
@@ -707,11 +706,11 @@ animation-play-state: running;
 97.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
 100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u75-173-0-1440 #u75 {
--webkit-animation: disappearance-u75-173-0-1440 2432ms forwards;
+.disappearance-u75-232-0-1440 #u75 {
+-webkit-animation: disappearance-u75-232-0-1440 2432ms forwards;
 -webkit-animation-play-state: paused;
 }
-.disappearance-u75-173-0-1440-running #u75 {
+.disappearance-u75-232-0-1440-running #u75 {
 -webkit-animation-play-state: running;
 }
 
@@ -813,11 +812,11 @@ displace-y = 0.5md;
 v-gutter-min: = 2.5md;
 v-gutter-max: = 4md;
 
-h-gutter: = 2md;
+h-gutter: = 1md;
 
-h-gutter-left == h-gutter / 8;
+h-gutter-left == h-gutter;
 h-gutter-right == h-gutter-left;
-h-gutter-middle == h-gutter;
+h-gutter-middle == h-gutter * 2;
 
     @if ::window[width] <= $taylorW/2 {
       v-gutter-min: = 1.5md;
@@ -973,25 +972,25 @@ p {
           </a>
         </aside>
         <section class="repost-bgmedia-title left section animating slide-in" id="u75">
-          <article class="repost post" id="u69f468dc-8acf-48fb-91cd-2500ff567a0a" style="position:relative"><style type="text/gss" scoped="scoped" id="u50">@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+          <article class="repost post" id="u69f468dc-8acf-48fb-91cd-2500ff567a0a" style="position:relative"><style type="text/gss" scoped="scoped" id="u50">@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0;
 block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u73"><style type="text/gss" scoped="scoped" id="u53">@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/variations/source-name.css;
+            <div class="block wrapper" id="u73"><style type="text/gss" scoped="scoped" id="u53">@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/variations/source-name.css;
 inner-gap = 1.5g;
-inner-gap-vertical: = 1md;
-inner-gap-horizontal: = 1md;
-outer-gap-left >= 1md !require;
-outer-gap-top >= 1md !require;
+inner-gap-vertical: = 2md;
+inner-gap-horizontal: = 2md;
+outer-gap-left >= 0md !require;
+outer-gap-top >= 0md !require;
 bg_media-opacity == .8;
 </style>
               <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u56">
@@ -1017,7 +1016,7 @@ img[height] == img[width] * (927/1200) !require;
 img[height] >= 927 * image-min-scale !require;
 img[height] <= 927 * image-max-scale !require;</style>
                 <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u60">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cdc1d3a53362196a2ef5ebd9d65072ef/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/75ee3640f2a3b8181d2dfed4de7def08/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=720&height=556.2&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cdc1d3a53362196a2ef5ebd9d65072ef/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True 1200w" sizes="(min-width: 1440px) 1440px, 100vw" id="u59" />
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/48ae54eda227133c0a75e23bcf22fa62/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0&stop2=1&color1=%235a858c&color2=%2370ccc7&opacity=1&srgb=True" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/a1d1101d19c8b3abfc4ec80c7a3f2235/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=720&height=556.2&stop1=0&stop2=1&color1=%235a858c&color2=%2370ccc7&opacity=1&srgb=True 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/48ae54eda227133c0a75e23bcf22fa62/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0&stop2=1&color1=%235a858c&color2=%2370ccc7&opacity=1&srgb=True 1200w" sizes="(min-width: 1440px) 1440px, 100vw" id="u59" />
                 </a><style type="text/gss" scoped="scoped" id="u62">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
@@ -1046,6 +1045,6 @@ img[height] <= 927 * image-max-scale !require;</style>
           </article>
         </section>
       </div>
-    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/assets/gss-init.js" id="u78"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u79"></script></body>
+    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/assets/gss-init.js" id="u78"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u79"></script></body>
 
 </html>
