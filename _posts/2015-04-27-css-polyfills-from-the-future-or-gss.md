@@ -30,4 +30,4 @@ _context: "http://schema.org"
 _type: MediaObject
 
 ---
-<article style=""><h1>CSS polyfills from the future &amp;vert; GSS</h1><p>GSS reimagines CSS layout & replaces the browser’s layout engine with one that harnesses the Cassowary Constraint Solver — the same algorithm Apple uses to compute native layout.</p><img src="http://gridstylesheets.org/assets/images/oreilly-fluent-cover-purple.jpg" /></article>
+<article style=""><h1>GSS: CSS polyfills from the future</h1><p>GSS reimagines CSS layout & replaces the browser’s layout engine with one that harnesses the Cassowary Constraint Solver — the same algorithm Apple uses to compute native layout.</p><img src="http://gridstylesheets.org/assets/images/Intro/CassowaryBird.png" /></article>
