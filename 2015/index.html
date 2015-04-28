@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="u70">
+<html id="u81">
 
   <head id="u33">
     <title id="u1">D4</title>
@@ -15,11 +15,11 @@
  .attribution {font-family: 'Open Sans';font-weight: 300;text-transform: uppercase;letter-spacing: .03em;}
  .layout-system .quote {font-family: 'Playfair Display';font-weight: 400;font-style: normal;}
  .layout-system .title {text-transform: inherit;}</style>
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" /><style type="text/css">
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" /><style type="text/css">
   html {
   width: 100%;
 }
@@ -115,52 +115,47 @@ html:not(.gss-ready) {
   outline: none;
 }
 </style>
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/layout.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/variables.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/debug.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/layout.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/variables.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/debug.gss" />
+    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss">
+.title {
+  width: == ^width;
+  height: <= ^height !medium100;
+  center-x: == ^center-x !medium100;
+  center-y: == ^center-y !medium100;
+  top: >= 0 !medium100;
+}
+
+.cover {
+  left: >= ^left;
+  width: == ^width;
+  height: == ^height !medium100;
+}
+
+.attribution {
+  width: == &intrinsic-width;
+  height: == &intrinsic-height;  
+  top: == ^(.title)[bottom] + 3g;
+  center-x: >= ^(.title)[center-x]; 
+}
+
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss">
+@v |-[inner-gap-top]-(.title)-[inner-gap-bottom]-| !require;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
+@v |(.cover)| !strong;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
 inner-gap-top >= inner-gap-vertical !require;
 inner-gap-bottom == inner-gap-top !require;
 inner-gap-top == inner-gap;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
 inner-gap-right == inner-gap-left !require;
 outer-gap-right == outer-gap-left !require;
 inner-gap-left >= inner-gap-horizontal !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss">
-left: == ^left;
-
-.title{
-  width: == (^ .cover)[width];
-  right: == (^ .cover)[left];
-  center-y: == (^ .cover)[center-y] !medium100;
-  z-index: 1;
-}
-
-.cover{
-  width: == ^width / 2;
-  width: <= ^width / 2;   
-  height: == 5md;
-}
-
-.attribution{
-  width: == &intrinsic-width;
-  max-width: <= ^(.title)[width];
-
-  height: == &intrinsic-height;
-  
-  top: == ^(.title)[bottom] + 1g;
-  left: >= ^(.title)[left];
-  center-x: == ^(.title)[center-x];
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss">
-@v |(.cover)| !strong;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/vfl/h-title-cover.gss">
-@h |(.title)(.cover)| !require;
-
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
 .title {
   z-index: 1;
   font-size: = 6g;
@@ -222,7 +217,7 @@ p {
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
 width: == intrinsic-width !require;
 top: == 0 !require;
 
@@ -240,7 +235,7 @@ top: == 0 !require;
   outer-gap-left >= 0 !require;
   outer-gap-right >= 0 !require;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
 block-gap-top == block-gap-vertical;
 block-gap-top >= block-gap-vertical !require;
 block-gap-top == block-gap-bottom !require;
@@ -250,7 +245,7 @@ block-gap     == block-gap-between;
 
 block-gap     == block-gap-top !require;
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
 block-gap-left == block-gap-right !require;
 block-gap-left >= block-gap-horizontal !require;
 block-gap-left == block-gap-horizontal !require;
@@ -361,25 +356,33 @@ ga('send', 'pageview');</script>
 
 #grid>div:nth-of-type(48){font-size: 0.99rem;}
 
-#u66{font-size: 0.99rem;}
-#u66:before{content: "97,120,141"; display: none;}
-#u65{position:relative;font-size: 0.99rem;}
-#u64{font-size: 0.99rem;}
-#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position:relative;font-size: 0.99rem;}
-#u62{font-size: 0.99rem;}
+#u77{font-size: 0.99rem;}
+#u77:before{content: "181,204,225"; display: none;}
+#u76{position:relative;font-size: 0.99rem;}
+#u47{font-size: 0.99rem;}
+#u39{font-size: 0.99rem;}
+
+#u46{font-size: 0.99rem;}
+#u43{font-size: 0.99rem;}
+
 #u45{font-size: 0.99rem;}
-#u44{font-size: 1.1583rem;}
 
-#u54{font-size: 0.99rem;}
-#u49{font-size: 0.99rem;}
-#u48{font-size: 0.99rem;}
-
-#u61{font-size: 0.99rem;}
-#u57{font-size: 0.99rem;}
+#u75{font-size: 0.99rem;}
+#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position:relative;font-size: 0.99rem;}
+#u73{font-size: 0.99rem;}
 #u56{font-size: 0.99rem;}
+#u55{font-size: 1.1583rem;}
 
+#u65{font-size: 0.99rem;}
 #u60{font-size: 0.99rem;}
 #u59{font-size: 0.99rem;}
+
+#u72{font-size: 0.99rem;}
+#u68{font-size: 0.99rem;}
+#u67{font-size: 0.99rem;}
+
+#u71{font-size: 0.99rem;}
+#u70{font-size: 0.99rem;}
 
 }
 @media (min-width: 721px) {
@@ -486,32 +489,41 @@ div.layout section { display: inline-block; }
 
 #grid>div:nth-of-type(48){width: 14.4rem; height: 1px; position: absolute; top: 20.87rem;;font-size: 0.99rem;}
 
-#u66{font-size: 0.99rem;}
-#u66:before{content: "80,92,102,109,120,131,141,147"; display: none;}
-#u65{position: relative; width: 14.4rem; top: 0rem; left: 0rem; height: 2.781rem;;font-size: 0.99rem;}
-#u64{width: 6.3rem; height: 2.781rem; position: absolute; top: 0rem; left: 0.18rem;;font-size: 0.99rem;}
-#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position: relative; height: 2.781rem; top: 0rem;;font-size: 0.99rem;}
-#u62{height: 2.781rem; width: 6.3rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
-#u62 .source { display: inline-block; }
+#u77{font-size: 0.99rem;}
+#u77:before{content: "176,193,215,231"; display: none;}
+#u76{position: relative; width: 14.4rem; left: 0rem; top: 0rem; height: 4.24rem;;font-size: 0.99rem;}
+#u76 .cta .cta-deco { text-align: center; }
 
-#u62 .author { display: inline-block; }
-#u62 .title { z-index: 1; }
-#u62 .title { z-index: 1; }
+#u47{width: 1.68rem; height: 1.68rem; position: absolute; left: 6.36rem; top: 2.76rem;;font-size: 0.99rem;}
+#u39{width: 1.68rem; height: 1.68rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
 
-#u45{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u44{font-size: 0.48rem; line-height: 0.56rem; width: 3.15rem; position: absolute; top: -2.1895rem; left: 0rem;;font-size: 0.48rem;}
+#u46{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
+#u43{font-size: 0.16rem;}
 
-#u54{overflow: hidden; height: 2.781rem; width: 3.15rem; position: absolute; left: 3.15rem; top: 0rem;;font-size: 0.99rem;}
-#u49{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u48{height: 2.781rem; width: 3.6rem; position: absolute; left: -0.297rem; top: -1.06rem;;font-size: 0.16rem;}
+#u45{font-size: 1.44rem; width: 1.68rem; position: absolute; left: 0rem; top: -0.19rem;;font-size: 1.44rem;}
 
-#u61{z-index: 1; font-size: 0.16rem; line-height: 0.24rem; max-width: 3.15rem; position: absolute; top: 3.9905rem; left: 0.315rem;;font-size: 0.16rem;}
-#u57{font-size: 0.16rem;}
+#u75{width: 6.3rem; height: 4.24rem; position: absolute; top: 0rem; left: 0.18rem;;font-size: 0.99rem;}
+#u69f468dc-8acf-48fb-91cd-2500ff567a0a{position: relative; height: 4.24rem; top: 0rem;;font-size: 0.99rem;}
+#u73{height: 4.24rem; width: 4.86rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.99rem;}
+#u73 .source { display: inline-block; }
+
+#u73 .author { display: inline-block; }
+#u73 .title { z-index: 1; }
+
 #u56{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
+#u55{font-size: 0.48rem; line-height: 0.56rem; width: 4.86rem; position: absolute; top: -0.34rem; left: 0rem;;font-size: 0.48rem;}
 
-#u60{z-index: 1; font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u59{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-@keyframes appearance-u64-113-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
+#u65{overflow: hidden; height: 4.24rem; width: 4.86rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u60{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
+#u59{height: 4.24rem; width: 5.4887rem; position: absolute; left: -0.4241rem; top: -1.06rem;;font-size: 0.16rem;}
+
+#u72{z-index: 1; font-size: 0.16rem; line-height: 0.24rem; position: absolute; top: 3.76rem; left: 1.17rem;;font-size: 0.16rem;}
+#u68{font-size: 0.16rem;}
+#u67{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
+
+#u71{z-index: 1; font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
+#u70{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
+@keyframes appearance-u75-173-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 2.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.08,0,1);opacity:0.303;}
 5.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.23,0,1);opacity:0.438;}
 7.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,16.32,0,1);opacity:0.547;}
@@ -551,15 +563,15 @@ div.layout section { display: inline-block; }
 97.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u64-113-0-1440 #u64 {
-animation: appearance-u64-113-0-1440 2432ms forwards;
+.appearance-u75-173-0-1440 #u75 {
+animation: appearance-u75-173-0-1440 2432ms forwards;
 animation-play-state: paused;
 }
-.appearance-u64-113-0-1440-running #u64 {
+.appearance-u75-173-0-1440-running #u75 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes appearance-u64-113-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
+@-webkit-keyframes appearance-u75-173-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 2.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.08,0,1);opacity:0.303;}
 5.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.23,0,1);opacity:0.438;}
 7.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,16.32,0,1);opacity:0.547;}
@@ -599,15 +611,15 @@ animation-play-state: running;
 97.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u64-113-0-1440 #u64 {
--webkit-animation: appearance-u64-113-0-1440 2432ms forwards;
+.appearance-u75-173-0-1440 #u75 {
+-webkit-animation: appearance-u75-173-0-1440 2432ms forwards;
 -webkit-animation-play-state: paused;
 }
-.appearance-u64-113-0-1440-running #u64 {
+.appearance-u75-173-0-1440-running #u75 {
 -webkit-animation-play-state: running;
 }
 
-@keyframes disappearance-u64-113-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
+@keyframes disappearance-u75-173-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
 2.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.91,0,1);opacity:0.697;}
 5.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.76,0,1);opacity:0.562;}
 7.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.67,0,1);opacity:0.454;}
@@ -647,15 +659,15 @@ animation-play-state: running;
 97.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
 100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u64-113-0-1440 #u64 {
-animation: disappearance-u64-113-0-1440 2432ms forwards;
+.disappearance-u75-173-0-1440 #u75 {
+animation: disappearance-u75-173-0-1440 2432ms forwards;
 animation-play-state: paused;
 }
-.disappearance-u64-113-0-1440-running #u64 {
+.disappearance-u75-173-0-1440-running #u75 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes disappearance-u64-113-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
+@-webkit-keyframes disappearance-u75-173-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
 2.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.91,0,1);opacity:0.697;}
 5.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.76,0,1);opacity:0.562;}
 7.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.67,0,1);opacity:0.454;}
@@ -695,18 +707,18 @@ animation-play-state: running;
 97.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
 100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u64-113-0-1440 #u64 {
--webkit-animation: disappearance-u64-113-0-1440 2432ms forwards;
+.disappearance-u75-173-0-1440 #u75 {
+-webkit-animation: disappearance-u75-173-0-1440 2432ms forwards;
 -webkit-animation-play-state: paused;
 }
-.disappearance-u64-113-0-1440-running #u64 {
+.disappearance-u75-173-0-1440-running #u75 {
 -webkit-animation-play-state: running;
 }
 
 
 }</style></head>
 
-  <body id="u69">
+  <body id="u80">
     <div id="grid">
       <div class="col1"></div>
       <div class="col2"></div>
@@ -757,8 +769,41 @@ animation-play-state: running;
       <div class="row29"></div>
       <div class="row30"></div>
     </div>
-    <div class="layout-system user artistic-d4 w-assets sections" id="u66">
-      <div class="layout two-columns bricks" style="position:relative" id="u65"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u36">section {
+    <div class="layout-system user artistic-d4 w-assets sections" id="u77">
+      <div class="layout two-columns bricks" style="position:relative" id="u76"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u36">.cta {
+  center-x: == ^center-x;
+  center-y: == ^top + 5md;
+  size: >= 21g !require;
+
+  .cta-circle {
+    size: == ^size;
+    position: == ^position;
+  }
+
+  .cta-text {
+    display: inline-block;
+    height: == ^height !require;
+    width: == ^width !require;
+
+    line-height: == &height;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .cta-deco {
+      // FIXME: Special case offset for "F" letter. 
+      // I used transform here so chrome doesn't crop it erroneously
+    translate-x: == -2;
+    text-align: center;
+
+    width: == ^width;
+    height: == &intrinsic-height;
+    center-y: == ^center-y - 3;
+    center-x: == ^center-x;
+  }
+}
+
+</style><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u38">section {
   width: <= $taylorW / 2;
 }
 
@@ -860,30 +905,99 @@ h-gutter-middle == h-gutter;
       margin-top: = ^shift-y * -1;
     }
 }</style>
-        <section class="repost-title-cover left section animating slide-in" id="u64">
-          <article class="repost post" id="u69f468dc-8acf-48fb-91cd-2500ff567a0a" style="position:relative"><style type="text/gss" scoped="scoped" id="u39">@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+        <aside class="cta follow" id="u47">
+          <div class="cta-circle" id="u39"></div><style scoped="scoped" type="text/gss" id="u41">.title {
+  z-index: 1;
+  font-size: = 6g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+.publisher {
+  z-index: = 1;
+  font-size: = 2g;
+  line-height: = &font-size;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+
+.attribution {
+  z-index: = 1;
+  font-size: = 2g;
+  line-height: = &font-size + 1g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+
+.cta-text {
+  font-size: = 2g;
+  line-height: = &font-size;
+}
+.cta-deco {
+  font-size: = 18g;
+  line-height: = &font-size - 2g;
+}
+
+.description {
+  font-size: = 3g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+.quote{
+  font-size: = 5g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+a {
+  font-size: = 2g;
+  line-height: = &font-size;
+  height: == &intrinsic-height !require;
+}
+
+.quote a {
+  font-size: = 5g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+p {
+  height: == &intrinsic-height !require;
+}
+
+</style>
+          <a href="https://twitter.com/d4tocchini" id="u46">
+            <span id="u43">Follow</span>
+            <span class="cta-deco" id="u45">F</span>
+          </a>
+        </aside>
+        <section class="repost-bgmedia-title left section animating slide-in" id="u75">
+          <article class="repost post" id="u69f468dc-8acf-48fb-91cd-2500ff567a0a" style="position:relative"><style type="text/gss" scoped="scoped" id="u50">@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0;
 block-gap-vertical = 0;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u62"><style type="text/gss" scoped="scoped" id="u42">@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/vfl/h-title-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/css/variations/source-name.css;
+            <div class="block wrapper" id="u73"><style type="text/gss" scoped="scoped" id="u53">@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/css/variations/source-name.css;
 inner-gap = 1.5g;
-picture-gap == 1md /4;
-inner-gap-vertical: = 0;
-inner-gap-horizontal: = 0;
+inner-gap-vertical: = 1md;
+inner-gap-horizontal: = 1md;
+outer-gap-left >= 1md !require;
+outer-gap-top >= 1md !require;
+bg_media-opacity == .8;
 </style>
-              <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u45">
-                <h1 class="title text" id="u44">Website builder The Grid gets Chrome extension, iOS app, & automatic image cropping</h1>
+              <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u56">
+                <h1 class="title text" id="u55">Website builder The Grid gets Chrome extension, iOS app, & automatic image cropping</h1>
               </a>
-              <div class="cover image" id="u54"><style type="text/gss" scoped="scoped" id="u47">overflow: hidden;
+              <div class="cover image" id="u65"><style type="text/gss" scoped="scoped" id="u58">overflow: hidden;
 "viewport"[top] == &top  !require;
 "viewport"[left] == &left  !require;
 "viewport"[height] == &height  !require;
@@ -902,13 +1016,13 @@ img[height] == img[width] * (927/1200) !require;
 /* enforce minimum scale*/
 img[height] >= 927 * image-min-scale !require;
 img[height] <= 927 * image-max-scale !require;</style>
-                <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u49">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cdc1d3a53362196a2ef5ebd9d65072ef/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/75ee3640f2a3b8181d2dfed4de7def08/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=720&height=556.2&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cdc1d3a53362196a2ef5ebd9d65072ef/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True 1200w" sizes="(min-width: 1440px) 1440px, 100vw" id="u48" />
-                </a><style type="text/gss" scoped="scoped" id="u51">/* define  blank spot */
+                <a href="http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/" id="u60">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cdc1d3a53362196a2ef5ebd9d65072ef/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/75ee3640f2a3b8181d2dfed4de7def08/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=720&height=556.2&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cdc1d3a53362196a2ef5ebd9d65072ef/gradientmap.jpg?input=http%3A%2F%2Fi0.wp.com%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2015%2F03%2FThe-Grid-layouts.jpg%3Ffit%3D1200%252C1200&width=1200&height=927&stop1=0.2&stop2=0.8&color2=%23d05388&opacity=0.4&srgb=True 1200w" sizes="(min-width: 1440px) 1440px, 100vw" id="u59" />
+                </a><style type="text/gss" scoped="scoped" id="u62">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  580 * image-scale !require;
-"space"[height] == 204 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u53">/* define  area of importance */
+"space"[height] == 204 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u64">/* define  area of importance */
 "scene"[x] == img[x] + 49 * image-scale !require;
 "scene"[y] == img[y] + 207 * image-scale !require;
 "scene"[width] ==  1150 * image-scale !require;
@@ -920,18 +1034,18 @@ img[height] <= 927 * image-max-scale !require;</style>
 
 @v |~("scene")~| in("viewport");
 @h |~("scene")~| in("viewport");</style></div>
-              <div class="attribution" id="u61">
-                <div class="author" id="u57">
-                  <a class="name text" href="http://venturebeat.com/author/jordan-novet/" id="u56">Jordan Novet</a>
+              <div class="attribution" id="u72">
+                <div class="author" id="u68">
+                  <a class="name text" href="http://venturebeat.com/author/jordan-novet/" id="u67">Jordan Novet</a>
                 </div>
-                <div class="publisher source" id="u60">
-                  <a href="http://venturebeat.com" id="u59">VentureBeat</a>
+                <div class="publisher source" id="u71">
+                  <a href="http://venturebeat.com" id="u70">VentureBeat</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
       </div>
-    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/assets/gss-init.js" id="u67"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.30/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u68"></script></body>
+    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/assets/gss-init.js" id="u78"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.31/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u79"></script></body>
 
 </html>
