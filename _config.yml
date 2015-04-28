@@ -2,7 +2,7 @@ name: D4
 title: "Dan Tocchini"
 favicon: "https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png"
 layout_spectrum: 0.8
-typography_spectrum: 0.8
+typography_spectrum: 0.97
 color:
   brandColors: 
     - "#66ccc0"
