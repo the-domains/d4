@@ -1,4 +1,5 @@
 name: D4
+title: "Dan Tocchini"
 favicon: "https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png"
 layout_spectrum: 0.8
 typography_spectrum: 0.8
@@ -12,7 +13,7 @@ color:
 purpose: 
   - 
     name: "follow"
-    item: "2f4afb84-83fd-4fd2-a8db-1e801cdea62f"
+    item: "fe330a10-e482-4901-9bb7-8e76adcb5aa7"
     url: "https://twitter.com/d4tocchini"
 analytics:
   google: UA-61994900-1
