@@ -36,7 +36,7 @@ description: "After over three and a half years of building, the team behind the
 datePublished: "2014-10-08T12:00:13.000Z"
 app_links: []
 title: Ex-Googler Launches The Grid Preordering Campaign for AI Web Design Platform
-dateModified: "2015-04-28T03:09:50.110Z"
+dateModified: "2015-04-28T03:13:09.718Z"
 sourcePath: _posts/2014-10-08-ex-googler-launches-the-grid-preordering-campaign-for-ai-web.md
 published: true
 authors: []
