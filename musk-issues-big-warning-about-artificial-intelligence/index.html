@@ -1,775 +1,65 @@
 <!DOCTYPE html>
-<html id="u83">
+<html id="u112">
 
-  <head id="u33">
+  <head id="u4">
     <title id="u1">D4</title>
     <meta charset="utf-8" id="u2" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" id="u3" /><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js" id="u4"></script><script id="u6">WebFont.load({"google":{"families":["Playfair Display:400,700","Domine:400,400italic,700,700italic"]}});</script><style type="text/css" id="u8">html {font-family: 'Domine';font-weight: 400;}
- .layout-system .hero {font-family: 'Playfair Display';font-weight: 400;}
- .layout-system .title {font-family: 'Playfair Display';}
- .layout-system .subtitle {font-family: 'Playfair Display';}
- .layout-system .description {font-family: 'Domine';}
- .layout-system .title {font-weight: 400;}
- .layout-system .subtitle {font-weight: 700;}
- a {font-family: 'Domine';font-weight: 700;}
- .attribution {font-family: 'Domine';font-weight: 400;text-transform: uppercase;letter-spacing: .07em;}
- .layout-system .quote {font-family: 'Playfair Display';font-weight: 400;font-style: italic;}
- .layout-system .subtitle {text-transform: uppercase;letter-spacing: .07em;}</style>
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" /><style type="text/css">
-  html {
-  width: 100%;
-}
-body {
-  width: 100%;
-  background: #faefda;
-  color: #5f4d5f;
-  overflow-x: hidden;
-}
-body:after {
-  content: "";
-  position: fixed;
-  left: 50%;
-  top: 0;
-  height: 100%;
-  border-right: 1px solid #dbc6bc;
-  opacity: .2;
-  z-index: -1;
-}
-body a,
-body .cta {
-  color: #d12164;
-  text-decoration: none;
-  display: inline-block;
-}
-*,
-*:before,
-*:after {
-  text-rendering: optimizeLegibility;
-  font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern=1";
-  box-sizing: inherit;
-  -webkit-font-smoothing: antialiased;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-weight: normal;
-  position: relative;
-  padding: 0;
-  margin: 0;
-}
-.center-line {
-  position: fixed;
-  left: 50%;
-  height: 100%;
-  border-left: 1px solid #dbc6bc;
-  opacity: .3;
-  top: 0;
-}
-article.post .cover img {
-  background-size: contain;
-  background-position: center;
-}
-article.post .title {
-  color: #66ccc0;
-  text-align: center;
-  line-height: 1em;
-}
-article.post .description {
-  color: #5f4d5f;
-}
-article.post .attribution .source {
-  text-align: center;
-  color: #dbc6bc;
-}
-article.post .attribution .author {
-  text-align: center;
-}
-article.post .attribution .name {
-  text-align: center;
-  color: #5f4d5f;
-}
-article.post .attribution .avatar {
-  background-size: cover;
-  border-radius: 30px;
-  opacity: .6;
-}
-article.post .text {
-  text-align: center;
-}
-
-</style><style type="text/css">
-  
-/*
-html:not(.gss-ready) {
-  opacity: 0;
-}
-*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: none;
-}
-</style>
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/layout.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/variables.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/debug.gss" />
-    <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss">
-.title {
-  width: == ^width - 1md;
-  height: <= ^height !medium100;
-  center-x: == ^center-x !medium100;
-  top: >= 0 !medium100;
-}
-
-.cover {
-  left: >= ^left;
-  width: == ^width !medium100;
-  height: == ^height !medium100;
-}
-
-.attribution {
-  width: == &intrinsic-width;
-  height: == &intrinsic-height;  
-  top: == ^(.title)[bottom] + 3g;
-  center-x: >= ^(.title)[center-x]; 
-}
-
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss">
-@v |-[inner-gap-top]-(.title)-[inner-gap-bottom]-| !require;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
-@v |(.cover)| !strong;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
-inner-gap-top >= inner-gap-vertical !require;
-inner-gap-bottom == inner-gap-top !require;
-inner-gap-top == inner-gap;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
-inner-gap-right == inner-gap-left !require;
-outer-gap-right == outer-gap-left !require;
-inner-gap-left >= inner-gap-horizontal !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss">
-.title {
-  z-index: 1;
-  font-size: = 6g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-.publisher {
-  z-index: = 1;
-  font-size: = 2g;
-  line-height: = &font-size;
-  width: == &intrinsic-width;
-  height: == &intrinsic-height !require;
-}
-
-.attribution {
-  z-index: = 1;
-  font-size: = 2g;
-  line-height: = &font-size + 1g;
-  width: == &intrinsic-width;
-  height: == &intrinsic-height !require;
-}
-
-.cta-text {
-  font-size: = 2g;
-  line-height: = &font-size;
-}
-.cta-deco {
-  font-size: = 18g;
-  line-height: = &font-size - 2g;
-}
-
-.description {
-  font-size: = 3g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-.quote{
-  font-size: = 5g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-a {
-  font-size: = 2g;
-  line-height: = &font-size;
-  height: == &intrinsic-height !require;
-}
-
-.quote a {
-  font-size: = 5g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-p {
-  height: == &intrinsic-height !require;
-}
-
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
-width: == intrinsic-width !require;
-top: == 0 !require;
-
-.block {
-  :first[top]   ==           ^block-gap-top     !require;
-  :next[top]    == &bottom + ^block-gap         !require;
-  :last[bottom] == ^height - ^block-gap-bottom  !require;
-
-  &outer-gap-left == 0;
-  &outer-gap-right == 0;
-
-  left:  ==          ^block-gap-left  + &outer-gap-left  !strong100;
-  right: == ^width - ^block-gap-right - &outer-gap-right !strong100;
-
-  outer-gap-left >= 0 !require;
-  outer-gap-right >= 0 !require;
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
-block-gap-top == block-gap-vertical;
-block-gap-top >= block-gap-vertical !require;
-block-gap-top == block-gap-bottom !require;
-
-
-block-gap     == block-gap-between;
-
-block-gap     == block-gap-top !require;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
-block-gap-left == block-gap-right !require;
-block-gap-left >= block-gap-horizontal !require;
-block-gap-left == block-gap-horizontal !require;
-
-</script><script id="u30">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-61994900-1', 'auto');
-ga('send', 'pageview');</script>
-    <link rel="shortcut icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png" id="u31" /><style id="gss-precomputed">
-@media (max-width: 720px) {
-#grid{font-size: 0.99rem;}
-#grid>div:nth-of-type(1){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(2){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(3){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(4){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(5){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(6){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(7){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(8){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(9){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(10){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(11){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(12){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(13){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(14){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(15){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(16){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(17){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(18){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(19){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(20){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(21){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(22){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(23){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(24){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(25){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(26){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(27){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(28){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(29){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(30){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(31){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(32){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(33){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(34){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(35){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(36){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(37){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(38){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(39){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(40){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(41){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(42){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(43){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(44){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(45){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(46){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(47){font-size: 0.99rem;}
-
-#grid>div:nth-of-type(48){font-size: 0.99rem;}
-
-#u79{font-size: 0.99rem;}
-#u79:before{content: "180,351"; display: none;}
-#u78{position:relative;font-size: 0.99rem;}
-#u47{font-size: 0.99rem;}
-#u39{font-size: 0.99rem;}
-
-#u46{font-size: 0.99rem;}
-#u43{font-size: 0.99rem;}
-
-#u45{font-size: 0.99rem;}
-
-#u77{font-size: 0.99rem;}
-#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position:relative;font-size: 0.99rem;}
-#u75{font-size: 0.99rem;}
-#u56{font-size: 0.99rem;}
-#u55{font-size: 1.1583rem;}
-
-#u67{font-size: 0.99rem;}
-#u60{font-size: 0.99rem;}
-#u59{font-size: 0.99rem;}
-
-#u74{font-size: 0.99rem;}
-#u70{font-size: 0.99rem;}
-#u69{font-size: 0.99rem;}
-
-#u73{font-size: 0.99rem;}
-#u72{font-size: 0.99rem;}
-
-}
-@media (min-width: 721px) {
-div.layout { display: block; width: 100%; }
-
-div.layout section { display: inline-block; }
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12, .col13, .col14, .col15, .col16, .col17, .col18, .col19, .col20 { background: none repeat scroll 0% 0% rgba(22, 22, 22, 0.05); }
-
-.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12, .row13, .row14, .row15, .row16, .row17, .row18, .row19, .row20, .row21, .row22, .row23, .row24, .row25, .row26, .row27, .row28, .row29, .row30 { background: none repeat scroll 0% 0% rgba(22, 22, 22, 0.05); }
-#grid{width: 14.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
-#grid>div:nth-of-type(1){width: 1px; height: 24.4rem; position: absolute; left: 0.71rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(2){width: 1px; height: 24.4rem; position: absolute; left: 1.43rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(3){width: 1px; height: 24.4rem; position: absolute; left: 2.15rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(4){width: 1px; height: 24.4rem; position: absolute; left: 2.87rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(5){width: 1px; height: 24.4rem; position: absolute; left: 3.59rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(6){width: 1px; height: 24.4rem; position: absolute; left: 4.31rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(7){width: 1px; height: 24.4rem; position: absolute; left: 5.03rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(8){width: 1px; height: 24.4rem; position: absolute; left: 5.75rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(9){width: 1px; height: 24.4rem; position: absolute; left: 6.47rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(10){width: 1px; height: 24.4rem; position: absolute; left: 7.19rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(11){width: 1px; height: 24.4rem; position: absolute; left: 7.91rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(12){width: 1px; height: 24.4rem; position: absolute; left: 8.63rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(13){width: 1px; height: 24.4rem; position: absolute; left: 9.35rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(14){width: 1px; height: 24.4rem; position: absolute; left: 10.07rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(15){width: 1px; height: 24.4rem; position: absolute; left: 10.79rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(16){width: 1px; height: 24.4rem; position: absolute; left: 11.51rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(17){width: 1px; height: 24.4rem; position: absolute; left: 12.23rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(18){width: 1px; height: 24.4rem; position: absolute; left: 12.95rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(19){height: 24.4rem; width: 1px; position: absolute; left: 13.67rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(20){height: 1px; width: 14.4rem; position: absolute; top: 0.71rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(21){height: 1px; width: 14.4rem; position: absolute; top: 1.43rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(22){height: 1px; width: 14.4rem; position: absolute; top: 2.15rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(23){height: 1px; width: 14.4rem; position: absolute; top: 2.87rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(24){height: 1px; width: 14.4rem; position: absolute; top: 3.59rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(25){height: 1px; width: 14.4rem; position: absolute; top: 4.31rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(26){height: 1px; width: 14.4rem; position: absolute; top: 5.03rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(27){height: 1px; width: 14.4rem; position: absolute; top: 5.75rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(28){height: 1px; width: 14.4rem; position: absolute; top: 6.47rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(29){height: 1px; width: 14.4rem; position: absolute; top: 7.19rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(30){height: 1px; width: 14.4rem; position: absolute; top: 7.91rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(31){height: 1px; width: 14.4rem; position: absolute; top: 8.63rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(32){height: 1px; width: 14.4rem; position: absolute; top: 9.35rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(33){height: 1px; width: 14.4rem; position: absolute; top: 10.07rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(34){height: 1px; width: 14.4rem; position: absolute; top: 10.79rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(35){height: 1px; width: 14.4rem; position: absolute; top: 11.51rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(36){height: 1px; width: 14.4rem; position: absolute; top: 12.23rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(37){height: 1px; width: 14.4rem; position: absolute; top: 12.95rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(38){height: 1px; width: 14.4rem; position: absolute; top: 13.67rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(39){height: 1px; width: 14.4rem; position: absolute; top: 14.39rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(40){height: 1px; width: 14.4rem; position: absolute; top: 15.11rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(41){height: 1px; width: 14.4rem; position: absolute; top: 15.83rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(42){height: 1px; width: 14.4rem; position: absolute; top: 16.55rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(43){height: 1px; width: 14.4rem; position: absolute; top: 17.27rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(44){height: 1px; width: 14.4rem; position: absolute; top: 17.99rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(45){height: 1px; width: 14.4rem; position: absolute; top: 18.71rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(46){height: 1px; width: 14.4rem; position: absolute; top: 19.43rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(47){height: 1px; width: 14.4rem; position: absolute; top: 20.15rem;;font-size: 0.99rem;}
-
-#grid>div:nth-of-type(48){width: 14.4rem; height: 1px; position: absolute; top: 20.87rem;;font-size: 0.99rem;}
-
-#u79{font-size: 0.99rem;}
-#u79:before{content: "172,186"; display: none;}
-#u78{position: relative; width: 14.4rem; left: 0rem; top: 0rem; height: 4.56rem;;font-size: 0.99rem;}
-#u78 .cta .cta-deco { text-align: center; }
-
-#u47{width: 1.68rem; height: 1.68rem; position: absolute; left: 6.36rem; top: 2.76rem;;font-size: 0.99rem;}
-#u39{width: 1.68rem; height: 1.68rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
-
-#u46{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u43{font-size: 0.16rem;}
-
-#u45{font-size: 1.44rem; width: 1.68rem; position: absolute; left: 0rem; top: -0.04rem;;font-size: 1.44rem;}
-
-#u77{width: 5.76rem; height: 4.56rem; position: absolute; top: 0rem; left: 0.72rem;;font-size: 0.99rem;}
-#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 4.56rem; top: 0rem;;font-size: 0.99rem;}
-#u75{height: 4.56rem; width: 5.76rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
-#u75 .source { display: inline-block; }
-
-#u75 .author { display: inline-block; }
-#u75 .title { z-index: 1; }
-
-#u56{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u55{font-size: 0.48rem; line-height: 0.56rem; width: 5.04rem; position: absolute; top: 0.54rem; left: 0.36rem;;font-size: 0.48rem;}
-
-#u67{overflow: hidden; height: 4.56rem; width: 5.76rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
-#u60{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u59{height: 4.56rem; width: 9.12rem; position: absolute; left: -2.8771rem; top: -0.9rem;;font-size: 0.16rem;}
-
-#u74{z-index: 1; font-size: 0.16rem; line-height: 0.24rem; position: absolute; top: 3.36rem; left: 0.57rem;;font-size: 0.16rem;}
-#u70{font-size: 0.16rem;}
-#u69{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-
-#u73{z-index: 1; font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-#u72{font-size: 0.16rem; line-height: 0.16rem;;font-size: 0.16rem;}
-@keyframes appearance-u77-186-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-2.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.08,0,1);opacity:0.303;}
-5.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.23,0,1);opacity:0.438;}
-7.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,16.32,0,1);opacity:0.547;}
-10.526% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,13.16,0,1);opacity:0.634;}
-13.158% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.62,0,1);opacity:0.705;}
-15.789% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,8.56,0,1);opacity:0.762;}
-18.421% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.91,0,1);opacity:0.808;}
-21.053% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.57,0,1);opacity:0.845;}
-23.684% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.49,0,1);opacity:0.875;}
-26.316% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.62,0,1);opacity:0.899;}
-28.947% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.92,0,1);opacity:0.919;}
-31.579% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.36,0,1);opacity:0.934;}
-34.211% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.9,0,1);opacity:0.947;}
-36.842% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.53,0,1);opacity:0.957;}
-39.474% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.24,0,1);opacity:0.966;}
-42.105% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1);opacity:0.972;}
-44.737% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.81,0,1);opacity:0.978;}
-47.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.65,0,1);opacity:0.982;}
-50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.52,0,1);opacity:0.985;}
-52.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.42,0,1);opacity:0.988;}
-55.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.991;}
-57.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.27,0,1);opacity:0.992;}
-60.526% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.22,0,1);opacity:0.994;}
-63.158% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.18,0,1);opacity:0.995;}
-65.789% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.18,0,1);opacity:0.995;}
-68.421% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.12,0,1);opacity:0.997;}
-71.053% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.12,0,1);opacity:0.997;}
-73.684% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-76.316% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-78.947% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-81.579% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-84.211% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-86.842% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-89.474% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-92.105% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-94.737% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-97.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-100% {opacity:1;}
-}
-.appearance-u77-186-0-1440 #u77 {
-animation: appearance-u77-186-0-1440 2432ms forwards;
-animation-play-state: paused;
-}
-.appearance-u77-186-0-1440-running #u77 {
-animation-play-state: running;
-}
-
-@-webkit-keyframes appearance-u77-186-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-2.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.08,0,1);opacity:0.303;}
-5.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.23,0,1);opacity:0.438;}
-7.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,16.32,0,1);opacity:0.547;}
-10.526% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,13.16,0,1);opacity:0.634;}
-13.158% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.62,0,1);opacity:0.705;}
-15.789% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,8.56,0,1);opacity:0.762;}
-18.421% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.91,0,1);opacity:0.808;}
-21.053% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.57,0,1);opacity:0.845;}
-23.684% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.49,0,1);opacity:0.875;}
-26.316% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.62,0,1);opacity:0.899;}
-28.947% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.92,0,1);opacity:0.919;}
-31.579% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.36,0,1);opacity:0.934;}
-34.211% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.9,0,1);opacity:0.947;}
-36.842% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.53,0,1);opacity:0.957;}
-39.474% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.24,0,1);opacity:0.966;}
-42.105% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1);opacity:0.972;}
-44.737% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.81,0,1);opacity:0.978;}
-47.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.65,0,1);opacity:0.982;}
-50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.52,0,1);opacity:0.985;}
-52.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.42,0,1);opacity:0.988;}
-55.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.991;}
-57.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.27,0,1);opacity:0.992;}
-60.526% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.22,0,1);opacity:0.994;}
-63.158% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.18,0,1);opacity:0.995;}
-65.789% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.18,0,1);opacity:0.995;}
-68.421% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.12,0,1);opacity:0.997;}
-71.053% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.12,0,1);opacity:0.997;}
-73.684% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-76.316% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-78.947% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-81.579% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-84.211% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-86.842% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-89.474% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-92.105% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-94.737% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-97.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-100% {opacity:1;}
-}
-.appearance-u77-186-0-1440 #u77 {
--webkit-animation: appearance-u77-186-0-1440 2432ms forwards;
--webkit-animation-play-state: paused;
-}
-.appearance-u77-186-0-1440-running #u77 {
--webkit-animation-play-state: running;
-}
-
-@keyframes disappearance-u77-186-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
-2.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.91,0,1);opacity:0.697;}
-5.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.76,0,1);opacity:0.562;}
-7.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.67,0,1);opacity:0.454;}
-10.526% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,22.83,0,1);opacity:0.366;}
-13.158% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.38,0,1);opacity:0.295;}
-15.789% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,27.43,0,1);opacity:0.238;}
-18.421% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,29.09,0,1);opacity:0.192;}
-21.053% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.43,0,1);opacity:0.155;}
-23.684% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,31.5,0,1);opacity:0.125;}
-26.316% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.37,0,1);opacity:0.101;}
-28.947% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.07,0,1);opacity:0.081;}
-31.579% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.64,0,1);opacity:0.066;}
-34.211% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.1,0,1);opacity:0.053;}
-36.842% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.46,0,1);opacity:0.043;}
-39.474% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.76,0,1);opacity:0.034;}
-42.105% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35,0,1);opacity:0.028;}
-44.737% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.19,0,1);opacity:0.022;}
-47.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.35,0,1);opacity:0.018;}
-50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.48,0,1);opacity:0.015;}
-52.632% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.58,0,1);opacity:0.012;}
-55.263% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.009;}
-57.895% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.72,0,1);opacity:0.008;}
-60.526% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.78,0,1);opacity:0.006;}
-63.158% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.82,0,1);opacity:0.005;}
-65.789% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.82,0,1);opacity:0.005;}
-68.421% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.88,0,1);opacity:0.003;}
-71.053% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.88,0,1);opacity:0.003;}
-73.684% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-76.316% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-78.947% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-81.579% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-84.211% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-86.842% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-89.474% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-92.105% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-94.737% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-97.368% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-}
-.disappearance-u77-186-0-1440 #u77 {
-animation: disappearance-u77-186-0-1440 2432ms forwards;
-animation-play-state: paused;
-}
-.disappearance-u77-186-0-1440-running #u77 {
-animation-play-state: running;
-}
-
-@-webkit-keyframes disappearance-u77-186-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.99,0,1);opacity:0.861;}
-2.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,10.91,0,1);opacity:0.697;}
-5.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.76,0,1);opacity:0.562;}
-7.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.67,0,1);opacity:0.454;}
-10.526% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,22.83,0,1);opacity:0.366;}
-13.158% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.38,0,1);opacity:0.295;}
-15.789% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,27.43,0,1);opacity:0.238;}
-18.421% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,29.09,0,1);opacity:0.192;}
-21.053% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.43,0,1);opacity:0.155;}
-23.684% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,31.5,0,1);opacity:0.125;}
-26.316% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.37,0,1);opacity:0.101;}
-28.947% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.07,0,1);opacity:0.081;}
-31.579% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.64,0,1);opacity:0.066;}
-34.211% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.1,0,1);opacity:0.053;}
-36.842% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.46,0,1);opacity:0.043;}
-39.474% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.76,0,1);opacity:0.034;}
-42.105% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35,0,1);opacity:0.028;}
-44.737% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.19,0,1);opacity:0.022;}
-47.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.35,0,1);opacity:0.018;}
-50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.48,0,1);opacity:0.015;}
-52.632% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.58,0,1);opacity:0.012;}
-55.263% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.009;}
-57.895% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.72,0,1);opacity:0.008;}
-60.526% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.78,0,1);opacity:0.006;}
-63.158% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.82,0,1);opacity:0.005;}
-65.789% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.82,0,1);opacity:0.005;}
-68.421% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.88,0,1);opacity:0.003;}
-71.053% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.88,0,1);opacity:0.003;}
-73.684% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-76.316% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-78.947% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-81.579% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-84.211% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-86.842% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-89.474% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-92.105% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-94.737% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-97.368% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-}
-.disappearance-u77-186-0-1440 #u77 {
--webkit-animation: disappearance-u77-186-0-1440 2432ms forwards;
--webkit-animation-play-state: paused;
-}
-.disappearance-u77-186-0-1440-running #u77 {
--webkit-animation-play-state: running;
-}
-
-
-}</style></head>
-
-  <body id="u82">
-    <div id="grid">
-      <div class="col1"></div>
-      <div class="col2"></div>
-      <div class="col3"></div>
-      <div class="col4"></div>
-      <div class="col5"></div>
-      <div class="col6"></div>
-      <div class="col7"></div>
-      <div class="col8"></div>
-      <div class="col9"></div>
-      <div class="col10"></div>
-      <div class="col11"></div>
-      <div class="col12"></div>
-      <div class="col13"></div>
-      <div class="col15"></div>
-      <div class="col16"></div>
-      <div class="col17"></div>
-      <div class="col18"></div>
-      <div class="col19"></div>
-      <div class="col20"></div>
-      <div class="row1"></div>
-      <div class="row2"></div>
-      <div class="row3"></div>
-      <div class="row4"></div>
-      <div class="row5"></div>
-      <div class="row6"></div>
-      <div class="row7"></div>
-      <div class="row8"></div>
-      <div class="row9"></div>
-      <div class="row10"></div>
-      <div class="row11"></div>
-      <div class="row12"></div>
-      <div class="row13"></div>
-      <div class="row15"></div>
-      <div class="row16"></div>
-      <div class="row17"></div>
-      <div class="row18"></div>
-      <div class="row19"></div>
-      <div class="row20"></div>
-      <div class="row21"></div>
-      <div class="row22"></div>
-      <div class="row23"></div>
-      <div class="row24"></div>
-      <div class="row25"></div>
-      <div class="row26"></div>
-      <div class="row27"></div>
-      <div class="row28"></div>
-      <div class="row29"></div>
-      <div class="row30"></div>
-    </div>
-    <div class="layout-system user artistic-d4 w-assets sections" id="u79">
-      <div class="layout two-columns bricks" style="position:relative" id="u78"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u36">.cta {
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="u3" />
+  </head>
+
+  <body id="u111">
+    <!-- <div id="grid">
+  <div class="col1"></div>
+  <div class="col2"></div>
+  <div class="col3"></div>
+  <div class="col4"></div>
+  <div class="col5"></div>
+  <div class="col6"></div>
+  <div class="col7"></div>
+  <div class="col8"></div>
+  <div class="col9"></div>
+  <div class="col10"></div>
+  <div class="col11"></div>
+  <div class="col12"></div>
+  <div class="col13"></div>
+  <div class="col15"></div>
+  <div class="col16"></div>
+  <div class="col17"></div>
+  <div class="col18"></div>
+  <div class="col19"></div>
+  <div class="col20"></div>
+  <div class="row1"></div>
+  <div class="row2"></div>
+  <div class="row3"></div>
+  <div class="row4"></div>
+  <div class="row5"></div>
+  <div class="row6"></div>
+  <div class="row7"></div>
+  <div class="row8"></div>
+  <div class="row9"></div>
+  <div class="row10"></div>
+  <div class="row11"></div>
+  <div class="row12"></div>
+  <div class="row13"></div>
+  <div class="row15"></div>
+  <div class="row16"></div>
+  <div class="row17"></div>
+  <div class="row18"></div>
+  <div class="row19"></div>
+  <div class="row20"></div>
+  <div class="row21"></div>
+  <div class="row22"></div>
+  <div class="row23"></div>
+  <div class="row24"></div>
+  <div class="row25"></div>
+  <div class="row26"></div>
+  <div class="row27"></div>
+  <div class="row28"></div>
+  <div class="row29"></div>
+  <div class="row30"></div>
+</div> -->
+    <div class="layout-system user artistic-d4 w-assets sections" id="u69">
+      <div class="layout two-columns bricks" style="position:relative" id="u18"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u7">.cta {
   center-x: == ^center-x;
   center-y: == ^top + 5md;
   size: >= 21g !require;
@@ -781,13 +71,28 @@ animation-play-state: running;
 
   .cta-text {
     display: inline-block;
-    height: == ^height !require;
-    width: == ^width !require;
+    height: == &intrinsic-height;
+    width: == &intrinsic-width;
+    center-x: == ^center-x;
+    center-y: == ^center-y;
 
     line-height: == &height;
     text-align: center;
     z-index: 2;
   }
+
+  // .cta-text {
+  //   display: inline-block;
+  //   height: == &intrinsic-height;
+  //   width: == &intrinsic-width;
+  //   center-x: == ^center-x;
+  //   center-y: == ^center-y;
+
+  //   line-height: == &height;
+  //   // text-align: center;
+  //   z-index: 2;
+  // }
+
 
   .cta-deco {
       // FIXME: Special case offset for "F" letter. 
@@ -802,7 +107,11 @@ animation-play-state: running;
   }
 }
 
-</style><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u38">section {
+</style><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u9">margin-top: = 1md;
+margin-bottom: = 1md;
+
+
+section {
   width: <= $taylorW / 2;
 }
 
@@ -812,11 +121,11 @@ displace-y = 0.5md;
 v-gutter-min: = 2.5md;
 v-gutter-max: = 4md;
 
-h-gutter: = 1md;
+h-gutter: = 2md;
 
-h-gutter-left == h-gutter;
+h-gutter-left == h-gutter / 8;
 h-gutter-right == h-gutter-left;
-h-gutter-middle == h-gutter * 2;
+h-gutter-middle == h-gutter;
 
     @if ::window[width] <= $taylorW/2 {
       v-gutter-min: = 1.5md;
@@ -853,6 +162,14 @@ h-gutter-middle == h-gutter * 2;
     section.right {
       left: == ^center-x + ^h-gutter-middle / 2;
       right: == ^right - ^h-gutter-right;
+    }
+    section.wide.left {
+      left: == ^left !strong;
+      right: == ^center-x !strong;
+    }
+    section.wide.right {
+      left: == ^center-x !strong;
+      right: == ^right !strong;
     }
 
     //rowtop   bricks stagger
@@ -904,29 +221,28 @@ h-gutter-middle == h-gutter * 2;
       margin-top: = ^shift-y * -1;
     }
 }</style>
-        <aside class="cta follow" id="u47">
-          <div class="cta-circle" id="u39"></div><style scoped="scoped" type="text/gss" id="u41">.title {
-  z-index: 1;
+        <aside class="cta follow" id="u17">
+          <div class="cta-circle" id="u10"></div><style scoped="scoped" type="text/gss" id="u12">.title {
+  z-index: 2;
   font-size: = 6g;
   line-height: = &font-size + 1g;
   height: == &intrinsic-height !require;
 }
 
-.publisher {
-  z-index: = 1;
-  font-size: = 2g;
-  line-height: = &font-size;
-  width: == &intrinsic-width;
-  height: == &intrinsic-height !require;
-}
-
 .attribution {
-  z-index: = 1;
+  z-index: 2;
   font-size: = 2g;
   line-height: = &font-size + 1g;
   width: == &intrinsic-width;
   height: == &intrinsic-height !require;
 }
+.paragraph {
+  font-size: = 2g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+
 
 .cta-text {
   font-size: = 2g;
@@ -937,73 +253,104 @@ h-gutter-middle == h-gutter * 2;
   line-height: = &font-size - 2g;
 }
 
-.description {
-  font-size: = 3g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-.quote{
-  font-size: = 5g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-a {
-  font-size: = 2g;
-  line-height: = &font-size;
-  height: == &intrinsic-height !require;
-}
-
-.quote a {
-  font-size: = 5g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-p {
-  height: == &intrinsic-height !require;
+.play-button{
+  font-size: == 2g;
+  center-y: == (^ .cover)[center-y];
+  center-x: == (^ .cover)[center-x];
+  width: == &intrinsic-width;
+  height: == &intrinsic-height;
 }
 
 </style>
-          <a href="https://twitter.com/d4tocchini" id="u46">
-            <span id="u43">Follow</span>
-            <span class="cta-deco" id="u45">F</span>
+          <a href="https://twitter.com/d4tocchini" id="u16">
+            <span class="cta-text" id="u14">Follow</span>
+            <span class="cta-deco" id="u15"></span>
           </a>
         </aside>
-        <section class="repost-bgmedia-title left section animating slide-in" id="u77">
-          <article class="repost post" id="ufe330a10-e482-4901-9bb7-8e76adcb5aa7" style="position:relative"><style type="text/gss" scoped="scoped" id="u50">@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
-block-gap-horizontal = 0;
+      </div>
+      <div class="layout shift" style="position:relative" id="u68"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u20">margin-top = 2md;
+margin-bottom == (.left-part .description)[height];
+
+//col 1 without asides
+section {
+  // height == 0;
+
+  // make section want to be small
+  // stack sections vertically
+  :first[top] == ^top !require;
+  :last[bottom] == ^height !require;
+  :next[top] == &bottom + ^v-gutter-min !require;
+}
+
+section {
+  height: == article[height] !require;
+  width: <= ::window[width] !require;
+
+  // offset horizontally
+  left: == ^left + ^h-gutter-left !require;
+  right: == ^right - ^h-gutter-right !require;
+}
+
+
+logo-width = 4md;
+
+//displace-x = 0.5md;
+displace-y = 0.5md;
+
+v-gutter-min: = 0md;
+v-gutter-max: = 3md;
+
+h-gutter: = 0;
+
+equal-image-scale == .cover[image-scale] !require;
+equal-image-height == .cover[height] !require;
+
+//gutter between
+h-gutter-left == h-gutter / 2 !require;
+h-gutter-right == h-gutter-left !require;
+h-gutter-middle == h-gutter !require;
+</style>
+        <section class="split-img-header section header" id="u67">
+          <article class="with-face header post equal-widths equal-heights" id="ufe330a10-e482-4901-9bb7-8e76adcb5aa7" style="position:relative"><style type="text/gss" scoped="scoped" id="u23">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-horizontal.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-shifted.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/alignment/align-shift-face.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/ctas/logo-cta.gss;
+block-gap-horizontal = 1md;
 block-gap-vertical = 0;
 block-gap-between = 0;
+outer-gap-top == 0;
+outer-gap-bottom == 0;
+//shift = -2md;
+logo-width = 4md;
+displace-y = 0.5md;
 </style>
-            <div class="block wrapper" id="u75"><style type="text/gss" scoped="scoped" id="u53">@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/variations/bgmedia-title.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-title.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/typography/repost-typography-small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/css/variations/source-name.css;
-inner-gap = 1.5g;
-inner-gap-vertical: = 2md;
-inner-gap-horizontal: = 2md;
-outer-gap-left >= 0md !require;
-outer-gap-top >= 0md !require;
-bg_media-opacity == .8;
+            <div class="block left-part left tilt heavy-with-offset animating elevate wrapper" id="u40"><style type="text/gss" scoped="scoped" id="u26">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/variations/source-name.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/split-header-description.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss;
+inner-gap = .5g;
+inner-gap-vertical: = 1.5md;
+inner-gap-horizontal: = 0.5md;
+image-height: = 5md;
 </style>
-              <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u56">
-                <h1 class="title text" id="u55">Musk Issues Big Warning About Artificial Intelligence</h1>
-              </a>
-              <div class="cover image" id="u67"><style type="text/gss" scoped="scoped" id="u58">overflow: hidden;
-"viewport"[top] == &top  !require;
-"viewport"[left] == &left  !require;
-"viewport"[height] == &height  !require;
-"viewport"[width] == &width  !require;
+              <div class="cover image" id="u37"><style type="text/gss" scoped="scoped" id="u28">overflow: hidden;
+"viewport"[top] == &top px  !require;
+"viewport"[left] == &left  px !require;
+"viewport"[height] == &height px  !require;
+"viewport"[width] == &width  px !require;
 
-@v |~("viewport")~| in(img) !strong900;
-@h |~("viewport")~| in(img) !strong900;
+@v |~[cover-v-gap]~("viewport")~[cover-v-gap]~| in(img) !strong900;
+@h |~[cover-h-gap]~("viewport")~[cover-h-gap]~| in(img) !strong900;
+
+cover-h-gap == 0 !strong;
+cover-v-gap == 0 !strong;
 
 image-min-scale = 0.3;
 image-max-scale = 1;
@@ -1015,9 +362,9 @@ img[height] == img[width] * (1000/2000) !require;
 /* enforce minimum scale*/
 img[height] >= 1000 * image-min-scale !require;
 img[height] <= 1000 * image-max-scale !require;</style>
-                <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u60">
-                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/fb5e9435a73ca48b11618a773e40389e/gradientmap.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000&stop1=0&stop2=1&color1=%235a858c&color2=%2370ccc7&opacity=1&srgb=True" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/94a509a485868575b8e51122c5a228c6/gradientmap.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=720&height=360&stop1=0&stop2=1&color1=%235a858c&color2=%2370ccc7&opacity=1&srgb=True 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/b28e919ab991363c5105c94b1f0446e4/gradientmap.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=1440&height=720&stop1=0&stop2=1&color1=%235a858c&color2=%2370ccc7&opacity=1&srgb=True 1440w" sizes="(min-width: 1440px) 1440px, 100vw" id="u59" />
-                </a><style type="text/gss" scoped="scoped" id="u62">/* define  area of importance */
+                <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u30">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/389544c432a03ef9f440d2da6f535940/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cc3681d839aaaa5690321654773784e5/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=720&height=360 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/00ab8676ea0010f5bc246951e234c024/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=1440&height=720 1440w" sizes="(min-width: 1440px) 1440px, 100vw" id="u29" />
+                </a><style type="text/gss" scoped="scoped" id="u32">/* define  area of importance */
 "face"[x] == img[x] + 630.9370874474367 * image-scale !require;
 "face"[y] == img[y] + 197.83922654607397 * image-scale !require;
 "face"[width] ==  473.4469562105775 * image-scale !require;
@@ -1028,11 +375,11 @@ img[height] <= 1000 * image-max-scale !require;</style>
 "face"[center-y] == "viewport"[center-y];
 
 @v |~("face")~| in("viewport") !medium500;
-@h |~("face")~| in("viewport") !medium500;</style><style type="text/gss" scoped="scoped" id="u64">/* define  blank spot */
+@h |~("face")~| in("viewport") !medium500;</style><style type="text/gss" scoped="scoped" id="u34">/* define  blank spot */
 "space"[x] == img[x] + 0 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  1503.90625 * image-scale !require;
-"space"[height] == 1019.53125 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u66">/* define  area of importance */
+"space"[height] == 1019.53125 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u36">/* define  area of importance */
 "scene"[x] == img[x] + 1570.3125 * image-scale !require;
 "scene"[y] == img[y] + 677.734375 * image-scale !require;
 "scene"[width] ==  154.296875 * image-scale !require;
@@ -1044,18 +391,774 @@ img[height] <= 1000 * image-max-scale !require;</style>
 
 @v |~("scene")~| in("viewport");
 @h |~("scene")~| in("viewport");</style></div>
-              <div class="attribution" id="u74">
-                <div class="author" id="u70">
-                  <a class="name text" href="http://www.huffingtonpost.com/macrinac-white/" id="u69">Macrina Cooper-White</a>
+              <p class="description text split-block-description" id="u39">Elon Musk is no Luddite, but that doesn't mean he's eager to embrace all new technology. "I think we should be very careful about artificial intelligence," the CEO of both SpaceX and Tesla, said Friday in a talk at MIT in Cambridge, Mass.</p>
+            </div>
+            <div class="aside wrapper" id="u43"><style type="text/gss" scoped="scoped" id="u42">inner-gap = .5g;
+inner-gap-vertical: = 1.5md;
+inner-gap-horizontal: = 0.5md;
+</style></div>
+            <div class="block right-part right tilt heavy animating elevate wrapper" id="u65"><style type="text/gss" scoped="scoped" id="u46">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/large.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/variations/author-header.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/author-header.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/block-top.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/block-left.gss;
+inner-gap = .5g;
+inner-gap-vertical: = 1.5md;
+inner-gap-horizontal: = 0.5md;
+</style>
+              <div class="cover image" id="u57"><style type="text/gss" scoped="scoped" id="u48">overflow: hidden;
+"viewport"[top] == &top px  !require;
+"viewport"[left] == &left  px !require;
+"viewport"[height] == &height px  !require;
+"viewport"[width] == &width  px !require;
+
+@v |~[cover-v-gap]~("viewport")~[cover-v-gap]~| in(img) !strong900;
+@h |~[cover-h-gap]~("viewport")~[cover-h-gap]~| in(img) !strong900;
+
+cover-h-gap == 0 !strong;
+cover-v-gap == 0 !strong;
+
+image-min-scale = 0.3;
+image-max-scale = 1;
+
+/* Define image dimensions and ratio */
+image-scale == img[width] / 2000 !require;
+img[height] == img[width] * (1000/2000) !require;
+
+/* enforce minimum scale*/
+img[height] >= 1000 * image-min-scale !require;
+img[height] <= 1000 * image-max-scale !require;</style>
+                <a href="http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html" id="u50">
+                  <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/389544c432a03ef9f440d2da6f535940/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=2000&height=1000" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/cc3681d839aaaa5690321654773784e5/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=720&height=360 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/00ab8676ea0010f5bc246951e234c024/passthrough.jpg?input=http%3A%2F%2Fi.huffpost.com%2Fgen%2F2211142%2Fthumbs%2Fo-ELON-MUSK-facebook.jpg&width=1440&height=720 1440w" sizes="(min-width: 1440px) 1440px, 100vw" id="u49" />
+                </a><style type="text/gss" scoped="scoped" id="u52">/* define  area of importance */
+"face"[x] == img[x] + 630.9370874474367 * image-scale !require;
+"face"[y] == img[y] + 197.83922654607397 * image-scale !require;
+"face"[width] ==  473.4469562105775 * image-scale !require;
+"face"[height] == 473.4469562105775 * image-scale !require;
+
+/* Keep face towards original position */
+"face"[center-x] == "viewport"[center-x];
+"face"[center-y] == "viewport"[center-y];
+
+@v |~("face")~| in("viewport") !medium500;
+@h |~("face")~| in("viewport") !medium500;</style><style type="text/gss" scoped="scoped" id="u54">/* define  blank spot */
+"space"[x] == img[x] + 0 * image-scale !require;
+"space"[y] == img[y] + 0 * image-scale !require;
+"space"[width] ==  1503.90625 * image-scale !require;
+"space"[height] == 1019.53125 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u56">/* define  area of importance */
+"scene"[x] == img[x] + 1570.3125 * image-scale !require;
+"scene"[y] == img[y] + 677.734375 * image-scale !require;
+"scene"[width] ==  154.296875 * image-scale !require;
+"scene"[height] == 177.734375 * image-scale !require;
+
+/* Keep saliency towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];
+
+@v |~("scene")~| in("viewport");
+@h |~("scene")~| in("viewport");</style></div>
+              <div class="attribution" id="u64">
+                <div class="author" id="u60">
+                  <a class="name text" href="http://www.huffingtonpost.com/macrinac-white/" id="u59">Macrina Cooper-White</a>
                 </div>
-                <div class="publisher source" id="u73">
-                  <a href="http://www.huffingtonpost.com" id="u72">The Huffington Post</a>
+                <div class="publisher source" id="u63">
+                  <a href="http://www.huffingtonpost.com" id="u62">The Huffington Post</a>
                 </div>
               </div>
             </div>
           </article>
         </section>
       </div>
-    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/assets/gss-init.js" id="u80"></script><script src="//cdn.thegrid.io/design-systems/taylor/0.0.33/src/layouts/artistic/D4/assets/gss/modifiers/displacement.js" id="u81"></script></body>
+    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/assets/gss-init.js" id="u70"></script>
+    <div id="u110"><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js" id="u71"></script><script id="u73">WebFont.load({"google":{"families":["Playfair Display:400,700","Domine:400,400italic,700,700italic"]}});</script><style type="text/css" id="u75">html {font-family: 'Domine';font-weight: 400;}
+ .layout-system .hero {font-family: 'Playfair Display';font-weight: 400;}
+ .layout-system .title {font-family: 'Playfair Display';}
+ .layout-system .subtitle {font-family: 'Playfair Display';}
+ .layout-system .description {font-family: 'Domine';}
+ .layout-system .title {font-weight: 400;}
+ .layout-system .subtitle {font-weight: 700;}
+ a {font-family: 'Domine';font-weight: 700;}
+ .attribution {font-family: 'Domine';font-weight: 400;text-transform: uppercase;letter-spacing: .07em;}
+ .layout-system .quote {font-family: 'Playfair Display';font-weight: 400;font-style: italic;}
+ .layout-system .subtitle {text-transform: uppercase;letter-spacing: .07em;}</style>
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/asides/ctas/follow.css" /><style type="text/css">
+  html {
+  width: 100%;
+}
+body {
+  width: 100%;
+  background: #faefda;
+  color: #5f4d5f;
+  overflow-x: hidden;
+}
+body:after {
+  content: "";
+  position: fixed;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  border-right: 1px solid #dbc6bc;
+  opacity: .2;
+  z-index: -1;
+}
+body a,
+body .cta {
+  color: #d12164;
+  text-decoration: none;
+  display: inline-block;
+}
+*,
+*:before,
+*:after {
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: normal;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+.center-line {
+  position: fixed;
+  left: 50%;
+  height: 100%;
+  border-left: 1px solid #dbc6bc;
+  opacity: .3;
+  top: 0;
+}
+article.post .title {
+  color: #66ccc0;
+}
+article.post .description {
+  color: #5f4d5f;
+}
+article.post .attribution .source {
+  color: #dbc6bc;
+}
+article.post .attribution .name {
+  color: #5f4d5f;
+}
+article.post .attribution .avatar {
+  background-size: cover;
+  border-radius: 30px;
+  opacity: .6;
+}
+
+</style><style type="text/css">
+  
+/*
+html:not(.gss-ready) {
+  opacity: 0;
+}
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+</style>
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/layout.gss" />
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variables.gss" />
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/debug.gss" />
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+inner-gap-top >= inner-gap-vertical !require;
+inner-gap-bottom == inner-gap-top !require;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
+inner-gap-right == inner-gap-left !require;
+outer-gap-right == outer-gap-left !require;
+inner-gap-left >= inner-gap-horizontal !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss">
+.title{
+  width: == (^ .cover)[width];
+  center-y: == (^ .cover)[center-y] !medium100;
+  top: >= (^ .cover)[top] + 0.5md !medium200;
+  z-index: 1;
+  text-align: == left !medium200;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
+@v |(.cover)| !strong;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss">
+@h |(.cover)| !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/small.gss">
+.title {
+  z-index: 2;
+  font-size: = 6g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+.attribution {
+  z-index: 2;
+  font-size: = 2g;
+  line-height: = &font-size + 1g;
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+.paragraph {
+  font-size: = 2g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+
+
+.cta-text {
+  font-size: = 2g;
+  line-height: = &font-size;
+}
+.cta-deco {
+  font-size: = 18g;
+  line-height: = &font-size - 2g;
+}
+
+.play-button{
+  font-size: == 2g;
+  center-y: == (^ .cover)[center-y];
+  center-x: == (^ .cover)[center-x];
+  width: == &intrinsic-width;
+  height: == &intrinsic-height;
+}
+
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/split-header-description.gss">
+
+.description {
+  top: == ^bottom - 4g !medium100;
+  left: == 1md;
+  width: == 5md;
+  font-size: = 3g;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss">
+.cover {
+  width: == ^image-width !strong;
+  // width: <= ^image-width !strong;   
+  height: == ^image-height !require;
+  center-x: == ^center-x;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/large.gss">
+.title {
+  z-index: 1;
+  font-size: = 6g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+.attribution {
+  z-index: 1;
+
+  font-size: = 4g;
+  line-height: = &font-size + 1g;
+
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+.paragraph {
+  font-size: = 2g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/author-header.gss">
+.attribution {
+    width: == 10md;
+    right: == ^right;
+
+	.author {
+		margin-left: = 1md;
+	}
+
+	.publisher {
+		margin-left: = 2md;
+	}
+}
+
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/block-top.gss">
+.attribution{
+  top: == ^[top] + ^attribution-gap;
+  max-width: <= ^[width];
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/block-left.gss">
+.attribution {
+  left: == ^left; 
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-horizontal.gss">
+width: == intrinsic-width !require;
+top: == 0 !require;
+
+.block {
+  :first[left]   == ^block-gap-left     !require;
+  :next[left]    == &right + ^block-gap         !require;
+  :last[right] == ^width - ^block-gap-right  !require;
+
+  outer-gap-top: == 0;
+  outer-gap-bottom: == 0;
+
+  top:  ==  ^block-gap-top  + &outer-gap-top  !strong100;
+  bottom: ==  ^height - ^block-gap-top - &outer-gap-bottom !strong100;
+
+  outer-gap-top: >= 0 !require;
+  outer-gap-bottom: >= 0 !require;
+
+  top: == 0;
+
+  &.over-half-width {
+    width: == ^^width / 2 + 1md !require;
+  }
+  &.half-width {
+    width: == ^^width / 2 !require;  
+  }
+  &.full-window-height {
+    height: == ::window[height] !require;
+  }
+}
+
+&.equal-widths {
+  equal-block-width == .block[width] !require;
+}
+&.equal-heights {
+  equal-block-height == .block[height] !require;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-shifted.gss">
+top: == 0 !require;
+left: == 0 !require;
+
+.block {
+  top: >= ^top !require;
+  bottom: <= ^bottom !require;
+
+  :next[top] == ^shift + &[top] !require;
+
+  //background: rgba(0,0,0, 0.1);
+}
+
+.block.left {
+  + block.right {
+    top: == ^top + ^^shift !require;
+  }
+  + aside + block.right {
+    top: == ^top + ^^shift !require;
+  }
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
+block-gap-top == block-gap-vertical;
+block-gap-top >= block-gap-vertical !require;
+block-gap-top == block-gap-bottom !require;
+
+
+block-gap     == block-gap-between;
+
+block-gap     == block-gap-top !require;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
+block-gap-left == block-gap-right !require;
+block-gap-left >= block-gap-horizontal !require;
+block-gap-left == block-gap-horizontal !require;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/alignment/align-shift-face.gss">
+displace-y = 0md;
+
+// @if ::window[width] <= $taylorW/2 {
+displace-y = 0md;
+// } @else {
+//   displace-y = 0.5md;
+
+// }
+
+/* Orient faces */
+.left-part .cover {
+  "face"[center-y] == ^center-y - displace-y / 2 !strong500;
+  "face"[center-x] == ^center-x !strong600;
+  "face"[width]    == logo-width / 2 !strong500;
+}
+
+.right-part .cover {
+  "face"[center-y] == ^center-y + displace-y / 2 !strong500;
+  "face"[center-x] == ^center-x !strong600;
+  "face"[width]    == logo-width / 2 !strong500;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/ctas/logo-cta.gss">
+.cta {
+	z-index: 1;
+	center-x: == ^center-x;
+	center-y: == ^center-y;
+	size: >= 41g !require;
+
+	.cta-circle {
+		size: == ^size;
+		position: == ^position;
+	}
+
+	.cta-text {
+	  display: inline-block;
+	  height: == ^height !require;
+	  width: == ^width !require;
+
+	  line-height: == &height;
+	  text-align: center;
+	  z-index: 2;
+	}
+
+	.cta-deco {
+      // FIXME: Special case offset for "F" letter. 
+      // I used transform here so chrome doesn't crop it erroneously
+	  translate-x: == -2;
+	  text-align: center;
+
+	  width: == ^width;
+	  height: == &intrinsic-height;
+	  center-y: == ^center-y;
+	  center-x: == ^center-x;
+	}
+
+
+}
+
+
+</script><script id="u107">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-61994900-1', 'auto');
+ga('send', 'pageview');</script>
+      <link rel="shortcut icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png" id="u108" /><style id="gss-precomputed">
+@media (max-width: 720px) {
+#u69{font-size: 0.99rem;}
+#u69:before{content: "249,278,297,328,361,392,422,453,624"; display: none;}
+#u18{position:relative;font-size: 0.99rem;}
+#u17{font-size: 0.99rem;}
+#u10{font-size: 0.99rem;}
+
+#u16{font-size: 0.99rem;}
+#u14{font-size: 0.99rem;}
+
+#u15{font-size: 0.99rem;}
+
+#u68{position:relative;font-size: 0.99rem;}
+#u67{font-size: 0.99rem;}
+#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position:relative;font-size: 0.99rem;}
+#u40{font-size: 0.99rem;}
+#u37{font-size: 0.99rem;}
+#u30{font-size: 0.99rem;}
+#u29{font-size: 0.99rem;}
+
+#u39{font-size: 0.99rem;}
+
+#u43{font-size: 0.99rem;}
+
+#u65{font-size: 0.99rem;}
+#u57{font-size: 0.99rem;}
+#u50{font-size: 0.99rem;}
+#u49{font-size: 0.99rem;}
+
+#u64{font-size: 0.99rem;}
+#u60{font-size: 0.99rem;}
+#u59{font-size: 0.99rem;}
+
+#u63{font-size: 0.99rem;}
+#u62{font-size: 0.99rem;}
+
+#u110{font-size: 0.99rem;}
+
+}
+@media (min-width: 721px) {
+#u69{font-size: 0.99rem;}
+#u69:before{content: "249,281,312,344,380,410,442"; display: none;}
+#u18{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 14.4rem; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u18 .cta .cta-text { display: inline-block; text-align: center; z-index: 2; }
+
+#u18 .cta .cta-deco { text-align: center; }
+
+#u17{width: 1.68rem; height: 1.68rem; position: absolute; left: 6.36rem; top: 2.76rem;;font-size: 0.99rem;}
+#u10{width: 1.68rem; height: 1.68rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+
+#u16{font-size: 0.99rem;}
+#u14{font-size: 0.16rem; line-height: 0.16rem; position: absolute; left: 0.57rem; top: -0.14rem;;font-size: 0.16rem;}
+
+#u15{font-size: 1.44rem; width: 1.68rem; position: absolute; left: 0rem; top: -0.09rem;;font-size: 1.44rem;}
+
+#u68{position: relative; margin-top: 1.44rem; height: 3.6rem; margin-bottom: 0rem; width: 14.4rem; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u67{height: 3.6rem; width: 14.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#ufe330a10-e482-4901-9bb7-8e76adcb5aa7{position: relative; height: 3.6rem; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u40{width: 6.48rem; height: 3.6rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.99rem;}
+#u37{overflow: hidden; height: 3.6rem; width: 6.48rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u30{font-size: 0.99rem;}
+#u29{height: 7.4684rem; width: 14.9367rem; position: absolute; left: 1.13687e-0.13rem; top: -2.3455rem;;font-size: 0.99rem;}
+
+#u39{font-size: 0.24rem; height: 0rem; width: 3.6rem; position: absolute; top: 3.28rem; left: 0rem;;font-size: 0.24rem;}
+
+#u43{font-size: 0.99rem;}
+
+#u65{width: 6.48rem; height: 3.6rem; position: absolute; left: 7.2rem; top: 0rem;;font-size: 0.99rem;}
+#u65 .source, #u65 .author { text-align: left; white-space: nowrap; }
+#u65 .attribution { z-index: 1; }
+
+#u57{overflow: hidden; height: 3.6rem; width: 6.48rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u50{font-size: 0.99rem;}
+#u49{height: 7.4684rem; width: 14.9367rem; position: absolute; left: -6.48rem; top: -2.3455rem;;font-size: 0.99rem;}
+
+#u64{font-size: 0.32rem; line-height: 0.4rem; max-width: 6.48rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.32rem;}
+#u60{margin-left: 0.72rem;;font-size: 0.32rem;}
+#u59{font-size: 0.32rem;}
+
+#u63{margin-left: 1.44rem;;font-size: 0.32rem;}
+#u62{font-size: 0.32rem;}
+
+#u110{font-size: 0.99rem;}
+div.layout { display: block; width: 100%; }
+
+div.layout section { display: inline-block; }
+@keyframes appearance-u40-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45.92,0,1);opacity:0.575;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,28.56,0,1);opacity:0.736;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,17.76,0,1);opacity:0.836;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.05,0,1);opacity:0.898;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.87,0,1);opacity:0.936;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.27,0,1);opacity:0.96;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.66,0,1);opacity:0.975;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.65,0,1);opacity:0.985;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.03,0,1);opacity:0.99;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.64,0,1);opacity:0.994;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.4,0,1);opacity:0.996;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u40-400-0-1440 #u40 {
+animation: appearance-u40-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.appearance-u40-400-0-1440-running #u40 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u40-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45.92,0,1);opacity:0.575;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,28.56,0,1);opacity:0.736;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,17.76,0,1);opacity:0.836;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.05,0,1);opacity:0.898;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.87,0,1);opacity:0.936;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.27,0,1);opacity:0.96;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.66,0,1);opacity:0.975;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.65,0,1);opacity:0.985;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.03,0,1);opacity:0.99;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.64,0,1);opacity:0.994;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.4,0,1);opacity:0.996;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u40-400-0-1440 #u40 {
+-webkit-animation: appearance-u40-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u40-400-0-1440-running #u40 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes appearance-u65-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-45.92,0,1);opacity:0.575;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-28.56,0,1);opacity:0.736;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-17.76,0,1);opacity:0.836;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-11.05,0,1);opacity:0.898;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-6.87,0,1);opacity:0.936;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-4.27,0,1);opacity:0.96;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-2.66,0,1);opacity:0.975;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.65,0,1);opacity:0.985;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.03,0,1);opacity:0.99;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.64,0,1);opacity:0.994;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.4,0,1);opacity:0.996;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u65-400-0-1440 #u65 {
+animation: appearance-u65-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.appearance-u65-400-0-1440-running #u65 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u65-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-45.92,0,1);opacity:0.575;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-28.56,0,1);opacity:0.736;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-17.76,0,1);opacity:0.836;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-11.05,0,1);opacity:0.898;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-6.87,0,1);opacity:0.936;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-4.27,0,1);opacity:0.96;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-2.66,0,1);opacity:0.975;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.65,0,1);opacity:0.985;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.03,0,1);opacity:0.99;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.64,0,1);opacity:0.994;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.4,0,1);opacity:0.996;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u65-400-0-1440 #u65 {
+-webkit-animation: appearance-u65-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u65-400-0-1440-running #u65 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u40-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.12,0,1);opacity:0.684;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,62.02,0,1);opacity:0.426;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,79.4,0,1);opacity:0.265;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,90.21,0,1);opacity:0.165;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,96.94,0,1);opacity:0.102;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,101.12,0,1);opacity:0.064;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,103.72,0,1);opacity:0.04;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,105.34,0,1);opacity:0.025;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.34,0,1);opacity:0.015;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.97,0,1);opacity:0.01;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.36,0,1);opacity:0.006;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.6,0,1);opacity:0.004;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+}
+.disappearance-u40-400-0-1440 #u40 {
+animation: disappearance-u40-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u40-400-0-1440-running #u40 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u40-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.12,0,1);opacity:0.684;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,62.02,0,1);opacity:0.426;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,79.4,0,1);opacity:0.265;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,90.21,0,1);opacity:0.165;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,96.94,0,1);opacity:0.102;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,101.12,0,1);opacity:0.064;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,103.72,0,1);opacity:0.04;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,105.34,0,1);opacity:0.025;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.34,0,1);opacity:0.015;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.97,0,1);opacity:0.01;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.36,0,1);opacity:0.006;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.6,0,1);opacity:0.004;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+}
+.disappearance-u40-400-0-1440 #u40 {
+-webkit-animation: disappearance-u40-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u40-400-0-1440-running #u40 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u65-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-34.12,0,1);opacity:0.684;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-62.02,0,1);opacity:0.426;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-79.4,0,1);opacity:0.265;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-90.21,0,1);opacity:0.165;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-96.94,0,1);opacity:0.102;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-101.12,0,1);opacity:0.064;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-103.72,0,1);opacity:0.04;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-105.34,0,1);opacity:0.025;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.34,0,1);opacity:0.015;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.97,0,1);opacity:0.01;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.36,0,1);opacity:0.006;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.6,0,1);opacity:0.004;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+}
+.disappearance-u65-400-0-1440 #u65 {
+animation: disappearance-u65-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u65-400-0-1440-running #u65 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u65-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-34.12,0,1);opacity:0.684;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-62.02,0,1);opacity:0.426;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-79.4,0,1);opacity:0.265;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-90.21,0,1);opacity:0.165;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-96.94,0,1);opacity:0.102;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-101.12,0,1);opacity:0.064;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-103.72,0,1);opacity:0.04;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-105.34,0,1);opacity:0.025;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.34,0,1);opacity:0.015;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.97,0,1);opacity:0.01;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.36,0,1);opacity:0.006;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.6,0,1);opacity:0.004;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+}
+.disappearance-u65-400-0-1440 #u65 {
+-webkit-animation: disappearance-u65-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u65-400-0-1440-running #u65 {
+-webkit-animation-play-state: running;
+}
+
+
+}</style></div>
+  </body>
 
 </html>
