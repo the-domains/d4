@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="u77">
+<html id="u103">
 
   <head id="u4">
     <title id="u1">D4</title>
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" id="u3" />
   </head>
 
-  <body id="u76">
+  <body id="u102">
     <!-- <div id="grid">
   <div class="col1"></div>
   <div class="col2"></div>
@@ -58,7 +58,7 @@
   <div class="row29"></div>
   <div class="row30"></div>
 </div> -->
-    <div class="layout-system user artistic-d4 w-assets sections" id="u43">
+    <div class="layout-system user artistic-d4 w-assets sections" id="u60">
       <div class="layout two-columns bricks" style="position:relative" id="u18"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u7">.cta {
   center-x: == ^center-x;
   center-y: == ^top + 5md;
@@ -268,30 +268,79 @@ h-gutter-middle == h-gutter;
           </a>
         </aside>
       </div>
-      <div style="position:relative" id="u42">
-        <section class="fallback section" id="u41">
-          <article class="post" id="u86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d" style="position:relative"><style type="text/gss" scoped="scoped" id="u21">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+      <div class="layout shift" style="position:relative" id="u59"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u20">margin-top = 2md;
+margin-bottom == (.left-part .description)[height];
+
+//col 1 without asides
+section {
+  // height == 0;
+
+  // make section want to be small
+  // stack sections vertically
+  :first[top] == ^top !require;
+  :last[bottom] == ^height !require;
+  :next[top] == &bottom + ^v-gutter-min !require;
+}
+
+section {
+  height: == article[height] !require;
+  width: <= ::window[width] !require;
+
+  // offset horizontally
+  left: == ^left + ^h-gutter-left !require;
+  right: == ^right - ^h-gutter-right !require;
+}
+
+
+logo-width = 4md;
+
+//displace-x = 0.5md;
+displace-y = 0.5md;
+
+v-gutter-min: = 0md;
+v-gutter-max: = 3md;
+
+h-gutter: = 0;
+
+equal-image-scale == .cover[image-scale] !require;
+equal-image-height == .cover[height] !require;
+
+//gutter between
+h-gutter-left == h-gutter / 2 !require;
+h-gutter-right == h-gutter-left !require;
+h-gutter-middle == h-gutter !require;
+</style>
+        <section class="split-img-header section header" id="u58">
+          <article class="with-face header post equal-widths equal-heights" id="u86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d" style="position:relative"><style type="text/gss" scoped="scoped" id="u23">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-horizontal.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-shifted.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
-block-gap-horizontal = 0;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/alignment/align-shift-face.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/ctas/logo-cta.gss;
+block-gap-horizontal = 1md;
 block-gap-vertical = 0;
 block-gap-between = 0;
+outer-gap-top == 0;
+outer-gap-bottom == 0;
+//shift = -2md;
+logo-width = 4md;
+displace-y = 0.5md;
 </style>
-            <div class="block wrapper" id="u39"><style type="text/gss" scoped="scoped" id="u24">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+            <div class="block left-part left tilt heavy-with-offset animating elevate wrapper" id="u39"><style type="text/gss" scoped="scoped" id="u26">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/small.gss;
 @import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/variations/source-name.css;
-inner-gap = 5g;
-inner-gap-vertical: = 0;
-inner-gap-horizontal: = 0;
-outer-gap-left >= 0 !require;
-outer-gap-top >= 0 !require;
-bg_media-opacity == .8;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/split-header-description.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss;
+inner-gap = .5g;
+inner-gap-vertical: = 1.5md;
+inner-gap-horizontal: = 0.5md;
+image-height: = 5md;
 </style>
-              <div class="cover image" id="u34"><style type="text/gss" scoped="scoped" id="u26">overflow: hidden;
+              <div class="cover image" id="u36"><style type="text/gss" scoped="scoped" id="u28">overflow: hidden;
 "viewport"[top] == &top px  !require;
 "viewport"[left] == &left  px !require;
 "viewport"[height] == &height px  !require;
@@ -313,7 +362,7 @@ img[height] == img[width] * (432/1296) !require;
 /* enforce minimum scale*/
 img[height] >= 432 * image-min-scale !require;
 img[height] <= 432 * image-max-scale !require;</style>
-                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/43ab03e28851baae36643a05ae8f7a69/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=1296&height=432" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/39d1a104aa72423c095295284b2ae71e/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=720&height=240 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/43ab03e28851baae36643a05ae8f7a69/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=1296&height=432 1296w" sizes="(min-width: 1440px) 1440px, 100vw" id="u27" /><style type="text/gss" scoped="scoped" id="u29">/* define  area of importance */
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/43ab03e28851baae36643a05ae8f7a69/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=1296&height=432" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/39d1a104aa72423c095295284b2ae71e/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=720&height=240 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/43ab03e28851baae36643a05ae8f7a69/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=1296&height=432 1296w" sizes="(min-width: 1440px) 1440px, 100vw" id="u29" /><style type="text/gss" scoped="scoped" id="u31">/* define  area of importance */
 "face"[x] == img[x] + 541.0836261196115 * image-scale !require;
 "face"[y] == img[y] + 107.46248957609582 * image-scale !require;
 "face"[width] ==  129.57238193479444 * image-scale !require;
@@ -324,11 +373,11 @@ img[height] <= 432 * image-max-scale !require;</style>
 "face"[center-y] == "viewport"[center-y];
 
 @v |~("face")~| in("viewport") !medium500;
-@h |~("face")~| in("viewport") !medium500;</style><style type="text/gss" scoped="scoped" id="u31">/* define  blank spot */
+@h |~("face")~| in("viewport") !medium500;</style><style type="text/gss" scoped="scoped" id="u33">/* define  blank spot */
 "space"[x] == img[x] + 797.34375 * image-scale !require;
 "space"[y] == img[y] + 0 * image-scale !require;
 "space"[width] ==  487.265625 * image-scale !require;
-"space"[height] == 440.4375 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u33">/* define  area of importance */
+"space"[height] == 440.4375 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u35">/* define  area of importance */
 "scene"[x] == img[x] + 513.84375 * image-scale !require;
 "scene"[y] == img[y] + 1.265625 * image-scale !require;
 "scene"[width] ==  278.4375 * image-scale !require;
@@ -340,14 +389,81 @@ img[height] <= 432 * image-max-scale !require;</style>
 
 @v |~("scene")~| in("viewport");
 @h |~("scene")~| in("viewport");</style></div>
-              <h1 class="title text" id="u36">Dan Tocchini</h1>
-              <p class="description text" id="u38">The Grid founding member #1&nbsp;</p>
+              <p class="description text split-block-description" id="u38">The Grid founding member #1&nbsp;</p>
+            </div>
+            <div class="aside wrapper" id="u42"><style type="text/gss" scoped="scoped" id="u41">inner-gap = .5g;
+inner-gap-vertical: = 1.5md;
+inner-gap-horizontal: = 0.5md;
+</style></div>
+            <div class="block right-part right tilt heavy animating elevate wrapper" id="u56"><style type="text/gss" scoped="scoped" id="u45">@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/large.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/css/variations/author-header.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/author-header.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/block-top.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/block-left.gss;
+inner-gap = .5g;
+inner-gap-vertical: = 1.5md;
+inner-gap-horizontal: = 0.5md;
+</style>
+              <div class="cover image" id="u55"><style type="text/gss" scoped="scoped" id="u47">overflow: hidden;
+"viewport"[top] == &top px  !require;
+"viewport"[left] == &left  px !require;
+"viewport"[height] == &height px  !require;
+"viewport"[width] == &width  px !require;
+
+@v |~[cover-v-gap]~("viewport")~[cover-v-gap]~| in(img) !strong900;
+@h |~[cover-h-gap]~("viewport")~[cover-h-gap]~| in(img) !strong900;
+
+cover-h-gap == 0 !strong;
+cover-v-gap == 0 !strong;
+
+image-min-scale = 0.3;
+image-max-scale = 1;
+
+/* Define image dimensions and ratio */
+image-scale == img[width] / 1296 !require;
+img[height] == img[width] * (432/1296) !require;
+
+/* enforce minimum scale*/
+img[height] >= 432 * image-min-scale !require;
+img[height] <= 432 * image-max-scale !require;</style>
+                <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/43ab03e28851baae36643a05ae8f7a69/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=1296&height=432" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/39d1a104aa72423c095295284b2ae71e/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=720&height=240 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/43ab03e28851baae36643a05ae8f7a69/passthrough.png?input=http%3A%2F%2Fthe-grid-user-content.s3-us-west-2.amazonaws.com%2Ff47d3740-47a8-4bc1-9813-c4a55e643532.png&width=1296&height=432 1296w" sizes="(min-width: 1440px) 1440px, 100vw" id="u48" /><style type="text/gss" scoped="scoped" id="u50">/* define  area of importance */
+"face"[x] == img[x] + 541.0836261196115 * image-scale !require;
+"face"[y] == img[y] + 107.46248957609582 * image-scale !require;
+"face"[width] ==  129.57238193479444 * image-scale !require;
+"face"[height] == 129.57238193479444 * image-scale !require;
+
+/* Keep face towards original position */
+"face"[center-x] == "viewport"[center-x];
+"face"[center-y] == "viewport"[center-y];
+
+@v |~("face")~| in("viewport") !medium500;
+@h |~("face")~| in("viewport") !medium500;</style><style type="text/gss" scoped="scoped" id="u52">/* define  blank spot */
+"space"[x] == img[x] + 797.34375 * image-scale !require;
+"space"[y] == img[y] + 0 * image-scale !require;
+"space"[width] ==  487.265625 * image-scale !require;
+"space"[height] == 440.4375 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u54">/* define  area of importance */
+"scene"[x] == img[x] + 513.84375 * image-scale !require;
+"scene"[y] == img[y] + 1.265625 * image-scale !require;
+"scene"[width] ==  278.4375 * image-scale !require;
+"scene"[height] == 387.28125 * image-scale !require;
+
+/* Keep saliency towards original position */
+"scene"[center-x] == "viewport"[center-x];
+"scene"[center-y] == "viewport"[center-y];
+
+@v |~("scene")~| in("viewport");
+@h |~("scene")~| in("viewport");</style></div>
             </div>
           </article>
         </section>
       </div>
-    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/assets/gss-init.js" id="u44"></script>
-    <div id="u75"><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js" id="u45"></script><script id="u47">WebFont.load({"google":{"families":["Playfair Display:400,700","Domine:400,400italic,700,700italic"]}});</script><style type="text/css" id="u49">html {font-family: 'Domine';font-weight: 400;}
+    </div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/assets/gss-init.js" id="u61"></script>
+    <div id="u101"><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js" id="u62"></script><script id="u64">WebFont.load({"google":{"families":["Playfair Display:400,700","Domine:400,400italic,700,700italic"]}});</script><style type="text/css" id="u66">html {font-family: 'Domine';font-weight: 400;}
  .layout-system .hero {font-family: 'Playfair Display';font-weight: 400;}
  .layout-system .title {font-family: 'Playfair Display';}
  .layout-system .subtitle {font-family: 'Playfair Display';}
@@ -448,27 +564,7 @@ html:not(.gss-ready) {
       <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/layout.gss" />
       <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variables.gss" />
       <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/debug.gss" />
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/cover.gss">
-//implement cover opacity
-
-.cover {
-  left: >= ^left;
-  width: == ^width;
-  height: <= ^height !medium100;
-}
-
-.attribution {
-  width: == &intrinsic-width;
-  height: == &intrinsic-height;
-  top: == ^(.cover)[bottom] + 2g;
-  left: >= ^(.cover)[left]; 
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss">
-@v |(.cover)| !strong;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss">
-@h |(.cover)| !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
 inner-gap-top >= inner-gap-vertical !require;
 inner-gap-bottom == inner-gap-top !require;
 
@@ -476,6 +572,20 @@ inner-gap-bottom == inner-gap-top !require;
 inner-gap-right == inner-gap-left !require;
 outer-gap-right == outer-gap-left !require;
 inner-gap-left >= inner-gap-horizontal !require;
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/title-cover.gss">
+.title{
+  width: == (^ .cover)[width];
+  center-y: == (^ .cover)[center-y] !medium100;
+  top: >= (^ .cover)[top] + 0.5md !medium200;
+  z-index: 1;
+  text-align: == left !medium200;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/v-bg_media.gss">
+@v |(.cover)| !strong;
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss">
+@h |(.cover)| !require;
 </script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/small.gss">
 .title {
   z-index: 2;
@@ -517,24 +627,130 @@ inner-gap-left >= inner-gap-horizontal !require;
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/split-header-description.gss">
+
+.description {
+  top: == ^bottom - 4g !medium100;
+  left: == 1md;
+  width: == 5md;
+  font-size: = 3g;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss">
+.cover {
+  width: == ^image-width !strong;
+  // width: <= ^image-width !strong;   
+  height: == ^image-height !require;
+  center-x: == ^center-x;
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/typography/large.gss">
+.title {
+  z-index: 1;
+  font-size: = 6g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+.attribution {
+  z-index: 1;
+
+  font-size: = 4g;
+  line-height: = &font-size + 1g;
+
+  width: == &intrinsic-width;
+  height: == &intrinsic-height !require;
+}
+.paragraph {
+  font-size: = 2g;
+  line-height: = &font-size + 1g;
+  height: == &intrinsic-height !require;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/variations/author-header.gss">
+.attribution {
+    width: == 10md;
+    right: == ^right;
+
+	.author {
+		margin-left: = 1md;
+	}
+
+	.publisher {
+		margin-left: = 2md;
+	}
+}
+
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/block-top.gss">
+.attribution{
+  top: == ^[top] + ^attribution-gap;
+  max-width: <= ^[width];
+}
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/block-left.gss">
+.attribution {
+  left: == ^left; 
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-horizontal.gss">
 width: == intrinsic-width !require;
 top: == 0 !require;
 
 .block {
-  :first[top]   ==           ^block-gap-top     !require;
-  :next[top]    == &bottom + ^block-gap         !require;
-  :last[bottom] == ^height - ^block-gap-bottom  !require;
+  :first[left]   == ^block-gap-left     !require;
+  :next[left]    == &right + ^block-gap         !require;
+  :last[right] == ^width - ^block-gap-right  !require;
 
-  &outer-gap-left == 0;
-  &outer-gap-right == 0;
+  outer-gap-top: == 0;
+  outer-gap-bottom: == 0;
 
-  left:  ==          ^block-gap-left  + &outer-gap-left  !strong100;
-  right: == ^width - ^block-gap-right - &outer-gap-right !strong100;
+  top:  ==  ^block-gap-top  + &outer-gap-top  !strong100;
+  bottom: ==  ^height - ^block-gap-top - &outer-gap-bottom !strong100;
 
-  outer-gap-left >= 0 !require;
-  outer-gap-right >= 0 !require;
+  outer-gap-top: >= 0 !require;
+  outer-gap-bottom: >= 0 !require;
+
+  top: == 0;
+
+  &.over-half-width {
+    width: == ^^width / 2 + 1md !require;
+  }
+  &.half-width {
+    width: == ^^width / 2 !require;  
+  }
+  &.full-window-height {
+    height: == ::window[height] !require;
+  }
 }
+
+&.equal-widths {
+  equal-block-width == .block[width] !require;
+}
+&.equal-heights {
+  equal-block-height == .block[height] !require;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/stack-shifted.gss">
+top: == 0 !require;
+left: == 0 !require;
+
+.block {
+  top: >= ^top !require;
+  bottom: <= ^bottom !require;
+
+  :next[top] == ^shift + &[top] !require;
+
+  //background: rgba(0,0,0, 0.1);
+}
+
+.block.left {
+  + block.right {
+    top: == ^top + ^^shift !require;
+  }
+  + aside + block.right {
+    top: == ^top + ^^shift !require;
+  }
+}
+
 </script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
 block-gap-top == block-gap-vertical;
 block-gap-top >= block-gap-vertical !require;
@@ -550,43 +766,351 @@ block-gap-left == block-gap-right !require;
 block-gap-left >= block-gap-horizontal !require;
 block-gap-left == block-gap-horizontal !require;
 
-</script><script id="u72">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/media/alignment/align-shift-face.gss">
+displace-y = 0md;
+
+// @if ::window[width] <= $taylorW/2 {
+displace-y = 0md;
+// } @else {
+//   displace-y = 0.5md;
+
+// }
+
+/* Orient faces */
+.left-part .cover {
+  "face"[center-y] == ^center-y - displace-y / 2 !strong500;
+  "face"[center-x] == ^center-x !strong600;
+  "face"[width]    == logo-width / 2 !strong500;
+}
+
+.right-part .cover {
+  "face"[center-y] == ^center-y + displace-y / 2 !strong500;
+  "face"[center-x] == ^center-x !strong600;
+  "face"[width]    == logo-width / 2 !strong500;
+}
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.35/src/layouts/artistic/D4/assets/gss/asides/ctas/logo-cta.gss">
+.cta {
+	z-index: 1;
+	center-x: == ^center-x;
+	center-y: == ^center-y;
+	size: >= 41g !require;
+
+	.cta-circle {
+		size: == ^size;
+		position: == ^position;
+	}
+
+	.cta-text {
+	  display: inline-block;
+	  height: == ^height !require;
+	  width: == ^width !require;
+
+	  line-height: == &height;
+	  text-align: center;
+	  z-index: 2;
+	}
+
+	.cta-deco {
+      // FIXME: Special case offset for "F" letter. 
+      // I used transform here so chrome doesn't crop it erroneously
+	  translate-x: == -2;
+	  text-align: center;
+
+	  width: == ^width;
+	  height: == &intrinsic-height;
+	  center-y: == ^center-y;
+	  center-x: == ^center-x;
+	}
+
+
+}
+
+
+</script><script id="u98">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-61994900-1', 'auto');
 ga('send', 'pageview');</script>
-      <link rel="shortcut icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png" id="u73" /><style id="gss-precomputed">
+      <link rel="shortcut icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png" id="u99" /><style id="gss-precomputed">
 @media (max-width: 720px) {
-#u43{font-size: 0.99rem;}
-#u43:before{content: "236"; display: none;}
-#u18{position:relative;font-size: 0.99rem;}
-#u17{font-size: 0.99rem;}
-#u10{font-size: 0.99rem;}
+#u60{font-size: 0.99rem;}
+#u60:before{content: ""; display: none;}
+#u18{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 7.2rem; left: 0rem; top: 0rem; height: 1.68rem;;font-size: 0.99rem;}
+#u18 .cta .cta-text { display: inline-block; text-align: center; z-index: 2; }
+
+#u18 .cta .cta-deco { text-align: center; }
+
+#u17{width: 1.68rem; height: 1.68rem; position: absolute; left: 2.76rem; top: 0rem;;font-size: 0.99rem;}
+#u10{width: 1.68rem; height: 1.68rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
 
 #u16{font-size: 0.99rem;}
-#u14{font-size: 0.99rem;}
+#u14{font-size: 0.16rem; line-height: 0.16rem; position: absolute; left: 0.57rem; top: -0.14rem;;font-size: 0.16rem;}
 
-#u15{font-size: 0.99rem;}
+#u15{font-size: 1.44rem; width: 1.68rem; position: absolute; left: 0rem; top: -0.09rem;;font-size: 1.44rem;}
 
-#u42{position:relative;font-size: 0.99rem;}
-#u41{font-size: 0.99rem;}
-#u86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d{position:relative;font-size: 0.99rem;}
-#u39{font-size: 0.99rem;}
-#u34{font-size: 0.99rem;}
-#u27{font-size: 0.99rem;}
+#u59{position: relative; margin-top: 1.44rem; height: 3.6rem; margin-bottom: 0rem; width: 7.2rem; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u58{height: 3.6rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d{position: relative; height: 3.6rem; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u39{width: 2.88rem; height: 3.6rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.99rem;}
+#u36{overflow: hidden; height: 3.6rem; width: 2.88rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u29{height: 4.32rem; width: 12.96rem; position: absolute; left: -3.1787rem; top: 0.0775rem;;font-size: 0.99rem;}
 
-#u36{font-size: 1.1583rem;}
+#u38{font-size: 0.24rem; height: 0rem; width: 3.6rem; position: absolute; top: 3.28rem; left: 0rem;;font-size: 0.24rem;}
 
-#u38{font-size: 0.99rem;}
+#u42{font-size: 0.99rem;}
 
-#u75{font-size: 0.99rem;}
+#u56{width: 2.88rem; height: 3.6rem; position: absolute; left: 3.6rem; top: 0rem;;font-size: 0.99rem;}
+#u55{overflow: hidden; height: 3.6rem; width: 2.88rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u48{height: 4.32rem; width: 12.96rem; position: absolute; left: -6.0587rem; top: 0.0775rem;;font-size: 0.99rem;}
+
+#u101{font-size: 0.99rem;}
+div.layout { display: block; width: 100%; }
+
+div.layout section { display: inline-block; }
+@keyframes appearance-u39-400-346-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);}
+4.762% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);}
+9.524% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);}
+14.286% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,73.78,0,1);opacity:0.317;}
+19.048% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45.92,0,1);opacity:0.575;}
+23.81% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,28.56,0,1);opacity:0.736;}
+28.571% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,17.76,0,1);opacity:0.836;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.05,0,1);opacity:0.898;}
+38.095% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.87,0,1);opacity:0.936;}
+42.857% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.27,0,1);opacity:0.96;}
+47.619% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.66,0,1);opacity:0.975;}
+52.381% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.65,0,1);opacity:0.985;}
+57.143% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.03,0,1);opacity:0.99;}
+61.905% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.64,0,1);opacity:0.994;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.4,0,1);opacity:0.996;}
+71.429% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+76.19% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+80.952% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+85.714% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+90.476% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+95.238% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u39-400-346-720 #u39 {
+animation: appearance-u39-400-346-720 1344ms forwards;
+animation-play-state: paused;
+}
+.appearance-u39-400-346-720-running #u39 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u39-400-346-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);}
+4.762% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);}
+9.524% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);}
+14.286% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,73.78,0,1);opacity:0.317;}
+19.048% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45.92,0,1);opacity:0.575;}
+23.81% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,28.56,0,1);opacity:0.736;}
+28.571% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,17.76,0,1);opacity:0.836;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.05,0,1);opacity:0.898;}
+38.095% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.87,0,1);opacity:0.936;}
+42.857% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.27,0,1);opacity:0.96;}
+47.619% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.66,0,1);opacity:0.975;}
+52.381% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.65,0,1);opacity:0.985;}
+57.143% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.03,0,1);opacity:0.99;}
+61.905% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.64,0,1);opacity:0.994;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.4,0,1);opacity:0.996;}
+71.429% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+76.19% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+80.952% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+85.714% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+90.476% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+95.238% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u39-400-346-720 #u39 {
+-webkit-animation: appearance-u39-400-346-720 1344ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u39-400-346-720-running #u39 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes appearance-u56-400-346-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);}
+4.762% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);}
+9.524% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);}
+14.286% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-73.78,0,1);opacity:0.317;}
+19.048% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-45.92,0,1);opacity:0.575;}
+23.81% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-28.56,0,1);opacity:0.736;}
+28.571% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-17.76,0,1);opacity:0.836;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-11.05,0,1);opacity:0.898;}
+38.095% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-6.87,0,1);opacity:0.936;}
+42.857% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-4.27,0,1);opacity:0.96;}
+47.619% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-2.66,0,1);opacity:0.975;}
+52.381% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.65,0,1);opacity:0.985;}
+57.143% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.03,0,1);opacity:0.99;}
+61.905% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.64,0,1);opacity:0.994;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.4,0,1);opacity:0.996;}
+71.429% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+76.19% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+80.952% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+85.714% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+90.476% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+95.238% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u56-400-346-720 #u56 {
+animation: appearance-u56-400-346-720 1344ms forwards;
+animation-play-state: paused;
+}
+.appearance-u56-400-346-720-running #u56 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u56-400-346-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);}
+4.762% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);}
+9.524% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);}
+14.286% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-73.78,0,1);opacity:0.317;}
+19.048% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-45.92,0,1);opacity:0.575;}
+23.81% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-28.56,0,1);opacity:0.736;}
+28.571% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-17.76,0,1);opacity:0.836;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-11.05,0,1);opacity:0.898;}
+38.095% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-6.87,0,1);opacity:0.936;}
+42.857% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-4.27,0,1);opacity:0.96;}
+47.619% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-2.66,0,1);opacity:0.975;}
+52.381% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.65,0,1);opacity:0.985;}
+57.143% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.03,0,1);opacity:0.99;}
+61.905% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.64,0,1);opacity:0.994;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.4,0,1);opacity:0.996;}
+71.429% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+76.19% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+80.952% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+85.714% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+90.476% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+95.238% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u56-400-346-720 #u56 {
+-webkit-animation: appearance-u56-400-346-720 1344ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u56-400-346-720-running #u56 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u39-400-346-720 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.12,0,1);opacity:0.684;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,62.02,0,1);opacity:0.426;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,79.4,0,1);opacity:0.265;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,90.21,0,1);opacity:0.165;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,96.94,0,1);opacity:0.102;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,101.12,0,1);opacity:0.064;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,103.72,0,1);opacity:0.04;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,105.34,0,1);opacity:0.025;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.34,0,1);opacity:0.015;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.97,0,1);opacity:0.01;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.36,0,1);opacity:0.006;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.6,0,1);opacity:0.004;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+}
+.disappearance-u39-400-346-720 #u39 {
+animation: disappearance-u39-400-346-720 1152ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u39-400-346-720-running #u39 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u39-400-346-720 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.12,0,1);opacity:0.684;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,62.02,0,1);opacity:0.426;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,79.4,0,1);opacity:0.265;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,90.21,0,1);opacity:0.165;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,96.94,0,1);opacity:0.102;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,101.12,0,1);opacity:0.064;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,103.72,0,1);opacity:0.04;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,105.34,0,1);opacity:0.025;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.34,0,1);opacity:0.015;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.97,0,1);opacity:0.01;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.36,0,1);opacity:0.006;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.6,0,1);opacity:0.004;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+}
+.disappearance-u39-400-346-720 #u39 {
+-webkit-animation: disappearance-u39-400-346-720 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u39-400-346-720-running #u39 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u56-400-346-720 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-34.12,0,1);opacity:0.684;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-62.02,0,1);opacity:0.426;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-79.4,0,1);opacity:0.265;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-90.21,0,1);opacity:0.165;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-96.94,0,1);opacity:0.102;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-101.12,0,1);opacity:0.064;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-103.72,0,1);opacity:0.04;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-105.34,0,1);opacity:0.025;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.34,0,1);opacity:0.015;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.97,0,1);opacity:0.01;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.36,0,1);opacity:0.006;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.6,0,1);opacity:0.004;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+}
+.disappearance-u56-400-346-720 #u56 {
+animation: disappearance-u56-400-346-720 1152ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u56-400-346-720-running #u56 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u56-400-346-720 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-34.12,0,1);opacity:0.684;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-62.02,0,1);opacity:0.426;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-79.4,0,1);opacity:0.265;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-90.21,0,1);opacity:0.165;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-96.94,0,1);opacity:0.102;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-101.12,0,1);opacity:0.064;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-103.72,0,1);opacity:0.04;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-105.34,0,1);opacity:0.025;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.34,0,1);opacity:0.015;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.97,0,1);opacity:0.01;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.36,0,1);opacity:0.006;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.6,0,1);opacity:0.004;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+}
+.disappearance-u56-400-346-720 #u56 {
+-webkit-animation: disappearance-u56-400-346-720 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u56-400-346-720-running #u56 {
+-webkit-animation-play-state: running;
+}
+
 
 }
 @media (min-width: 721px) {
-#u43{font-size: 0.99rem;}
-#u43:before{content: "236"; display: none;}
+#u60{font-size: 0.99rem;}
+#u60:before{content: ""; display: none;}
 #u18{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 14.4rem; left: 0rem; top: 0rem;;font-size: 0.99rem;}
 #u18 .cta .cta-text { display: inline-block; text-align: center; z-index: 2; }
 
@@ -600,21 +1124,249 @@ ga('send', 'pageview');</script>
 
 #u15{font-size: 1.44rem; width: 1.68rem; position: absolute; left: 0rem; top: -0.09rem;;font-size: 1.44rem;}
 
-#u42{position:relative;font-size: 0.99rem;}
-#u41{font-size: 0.99rem;}
-#u86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d{position: relative; height: 0rem; top: 0rem;;font-size: 0.99rem;}
-#u39{width: 14.4rem; height: 0rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
-#u39 .title { z-index: 2; }
+#u59{position: relative; margin-top: 1.44rem; height: 3.6rem; margin-bottom: 0rem; width: 14.4rem; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u58{height: 3.6rem; width: 14.4rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d{position: relative; height: 3.6rem; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u39{width: 6.48rem; height: 3.6rem; position: absolute; left: 0.72rem; top: 0rem;;font-size: 0.99rem;}
+#u36{overflow: hidden; height: 3.6rem; width: 6.48rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u29{height: 4.32rem; width: 12.96rem; position: absolute; left: 0.4213rem; top: 0.0775rem;;font-size: 0.99rem;}
 
-#u34{overflow: hidden; width: 14.4rem; height: 0rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
-#u27{height: 4.32rem; width: 12.96rem; position: absolute; top: -1.7225rem; left: 0.72rem;;font-size: 0.99rem;}
+#u38{font-size: 0.24rem; height: 0rem; width: 3.6rem; position: absolute; top: 3.28rem; left: 0rem;;font-size: 0.24rem;}
 
-#u36{font-size: 0.48rem; line-height: 0.56rem;;font-size: 0.48rem;}
+#u42{font-size: 0.99rem;}
 
-#u38{font-size: 0.99rem;}
+#u56{width: 6.48rem; height: 3.6rem; position: absolute; left: 7.2rem; top: 0rem;;font-size: 0.99rem;}
+#u55{overflow: hidden; height: 3.6rem; width: 6.48rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u48{height: 4.32rem; width: 12.96rem; position: absolute; left: -6.0587rem; top: 0.0775rem;;font-size: 0.99rem;}
 
-#u75{font-size: 0.99rem;}
+#u101{font-size: 0.99rem;}
 div.layout { display: block; width: 100%; }
+
+div.layout section { display: inline-block; }
+@keyframes appearance-u39-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45.92,0,1);opacity:0.575;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,28.56,0,1);opacity:0.736;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,17.76,0,1);opacity:0.836;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.05,0,1);opacity:0.898;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.87,0,1);opacity:0.936;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.27,0,1);opacity:0.96;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.66,0,1);opacity:0.975;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.65,0,1);opacity:0.985;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.03,0,1);opacity:0.99;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.64,0,1);opacity:0.994;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.4,0,1);opacity:0.996;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u39-400-0-1440 #u39 {
+animation: appearance-u39-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.appearance-u39-400-0-1440-running #u39 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u39-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45.92,0,1);opacity:0.575;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,28.56,0,1);opacity:0.736;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,17.76,0,1);opacity:0.836;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.05,0,1);opacity:0.898;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,6.87,0,1);opacity:0.936;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.27,0,1);opacity:0.96;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.66,0,1);opacity:0.975;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.65,0,1);opacity:0.985;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.03,0,1);opacity:0.99;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.64,0,1);opacity:0.994;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.4,0,1);opacity:0.996;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.25,0,1);opacity:0.998;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u39-400-0-1440 #u39 {
+-webkit-animation: appearance-u39-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u39-400-0-1440-running #u39 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes appearance-u56-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-45.92,0,1);opacity:0.575;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-28.56,0,1);opacity:0.736;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-17.76,0,1);opacity:0.836;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-11.05,0,1);opacity:0.898;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-6.87,0,1);opacity:0.936;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-4.27,0,1);opacity:0.96;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-2.66,0,1);opacity:0.975;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.65,0,1);opacity:0.985;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.03,0,1);opacity:0.99;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.64,0,1);opacity:0.994;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.4,0,1);opacity:0.996;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u56-400-0-1440 #u56 {
+animation: appearance-u56-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.appearance-u56-400-0-1440-running #u56 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes appearance-u56-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-45.92,0,1);opacity:0.575;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-28.56,0,1);opacity:0.736;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-17.76,0,1);opacity:0.836;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-11.05,0,1);opacity:0.898;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-6.87,0,1);opacity:0.936;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-4.27,0,1);opacity:0.96;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-2.66,0,1);opacity:0.975;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.65,0,1);opacity:0.985;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-1.03,0,1);opacity:0.99;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.64,0,1);opacity:0.994;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.4,0,1);opacity:0.996;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.25,0,1);opacity:0.998;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-0.1,0,1);opacity:0.999;}
+100% {opacity:1;}
+}
+.appearance-u56-400-0-1440 #u56 {
+-webkit-animation: appearance-u56-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.appearance-u56-400-0-1440-running #u56 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u39-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.12,0,1);opacity:0.684;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,62.02,0,1);opacity:0.426;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,79.4,0,1);opacity:0.265;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,90.21,0,1);opacity:0.165;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,96.94,0,1);opacity:0.102;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,101.12,0,1);opacity:0.064;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,103.72,0,1);opacity:0.04;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,105.34,0,1);opacity:0.025;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.34,0,1);opacity:0.015;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.97,0,1);opacity:0.01;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.36,0,1);opacity:0.006;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.6,0,1);opacity:0.004;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+}
+.disappearance-u39-400-0-1440 #u39 {
+animation: disappearance-u39-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u39-400-0-1440-running #u39 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u39-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.12,0,1);opacity:0.684;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,62.02,0,1);opacity:0.426;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,79.4,0,1);opacity:0.265;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,90.21,0,1);opacity:0.165;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,96.94,0,1);opacity:0.102;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,101.12,0,1);opacity:0.064;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,103.72,0,1);opacity:0.04;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,105.34,0,1);opacity:0.025;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.34,0,1);opacity:0.015;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,106.97,0,1);opacity:0.01;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.36,0,1);opacity:0.006;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.6,0,1);opacity:0.004;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.75,0,1);opacity:0.002;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,107.9,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,108,0,1);opacity:0;}
+}
+.disappearance-u39-400-0-1440 #u39 {
+-webkit-animation: disappearance-u39-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u39-400-0-1440-running #u39 {
+-webkit-animation-play-state: running;
+}
+
+@keyframes disappearance-u56-400-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-34.12,0,1);opacity:0.684;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-62.02,0,1);opacity:0.426;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-79.4,0,1);opacity:0.265;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-90.21,0,1);opacity:0.165;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-96.94,0,1);opacity:0.102;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-101.12,0,1);opacity:0.064;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-103.72,0,1);opacity:0.04;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-105.34,0,1);opacity:0.025;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.34,0,1);opacity:0.015;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.97,0,1);opacity:0.01;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.36,0,1);opacity:0.006;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.6,0,1);opacity:0.004;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+}
+.disappearance-u56-400-0-1440 #u56 {
+animation: disappearance-u56-400-0-1440 1152ms forwards;
+animation-play-state: paused;
+}
+.disappearance-u56-400-0-1440-running #u56 {
+animation-play-state: running;
+}
+
+@-webkit-keyframes disappearance-u56-400-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-34.12,0,1);opacity:0.684;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-62.02,0,1);opacity:0.426;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-79.4,0,1);opacity:0.265;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-90.21,0,1);opacity:0.165;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-96.94,0,1);opacity:0.102;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-101.12,0,1);opacity:0.064;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-103.72,0,1);opacity:0.04;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-105.34,0,1);opacity:0.025;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.34,0,1);opacity:0.015;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-106.97,0,1);opacity:0.01;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.36,0,1);opacity:0.006;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.6,0,1);opacity:0.004;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.75,0,1);opacity:0.002;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-107.9,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,-108,0,1);opacity:0;}
+}
+.disappearance-u56-400-0-1440 #u56 {
+-webkit-animation: disappearance-u56-400-0-1440 1152ms forwards;
+-webkit-animation-play-state: paused;
+}
+.disappearance-u56-400-0-1440-running #u56 {
+-webkit-animation-play-state: running;
+}
+
 
 }</style></div>
   </body>
