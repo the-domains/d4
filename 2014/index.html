@@ -63,7 +63,12 @@
       <div class="layout two-columns bricks" style="position:relative" id="u50"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u8">.cta {
   center-x: == ^center-x;
   center-y: == ^top + 5md;
-  size: >= 21g !require;
+  width: == 21g;
+  height: == 21g;
+  @if ::window[width] <= $taylorW/2 {
+    width: == 36g !strong100;
+    height: == 36g !strong100;
+  }
 
   a {
     size: == ^size;
@@ -72,9 +77,13 @@
   }
 
   .cta-circle {
-    size: == ^size;
+    width: == ^height;
+    height: == ^width;
     position: == ^position;
     border-width: == 1g;
+    @if ::window[width] <= $taylorW/2 {
+      border-width: == 1.75g;
+    }
   }
 
   .cta-text {
@@ -103,9 +112,14 @@
 
 
   .cta-deco {
-    size: == 12g;
+    width: == 12g;
+    height: == 12g;
     center-y: == ^center-y;
     center-x: == ^center-x;
+    @if ::window[width] <= $taylorW/2 {
+      width: == 21g;
+      height: == 21g;
+    }
   }
 }
 
@@ -129,99 +143,102 @@ h-gutter-left == h-gutter / 8;
 h-gutter-right == h-gutter-left;
 h-gutter-middle == h-gutter;
 
-    @if ::window[width] <= $taylorW/2 {
-      v-gutter-min: = 1.5md;
-      v-gutter-max = 2md;
+@if ::window[width] <= $taylorW/2 {
+  v-gutter-max = 3md;
+  h-gutter: = 0;
+  displace-x = 0;
+  h-gutter-left == h-gutter;
+  h-gutter-right == h-gutter-left;
 
 
 
-      section, aside {
-        height == 0;
-        // make section want to be small
-        // stack sections vertically
-        :first[top] == ^top !require;
-        :last[bottom] == ^height !require;
-        :next[top] == &bottom + ^v-gutter-min !require;
-      }
+  section, aside {
+    height == 0;
+    // make section want to be small
+    // stack sections vertically
+    :first[top] == ^top !require;
+    :last[bottom] == ^height !require;
+    :next[top] == &bottom + ^v-gutter-min !require;
+  }
 
-      section {
-        height: == article[height] !require;
+  section {
+    height: == article[height] !require;
 
 
-        // offset horizontally
-        left: == ^left + ^h-gutter-left !require;
-        right: == ^right - ^h-gutter-right !require;
-      }
-    } @else {
-      h-gutter: = 1md;
+    // offset horizontally
+    left: == ^left + ^h-gutter-left !require;
+    right: == ^right - ^h-gutter-right !require;
+  }
+} @else {
+  h-gutter: = 1md;
 
 //col2
 
-    section.left {
-      left: == ^left + ^h-gutter-left;
-      right: == ^center-x - ^h-gutter-middle / 2;
-    }
-    section.right {
-      left: == ^center-x + ^h-gutter-middle / 2;
-      right: == ^right - ^h-gutter-right;
-    }
-    section.wide.left {
-      left: == ^left !strong;
-      right: == ^center-x !strong;
-    }
-    section.wide.right {
-      left: == ^center-x !strong;
-      right: == ^right !strong;
-    }
+  section.left {
+    left: == ^left + ^h-gutter-left;
+    right: == ^center-x - ^h-gutter-middle / 2;
+  }
+  section.right {
+    left: == ^center-x + ^h-gutter-middle / 2;
+    right: == ^right - ^h-gutter-right;
+  }
+  section.wide.left {
+    left: == ^left !strong;
+    right: == ^center-x !strong;
+  }
+  section.wide.right {
+    left: == ^center-x !strong;
+    right: == ^right !strong;
+  }
 
-    //rowtop   bricks stagger
+//rowtop   bricks stagger
 
 
-     section {
-       top: >= ^top !require;
-       bottom: <= ^bottom !require;
-       
-       :next[top] == &center-y;
+ section {
+   top: >= ^top !require;
+   bottom: <= ^bottom !require;
+   
+   :next[top] == &center-y;
 
-       slack-gap: >= ^v-gutter-min !require;
-       slack-gap: <= ^v-gutter-max !require;
+   slack-gap: >= ^v-gutter-min !require;
+   slack-gap: <= ^v-gutter-max !require;
 
-       // background: rgba(0,0,0, 0.1);
+   // background: rgba(0,0,0, 0.1);
 
-       height: == article[height] !require;
-     }
+   height: == article[height] !require;
+ }
 
-     section.detached {
-       slack-gap: == ^v-gutter-max !strong;
-     }
+ section.detached {
+   slack-gap: == ^v-gutter-max !strong;
+ }
 
-     section.left {
-       top: == :previous[bottom] + &slack-gap !require;
-     }
-     section.right {
-       top: == :previous[bottom] + &slack-gap !require;
-     }
+ section.left {
+   top: == :previous[bottom] + &slack-gap !require;
+ }
+ section.right {
+   top: == :previous[bottom] + &slack-gap !require;
+ }
 
-    //last row bottom
-    // section.left {
-    //   :last[bottom] == ^bottom !strong;
-    // }
-    // section.right {
-    //   :last[bottom] == ^bottom !strong;
-    // }
+  //last row bottom
+  // section.left {
+  //   :last[bottom] == ^bottom !strong;
+  // }
+  // section.right {
+  //   :last[bottom] == ^bottom !strong;
+  // }
 
-    .shift-x-1 {
-      margin-left: = ^shift-x;
-    }
-    .shift-x--1 {
-      margin-left: = ^shift-x * -1;
-    }
-    .shift-y-1 {
-      margin-top: = ^shift-y;
-    }
-    .shift-y--1 {
-      margin-top: = ^shift-y * -1;
-    }
+  .shift-x-1 {
+    margin-left: = ^shift-x;
+  }
+  .shift-x--1 {
+    margin-left: = ^shift-x * -1;
+  }
+  .shift-y-1 {
+    margin-top: = ^shift-y;
+  }
+  .shift-y--1 {
+    margin-top: = ^shift-y * -1;
+  }
 }</style>
         <aside class="cta follow" id="u19">
           <div class="cta-circle" id="u11"></div><style scoped="scoped" type="text/gss" id="u13">.title {
@@ -243,10 +260,19 @@ h-gutter-middle == h-gutter;
     font-size: = 1.5g;
     letter-spacing: .05em;
   }
+  @if ::window[width] <= $taylorW/2 {
+    font-size: = 3g;
+    a{
+      font-size: = 3g;
+    }
+  }
 }
 
 .paragraph {
   font-size: = 2g;
+  @if ::window[width] <= $taylorW/2 {
+    font-size: = 3g;
+  }
   line-height: = &font-size + 1g;
   height: == &intrinsic-height !require;
 }
@@ -261,7 +287,11 @@ h-gutter-middle == h-gutter;
 .cta-text {
   font-size: = 2g;
   line-height: = &font-size;
+  @if ::window[width] <= $taylorW/2 {
+    font-size: = 3.5g;
+  }
 }
+
 .cta-deco {
   font-size: = 18g;
   line-height: = &font-size - 2g;
@@ -269,10 +299,15 @@ h-gutter-middle == h-gutter;
 
 .play-button{
   font-size: == 2g;
+  line-height: = &font-size + .5g;
   center-y: == (^ .cover)[center-y];
   center-x: == (^ .cover)[center-x];
   width: == &intrinsic-width;
   height: == &intrinsic-height;
+  white-space: nowrap;
+  @if ::window[width] <= $taylorW/2 {
+    font-size: == 3g;
+  }
 }
 
 </style>
@@ -327,34 +362,34 @@ h-gutter-middle == h-gutter;
           </a>
         </aside>
         <section class="repost-v-title-media right section animating slide-in" id="u49">
-          <article class="repost post" id="ue6e93dd1-0837-41ea-a316-1685da184b1c" style="position:relative"><style type="text/gss" scoped="scoped" id="u22">@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
+          <article class="repost post" id="ue6e93dd1-0837-41ea-a316-1685da184b1c" style="position:relative"><style type="text/gss" scoped="scoped" id="u22">@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
 block-gap-horizontal = 0md;
 block-gap-vertical = 0md;
 block-gap-between = 0;
 </style>
-            <div class="block wrapper" id="u47"><style type="text/gss" scoped="scoped" id="u25">@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/variations/title-image.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/vfl/v-title-image.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/typography/small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/variations/source-name.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/variations/play-button.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/decorations/overlay.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/title-above.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/leading/small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/leading/attachments/attribution-above.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/trailing/small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/trailing/attachments/cover-below.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/overlay/big.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/overlay/attachments/cover-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/overlay/alignments/cover-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/leading/alignments/title-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/trailing/alignments/title-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/title-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/typography/alignments/center.gss;
+            <div class="block wrapper" id="u47"><style type="text/gss" scoped="scoped" id="u25">@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/variations/title-image.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/vfl/v-title-image.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/typography/small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/variations/source-name.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/variations/play-button.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/decorations/overlay.css;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/title-above.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/leading/small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/leading/attachments/attribution-above.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/trailing/small.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/trailing/attachments/cover-below.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/overlay/big.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/overlay/attachments/cover-center-y.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/overlay/alignments/cover-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/leading/alignments/title-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/trailing/alignments/title-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/title-center-x.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/typography/alignments/center.gss;
 inner-gap:= 3g;
 inner-gap-horizontal:= 1md;
 inner-gap-vertical:= 1md;
@@ -394,7 +429,7 @@ img[height] == img[width] * (720/1280) !require;
 /* enforce minimum scale*/
 img[height] >= 720 * image-min-scale !require;
 img[height] <= 720 * image-max-scale !require;</style>
-                <a href="http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself" id="u32">
+                <a href="http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself" target="_blank" id="u32">
                   <img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/472ca30425eb8360374ff29ad425a2b4/passthrough.jpg?input=http%3A%2F%2Fg.fastcompany.net%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F1280%2Fposter%2F2014%2F10%2F3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg&width=1280&height=720" srcset="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/618e95fd3b2c2f8f6584f678b6e6c0ac/passthrough.jpg?input=http%3A%2F%2Fg.fastcompany.net%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F1280%2Fposter%2F2014%2F10%2F3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg&width=720&height=405 720w, https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/472ca30425eb8360374ff29ad425a2b4/passthrough.jpg?input=http%3A%2F%2Fg.fastcompany.net%2Fmultisite_files%2Ffastcompany%2Fimagecache%2F1280%2Fposter%2F2014%2F10%2F3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg&width=1280&height=720 1280w" sizes="(min-width: 1440px) 1440px, 100vw" id="u31" />
                 </a>
               </div>
@@ -556,31 +591,31 @@ img[height] <= 720 * image-max-scale !require;</style>
  .layout-system .title {font-family: 'Playfair Display';}
  .layout-system .subtitle {font-family: 'Playfair Display';}
  .layout-system .description {font-family: 'Domine';}
- .layout-system .title {font-weight: 400;}
- .layout-system .subtitle {font-weight: 700;}
- a {font-family: 'Domine';font-weight: 700;}
- .attribution {font-family: 'Domine';font-weight: 400;text-transform: uppercase;letter-spacing: .07em;}
- .layout-system .quote {font-family: 'Playfair Display';font-weight: 400;font-style: italic;}
- .layout-system .subtitle {text-transform: uppercase;letter-spacing: .07em;}</style><style id="gss-precomputed">
+ .layout-system .title {font-weight: 700;}
+ .layout-system .subtitle {font-weight: 400;}
+ a {font-family: 'Domine';font-weight: 400;}
+ .attribution {font-family: 'Domine';font-weight: 700;text-transform: uppercase;letter-spacing: .03em;}
+ .layout-system .quote {font-family: 'Playfair Display';font-weight: 400;font-style: normal;}
+ .layout-system .title {text-transform: inherit;}</style><style id="gss-precomputed">
 @media (max-width: 720px) {
 #u51{font-size: 0.99rem;}
-#u51:before{content: "171,186,204"; display: none;}
-#u50{position: relative; margin-top: 0.9rem; margin-bottom: 0.9rem; width: 7.2rem; left: 0rem; top: 0rem; height: 11.95rem;;font-size: 0.99rem;}
+#u51:before{content: "179,204"; display: none;}
+#u50{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 7.2rem; left: 0rem; top: 0rem; height: 9.54rem;;font-size: 0.99rem;}
 #u50 .cta a { position: relative; z-index: 2; }
 
 #u50 .cta .cta-text { display: inline-block; text-align: center; z-index: 2; }
 
-#u19{width: 2.1rem; height: 2.1rem; position: absolute; left: 2.55rem; top: 0rem;;font-size: 0.99rem;}
-#u11{width: 2.1rem; height: 2.1rem; border-width: 0.1rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u19{width: 2.88rem; height: 2.88rem; position: absolute; left: 2.16rem; top: 0rem;;font-size: 0.99rem;}
+#u11{height: 2.88rem; width: 2.88rem; border-width: 0.14rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
 
-#u18{width: 2.1rem; height: 2.1rem;;font-size: 0.99rem;}
-#u15{font-size: 0.2rem; line-height: 0.2rem; position: absolute; left: -0.6rem; top: 0.95rem;;}
+#u18{width: 2.88rem; height: 2.88rem;;font-size: 0.99rem;}
+#u15{font-size: 0.28rem; line-height: 0.28rem; position: absolute; left: -0.21rem; top: 1.3rem;;}
 
-#u17{font-size: 1.8rem; width: 1.2rem; height: 1.2rem; position: absolute; left: 0.45rem; top: 0.45rem;;}
+#u17{font-size: 1.44rem; width: 1.68rem; height: 1.68rem; position: absolute; left: 0.6rem; top: 0.6rem;;}
 
-#u49{width: 6.75rem; height: 8.5rem; position: absolute; top: 3.45rem; left: 0.23rem;;font-size: 0.99rem;}
-#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 8.5rem; top: 0rem;;font-size: 0.99rem;}
-#u47{height: 8.5rem; width: 6.75rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u49{width: 7.2rem; height: 4.86rem; position: absolute; top: 4.68rem; left: 0rem;;font-size: 0.99rem;}
+#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 4.86rem; top: 0rem;;font-size: 0.99rem;}
+#u47{height: 4.86rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
 #u47 .source { display: inline-block; }
 
 #u47 .author { display: inline-block; }
@@ -598,150 +633,150 @@ img[height] <= 720 * image-max-scale !require;</style>
 #u47 .attribution a { letter-spacing: 0.05em; }
 
 #u28{font-size: 0.99rem;}
-#u27{font-size: 0.6rem; line-height: 0.7rem; font-weight: 800; width: 5.07rem; position: absolute; top: 0rem; left: 0.85rem;;}
+#u27{font-size: 0.48rem; line-height: 0.56rem; font-weight: 800; width: 5.4rem; position: absolute; top: -0.18rem; left: 0.9rem;;}
 
-#u33{overflow: hidden; height: 3.6rem; width: 4.5rem; position: absolute; top: 4rem; left: 1.13rem;;font-size: 0.99rem;}
+#u33{overflow: hidden; height: 1.5rem; width: 7.2rem; position: absolute; top: 2.64rem; left: 0rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 3.6rem; width: 6.4rem; position: absolute; top: -0.9rem; left: -1.9rem;;font-size: 0.99rem;}
+#u31{height: 4.05rem; width: 7.2rem; position: absolute; top: -3.45rem; left: 0rem;;font-size: 0.99rem;}
 
-#u35{opacity: 0.4; height: 0.3rem; width: 0.3rem; position: absolute; top: 0.05rem; left: 3.23rem;;font-size: 0.99rem;}
+#u35{opacity: 0.4; height: 0.24rem; width: 0.24rem; position: absolute; top: -0.08rem; left: 3.48rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 3.6rem; width: 6.4rem; position: absolute; top: -0.9rem; left: -1.9rem;;font-size: 0.99rem;}
+#u31{height: 4.05rem; width: 7.2rem; position: absolute; top: -3.45rem; left: 0rem;;font-size: 0.99rem;}
 
-#u37{opacity: 0.4; width: 0.3rem; height: 0.3rem; position: absolute; top: 7.8rem; left: 3.23rem;;font-size: 0.99rem;}
+#u37{opacity: 0.4; width: 0.24rem; height: 0.24rem; position: absolute; top: 4.3rem; left: 3.48rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 3.6rem; width: 6.4rem; position: absolute; top: -0.9rem; left: -1.9rem;;font-size: 0.99rem;}
+#u31{height: 4.05rem; width: 7.2rem; position: absolute; top: -3.45rem; left: 0rem;;font-size: 0.99rem;}
 
-#u39{opacity: 0.05; height: 1.8rem; width: 1.8rem; position: absolute; top: 4.9rem; left: 2.48rem;;font-size: 0.99rem;}
+#u39{opacity: 0.05; height: 1.44rem; width: 1.44rem; position: absolute; top: 2.67rem; left: 2.88rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 3.6rem; width: 6.4rem; position: absolute; top: -0.9rem; left: -1.9rem;;font-size: 0.99rem;}
+#u31{height: 4.05rem; width: 7.2rem; position: absolute; top: -3.45rem; left: 0rem;;font-size: 0.99rem;}
 
-#u46{font-size: 0.15rem; line-height: 0.25rem; max-width: 5.07rem; position: absolute; top: 0.55rem; left: 2.43rem;;}
-#u42{font-size: 0.15rem;}
-#u41{font-size: 0.15rem;;}
+#u46{font-size: 0.24rem; line-height: 0.32rem; max-width: 5.4rem; position: absolute; top: 0.32rem; left: 2.12rem;;}
+#u42{font-size: 0.24rem;}
+#u41{font-size: 0.24rem;;}
 
-#u45{font-size: 0.15rem;}
-#u44{font-size: 0.15rem;;}
+#u45{font-size: 0.24rem;}
+#u44{font-size: 0.24rem;;}
 
 #u93{font-size: 0.99rem;}
 div.layout { display: block; width: 100%; }
 
 div.layout section { display: inline-block; }
-@keyframes appearance-u49-618-250-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);}
-4.762% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);}
+@keyframes appearance-u49-442-426-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
+4.762% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
 9.524% {opacity:0;}
-14.286% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.74,0,1);opacity:0.317;}
-19.048% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.13,0,1);opacity:0.575;}
-23.81% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.9,0,1);opacity:0.736;}
-28.571% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,7.4,0,1);opacity:0.836;}
-33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.6,0,1);opacity:0.898;}
-38.095% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.86,0,1);opacity:0.936;}
-42.857% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.78,0,1);opacity:0.96;}
-47.619% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.11,0,1);opacity:0.975;}
-52.381% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.69,0,1);opacity:0.985;}
-57.143% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.43,0,1);opacity:0.99;}
-61.905% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.27,0,1);opacity:0.994;}
-66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.17,0,1);opacity:0.996;}
-71.429% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.998;}
-76.19% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.998;}
-80.952% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
-85.714% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
-90.476% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
-95.238% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
+14.286% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
+19.048% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
+23.81% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,9.52,0,1);opacity:0.736;}
+28.571% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.92,0,1);opacity:0.836;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.68,0,1);opacity:0.898;}
+38.095% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.29,0,1);opacity:0.936;}
+42.857% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.42,0,1);opacity:0.96;}
+47.619% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.89,0,1);opacity:0.975;}
+52.381% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.55,0,1);opacity:0.985;}
+57.143% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.99;}
+61.905% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.21,0,1);opacity:0.994;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.13,0,1);opacity:0.996;}
+71.429% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
+76.19% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
+80.952% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
+85.714% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
+90.476% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
+95.238% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u49-618-250-720 #u49 {
-animation: appearance-u49-618-250-720 1344ms forwards;
+.appearance-u49-442-426-720 #u49 {
+animation: appearance-u49-442-426-720 1344ms forwards;
 animation-play-state: paused;
 }
-.appearance-u49-618-250-720-running #u49 {
+.appearance-u49-442-426-720-running #u49 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes appearance-u49-618-250-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);}
-4.762% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);}
+@-webkit-keyframes appearance-u49-442-426-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
+4.762% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
 9.524% {opacity:0;}
-14.286% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.74,0,1);opacity:0.317;}
-19.048% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,19.13,0,1);opacity:0.575;}
-23.81% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.9,0,1);opacity:0.736;}
-28.571% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,7.4,0,1);opacity:0.836;}
-33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,4.6,0,1);opacity:0.898;}
-38.095% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.86,0,1);opacity:0.936;}
-42.857% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.78,0,1);opacity:0.96;}
-47.619% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.11,0,1);opacity:0.975;}
-52.381% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.69,0,1);opacity:0.985;}
-57.143% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.43,0,1);opacity:0.99;}
-61.905% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.27,0,1);opacity:0.994;}
-66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.17,0,1);opacity:0.996;}
-71.429% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.998;}
-76.19% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.1,0,1);opacity:0.998;}
-80.952% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
-85.714% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
-90.476% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
-95.238% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.04,0,1);opacity:0.999;}
+14.286% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
+19.048% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
+23.81% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,9.52,0,1);opacity:0.736;}
+28.571% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.92,0,1);opacity:0.836;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.68,0,1);opacity:0.898;}
+38.095% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.29,0,1);opacity:0.936;}
+42.857% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.42,0,1);opacity:0.96;}
+47.619% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.89,0,1);opacity:0.975;}
+52.381% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.55,0,1);opacity:0.985;}
+57.143% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.99;}
+61.905% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.21,0,1);opacity:0.994;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.13,0,1);opacity:0.996;}
+71.429% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
+76.19% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
+80.952% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
+85.714% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
+90.476% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
+95.238% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u49-618-250-720 #u49 {
--webkit-animation: appearance-u49-618-250-720 1344ms forwards;
+.appearance-u49-442-426-720 #u49 {
+-webkit-animation: appearance-u49-442-426-720 1344ms forwards;
 -webkit-animation-play-state: paused;
 }
-.appearance-u49-618-250-720-running #u49 {
+.appearance-u49-442-426-720-running #u49 {
 -webkit-animation-play-state: running;
 }
 
-@keyframes disappearance-u49-618-250-720 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,14.22,0,1);opacity:0.684;}
-5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.84,0,1);opacity:0.426;}
-11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.08,0,1);opacity:0.265;}
-16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,37.59,0,1);opacity:0.165;}
-22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,40.39,0,1);opacity:0.102;}
-27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,42.13,0,1);opacity:0.064;}
-33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,43.22,0,1);opacity:0.04;}
-38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,43.89,0,1);opacity:0.025;}
-44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.31,0,1);opacity:0.015;}
-50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.57,0,1);opacity:0.01;}
-55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.73,0,1);opacity:0.006;}
-61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.83,0,1);opacity:0.004;}
-66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.9,0,1);opacity:0.002;}
-72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.9,0,1);opacity:0.002;}
-77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);opacity:0;}
+@keyframes disappearance-u49-442-426-720 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
+5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
+11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
+16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
+22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.31,0,1);opacity:0.102;}
+27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.71,0,1);opacity:0.064;}
+33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.57,0,1);opacity:0.04;}
+38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.11,0,1);opacity:0.025;}
+44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.45,0,1);opacity:0.015;}
+50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.01;}
+55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.79,0,1);opacity:0.006;}
+61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.87,0,1);opacity:0.004;}
+66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
+72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
+77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u49-618-250-720 #u49 {
-animation: disappearance-u49-618-250-720 1152ms forwards;
+.disappearance-u49-442-426-720 #u49 {
+animation: disappearance-u49-442-426-720 1152ms forwards;
 animation-play-state: paused;
 }
-.disappearance-u49-618-250-720-running #u49 {
+.disappearance-u49-442-426-720-running #u49 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes disappearance-u49-618-250-720 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,14.22,0,1);opacity:0.684;}
-5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,25.84,0,1);opacity:0.426;}
-11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.08,0,1);opacity:0.265;}
-16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,37.59,0,1);opacity:0.165;}
-22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,40.39,0,1);opacity:0.102;}
-27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,42.13,0,1);opacity:0.064;}
-33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,43.22,0,1);opacity:0.04;}
-38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,43.89,0,1);opacity:0.025;}
-44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.31,0,1);opacity:0.015;}
-50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.57,0,1);opacity:0.01;}
-55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.73,0,1);opacity:0.006;}
-61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.83,0,1);opacity:0.004;}
-66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.9,0,1);opacity:0.002;}
-72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.9,0,1);opacity:0.002;}
-77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,44.96,0,1);opacity:0.001;}
-100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);opacity:0;}
+@-webkit-keyframes disappearance-u49-442-426-720 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
+5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
+11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
+16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
+22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.31,0,1);opacity:0.102;}
+27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.71,0,1);opacity:0.064;}
+33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.57,0,1);opacity:0.04;}
+38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.11,0,1);opacity:0.025;}
+44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.45,0,1);opacity:0.015;}
+50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.01;}
+55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.79,0,1);opacity:0.006;}
+61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.87,0,1);opacity:0.004;}
+66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
+72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
+77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
+100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u49-618-250-720 #u49 {
--webkit-animation: disappearance-u49-618-250-720 1152ms forwards;
+.disappearance-u49-442-426-720 #u49 {
+-webkit-animation: disappearance-u49-442-426-720 1152ms forwards;
 -webkit-animation-play-state: paused;
 }
-.disappearance-u49-618-250-720-running #u49 {
+.disappearance-u49-442-426-720-running #u49 {
 -webkit-animation-play-state: running;
 }
 
@@ -749,23 +784,23 @@ animation-play-state: running;
 }
 @media (min-width: 721px) {
 #u51{font-size: 0.99rem;}
-#u51:before{content: "171,186,204"; display: none;}
-#u50{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 14.4rem; left: 0rem; top: 0rem; height: 6.8rem;;font-size: 0.99rem;}
+#u51:before{content: "171,194"; display: none;}
+#u50{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 14.4rem; left: 0rem; top: 0rem; height: 6.24rem;;font-size: 0.99rem;}
 #u50 .cta a { position: relative; z-index: 2; }
 
 #u50 .cta .cta-text { display: inline-block; text-align: center; z-index: 2; }
 
 #u19{width: 1.68rem; height: 1.68rem; position: absolute; left: 6.36rem; top: 2.76rem;;font-size: 0.99rem;}
-#u11{width: 1.68rem; height: 1.68rem; border-width: 0.08rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u11{height: 1.68rem; width: 1.68rem; border-width: 0.08rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
 
 #u18{width: 1.68rem; height: 1.68rem;;font-size: 0.99rem;}
-#u15{font-size: 0.16rem; line-height: 0.16rem; position: absolute; left: 0.5rem; top: 0.76rem;;}
+#u15{font-size: 0.16rem; line-height: 0.16rem; position: absolute; left: 0.37rem; top: 0.76rem;;}
 
 #u17{font-size: 1.44rem; width: 0.96rem; height: 0.96rem; position: absolute; left: 0.36rem; top: 0.36rem;;}
 
-#u49{width: 6.3rem; height: 6.8rem; position: absolute; top: 0rem; left: 7.92rem;;font-size: 0.99rem;}
-#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 6.8rem; top: 0rem;;font-size: 0.99rem;}
-#u47{height: 6.8rem; width: 6.3rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
+#u49{width: 6.75rem; height: 6.24rem; position: absolute; top: 0rem; left: 7.56rem;;font-size: 0.99rem;}
+#ue6e93dd1-0837-41ea-a316-1685da184b1c{position: relative; height: 6.24rem; top: 0rem;;font-size: 0.99rem;}
+#u47{height: 6.24rem; width: 6.75rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
 #u47 .source { display: inline-block; }
 
 #u47 .author { display: inline-block; }
@@ -783,25 +818,25 @@ animation-play-state: running;
 #u47 .attribution a { letter-spacing: 0.05em; }
 
 #u28{font-size: 0.99rem;}
-#u27{font-size: 0.48rem; line-height: 0.56rem; font-weight: 800; width: 4.73rem; position: absolute; top: -0.18rem; left: 0.79rem;;}
+#u27{font-size: 0.48rem; line-height: 0.56rem; font-weight: 800; width: 5.07rem; position: absolute; top: -0.18rem; left: 0.85rem;;}
 
-#u33{overflow: hidden; height: 2.88rem; width: 3.6rem; position: absolute; top: 3.2rem; left: 1.35rem;;font-size: 0.99rem;}
+#u33{overflow: hidden; height: 2.88rem; width: 3.6rem; position: absolute; top: 2.64rem; left: 1.58rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 2.88rem; width: 5.12rem; position: absolute; top: -0.9rem; left: -1.52rem;;font-size: 0.99rem;}
+#u31{height: 7.2rem; width: 12.8rem; position: absolute; top: -5.22rem; left: -9.2rem;;font-size: 0.99rem;}
 
-#u35{opacity: 0.4; height: 0.24rem; width: 0.24rem; position: absolute; top: 0.04rem; left: 3.03rem;;font-size: 0.99rem;}
+#u35{opacity: 0.4; height: 0.24rem; width: 0.24rem; position: absolute; top: 0.04rem; left: 3.26rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 2.88rem; width: 5.12rem; position: absolute; top: -0.9rem; left: -1.52rem;;font-size: 0.99rem;}
+#u31{height: 7.2rem; width: 12.8rem; position: absolute; top: -5.22rem; left: -9.2rem;;font-size: 0.99rem;}
 
-#u37{opacity: 0.4; width: 0.24rem; height: 0.24rem; position: absolute; top: 6.24rem; left: 3.03rem;;font-size: 0.99rem;}
+#u37{opacity: 0.4; width: 0.24rem; height: 0.24rem; position: absolute; top: 5.68rem; left: 3.26rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 2.88rem; width: 5.12rem; position: absolute; top: -0.9rem; left: -1.52rem;;font-size: 0.99rem;}
+#u31{height: 7.2rem; width: 12.8rem; position: absolute; top: -5.22rem; left: -9.2rem;;font-size: 0.99rem;}
 
-#u39{opacity: 0.05; height: 1.44rem; width: 1.44rem; position: absolute; top: 3.92rem; left: 2.43rem;;font-size: 0.99rem;}
+#u39{opacity: 0.05; height: 1.44rem; width: 1.44rem; position: absolute; top: 3.36rem; left: 2.66rem;;font-size: 0.99rem;}
 #u32{font-size: 0.99rem;}
-#u31{height: 2.88rem; width: 5.12rem; position: absolute; top: -0.9rem; left: -1.52rem;;font-size: 0.99rem;}
+#u31{height: 7.2rem; width: 12.8rem; position: absolute; top: -5.22rem; left: -9.2rem;;font-size: 0.99rem;}
 
-#u46{font-size: 0.12rem; line-height: 0.2rem; max-width: 4.73rem; position: absolute; top: 0.44rem; left: 2.4rem;;}
+#u46{font-size: 0.12rem; line-height: 0.2rem; max-width: 5.07rem; position: absolute; top: 0.44rem; left: 2.63rem;;}
 #u42{font-size: 0.12rem;}
 #u41{font-size: 0.12rem;;}
 
@@ -812,7 +847,7 @@ animation-play-state: running;
 div.layout { display: block; width: 100%; }
 
 div.layout section { display: inline-block; }
-@keyframes appearance-u49-755-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);opacity:0;}
+@keyframes appearance-u49-693-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 5% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
 10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
 15% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
@@ -834,15 +869,15 @@ div.layout section { display: inline-block; }
 95% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u49-755-0-1440 #u49 {
-animation: appearance-u49-755-0-1440 1280ms forwards;
+.appearance-u49-693-0-1440 #u49 {
+animation: appearance-u49-693-0-1440 1280ms forwards;
 animation-play-state: paused;
 }
-.appearance-u49-755-0-1440-running #u49 {
+.appearance-u49-693-0-1440-running #u49 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes appearance-u49-755-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,45,0,1);opacity:0;}
+@-webkit-keyframes appearance-u49-693-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 5% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
 10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
 15% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
@@ -864,15 +899,15 @@ animation-play-state: running;
 95% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
 100% {opacity:1;}
 }
-.appearance-u49-755-0-1440 #u49 {
--webkit-animation: appearance-u49-755-0-1440 1280ms forwards;
+.appearance-u49-693-0-1440 #u49 {
+-webkit-animation: appearance-u49-693-0-1440 1280ms forwards;
 -webkit-animation-play-state: paused;
 }
-.appearance-u49-755-0-1440-running #u49 {
+.appearance-u49-693-0-1440-running #u49 {
 -webkit-animation-play-state: running;
 }
 
-@keyframes disappearance-u49-755-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
+@keyframes disappearance-u49-693-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
 5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
 11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
 16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
@@ -892,15 +927,15 @@ animation-play-state: running;
 94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
 100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u49-755-0-1440 #u49 {
-animation: disappearance-u49-755-0-1440 1152ms forwards;
+.disappearance-u49-693-0-1440 #u49 {
+animation: disappearance-u49-693-0-1440 1152ms forwards;
 animation-play-state: paused;
 }
-.disappearance-u49-755-0-1440-running #u49 {
+.disappearance-u49-693-0-1440-running #u49 {
 animation-play-state: running;
 }
 
-@-webkit-keyframes disappearance-u49-755-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
+@-webkit-keyframes disappearance-u49-693-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
 5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
 11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
 16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
@@ -920,22 +955,22 @@ animation-play-state: running;
 94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
 100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
 }
-.disappearance-u49-755-0-1440 #u49 {
--webkit-animation: disappearance-u49-755-0-1440 1152ms forwards;
+.disappearance-u49-693-0-1440 #u49 {
+-webkit-animation: disappearance-u49-693-0-1440 1152ms forwards;
 -webkit-animation-play-state: paused;
 }
-.disappearance-u49-755-0-1440-running #u49 {
+.disappearance-u49-693-0-1440-running #u49 {
 -webkit-animation-play-state: running;
 }
 
 
 }</style>
-      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
-      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
-      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
-      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
-      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" />
-      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/css/asides/ctas/follow.css" /><style type="text/css">
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" />
+      <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/css/asides/ctas/follow.css" /><style type="text/css">
   .box-sizing {
   -o-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -960,6 +995,11 @@ body:after {
   border-right: 1px solid #dbc6bc;
   opacity: .2;
   z-index: -1;
+}
+@media screen and (max-width: 720px) {
+  body:after {
+    display: none;
+  }
 }
 body a,
 body .cta {
@@ -1043,33 +1083,39 @@ html:not(.gss-ready) {
   outline: none;
 }
 </style>
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/layout.gss" />
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/variables.gss" />
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/debug.gss" />
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/variations/title-image.gss">
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/layout.gss" />
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/variables.gss" />
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/debug.gss" />
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/variations/title-image.gss">
 .title{
   width: <= ^width * .75;
   center-x: == ^center-x;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss">
 .cover {
   width: == ^image-width !strong;
   // width: <= ^image-width !strong;   
-  height: == ^image-height !require;
+  height: == ^image-height !strong;
   center-x: == ^center-x;
+  @if ::window[width] <= $taylorW/2 {
+    width: == ::window[width] !strong100;
+    height: == ::window[height]/3 !strong100;
+  }
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/vfl/v-title-image.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/vfl/v-title-image.gss">
 @v |-[inner-gap-top]-(.title)-[inner-gap]-(.cover)-[inner-gap-bottom]-| !require;
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
 inner-gap-top >= inner-gap-vertical !require;
 inner-gap-bottom == inner-gap-top !require;
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
 inner-gap-right == inner-gap-left !require;
 outer-gap-right == outer-gap-left !require;
 inner-gap-left >= inner-gap-horizontal !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/typography/small.gss">
+
+
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/typography/small.gss">
 .title {
   z-index: 2;
   font-size: = 6g;
@@ -1089,10 +1135,19 @@ inner-gap-left >= inner-gap-horizontal !require;
     font-size: = 1.5g;
     letter-spacing: .05em;
   }
+  @if ::window[width] <= $taylorW/2 {
+    font-size: = 3g;
+    a{
+      font-size: = 3g;
+    }
+  }
 }
 
 .paragraph {
   font-size: = 2g;
+  @if ::window[width] <= $taylorW/2 {
+    font-size: = 3g;
+  }
   line-height: = &font-size + 1g;
   height: == &intrinsic-height !require;
 }
@@ -1107,7 +1162,11 @@ inner-gap-left >= inner-gap-horizontal !require;
 .cta-text {
   font-size: = 2g;
   line-height: = &font-size;
+  @if ::window[width] <= $taylorW/2 {
+    font-size: = 3.5g;
+  }
 }
+
 .cta-deco {
   font-size: = 18g;
   line-height: = &font-size - 2g;
@@ -1115,21 +1174,26 @@ inner-gap-left >= inner-gap-horizontal !require;
 
 .play-button{
   font-size: == 2g;
+  line-height: = &font-size + .5g;
   center-y: == (^ .cover)[center-y];
   center-x: == (^ .cover)[center-x];
   width: == &intrinsic-width;
   height: == &intrinsic-height;
+  white-space: nowrap;
+  @if ::window[width] <= $taylorW/2 {
+    font-size: == 3g;
+  }
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/title-above.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/title-above.gss">
 .attribution{
   bottom: == ^(.title)[top] - ^attribution-gap;
   max-width: <= ^(.title)[width];
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/leading/small.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/leading/small.gss">
 .leading{
   width: == 3g;
   height: == 3g;
@@ -1137,13 +1201,13 @@ inner-gap-left >= inner-gap-horizontal !require;
   opacity: == ^decoration-opacity-leading;
 }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/leading/attachments/attribution-above.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/leading/attachments/attribution-above.gss">
 .leading{
   bottom: == ^(.attribution)[top] - ^decoration-gap-leading;
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/trailing/small.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/trailing/small.gss">
 .trailing{
   width: == 3g;
   height: == 3g;
@@ -1151,12 +1215,12 @@ inner-gap-left >= inner-gap-horizontal !require;
   opacity: == ^decoration-opacity-trailing;
 }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/trailing/attachments/cover-below.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/trailing/attachments/cover-below.gss">
 .trailing{
   top: == ^(.cover)[bottom] + ^decoration-gap-trailing;
 }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/overlay/big.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/overlay/big.gss">
 .overlay {
   width: == 2md;
   height: == 2md;
@@ -1165,37 +1229,37 @@ inner-gap-left >= inner-gap-horizontal !require;
   opacity: == 0.05;
 }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/overlay/attachments/cover-center-y.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/overlay/attachments/cover-center-y.gss">
 .overlay{
   center-y: == ^(.cover)[center-y];
 }
 
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/overlay/alignments/cover-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/overlay/alignments/cover-center-x.gss">
 .overlay {
   center-x: == ^(.cover)[center-x]; 
 }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/leading/alignments/title-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/leading/alignments/title-center-x.gss">
 .leading {
   center-x: == ^(.title)[center-x]; 
 }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/decorations/trailing/alignments/title-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/decorations/trailing/alignments/title-center-x.gss">
 .trailing {
   center-x: == ^(.title)[center-x]; 
  }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/title-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/title-center-x.gss">
 .attribution {
   center-x: == ^(.title)[center-x]; 
  }
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/typography/alignments/center.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/typography/alignments/center.gss">
 .text {
 	text-align: center;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
 width: == intrinsic-width !require;
 top: == 0 !require;
 
@@ -1213,7 +1277,7 @@ top: == 0 !require;
   outer-gap-left >= 0 !require;
   outer-gap-right >= 0 !require;
 }
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
 block-gap-top == block-gap-vertical;
 block-gap-top >= block-gap-vertical !require;
 block-gap-top == block-gap-bottom !require;
@@ -1223,7 +1287,7 @@ block-gap     == block-gap-between;
 
 block-gap     == block-gap-top !require;
 
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
+</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
 block-gap-left == block-gap-right !require;
 block-gap-left >= block-gap-horizontal !require;
 block-gap-left == block-gap-horizontal !require;
@@ -1234,6 +1298,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-61994900-1', 'auto');
-ga('send', 'pageview');</script></div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.46/src/assets/gss-init.js" id="u94"></script></body>
+ga('send', 'pageview');</script></div><script src="//cdn.thegrid.io/design-systems/taylor/0.0.48/src/assets/gss-init.js" id="u94"></script></body>
 
 </html>
