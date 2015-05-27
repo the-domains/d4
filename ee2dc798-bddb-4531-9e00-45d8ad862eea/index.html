@@ -2,31 +2,26 @@
 <html>
 
   <head>
+    <TITLE>D4</TITLE>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="the-grid-solution" content=" " />
-    <title>D4</title>
     <link rel="shortcut icon" type="image/png" href="https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/font/Icons/Icons.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/scale/large.css" media="(min-width: 90.0625em)" />
-    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/asides/ctas/follow.css" /><style type="text/css">
-  .box-sizing {
-  -o-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html {
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/css/font/Icons/Icons.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/css/scale/mini.css" media="(max-width: 19.9375em)" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/css/scale/small.css" media="(min-width: 20em) and (max-width: 45.0624em) " />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/css/scale/medium.css" media="(min-width: 45.0625em) and (max-width: 90.0624em)" />
+    <link rel="stylesheet" type="text/css" href="//cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/css/scale/large.css" media="(min-width: 90.0625em)" /><style type="text/css">
+  html {
   width: 100%;
 }
 body {
   width: 100%;
-  background: #faefda;
+  background: #ffffff;
   color: #5f4d5f;
   overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.6;
 }
 body:after {
   content: "";
@@ -38,39 +33,18 @@ body:after {
   opacity: .2;
   z-index: -1;
 }
-@media screen and (max-width: 720px) {
-  body:after {
-    display: none;
-  }
-}
 body a,
 body .cta {
   color: #d12164;
   text-decoration: none;
+}
+body .media > a {
   display: inline-block;
 }
-body a:hover *,
-body .cta:hover * {
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  -o-transition-delay: 0s;
-  -ms-transition-delay: 0s;
-  transition-delay: 0s;
-  -webkit-transition-timing-function: linear;
-  -moz-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  -ms-transition-timing-function: linear;
-  transition-transition-timing-function: linear;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  -ms-transition-property: all;
-  transition-property: all;
-  opacity: .8;
+body h1 a,
+body h2 a,
+body h3 a {
+  color: inherit;
 }
 *,
 *:before,
@@ -88,27 +62,43 @@ body .cta:hover * {
   padding: 0;
   margin: 0;
 }
-article.post .title {
-  color: #66ccc0;
+.decoration > svg {
+  display: block;
 }
-article.post .description {
+.group .title,
+.group a {
+  line-height: 1em;
+}
+.group .description {
   color: #5f4d5f;
 }
-article.post .overlay {
-  opacity: 0.06;
+.group .attribution {
+  white-space: nowrap;
 }
-article.post .attribution .source {
+.group .attribution .source {
+  display: inline-block;
   color: #dbc6bc;
 }
-article.post .attribution .name {
+.group .attribution .publisher {
+  display: inline-block;
+}
+.group .attribution .author {
+  display: inline-block;
+}
+.group .attribution .name {
   color: #5f4d5f;
 }
-article.post .attribution .avatar {
+.group .attribution .avatar {
   background-size: cover;
+  opacity: .6;
+  display: inline-block;
+  vertical-align: middle;
 }
-svg text,
-svg path {
-  fill: #66ccc0;
+.group .attribution .avatar img,
+.group .attribution .avatar a {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
 
 </style><style type="text/css">
@@ -126,335 +116,61 @@ html:not(.gss-ready) {
 }
 </style><style id="gss-precomputed">
 @media (max-width: 720px) {
-#u40{font-size: 0.99rem;}
-#u40:before{content: ""; display: none;}
-#u39{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 7.2rem; left: 0rem; top: 0rem; height: 7.56rem;;font-size: 0.99rem;}
-#u39 .cta a { position: relative; z-index: 2; }
+#u20{font-size: 0.16rem;}
+#u20:before{content: ""; display: none;}
+#u19{position: relative; display: block; width: 7.2rem; margin-top: 1.44rem; margin-bottom: 1.44rem; top: 0rem; left: 0rem; height: 3.6rem;;font-size: 0.16rem;}
+#u19 .stack { display: inline-block; }
 
-#u39 .cta .cta-text { display: inline-block; z-index: 2; }
+#u18{height: 3.6rem; width: 2.88rem; position: absolute; top: 0rem; left: 0.36rem;;font-size: 0.16rem;}
+#u18 .group.mixed { text-align: left; }
 
-#u14{width: 2.88rem; height: 2.88rem; position: absolute; left: 2.16rem; top: 0rem;;font-size: 0.99rem;}
-#u6{width: 2.88rem; height: 2.88rem; border-width: 0.14rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u17{height: 3.6rem; width: 2.88rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u13{overflow: hidden; height: 3.6rem; width: 1.44rem; position: absolute; top: 0rem; left: 0.72rem;;font-size: 0.16rem;}
+#u7{font-size: 0.16rem;}
+#u6{height: 3.6rem; width: 2.88rem; position: absolute; top: -0.19rem; left: -0.79rem;;font-size: 0.16rem;}
 
-#u13{width: 2.88rem; height: 2.88rem;;font-size: 0.99rem;}
-#u10{font-size: 0.28rem; line-height: 0.28rem; position: absolute; left: 0.97rem; top: 1.3rem;;}
+#u10{background: none repeat scroll 0% 0% orange; width: 0.72rem; height: 0.72rem; position: absolute; top: 1.44rem; left: 0.36rem;;font-size: 0.1388rem;}
 
-#u12{font-size: 1.44rem; width: 1.68rem; height: 1.68rem; position: absolute; left: 0.6rem; top: 0.6rem;;}
+#u16{position: absolute; top: -0.42rem; left: 0rem;;font-size: 0.16rem;}
+#u15{z-index: 2; font-size: 0.12rem; line-height: 0.2rem;;}
 
-#u38{width: 7.2rem; height: 2.88rem; position: absolute; top: 4.68rem; left: 0rem;;font-size: 0.99rem;}
-#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 2.88rem; top: 0rem;;font-size: 0.99rem;}
-#u36{height: 2.88rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
-#u36 .overlay path { fill: rgb(250, 239, 219) ! important; }
-
-#u36 .overlay { opacity: 0.2 ! important; pointer-events: none; }
-#u36 .trailing { z-index: 2; }
-#u36 .leading { z-index: 2; }
-#u36 .overlay { z-index: 2; }
-
-#u22{opacity: 0.4; height: 0.24rem; width: 0.24rem; position: absolute; top: -0.4rem; left: 0rem;;font-size: 0.99rem;}
-
-#u24{opacity: 0.4; width: 0.24rem; height: 0.24rem; position: absolute; left: 0rem;;font-size: 0.99rem;}
-
-#u26{opacity: 0.05; height: 1.44rem; width: 1.44rem; position: absolute; top: 0.72rem; left: 2.88rem;;font-size: 0.99rem;}
-
-#u35{overflow: hidden; height: 2.88rem; width: 7.2rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
-#u30{font-size: 0.99rem;}
-#u29{height: 8.59rem; width: 6.86rem; position: absolute; top: -3.47rem; left: 0.18rem;;font-size: 0.99rem;}
-
-#u68{font-size: 0.99rem;}
-div.layout { display: block; width: 100%; }
-
-div.layout section { display: inline-block; }
-@keyframes appearance-u38-320-520-720 {0% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
-4.762% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
-9.524% {opacity:0;}
-14.286% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
-19.048% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
-23.81% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,9.52,0,1);opacity:0.736;}
-28.571% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.92,0,1);opacity:0.836;}
-33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.68,0,1);opacity:0.898;}
-38.095% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.29,0,1);opacity:0.936;}
-42.857% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.42,0,1);opacity:0.96;}
-47.619% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.89,0,1);opacity:0.975;}
-52.381% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.55,0,1);opacity:0.985;}
-57.143% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.99;}
-61.905% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.21,0,1);opacity:0.994;}
-66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.13,0,1);opacity:0.996;}
-71.429% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-76.19% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-80.952% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-85.714% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-90.476% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-95.238% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-100% {opacity:1;}
-}
-.appearance-u38-320-520-720 #u38 {
-animation: appearance-u38-320-520-720 1344ms forwards;
-animation-play-state: paused;
-}
-.appearance-u38-320-520-720-running #u38 {
-animation-play-state: running;
-}
-
-@-webkit-keyframes appearance-u38-320-520-720 {0% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
-4.762% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
-9.524% {opacity:0;}
-14.286% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
-19.048% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
-23.81% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,9.52,0,1);opacity:0.736;}
-28.571% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.92,0,1);opacity:0.836;}
-33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.68,0,1);opacity:0.898;}
-38.095% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.29,0,1);opacity:0.936;}
-42.857% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.42,0,1);opacity:0.96;}
-47.619% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.89,0,1);opacity:0.975;}
-52.381% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.55,0,1);opacity:0.985;}
-57.143% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.99;}
-61.905% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.21,0,1);opacity:0.994;}
-66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.13,0,1);opacity:0.996;}
-71.429% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-76.19% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-80.952% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-85.714% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-90.476% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-95.238% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-100% {opacity:1;}
-}
-.appearance-u38-320-520-720 #u38 {
--webkit-animation: appearance-u38-320-520-720 1344ms forwards;
--webkit-animation-play-state: paused;
-}
-.appearance-u38-320-520-720-running #u38 {
--webkit-animation-play-state: running;
-}
-
-@keyframes disappearance-u38-320-520-720 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
-5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
-11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
-16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
-22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.31,0,1);opacity:0.102;}
-27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.71,0,1);opacity:0.064;}
-33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.57,0,1);opacity:0.04;}
-38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.11,0,1);opacity:0.025;}
-44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.45,0,1);opacity:0.015;}
-50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.01;}
-55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.79,0,1);opacity:0.006;}
-61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.87,0,1);opacity:0.004;}
-66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-}
-.disappearance-u38-320-520-720 #u38 {
-animation: disappearance-u38-320-520-720 1152ms forwards;
-animation-play-state: paused;
-}
-.disappearance-u38-320-520-720-running #u38 {
-animation-play-state: running;
-}
-
-@-webkit-keyframes disappearance-u38-320-520-720 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
-5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
-11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
-16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
-22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.31,0,1);opacity:0.102;}
-27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.71,0,1);opacity:0.064;}
-33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.57,0,1);opacity:0.04;}
-38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.11,0,1);opacity:0.025;}
-44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.45,0,1);opacity:0.015;}
-50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.01;}
-55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.79,0,1);opacity:0.006;}
-61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.87,0,1);opacity:0.004;}
-66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-}
-.disappearance-u38-320-520-720 #u38 {
--webkit-animation: disappearance-u38-320-520-720 1152ms forwards;
--webkit-animation-play-state: paused;
-}
-.disappearance-u38-320-520-720-running #u38 {
--webkit-animation-play-state: running;
-}
-
+#u24{font-size: 0.16rem;}
 
 }
 @media (min-width: 721px) {
-#u40{font-size: 0.99rem;}
-#u40:before{content: ""; display: none;}
-#u39{position: relative; margin-top: 0.72rem; margin-bottom: 0.72rem; width: 14.4rem; left: 0rem; top: 0rem; height: 2.88rem;;font-size: 0.99rem;}
-#u39 .cta a { position: relative; z-index: 2; }
+#u20{font-size: 0.16rem;}
+#u20:before{content: ""; display: none;}
+#u19{position: relative; display: block; width: 14.4rem; margin-top: 1.44rem; margin-bottom: 1.44rem; top: 0rem; left: 0rem; height: 3.6rem;;font-size: 0.16rem;}
+#u19 .stack { display: inline-block; }
 
-#u39 .cta .cta-text { display: inline-block; z-index: 2; }
+#u18{height: 3.6rem; width: 6.48rem; position: absolute; top: 0rem; left: 0.36rem;;font-size: 0.16rem;}
+#u18 .group.mixed { text-align: left; }
 
-#u14{width: 1.68rem; height: 1.68rem; position: absolute; left: 6.36rem; top: 2.76rem;;font-size: 0.99rem;}
-#u6{width: 1.68rem; height: 1.68rem; border-width: 0.08rem; position: absolute; left: 0rem; top: 0rem;;font-size: 0.99rem;}
+#u17{height: 3.6rem; width: 6.48rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.16rem;}
+#u13{overflow: hidden; height: 3.6rem; width: 5.04rem; position: absolute; top: 0rem; left: 0.72rem;;font-size: 0.16rem;}
+#u7{font-size: 0.16rem;}
+#u6{height: 6.32rem; width: 5.05rem; position: absolute; top: -1.33rem; left: 0rem;;font-size: 0.16rem;}
 
-#u13{width: 1.68rem; height: 1.68rem;;font-size: 0.99rem;}
-#u10{font-size: 0.16rem; line-height: 0.16rem; position: absolute; left: 0.37rem; top: 0.76rem;;}
+#u10{background: none repeat scroll 0% 0% orange; width: 0.72rem; height: 0.72rem; position: absolute; top: 1.44rem; left: 2.16rem;;font-size: 0.1388rem;}
 
-#u12{font-size: 1.44rem; width: 0.96rem; height: 0.96rem; position: absolute; left: 0.36rem; top: 0.36rem;;}
+#u16{position: absolute; top: -0.42rem; left: 0rem;;font-size: 0.16rem;}
+#u15{z-index: 2; font-size: 0.12rem; line-height: 0.2rem;;}
 
-#u38{width: 6.75rem; height: 2.88rem; position: absolute; top: 0rem; left: 0.09rem;;font-size: 0.99rem;}
-#uee2dc798-bddb-4531-9e00-45d8ad862eea{position: relative; height: 2.88rem; top: 0rem;;font-size: 0.99rem;}
-#u36{height: 2.88rem; width: 3.6rem; position: absolute; top: 0rem; left: 1.58rem;;font-size: 0.99rem;}
-#u36 .overlay path { fill: rgb(250, 239, 219) ! important; }
+#u24{font-size: 0.16rem;}
 
-#u36 .overlay { opacity: 0.2 ! important; pointer-events: none; }
-#u36 .trailing { z-index: 2; }
-#u36 .leading { z-index: 2; }
-#u36 .overlay { z-index: 2; }
-
-#u22{opacity: 0.4; height: 0.24rem; width: 0.24rem; position: absolute; top: -0.4rem; left: 0rem;;font-size: 0.99rem;}
-
-#u24{opacity: 0.4; width: 0.24rem; height: 0.24rem; position: absolute; left: 0rem;;font-size: 0.99rem;}
-
-#u26{opacity: 0.05; height: 1.44rem; width: 1.44rem; position: absolute; top: 0.72rem; left: 1.08rem;;font-size: 0.99rem;}
-
-#u35{overflow: hidden; height: 2.88rem; width: 3.6rem; position: absolute; top: 0rem; left: 0rem;;font-size: 0.99rem;}
-#u30{font-size: 0.99rem;}
-#u29{height: 4.51rem; width: 3.6rem; position: absolute; top: -1.56rem; left: 1px;;font-size: 0.99rem;}
-
-#u68{font-size: 0.99rem;}
-div.layout { display: block; width: 100%; }
-
-div.layout section { display: inline-block; }
-@keyframes appearance-u38-320-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-5% {opacity:0;transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
-10% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
-15% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
-20% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,9.52,0,1);opacity:0.736;}
-25% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.92,0,1);opacity:0.836;}
-30% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.68,0,1);opacity:0.898;}
-35% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.29,0,1);opacity:0.936;}
-40% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.42,0,1);opacity:0.96;}
-45% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.89,0,1);opacity:0.975;}
-50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.55,0,1);opacity:0.985;}
-55% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.99;}
-60% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.21,0,1);opacity:0.994;}
-65% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.13,0,1);opacity:0.996;}
-70% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-75% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-80% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-85% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-90% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-95% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-100% {opacity:1;}
-}
-.appearance-u38-320-0-1440 #u38 {
-animation: appearance-u38-320-0-1440 1280ms forwards;
-animation-play-state: paused;
-}
-.appearance-u38-320-0-1440-running #u38 {
-animation-play-state: running;
-}
-
-@-webkit-keyframes appearance-u38-320-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-5% {opacity:0;-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);}
-10% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,24.59,0,1);opacity:0.317;}
-15% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,15.31,0,1);opacity:0.575;}
-20% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,9.52,0,1);opacity:0.736;}
-25% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,5.92,0,1);opacity:0.836;}
-30% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,3.68,0,1);opacity:0.898;}
-35% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,2.29,0,1);opacity:0.936;}
-40% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,1.42,0,1);opacity:0.96;}
-45% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.89,0,1);opacity:0.975;}
-50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.55,0,1);opacity:0.985;}
-55% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.34,0,1);opacity:0.99;}
-60% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.21,0,1);opacity:0.994;}
-65% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.13,0,1);opacity:0.996;}
-70% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-75% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.08,0,1);opacity:0.998;}
-80% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-85% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-90% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-95% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0.03,0,1);opacity:0.999;}
-100% {opacity:1;}
-}
-.appearance-u38-320-0-1440 #u38 {
--webkit-animation: appearance-u38-320-0-1440 1280ms forwards;
--webkit-animation-play-state: paused;
-}
-.appearance-u38-320-0-1440-running #u38 {
--webkit-animation-play-state: running;
-}
-
-@keyframes disappearance-u38-320-0-1440 {0% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
-5.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
-11.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
-16.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
-22.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.31,0,1);opacity:0.102;}
-27.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.71,0,1);opacity:0.064;}
-33.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.57,0,1);opacity:0.04;}
-38.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.11,0,1);opacity:0.025;}
-44.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.45,0,1);opacity:0.015;}
-50% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.01;}
-55.556% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.79,0,1);opacity:0.006;}
-61.111% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.87,0,1);opacity:0.004;}
-66.667% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-72.222% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-77.778% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-83.333% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-88.889% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-94.444% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-100% {transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-}
-.disappearance-u38-320-0-1440 #u38 {
-animation: disappearance-u38-320-0-1440 1152ms forwards;
-animation-play-state: paused;
-}
-.disappearance-u38-320-0-1440-running #u38 {
-animation-play-state: running;
-}
-
-@-webkit-keyframes disappearance-u38-320-0-1440 {0% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,11.37,0,1);opacity:0.684;}
-5.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,20.67,0,1);opacity:0.426;}
-11.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,26.47,0,1);opacity:0.265;}
-16.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,30.07,0,1);opacity:0.165;}
-22.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,32.31,0,1);opacity:0.102;}
-27.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,33.71,0,1);opacity:0.064;}
-33.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,34.57,0,1);opacity:0.04;}
-38.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.11,0,1);opacity:0.025;}
-44.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.45,0,1);opacity:0.015;}
-50% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.66,0,1);opacity:0.01;}
-55.556% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.79,0,1);opacity:0.006;}
-61.111% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.87,0,1);opacity:0.004;}
-66.667% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-72.222% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.92,0,1);opacity:0.002;}
-77.778% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-83.333% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-88.889% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-94.444% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,35.97,0,1);opacity:0.001;}
-100% {-webkit-transform:matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,36,0,1);opacity:0;}
-}
-.disappearance-u38-320-0-1440 #u38 {
--webkit-animation: disappearance-u38-320-0-1440 1152ms forwards;
--webkit-animation-play-state: paused;
-}
-.disappearance-u38-320-0-1440-running #u38 {
--webkit-animation-play-state: running;
-}
-
-
-}</style><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script><script>WebFont.load({"google":{"families":["Playfair Display:400,700","Domine:400,400italic,700,700italic"]}});</script><style type="text/css">html {font-family: 'Domine';font-weight: 400;}
- .layout-system .hero {font-family: 'Playfair Display';font-weight: 400;}
+}</style><script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script><script>WebFont.load({"google":{"families":["Playfair Display:400,700","Open Sans:300,300italic,800,800italic"]}});</script><style type="text/css">html {font-family: 'Open Sans';font-weight: 300;}
+ .layout-system .hero {font-family: 'Playfair Display';font-weight: 700;}
  .layout-system .title {font-family: 'Playfair Display';}
  .layout-system .subtitle {font-family: 'Playfair Display';}
- .layout-system .description {font-family: 'Domine';}
- .layout-system .title {font-weight: 700;}
- .layout-system .subtitle {font-weight: 400;}
- a {font-family: 'Domine';font-weight: 400;}
- .attribution {font-family: 'Domine';font-weight: 700;text-transform: uppercase;letter-spacing: .03em;}
+ .layout-system .description {font-family: 'Open Sans';}
+ .layout-system .title {font-weight: 400;}
+ .layout-system .subtitle {font-weight: 700;}
+ a {font-family: 'Open Sans';font-weight: 800;}
+ .attribution {font-family: 'Open Sans';font-weight: 300;text-transform: uppercase;letter-spacing: .03em;}
  .layout-system .quote {font-family: 'Playfair Display';font-weight: 400;font-style: normal;}
  .layout-system .title {text-transform: inherit;}</style></head>
 
-  <body id="u69"><script src="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/assets/gss-init.js" id="u0"></script>
+  <body id="u25"><script src="//cdn.thegrid.io/design-systems/taylor/0.0.64/src/assets/gss-init.js" id="u0"></script>
     <!-- <div id="grid">
   <div class="col1"></div>
   <div class="col2"></div>
@@ -505,529 +221,113 @@ animation-play-state: running;
   <div class="row29"></div>
   <div class="row30"></div>
 </div> -->
-    <div class="layout-system user artistic-d4 w-assets sections" id="u40">
-      <div class="layout two-columns bricks" style="position:relative" id="u39"><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u3">.cta {
-center-x: == ^center-x;
-center-y: == ^top + 5md;
-width: == 21g;
-height: == 21g;
-@if ::window[width] <= $taylorW/2 {
-  width: == 36g !strong100;
-  height: == 36g !strong100;
+    <div class="layout-system user artistic-d4 w-assets sections" id="u20">
+      <div index="bricks" kind="layout" style="position: relative" class="bricks layout" id="u19"><style type="text/gss" scoped="scoped" id="u3">margin-top:= 2md;
+margin-bottom:= 2md;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/layout/sizing/container.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/layout/h-align/distribute.gss;
+@if ::window[width] < $taylorW / 2{
+  h-gutter:= 0md;
+  v-gutter-min:= .5md;
+  v-gutter-max:= .5md;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/layout/columns/one.gss;
 }
-
-a {
-  size: == ^size;
-  position: relative;
-  z-index: 2;
+@else{
+  h-gutter:= 1md;
+  v-gutter-min:= 3md;
+  v-gutter-max:= 6.5md;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/layout/columns/two.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/layout/v-align/bricks.gss;
 }
-
-.cta-circle {
-  width: == ^height;
-  height: == ^width;
-  position: == ^position;
-  border-width: == 1g;
-  @if ::window[width] <= $taylorW/2 {
-    border-width: == 1.75g;
+</style>
+        <section dataId="21f136b3-1f88-4976-9b4e-fe83046efcf5" kind="stack" class="title-text-cover mixed narrow left flow_vertical flow_reversed align-left not_decorated softcolor1 stack" id="u18"><style type="text/gss" scoped="scoped" id="u5">@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/stack/h-align/stretch.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/stack/v-align/stretch.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/stack/h-distribute/center.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/stack/v-distribute/center.gss;
+inner-gap-horizontal:= 0;
+inner-gap-vertical:= 0;
+inner-gap:= 0;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/stack/direction/vertical.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/stack/h-emphasis/center.gss;
+@import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/stack/v-emphasis/center.gss;
+// name: title-text-cover;
+.group.mixed{
+  @v |-[inner-gap-top]-(.cover)-[inner-gap-bottom]-| !require;
+  @h |-[inner-gap-3-left]-(.cover)-[inner-gap-3-right]-| !require;
+  // direction: vertical;
+  inner-gap:= 2g;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/font-size/small.gss;
+  outer-gap-horizontal:= 0md;
+  outer-gap-vertical:= 0md;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/h-squeeze/center.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/v-squeeze/center.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/h-push/stretch.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/v-push/stretch.gss;
+  inner-gap-horizontal:= 2md;
+  inner-gap-vertical:= 0md;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/h-distribute/center.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/v-distribute/center.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/h-align/stretch.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/v-align/center.gss;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/h-emphasis/equal.gss;
+  .media.cover{
+    .aside.play{
+      ^{
+        @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/h-align/center.gss;
+      }
+      ^{
+        @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/v-align/center.gss;
+      }
+      h-offset:= 0;
+      width:= 1md;
+      height:= 1md;
+      @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/variation/play-button.gss;
+    }
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/media/v-focus/fit.gss;
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/media/h-focus/fit.gss;
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/media/v-align/center.gss;
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/media/h-align/center.gss;
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/media/sizing/image.gss;
+    desired-width:= 5md;
+    desired-height:= 5md;
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/media/viewport/bound.gss;
+    // overflow: hidden;
   }
-}
-
-.cta-text {
-  display: inline-block;
-  // left: >= ^(.cta-circle)[left];
-  height: == &intrinsic-height;
-  width: == &intrinsic-width;
-  center: == ^(.cta-circle)[center];
-  line-height: == &height;
-  z-index: 2;
-}
-
-// .cta-text {
-//   display: inline-block;
-//   height: == &intrinsic-height;
-//   width: == &intrinsic-width;
-//   center-x: == ^center-x;
-//   center-y: == ^center-y;
-
-//   line-height: == &height;
-//   // text-align: center;
-//   z-index: 2;
-// }
-
-
-.cta-deco {
-  width: == 12g;
-  height: == 12g;
-  center-x: == ^(.cta-circle)[center-x];
-  center-y: == ^(.cta-circle)[center-y];
-  @if ::window[width] <= $taylorW/2 {
-    width: == 21g;
-    height: == 21g;
-  }
-}
-}
-
-</style><style rel="stylesheet/gss" type="text/gss" scoped="scoped" id="u5">margin-top: = 1md;
-margin-bottom: = 1md;
-
-
-section {
-  width: <= $taylorW / 2;
-}
-
-displace-x = 1md;
-displace-y = 0.5md;
-
-v-gutter-min: = 2.5md;
-v-gutter-max: = 4md;
-
-h-gutter: = 2md;
-
-h-gutter-left == h-gutter / 8;
-h-gutter-right == h-gutter-left;
-h-gutter-middle == h-gutter;
-
-@if ::window[width] <= $taylorW/2 {
-  v-gutter-max = 3md;
-  h-gutter: = 0;
-  displace-x = 0;
-  h-gutter-left == h-gutter;
-  h-gutter-right == h-gutter-left;
-
-
-
-  section, aside {
-    height == 0;
-    // make section want to be small
-    // stack sections vertically
-    :first[top] == ^top !require;
-    :last[bottom] == ^height !require;
-    :next[top] == &bottom + ^v-gutter-min !require;
-  }
-
-  section {
-    height: == article[height] !require;
-
-
-    // offset horizontally
-    left: == ^left + ^h-gutter-left !require;
-    right: == ^right - ^h-gutter-right !require;
-  }
-} @else {
-  h-gutter: = 1md;
-
-//col2
-
-  section.left {
-    left: == ^left + ^h-gutter-left;
-    right: == ^center-x - ^h-gutter-middle / 2;
-  }
-  section.right {
-    left: == ^center-x + ^h-gutter-middle / 2;
-    right: == ^right - ^h-gutter-right;
-  }
-  section.wide.left {
-    left: == ^left !strong;
-    right: == ^center-x !strong;
-  }
-  section.wide.right {
-    left: == ^center-x !strong;
-    right: == ^right !strong;
-  }
-
-//rowtop   bricks stagger
-
-
- section {
-   top: >= ^top !require;
-   bottom: <= ^bottom !require;
-   
-   :next[top] == &center-y;
-
-   slack-gap: >= ^v-gutter-min !require;
-   slack-gap: <= ^v-gutter-max !require;
-
-   // background: rgba(0,0,0, 0.1);
-
-   height: == article[height] !require;
- }
-
- section.detached {
-   slack-gap: == ^v-gutter-max !strong;
- }
-
- section.left {
-   top: == :previous[bottom] + &slack-gap !require;
- }
- section.right {
-   top: == :previous[bottom] + &slack-gap !require;
- }
-
-  //last row bottom
-  // section.left {
-  //   :last[bottom] == ^bottom !strong;
-  // }
-  // section.right {
-  //   :last[bottom] == ^bottom !strong;
-  // }
-
-  .shift-x-1 {
-    margin-left: = ^shift-x;
-  }
-  .shift-x--1 {
-    margin-left: = ^shift-x * -1;
-  }
-  .shift-y-1 {
-    margin-top: = ^shift-y;
-  }
-  .shift-y--1 {
-    margin-top: = ^shift-y * -1;
-  }
-}</style>
-        <aside class="cta follow" id="u14">
-          <div class="cta-circle" id="u6"></div><style scoped="scoped" type="text/gss" id="u8">.title {
-  z-index: 2;
-  font-size: = 6g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-  font-weight: == 800;
-}
-
-.attribution {
-  z-index: 2;
-  font-size: = 1.5g;
-  line-height: = &font-size + 1g;
-  letter-spacing: .05em;
-  width: == &intrinsic-width;
-  height: == &intrinsic-height !require;
-  a{
-    font-size: = 1.5g;
-    letter-spacing: .05em;
-  }
-  @if ::window[width] <= $taylorW/2 {
-    font-size: = 3g;
-    a{
-      font-size: = 3g;
+  .aside.attribution{
+    ^{
+      @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/h-align/left.gss;
+    }
+    ^{
+      @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/v-align/above.gss;
+    }
+    h-offset:= 0;
+    gap:= 2g;
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/h-sizing/intrinsic.gss;
+    @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/v-sizing/intrinsic.gss;
+    .aside.publisher{
+      @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/aside/size/small.gss;
     }
   }
+  // $class: not_decorated;
+  // reversed: true;
+  text-align: left;
+  @import //cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/group/h-align-3/stretch.gss;
 }
-
-.paragraph {
-  font-size: = 2g;
-  @if ::window[width] <= $taylorW/2 {
-    font-size: = 3g;
-  }
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-.quote{
-  font-size: = 4g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-  font-weight: = 800;
-}
-
-.cta-text {
-  font-size: = 2g;
-  line-height: = &font-size;
-  @if ::window[width] <= $taylorW/2 {
-    font-size: = 3.5g;
-  }
-}
-
-.cta-deco {
-  font-size: = 18g;
-  line-height: = &font-size - 2g;
-}
-
-.play-button{
-  font-size: == 2g;
-  line-height: = &font-size + .5g;
-  center-y: == (^ .cover)[center-y];
-  center-x: == (^ .cover)[center-x];
-  width: == &intrinsic-width;
-  height: == &intrinsic-height;
-  white-space: nowrap;
-  @if ::window[width] <= $taylorW/2 {
-    font-size: == 3g;
-  }
-}
-
+// $class: left;
+// wrapper: bricks;
 </style>
-          <a href="https://twitter.com/d4tocchini" id="u13">
-            <span class="cta-text" id="u10">Follow</span>
-            <svg class="cta-deco" id="u12">
-              <?xml version="1.0" encoding="iso-8859-1" ?>
-              <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-                <g>
-                  <g>
-                    <path style="fill:#7CCCC3;" d="M14.516,70.418c4.536-0.106,4.958-0.106,5.274-0.422c0.211-0.212,0.317-0.738,0.317-3.376
-			c0-4.009,0-35.125-0.317-40.506c-2.426-0.106-4.641-0.106-5.274-0.106c-0.317,0-0.211-1.371,0.105-1.371h5.169
-			c0.106-7.595,1.688-12.131,6.013-16.455c4.853-4.853,11.604-7.7,22.468-7.7c9.073,0,16.246,5.063,16.246,12.447
-			c0,5.485-4.009,9.388-9.389,9.388c-5.275,0-9.071-3.903-9.071-8.966c0-2.848,0.95-5.064,2.426-6.54
-			c2.848-2.848,6.435-2.848,6.751-3.164c0.528-0.528-1.266-1.793-5.169-1.793c-3.481,0-5.697,1.582-6.963,4.114
-			c-1.265,2.531-1.687,5.591-1.687,9.704v8.966h9.388c0.316,0,0.422,1.371,0,1.371c-1.898,0-6.857-0.104-9.388,0
-			c0.104,11.077,0.104,28.376,0.21,40.823c0,2.637,0.106,2.953,0.316,3.164c0.212,0.21,0.844,0.316,7.173,0.422
-			c0.316,0,0.316,1.054,0,1.054c-2.531,0-27.636-0.106-34.598,0C14.305,71.472,14.305,70.418,14.516,70.418z M44.051,1.536
-			c-6.54,0.528-12.869,2.742-17.616,7.489c-3.164,3.165-4.958,7.701-5.275,12.026c-0.316,5.801,0,11.498,0,17.194
-			c0,5.695,0.106,11.392,0.106,17.193c0,4.747,0.422,9.811-0.211,14.662c0,0.212,1.266,0.212,1.266,0c0.105-4.851,0-9.915,0-14.662
-			c0-5.801-0.211-11.498-0.211-17.193c0-5.697-0.211-11.498,0.105-17.089c0.211-2.742,1.055-5.169,2.32-7.489
-			c-0.632,1.793-1.054,3.587-1.265,5.38c-0.528,5.697-0.106,11.392-0.106,17.088c0,5.591,0.106,11.182,0.106,16.877
-			c0,5.591,0.316,11.499-0.211,17.088c-0.106,0.212,1.371,0.212,1.371,0c0-5.589-0.211-11.498-0.211-17.088
-			c0-5.695-0.106-11.286-0.106-16.877c0-5.697-0.316-11.392,0.317-16.877c0.316-2.426,1.055-4.536,2.215-6.54
-			c-0.844,2.004-1.266,4.009-1.371,6.013c-0.422,5.801-0.106,11.498-0.106,17.088c0,5.801,0.106,11.498,0.106,17.193
-			c0,5.591,0.316,11.499-0.211,17.088c-0.106,0.212,1.476,0.212,1.476,0c-0.105-5.589-0.316-11.498-0.316-17.088
-			c0-5.801-0.106-11.498-0.106-17.193c0-5.591-0.211-11.393,0.317-16.877c0.316-2.637,0.949-4.958,2.215-7.068
-			c-0.739,1.899-1.055,3.903-1.266,5.907c-0.422,5.802-0.211,11.604-0.211,17.405c0,5.802,0.106,11.604,0.106,17.406
-			c0,5.695,0.21,11.814-0.317,17.509c0,0.212,1.688,0.212,1.688,0c-0.211-5.695-0.422-11.814-0.422-17.509
-			c0-5.802-0.106-11.604-0.106-17.406c0-5.801-0.316-11.603,0.317-17.299c0.211-2.426,0.949-4.747,2.109-6.857
-			c-0.633,1.793-1.055,3.798-1.16,5.591c-0.527,6.013-0.211,11.92-0.211,17.827s0.105,11.814,0.105,17.722
-			c0,5.907,0.106,12.024-0.316,17.931c0,0.212,1.688,0.212,1.688,0c-0.317-5.907-0.422-12.024-0.422-17.931
-			c0-5.908-0.106-11.815-0.106-17.722s-0.105-11.814,0.422-17.616C31.288,9.025,36.14,3.329,44.051,1.642V1.536z M49.326,7.76
-			c-1.478,1.476-1.898,3.375-1.898,5.38c0,2.637,0.843,4.641,2.531,6.013l0.106-0.106c-1.266-1.266-1.898-3.059-1.898-4.747
-			c0-2.637,0.632-4.642,2.32-6.329c-1.16,2.004-1.688,4.431-1.266,6.962c0.316,1.793,1.16,3.692,2.532,4.747l0.104-0.106
-			c-1.265-1.265-1.898-2.953-2.004-4.641c-0.21-2.637,0.318-5.064,2.11-7.173c-1.371,2.637-1.476,5.485-1.054,7.7
-			c0.316,1.688,0.844,3.692,2.32,4.747l0.106-0.105c-1.16-1.266-1.582-3.059-1.794-4.747c-0.316-2.743,0.422-5.697,1.794-7.806
-			c-1.056,2.953-1.056,5.38-0.844,7.806c0.106,1.582,0.422,4.008,1.793,5.169l0.106-0.106c-0.844-1.371-1.054-3.059-1.16-4.747
-			c-0.212-3.059,0.21-6.329,1.476-8.649c-0.422,2.109-0.632,4.114-0.632,6.223c0,2.426,0,5.169,0.948,7.384h0.106
-			c-0.422-2.32-0.316-4.853-0.316-7.384c0-2.426,0.316-5.063,1.16-7.384c0.528,0.106,0.844,0.739,1.054,1.161h0.106
-			c0-0.211-0.106-0.739-0.21-0.95c0.632,0.317,1.16,0.95,1.582,1.688l0.104-0.106c-0.104-0.421-0.316-0.949-0.632-1.371
-			c0.95,0.528,1.688,1.477,2.215,2.532l0.106-0.106c-0.21-0.738-0.632-1.476-1.266-2.109c1.372,0.738,2.426,1.898,3.06,3.27h0.104
-			c-0.948-2.742-3.059-4.747-6.645-4.747C53.545,5.123,51.014,6.072,49.326,7.76z" />
-                  </g>
-                </g>
-                <g>
-                </g>
-              </svg>
-            </svg>
-          </a>
-        </aside>
-        <section class="repost-media left section animating slide-in" id="u38">
-          <article class="repost post" id="uee2dc798-bddb-4531-9e00-45d8ad862eea" style="position:relative"><style type="text/gss" scoped="scoped" id="u17">@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss;
-block-gap-horizontal = 0;
-block-gap-vertical = 0;
-block-gap-between = 0;
-</style>
-            <div class="block wrapper" id="u36"><style type="text/gss" scoped="scoped" id="u20">@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/typography/small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/variations/source-name.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/variations/play-button.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/css/decorations/overlay.css;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/cover-below.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/cover-left.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/leading/small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/leading/attachments/cover-above.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/trailing/small.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/trailing/attachments/attribution-below.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/overlay/big.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/overlay/attachments/cover-center-y.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/overlay/alignments/cover-center-x.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/block-left.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/leading/alignments/block-left.gss;
-@import //cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/trailing/alignments/block-left.gss;
-inner-gap:= 1g;
-inner-gap-vertical:= 0;
-inner-gap-horizontal:= 0;
-bg_media-opacity:= .8;
-image-width:= 5md;
-image-height:= 4md;
-attribution-gap:= 1g;
-decoration-gap-leading:= 2g;
-decoration-gap-trailing:= 1.5g;
-decoration-gap-overlay:= 2g;
-decoration-opacity-leading:= .4;
-decoration-opacity-trailing:= .4;
-decoration-opacity-overlay:= .4;
-</style>
-              <svg class="leading decoration" id="u22">
-                <?xml version="1.0" encoding="iso-8859-1" ?>
-                <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path style="fill:#7CCCC3;" d="M60.745,39.427c7.848,3.712,8.277,10.705,5.135,14.992c-2.852,3.712-8.562,5.28-14.562-0.145
-			c-8.992-8.423-9.846-15.132-14.986-18.704c0.714,7.999,5.565,10.851,8.138,23.275c1.714,8.423-3.288,12.704-8.423,12.704
-			c-4.429,0-9.14-3.427-9.14-9.706c0-4.142,1.429-8.852,2.997-11.995c2.286-5.28,4.856-8.423,5.283-14.133
-			c-5.995,4.995-6.851,11.42-15.419,19.273C14.915,59.56,8.92,57.986,6.062,54.135c-2.997-4.142-2.713-10.711,4.998-14.278
-			c9.137-4.142,17.133-1.859,23.557-5.141c-7.424-3.427-15.419,0.145-23.699-3.567C4.064,28.007,3.207,20.868,5.92,16.872
-			s8.423-4.856,13.993-0.43c5.852,4.711,9.137,12.28,15.274,17.275c-0.857-8.707-7.85-13.563-8.28-22.985
-			c-0.285-7.284,3.999-10.281,8.995-10.281c4.856,0,9.706,3.857,8.707,11.135c-1.284,9.282-7.708,14.562-8.277,22.131
-			c6.424-4.995,7.993-11.135,14.562-17.13c5.71-4.856,11.565-3.427,14.562,0.139c3.427,4.142,2.852,11.135-5.571,14.992
-			c-7.853,3.567-15.277-0.999-22.84,2.997C43.041,37.859,51.033,35.001,60.745,39.427z M7.491,52.99
-			c8.28-7.139,18.132-10.996,23.415-15.561v-0.145c-6.997,1.714-16.276,0.999-22.131,6c-2.425,2.138-3.14,4.85-2.567,7.139H6.35
-			c-0.288-2.289,0.712-4.856,3.14-6.715c2.997-2.283,7.281-3.282,11.85-4.136c-4.284,1.423-8.423,2.852-11.992,5.565
-			c-1.998,1.574-3.427,4.287-2.713,6.709h0.142c-0.285-2.422,1.287-4.711,3.143-5.995c3.567-2.567,7.566-3.857,11.85-5.141
-			c-3.857,1.714-7.711,3.572-11.28,6c-1.714,1.139-3.712,3.282-3.427,5.71h0.145c0.285-2.143,2.141-3.857,3.854-5.001
-			c3.569-2.283,7.708-4.136,11.707-5.849c-5.713,3.282-11.707,6.14-15.419,11.275L7.491,52.99z M31.049,32.004
-			c-5.713-5.571-9.137-13.279-15.135-16.131c-3.996-1.859-7.566-0.43-8.995,2.428c-1.998,3.851,0.142,9.276,3.712,10.845v-0.139
-			c-1.998-1.284-3.14-3.572-3.424-5.571c0.999,1.429,2.425,2.997,3.996,3.712v-0.139c-1.998-1.284-3.854-3.572-3.854-5.71
-			c1.141,2.138,3.427,3.282,5.425,4.426v-0.145c-2.428-1.429-4.569-3.282-4.856-5.425c2.143,1.714,4.426,3.282,6.854,4.571V24.58
-			c-2.141-1.284-4.142-2.858-5.852-4.426c6.567,2.713,13.703,8.138,22.128,11.995V32.004z M25.336,26.724
-			c-4.711-5.286-9.564-11.995-16.415-9.137c1.426-1.144,3.282-1.29,4.995-0.999C18.911,17.871,22.196,22.152,25.336,26.724z
-			 M9.063,18.301c5.425-1.714,10.278,2.997,14.705,7.848C19.483,22.152,15.057,18.156,9.063,18.301z M9.49,19.01
-			c4.426,0.29,8.71,3.712,12.991,7.424C18.342,23.72,14.343,21.008,9.49,19.01z M35.902,28.722c-0.285-8.423-0.999-17.42,0-25.128
-			c0.285,0.285,0.569,1.144,0.714,2.283h0.139c0.145-0.999,0-1.714-0.139-2.138C37.76,4.308,38.33,5.591,38.76,7.16h0.139
-			c-0.139-1.139-0.43-2.283-0.999-3.282c1.284,0.86,2.283,2.283,2.858,3.996h0.139c-0.139-1.139-0.569-2.428-1.284-3.427
-			c1.568,0.999,2.858,2.573,3.282,4.571h0.145c-0.285-3.712-2.997-6.994-7.566-6.994c-3.715,0-6.997,2.852-6.997,7.708
-			c0,7.853,4.995,12.704,7.281,18.989H35.902z M35.617,40.711c-0.999,2.713-3,6.709-4.284,9.852
-			c-2.283,5.286-3.712,10.996-1.429,15.707h0.145c-0.857-3.572-0.145-7.284,0.999-10.711c-0.714,3.857-0.857,8.568,0.857,12.28
-			h0.142c-1.141-4.142-0.288-9.422,0.857-13.703c-0.714,4.566-0.857,10.421,0.857,14.847h0.142
-			c-0.999-5.141-0.142-11.71,0.714-16.845c-0.43,5.849-0.572,11.844,0.712,17.699h0.145c-0.714-8.992,0.857-18.989,0.285-29.125
-			H35.617z M31.049,5.162c-0.572,1.29-0.714,2.997-0.714,4.711c0,4.426,1.426,8.568,2.997,12.425
-			c-2.141-3.857-3.854-7.853-3.854-11.85C29.477,7.874,30.192,6.451,31.049,5.162z M32.332,11.447c0,3.427,0.714,6.854,1.571,10.566
-			c-1.287-3.857-2.428-7.429-2.428-11.141c0-2.422,0.572-5.135,2.143-6.709C32.475,6.306,32.332,9.019,32.332,11.447z M34.76,4.163
-			c-0.714,5.71-0.43,11.565,0,16.99C33.474,15.298,32.762,8.873,34.76,4.163z M64.027,17.871
-			c-5.855,2.567-10.566,5.849-15.561,9.276c4.281-3.851,9.706-8.277,15.277-9.561l-0.145-0.145
-			c-5.71,0.43-11.135,4.426-15.277,8.283c3.996-4.571,8.423-9.428,14.992-8.713l-0.145-0.139
-			c-6.848-1.284-11.275,2.852-15.132,7.424c1.429-1.998,2.713-3.857,4.426-5.425c2.567-2.428,6.424-4.287,9.997-2.428l0.139-0.145
-			c-3.427-2.422-7.853-0.854-10.705,1.714c-4.142,3.857-7.139,9.282-10.851,13.563l0.139,0.145
-			c7.714-3.572,15.991-8.852,22.985-13.709L64.027,17.871z M41.327,37.574c6.279,3.567,13.848,7.563,19.988,12.134l0.145-0.145
-			c-4.142-3.857-9.143-6.854-14.278-9.567c4.85,1.859,10.276,4.287,14.417,7.424l0.145-0.139c-3.288-2.997-7.853-5.571-11.85-7.284
-			c4.426,1.144,8.562,2.713,12.274,5.425l0.145-0.139c-2.858-2.713-6.279-4.426-9.997-5.71c3.718,0.714,7.284,1.714,10.427,3.851
-			l0.139-0.139c-5.995-6-13.418-4.287-21.556-5.855V37.574z" />
-                    </g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>
-              </svg>
-              <svg class="trailing decoration" id="u24">
-                <?xml version="1.0" encoding="iso-8859-1" ?>
-                <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path style="fill:#7CCCC3;" d="M60.745,39.427c7.848,3.712,8.277,10.705,5.135,14.992c-2.852,3.712-8.562,5.28-14.562-0.145
-			c-8.992-8.423-9.846-15.132-14.986-18.704c0.714,7.999,5.565,10.851,8.138,23.275c1.714,8.423-3.288,12.704-8.423,12.704
-			c-4.429,0-9.14-3.427-9.14-9.706c0-4.142,1.429-8.852,2.997-11.995c2.286-5.28,4.856-8.423,5.283-14.133
-			c-5.995,4.995-6.851,11.42-15.419,19.273C14.915,59.56,8.92,57.986,6.062,54.135c-2.997-4.142-2.713-10.711,4.998-14.278
-			c9.137-4.142,17.133-1.859,23.557-5.141c-7.424-3.427-15.419,0.145-23.699-3.567C4.064,28.007,3.207,20.868,5.92,16.872
-			s8.423-4.856,13.993-0.43c5.852,4.711,9.137,12.28,15.274,17.275c-0.857-8.707-7.85-13.563-8.28-22.985
-			c-0.285-7.284,3.999-10.281,8.995-10.281c4.856,0,9.706,3.857,8.707,11.135c-1.284,9.282-7.708,14.562-8.277,22.131
-			c6.424-4.995,7.993-11.135,14.562-17.13c5.71-4.856,11.565-3.427,14.562,0.139c3.427,4.142,2.852,11.135-5.571,14.992
-			c-7.853,3.567-15.277-0.999-22.84,2.997C43.041,37.859,51.033,35.001,60.745,39.427z M7.491,52.99
-			c8.28-7.139,18.132-10.996,23.415-15.561v-0.145c-6.997,1.714-16.276,0.999-22.131,6c-2.425,2.138-3.14,4.85-2.567,7.139H6.35
-			c-0.288-2.289,0.712-4.856,3.14-6.715c2.997-2.283,7.281-3.282,11.85-4.136c-4.284,1.423-8.423,2.852-11.992,5.565
-			c-1.998,1.574-3.427,4.287-2.713,6.709h0.142c-0.285-2.422,1.287-4.711,3.143-5.995c3.567-2.567,7.566-3.857,11.85-5.141
-			c-3.857,1.714-7.711,3.572-11.28,6c-1.714,1.139-3.712,3.282-3.427,5.71h0.145c0.285-2.143,2.141-3.857,3.854-5.001
-			c3.569-2.283,7.708-4.136,11.707-5.849c-5.713,3.282-11.707,6.14-15.419,11.275L7.491,52.99z M31.049,32.004
-			c-5.713-5.571-9.137-13.279-15.135-16.131c-3.996-1.859-7.566-0.43-8.995,2.428c-1.998,3.851,0.142,9.276,3.712,10.845v-0.139
-			c-1.998-1.284-3.14-3.572-3.424-5.571c0.999,1.429,2.425,2.997,3.996,3.712v-0.139c-1.998-1.284-3.854-3.572-3.854-5.71
-			c1.141,2.138,3.427,3.282,5.425,4.426v-0.145c-2.428-1.429-4.569-3.282-4.856-5.425c2.143,1.714,4.426,3.282,6.854,4.571V24.58
-			c-2.141-1.284-4.142-2.858-5.852-4.426c6.567,2.713,13.703,8.138,22.128,11.995V32.004z M25.336,26.724
-			c-4.711-5.286-9.564-11.995-16.415-9.137c1.426-1.144,3.282-1.29,4.995-0.999C18.911,17.871,22.196,22.152,25.336,26.724z
-			 M9.063,18.301c5.425-1.714,10.278,2.997,14.705,7.848C19.483,22.152,15.057,18.156,9.063,18.301z M9.49,19.01
-			c4.426,0.29,8.71,3.712,12.991,7.424C18.342,23.72,14.343,21.008,9.49,19.01z M35.902,28.722c-0.285-8.423-0.999-17.42,0-25.128
-			c0.285,0.285,0.569,1.144,0.714,2.283h0.139c0.145-0.999,0-1.714-0.139-2.138C37.76,4.308,38.33,5.591,38.76,7.16h0.139
-			c-0.139-1.139-0.43-2.283-0.999-3.282c1.284,0.86,2.283,2.283,2.858,3.996h0.139c-0.139-1.139-0.569-2.428-1.284-3.427
-			c1.568,0.999,2.858,2.573,3.282,4.571h0.145c-0.285-3.712-2.997-6.994-7.566-6.994c-3.715,0-6.997,2.852-6.997,7.708
-			c0,7.853,4.995,12.704,7.281,18.989H35.902z M35.617,40.711c-0.999,2.713-3,6.709-4.284,9.852
-			c-2.283,5.286-3.712,10.996-1.429,15.707h0.145c-0.857-3.572-0.145-7.284,0.999-10.711c-0.714,3.857-0.857,8.568,0.857,12.28
-			h0.142c-1.141-4.142-0.288-9.422,0.857-13.703c-0.714,4.566-0.857,10.421,0.857,14.847h0.142
-			c-0.999-5.141-0.142-11.71,0.714-16.845c-0.43,5.849-0.572,11.844,0.712,17.699h0.145c-0.714-8.992,0.857-18.989,0.285-29.125
-			H35.617z M31.049,5.162c-0.572,1.29-0.714,2.997-0.714,4.711c0,4.426,1.426,8.568,2.997,12.425
-			c-2.141-3.857-3.854-7.853-3.854-11.85C29.477,7.874,30.192,6.451,31.049,5.162z M32.332,11.447c0,3.427,0.714,6.854,1.571,10.566
-			c-1.287-3.857-2.428-7.429-2.428-11.141c0-2.422,0.572-5.135,2.143-6.709C32.475,6.306,32.332,9.019,32.332,11.447z M34.76,4.163
-			c-0.714,5.71-0.43,11.565,0,16.99C33.474,15.298,32.762,8.873,34.76,4.163z M64.027,17.871
-			c-5.855,2.567-10.566,5.849-15.561,9.276c4.281-3.851,9.706-8.277,15.277-9.561l-0.145-0.145
-			c-5.71,0.43-11.135,4.426-15.277,8.283c3.996-4.571,8.423-9.428,14.992-8.713l-0.145-0.139
-			c-6.848-1.284-11.275,2.852-15.132,7.424c1.429-1.998,2.713-3.857,4.426-5.425c2.567-2.428,6.424-4.287,9.997-2.428l0.139-0.145
-			c-3.427-2.422-7.853-0.854-10.705,1.714c-4.142,3.857-7.139,9.282-10.851,13.563l0.139,0.145
-			c7.714-3.572,15.991-8.852,22.985-13.709L64.027,17.871z M41.327,37.574c6.279,3.567,13.848,7.563,19.988,12.134l0.145-0.145
-			c-4.142-3.857-9.143-6.854-14.278-9.567c4.85,1.859,10.276,4.287,14.417,7.424l0.145-0.139c-3.288-2.997-7.853-5.571-11.85-7.284
-			c4.426,1.144,8.562,2.713,12.274,5.425l0.145-0.139c-2.858-2.713-6.279-4.426-9.997-5.71c3.718,0.714,7.284,1.714,10.427,3.851
-			l0.139-0.139c-5.995-6-13.418-4.287-21.556-5.855V37.574z" />
-                    </g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>
-              </svg>
-              <svg class="overlay decoration" id="u26">
-                <?xml version="1.0" encoding="iso-8859-1" ?>
-                <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 72 72" style="enable-background:new 0 0 72 72;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path style="fill:#452F4C;" d="M40.885,71.311c-14.098,0-23.534-8.326-23.645-8.326c-0.222,0-6.106,4.774-8.881,7.771
-			c-0.444,0.443-0.888,0.222-0.888-0.222c0.222-7.77,0.222-14.209-0.777-24.422c0-0.555,0.777-0.667,0.999-0.222
-			c2.997,6.217,6.772,10.99,10.435,14.653c6.327,6.328,14.32,9.436,22.868,9.436c4.883,0,8.215-1.332,9.99-3.108
-			c1.11-1.11,1.998-2.664,1.998-5.217c0-4.552-3.885-7.66-17.095-10.879c-12.544-3.109-19.427-6.106-23.09-9.659
-			c-3.663-3.552-5.551-7.548-5.551-15.319c0-13.432,9.436-23.756,24.977-23.756c11.989,0,19.538,7.548,20.093,7.548
-			s5.662-5.328,8.104-8.659c0.333-0.444,0.776-0.222,0.776,0.222c-0.555,7.993-0.443,14.986-0.221,22.535
-			c0,0.444-0.555,0.555-0.889,0.111c-3.218-5.106-6.105-8.992-8.992-11.878C45.547,6.37,40.33,3.373,31.893,3.373
-			c-5.217,0-8.991,1.554-10.99,3.552c-1.332,1.332-1.887,2.887-1.887,4.885c0,3.997,2.997,6.55,12.211,8.992
-			c18.76,4.996,24.644,7.549,28.862,11.656c3.442,3.33,5.217,7.77,5.217,14.764C65.306,59.766,56.759,71.311,40.885,71.311z
-			 M15.02,40.895l0.111-0.112c-3.552-2.997-5.44-7.992-5.44-11.545c0.555,3.22,2.331,6.882,5.44,9.325l0.111-0.111
-			c-3.108-2.776-4.551-6.772-4.884-10.769c0.444,2.997,2.331,6.55,5.328,8.881l0.111-0.112c-2.997-2.663-4.441-6.882-4.773-10.101
-			c0.999,3.441,2.553,6.106,5.217,8.214l0.111-0.111c-2.664-2.442-4.441-6.105-4.441-9.658c0.555,3.108,2.331,5.773,4.773,7.66
-			l0.111-0.112c-2.664-2.442-4.107-5.55-4.107-9.214c0.666,3.331,2.331,5.661,4.551,7.326l0.111-0.111
-			c-2.886-2.553-3.996-6.438-3.996-10.213c0-5.55,2.109-11.101,7.105-14.431l-0.111-0.111C12.8,9.257,8.47,17.027,8.47,25.797
-			C8.47,32.458,10.468,37.675,15.02,40.895z M46.435,37.898c-2.442-0.889-4.773-1.666-7.215-2.332
-			c-2.887-0.888-5.661-1.554-8.548-2.331c-2.442-0.667-4.773-1.444-7.105-2.332c-2.109-0.888-4.107-1.777-5.883-3.22
-			c-1.443-1.11-2.553-2.442-3.33-4.218h-0.111c0.555,1.776,1.554,3.441,2.997,4.773c1.665,1.665,3.775,2.775,5.883,3.664
-			c2.331,0.998,4.773,1.887,7.216,2.553c2.886,0.888,5.773,1.443,8.548,2.22c2.442,0.667,4.773,1.443,7.105,2.22
-			c2.22,0.777,4.33,1.665,6.327,2.775c2.664,1.444,5.107,3.552,6.217,6.439h0.111c-0.888-2.997-3.108-5.55-5.883-7.215
-			C50.764,39.673,48.656,38.674,46.435,37.898z M46.769,35.676c-2.442-0.888-4.885-1.665-7.327-2.331
-			c-2.887-0.888-5.773-1.554-8.548-2.332c-2.22-0.555-4.551-1.331-6.661-2.108c-2.109-0.777-4.107-1.777-5.883-3.108
-			c-1.443-0.999-2.442-2.442-3.219-4.107H15.02c0.555,1.776,1.443,3.441,2.886,4.662c1.665,1.443,3.775,2.664,5.883,3.552
-			c2.22,0.889,4.551,1.665,6.772,2.332c2.886,0.777,5.661,1.443,8.548,2.22c2.442,0.666,4.883,1.443,7.326,2.332
-			c2.221,0.776,4.441,1.776,6.439,2.886c2.775,1.554,5.217,3.775,6.55,6.772h0.111c-0.998-3.22-3.33-5.772-6.216-7.549
-			C51.319,37.675,49.099,36.565,46.769,35.676z M47.212,33.568c-2.442-0.888-4.995-1.665-7.548-2.442
-			c-2.887-0.888-5.884-1.554-8.77-2.332c-2.109-0.666-4.218-1.221-6.216-1.998c-1.998-0.777-3.886-1.665-5.662-2.886
-			c-1.332-0.999-2.442-2.331-3.219-3.886h-0.111c0.555,1.666,1.554,3.331,2.886,4.441c1.665,1.443,3.663,2.553,5.661,3.331
-			c2.109,0.888,4.218,1.553,6.328,2.108c2.997,0.889,5.883,1.554,8.769,2.332c2.554,0.777,4.996,1.554,7.549,2.442
-			c2.22,0.777,4.44,1.665,6.55,2.886c2.887,1.554,5.55,3.997,6.772,7.105h0.111c-0.888-3.218-3.441-6.105-6.438-7.881
-			C51.764,35.455,49.544,34.456,47.212,33.568z M47.879,31.569c-2.554-0.998-5.107-1.776-7.66-2.553
-			c-2.997-0.888-5.884-1.665-8.881-2.442c-1.998-0.555-3.996-0.999-5.995-1.776c-1.887-0.666-3.885-1.665-5.55-2.775
-			c-1.443-0.999-2.664-2.22-3.331-3.885h-0.111c0.444,1.776,1.554,3.441,2.997,4.551c1.665,1.332,3.663,2.331,5.661,3.108
-			c1.998,0.777,3.996,1.443,5.995,1.998c2.997,0.776,5.995,1.553,8.88,2.331c2.554,0.777,5.107,1.554,7.66,2.442
-			c2.221,0.888,4.552,1.777,6.661,2.997c2.886,1.665,5.55,4.219,6.772,7.437h0.111c-0.999-3.33-3.442-6.327-6.439-8.215
-			C52.541,33.456,50.209,32.458,47.879,31.569z M48.434,29.461c-2.554-0.999-5.107-1.777-7.771-2.553
-			c-2.886-0.888-5.883-1.665-8.88-2.442c-1.887-0.555-3.886-1.11-5.773-1.776c-1.887-0.666-3.774-1.443-5.439-2.553
-			c-1.443-0.888-2.776-2.109-3.442-3.663h-0.111c0.444,1.666,1.554,3.331,2.997,4.33c1.776,1.332,3.663,2.331,5.551,2.997
-			c1.998,0.777,3.885,1.221,5.883,1.776c2.997,0.777,5.994,1.554,8.881,2.442c2.664,0.777,5.217,1.554,7.771,2.442
-			c2.331,0.889,4.662,1.887,6.771,3.109c2.997,1.776,5.551,4.44,6.882,7.66h0.112c-0.999-3.442-3.442-6.327-6.55-8.326
-			C53.206,31.569,50.876,30.349,48.434,29.461z M49.211,27.462c-2.664-0.998-5.218-1.887-7.882-2.664
-			c-2.997-0.888-6.106-1.665-9.103-2.442c-1.887-0.444-3.775-1.11-5.662-1.776c-1.887-0.555-3.663-1.332-5.328-2.331
-			c-1.443-0.777-2.775-1.887-3.441-3.441h-0.111c0.444,1.665,1.666,3.22,3.108,4.218c1.665,1.11,3.552,1.998,5.44,2.664
-			c1.887,0.666,3.775,1.221,5.661,1.776c3.108,0.777,6.106,1.554,9.104,2.442c2.553,0.777,5.217,1.554,7.77,2.553
-			c2.331,0.888,4.552,1.887,6.66,3.108c3.109,1.777,5.772,4.552,7.105,7.993h0.112c-0.999-3.775-3.552-6.772-6.661-8.77
-			C53.873,29.461,51.541,28.351,49.211,27.462z M52.319,67.426c4.33-2.442,6.882-7.216,6.882-12.322
-			c0-3.886-1.665-7.993-5.107-10.324l-0.111,0.111c2.442,2.22,3.885,5.44,4.107,8.77c-0.666-2.775-2.22-5.106-4.552-6.882
-			l-0.111,0.112c2.553,2.331,3.663,5.217,3.885,8.325c-0.666-2.553-2.108-4.774-4.218-6.217l-0.112,0.112
-			c2.221,1.887,3.442,4.773,3.442,7.66c-0.222-2.332-1.777-4.441-3.885-5.772l-0.112,0.111c2.109,1.776,2.997,3.663,3.22,7.105
-			c-0.555-2.553-2.109-3.997-3.663-5.217l-0.112,0.111c1.887,1.777,2.997,3.552,2.997,6.439c-0.443-1.777-1.776-3.22-3.33-4.33
-			l-0.111,0.111c1.998,1.665,2.886,4.107,2.886,6.217c0,2.332-0.666,4.219-2.108,5.772L52.319,67.426z" />
-                    </g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>
-              </svg>
-              <div class="cover image" id="u35"><style type="text/gss" scoped="scoped" id="u28">overflow: hidden;
-"viewport"[top] == &top px  !require;
-"viewport"[left] == &left  px !require;
-"viewport"[height] == &height px  !require;
-"viewport"[width] == &width  px !require;
+          <div dataId="21f136b3-1f88-4976-9b4e-fe83046efcf5" index="mixed" class="mixed group" kind="group" id="u17">
+            <div dataId="21f136b3-1f88-4976-9b4e-fe83046efcf5" index="cover" kind="media" class="vfld vfld-leader vfl-trailer cover media" id="u13">
+              <a href="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" id="u7">
+                <img src="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" srcset="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif 686w" sizes="(min-width: 1400px) 1400px, 100vw" id="u6" />
+              </a><style type="text/gss" scoped="scoped" id="u9">"scene"[x] == img[x] + 154 * image-scale !require;
+"scene"[y] == img[y] + 34 * image-scale !require;
+"scene"[width] ==  414 * image-scale !require;
+"scene"[height] == 734 * image-scale !require;</style>
+              <button dataId="21f136b3-1f88-4976-9b4e-fe83046efcf5" index="play" kind="aside" class="play aside" id="u10"></button><style type="text/gss" scoped="scoped" id="u12">overflow: hidden;
 
-@v |~[cover-v-gap]~("viewport")~[cover-v-gap]~| in(img) !strong900;
-@h |~[cover-h-gap]~("viewport")~[cover-h-gap]~| in(img) !strong900;
-
-cover-h-gap == 0 !strong;
-cover-v-gap == 0 !strong;
+@v |~("viewport")~| in(img) !strong900;
+@h |~("viewport")~| in(img) !strong900;
 
 image-min-scale = 0.3;
 image-max-scale = 1;
@@ -1037,246 +337,17 @@ image-scale == img[width] / 686 !require;
 img[height] == img[width] * (859/686) !require;
 
 /* enforce minimum scale*/
-img[height] >= 859 * image-min-scale !require;
-img[height] <= 859 * image-max-scale !require;</style>
-                <a href="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" id="u30">
-                  <img src="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif" srcset="https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif 686w" sizes="(min-width: 1440px) 1440px, 100vw" id="u29" />
-                </a><style type="text/gss" scoped="scoped" id="u32">/* define  blank spot */
-"space"[x] == img[x] + 595 * image-scale !require;
-"space"[y] == img[y] + 0 * image-scale !require;
-"space"[width] ==  420 * image-scale !require;
-"space"[height] == 667 * image-scale !require;</style><style type="text/gss" scoped="scoped" id="u34">/* define  area of importance */
-"scene"[x] == img[x] + 154 * image-scale !require;
-"scene"[y] == img[y] + 34 * image-scale !require;
-"scene"[width] ==  414 * image-scale !require;
-"scene"[height] == 734 * image-scale !require;
-
-/* Keep saliency towards original position */
-"scene"[center-x] == "viewport"[center-x];
-"scene"[center-y] == "viewport"[center-y];
-
-@v |~("scene")~| in("viewport");
-@h |~("scene")~| in("viewport");</style></div>
+img[height] >= 859 * image-min-scale !strong950;
+img[height] <= 859 * image-max-scale !strong950;</style></div>
+            <div dataId="21f136b3-1f88-4976-9b4e-fe83046efcf5" index="attribution" kind="aside" class="attribution aside" id="u16">
+              <div index="publisher" dataId="21f136b3-1f88-4976-9b4e-fe83046efcf5" kind="aside" class="publisher aside" id="u15">s3.amazonaws.com</div>
             </div>
-          </article>
+          </div>
         </section>
       </div>
     </div>
-    <div id="u68">
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/layout.gss" />
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/variables.gss" />
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/debug.gss" />
-      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/motion/animation.gss" /><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/media/sizing/cover.gss">
-.cover {
-  width: == ^image-width !strong;
-  // width: <= ^image-width !strong;   
-  height: == ^image-height !strong;
-  center-x: == ^center-x;
-  @if ::window[width] <= $taylorW/2 {
-    width: == ::window[width] !strong100;
-    // height: == ::window[height]/1. !strong100;
-  }
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/vfl/v-cover.gss">
-@v |(.cover)| !strong;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/vfl/h-bg_media.gss">
-@h |(.cover)| !require;
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/blocks/align-center-y.gss">
-inner-gap-top >= inner-gap-vertical !require;
-inner-gap-bottom == inner-gap-top !require;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/blocks/align-center-x.gss">
-inner-gap-right == inner-gap-left !require;
-outer-gap-right == outer-gap-left !require;
-inner-gap-left >= inner-gap-horizontal !require;
-
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/typography/small.gss">
-.title {
-  z-index: 2;
-  font-size: = 6g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-  font-weight: == 800;
-}
-
-.attribution {
-  z-index: 2;
-  font-size: = 1.5g;
-  line-height: = &font-size + 1g;
-  letter-spacing: .05em;
-  width: == &intrinsic-width;
-  height: == &intrinsic-height !require;
-  a{
-    font-size: = 1.5g;
-    letter-spacing: .05em;
-  }
-  @if ::window[width] <= $taylorW/2 {
-    font-size: = 3g;
-    a{
-      font-size: = 3g;
-    }
-  }
-}
-
-.paragraph {
-  font-size: = 2g;
-  @if ::window[width] <= $taylorW/2 {
-    font-size: = 3g;
-  }
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-}
-
-.quote{
-  font-size: = 4g;
-  line-height: = &font-size + 1g;
-  height: == &intrinsic-height !require;
-  font-weight: = 800;
-}
-
-.cta-text {
-  font-size: = 2g;
-  line-height: = &font-size;
-  @if ::window[width] <= $taylorW/2 {
-    font-size: = 3.5g;
-  }
-}
-
-.cta-deco {
-  font-size: = 18g;
-  line-height: = &font-size - 2g;
-}
-
-.play-button{
-  font-size: == 2g;
-  line-height: = &font-size + .5g;
-  center-y: == (^ .cover)[center-y];
-  center-x: == (^ .cover)[center-x];
-  width: == &intrinsic-width;
-  height: == &intrinsic-height;
-  white-space: nowrap;
-  @if ::window[width] <= $taylorW/2 {
-    font-size: == 3g;
-  }
-}
-
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/asides/attribution/attachments/cover-below.gss">
-@if ::window[width] <= $taylorW/2 {
-  attribution-gap = 2g;
-}
-.attribution{
-  top: == ^(.cover)[bottom] + ^attribution-gap;
-  max-width: <= ^(.cover)[width];
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/cover-left.gss">
-.attribution {
-  left: == ^(.cover)[left];
-  @if ::window[width] <= $taylorW/2 {
-    left: == 1md;
-  }
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/leading/small.gss">
-.leading{
-  width: == 3g;
-  height: == 3g;
-  z-index: 2;
-  opacity: == ^decoration-opacity-leading;
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/leading/attachments/cover-above.gss">
-.leading{
-  bottom: == ^(.cover)[top] - ^decoration-gap-leading;
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/trailing/small.gss">
-.trailing{
-  width: == 3g;
-  height: == 3g;
-  z-index: 2;
-  opacity: == ^decoration-opacity-trailing;
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/trailing/attachments/attribution-below.gss">
-.trailing{
-  top: == ^(.attribution)[bottom] + ^decoration-gap-trailing;
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/overlay/big.gss">
-.overlay {
-  width: == 2md;
-  height: == 2md;
-  z-index: 2;
-  //opacity: == ^decoration-opacity-overlay;
-  opacity: == 0.05;
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/overlay/attachments/cover-center-y.gss">
-.overlay{
-  center-y: == ^(.cover)[center-y];
-}
-
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/overlay/alignments/cover-center-x.gss">
-.overlay {
-  center-x: == ^(.cover)[center-x]; 
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/asides/attribution/alignments/block-left.gss">
-.attribution {
-  left: == ^left; 
-  @if ::window[width] <= $taylorW/2 {
-    left: == ^left + 1md !strong; 
-  }
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/leading/alignments/block-left.gss">
-.leading {
-  left: == ^left; 
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/decorations/trailing/alignments/block-left.gss">
-.trailing {
-  left: == ^left; 
-}
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/sections/stack-vertical.gss">
-width: == intrinsic-width !require;
-top: == 0 !require;
-
-.block {
-  :first[top]   ==           ^block-gap-top     !require;
-  :next[top]    == &bottom + ^block-gap         !require;
-  :last[bottom] == ^height - ^block-gap-bottom  !require;
-
-  &outer-gap-left == 0;
-  &outer-gap-right == 0;
-
-  left:  ==          ^block-gap-left  + &outer-gap-left  !strong100;
-  right: == ^width - ^block-gap-right - &outer-gap-right !strong100;
-
-  outer-gap-left >= 0 !require;
-  outer-gap-right >= 0 !require;
-}
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/sections/align-justify-y.gss">
-block-gap-top == block-gap-vertical;
-block-gap-top >= block-gap-vertical !require;
-block-gap-top == block-gap-bottom !require;
-
-
-block-gap     == block-gap-between;
-
-block-gap     == block-gap-top !require;
-
-</script><script type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.55/src/layouts/artistic/D4/assets/gss/sections/align-center-x.gss">
-block-gap-left == block-gap-right !require;
-block-gap-left >= block-gap-horizontal !require;
-block-gap-left == block-gap-horizontal !require;
-
-</script><script id="u67">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    <div id="u24">
+      <link rel="stylesheet/gss" type="text/gss" href="//cdn.thegrid.io/design-systems/taylor/0.0.64/src/layouts/shared/assets/gss/variables.gss" /><script id="u23">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
