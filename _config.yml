@@ -1,6 +1,6 @@
 name: D4
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
-layout_spectrum: 0.61409
+layout_spectrum: 0.10015
 typography_spectrum: 0.97
 title: Dan Tocchini
 cta:
@@ -23,8 +23,8 @@ color:
     - '#dbc6bc'
     - '#faefda'
   brandStrength: 0.6875
-  lightness: 0.375
-  saturation: 0.0625
+  lightness: 0.6875
+  saturation: 0.125
   rhythmicContrast: 1
 purpose:
   - name: follow
