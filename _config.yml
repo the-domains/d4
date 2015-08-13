@@ -23,9 +23,9 @@ color:
     - '#dbc6bc'
     - '#faefda'
   brandStrength: 0.6875
-  lightness: 0.6875
+  lightness: 1
   saturation: 0.125
-  rhythmicContrast: 1
+  rhythmicContrast: 0.75
 purpose:
   - name: follow
     item: 86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d
