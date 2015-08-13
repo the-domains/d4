@@ -24,7 +24,7 @@ color:
     - '#faefda'
   brandStrength: 0.6875
   lightness: 1
-  saturation: 0.125
+  saturation: 0.3125
   rhythmicContrast: 0.75
 purpose:
   - name: follow
