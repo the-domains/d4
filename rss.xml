@@ -1,67 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[Untitled RSS Feed]]></title>
-        <description><![CDATA[Untitled RSS Feed]]></description>
-        <link>http://github.com/dylang/node-rss</link>
+        <title><![CDATA[Dan Tocchini]]></title>
+        <description><![CDATA[Dan Tocchini]]></description>
+        <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Mon, 14 Sep 2015 14:23:25 GMT</lastBuildDate>
-        <atom:link href="undefinedrss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 14 Sep 2015 14:21:00 GMT</pubDate>
+        <lastBuildDate>Wed, 21 Oct 2015 18:51:45 GMT</lastBuildDate>
+        <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[Are agencies dead ? @schneidertobias + Grid evolution @D4TOCCHINI. A non-conference in Lake Tahoe. Invite only. https://epicurrence.com/]]></description>
-            <link>https://twitter.com/wertandcompany/status/572476221860278272</link>
-            <guid isPermaLink="false">6baf7682-761c-4ae4-b161-f40186653117</guid>
-            <pubDate>Thu, 05 Mar 2015 20:46:19 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[And Then Steve Said, 'Let There Be an iPhone']]></title>
-            <description><![CDATA[The 55 miles from Campbell to San Francisco make for one of the nicest commutes anywhere. The journey mostly zips along the Junipero Serra Freeway, a grand and remarkably empty highway that abuts the east side of the Santa Cruz Mountains.]]></description>
-            <link>http://www.nytimes.com/2013/10/06/magazine/and-then-steve-said-let-there-be-an-iphone.html?_r=2&amp;</link>
-            <guid isPermaLink="false">d210e2bb-dce7-4c7c-801e-7e5628c853de</guid>
-            <pubDate>Fri, 04 Oct 2013 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Musk Issues Big Warning About Artificial Intelligence]]></title>
-            <description><![CDATA[Elon Musk is no Luddite, but that doesn't mean he's eager to embrace all new technology. "I think we should be very careful about artificial intelligence," the CEO of both SpaceX and Tesla, said Friday in a talk at MIT in Cambridge, Mass.]]></description>
-            <link>http://www.huffingtonpost.com/2014/10/27/elon-musk-artificial-intelligence_n_6053804.html</link>
-            <guid isPermaLink="false">fe330a10-e482-4901-9bb7-8e76adcb5aa7</guid>
-            <pubDate>Tue, 24 Feb 2015 00:00:00 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The Grid Is The Website Of The Future: It Builds Itself]]></title>
-            <description><![CDATA[Making the process of building websites less complicated is a growth industry. Just look at the success of WordPress and Squarespace. Yet with all the templates and customization available from these platforms, it still leaves humans to do most of the decision-making-should you put that checkout button in the middle or top right?]]></description>
-            <link>http://www.fastcolabs.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself</link>
-            <guid isPermaLink="false">e6e93dd1-0837-41ea-a316-1685da184b1c</guid>
-            <pubDate>Mon, 20 Oct 2014 13:00:00 GMT</pubDate>
+            <title><![CDATA[How Dan Tocchini, CEO The Grid, Is Rethinking Website Development. I Love His First Answer.]]></title>
+            <description><![CDATA[<article><h1>How Dan Tocchini, CEO The Grid, Is Rethinking Website Development. I Love His First Answer.</h1><p>Dan Tocchini is the founder and CEO of The Grid where he gets a lot of mentorship from D3 AKA, Daniel the 3rd, his dad. You might find that having your dad as a founder is a bit well - odd.</p><img src="http://s.huffpost.com/contributors/ramon-nuez/headshot.jpg"></article>]]></description>
+            <link>http://m.huffpost.com/us/entry/8245456</link>
+            <guid isPermaLink="false">bd970f48-8ccd-45c6-b399-37a782e41ddb</guid>
+            <pubDate>Wed, 21 Oct 2015 18:51:14 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[No title]]></title>
-            <description><![CDATA[Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.]]></description>
-            <link>https://twitter.com/elonmusk/status/495759307346952192</link>
-            <guid isPermaLink="false">17aab240-44ed-4bb6-94b8-c8d4b04b0b53</guid>
-            <pubDate>Thu, 05 Mar 2015 20:46:21 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA["That helps explain why Tocchini isn't worried..." http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/ ... enjoyed the nerd-out sesh, @jordannovet!]]></description>
-            <link>https://twitter.com/d4tocchini/status/572593744517595136</link>
-            <guid isPermaLink="false">2f4afb84-83fd-4fd2-a8db-1e801cdea62f</guid>
-            <pubDate>Thu, 05 Mar 2015 20:46:21 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <link>https://s3.amazonaws.com/vice_asset_uploader/files/14230914901422278769_photography_by_han_bin_headpiece_by_katsuya_kamo_reverse2.gif</link>
-            <guid isPermaLink="false">ee2dc798-bddb-4531-9e00-45d8ad862eea</guid>
-            <pubDate>Thu, 05 Mar 2015 20:46:21 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The Grid - an unconventional startup]]></title>
-            <description><![CDATA[I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional.]]></description>
-            <link>https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d</link>
-            <guid isPermaLink="false">9c484406-057d-4c15-9d8c-ea3dd3bc0313</guid>
-            <pubDate>Thu, 26 Feb 2015 22:23:19 GMT</pubDate>
+            <description><![CDATA[<img alt="Prometheus 2 might be stalling production on Alien 5 http&colon;&sol;&sol;go&period;ign&period;com&sol;mOyx0T2" src="https://pbs.twimg.com/media/CMuCaQdUYAEpOKE.png:large">]]></description>
+            <link>https://twitter.com/IGN/status/633743561410801665</link>
+            <guid isPermaLink="false">1883cf6f-41a1-4cef-bd8e-a850cc36f3bf</guid>
+            <pubDate>Tue, 18 Aug 2015 21:06:48 GMT</pubDate>
         </item>
     </channel>
 </rss>
