@@ -28,15 +28,15 @@ collections:
       path: '/:title/'
       navigable: true
 color:
-  saturation: 0.8340425
-  lightness: 0.3085106
+  saturation: 0.7553192
+  lightness: 0.8234043
   brandStrength: 0.8125
   brandColors:
-    - '#280B05'
-    - '#883916'
-    - '#F26E27'
-    - '#FFFFFB'
-    - '#FFFB6E'
+    - '#32282E'
+    - '#0C0B0F'
+    - '#A4A4A2'
+    - '#E8E2CD'
+    - '#F2A499'
   rhythmicContrast: 1
 cta:
   bucket: null
@@ -46,8 +46,8 @@ analytics:
   twitter: null
   google: UA-61994900-1
   facebook: null
-favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 name: D4
+favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 opengraph:
   image: null
   type: null
