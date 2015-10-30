@@ -28,16 +28,16 @@ collections:
       path: '/:title/'
       navigable: true
 color:
-  saturation: 0.7553192
-  brandStrength: 0.8125
-  rhythmicContrast: 1
+  saturation: 0.7
+  brandStrength: 0.8297873
+  lightness: 0.6574468
   brandColors:
-    - '#32282E'
-    - '#0C0B0F'
-    - '#A4A4A2'
-    - '#E8E2CD'
-    - '#F2A499'
-  lightness: 0.8234043
+    - '#9A202F'
+    - '#E1D7C6'
+    - '#1E2027'
+    - '#B45C5C'
+    - '#5C5D5C'
+  rhythmicContrast: 1
 cta:
   bucket: null
   version: null
