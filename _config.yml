@@ -1,8 +1,8 @@
-name: D4
-favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
-layout_spectrum: 0.1586
-typography_spectrum: 0.97271
 title: Dan Tocchini
+purpose:
+  - name: follow
+    url: 'https://twitter.com/d4tocchini'
+    item: 86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d
 collections:
   - filter:
       notType:
@@ -27,30 +27,30 @@ collections:
     permalink:
       path: '/:title/'
       navigable: true
-cta:
-  domain: null
-  bucket: null
-  version: null
-analytics:
-  google: UA-61994900-1
-  facebook: null
-  twitter: null
-opengraph:
-  image: null
-  type: null
-  appId: null
 color:
+  saturation: 0.7
+  brandStrength: 0.875
+  rhythmicContrast: 1
   brandColors:
     - '#2c2e3a'
     - '#f4eae1'
     - '#b20c19'
     - '#877e8e'
     - '#beb1a9'
-  brandStrength: 0.875
   lightness: 0.6574468
-  saturation: 0.7
-  rhythmicContrast: 1
-purpose:
-  - name: follow
-    url: 'https://twitter.com/d4tocchini'
-    item: 86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d
+cta:
+  bucket: null
+  version: null
+  domain: null
+analytics:
+  twitter: null
+  google: UA-61994900-1
+  facebook: null
+name: D4
+favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
+opengraph:
+  image: null
+  type: null
+  appId: null
+typography_spectrum: 0.97271
+layout_spectrum: 0.03404255
