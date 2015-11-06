@@ -29,8 +29,8 @@ collections:
       navigable: true
 color:
   saturation: 0.7
+  brandStrength: 1
   lightness: 0.6574468
-  brandStrength: 0.9276596
   brandColors:
     - '#171317'
     - '#FFFFFF'
@@ -52,5 +52,5 @@ opengraph:
   image: null
   type: null
   appId: null
-typography_spectrum: 1
+typography_spectrum: 0.05744681
 layout_spectrum: 0.4297872
