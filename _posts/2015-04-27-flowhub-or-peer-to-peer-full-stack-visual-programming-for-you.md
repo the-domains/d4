@@ -2,9 +2,9 @@
 author: []
 related: []
 publisher:
-  url: "https://flowhub.io"
+  url: 'https://flowhub.io'
   name: Flowhub
-  favicon: "https://flowhub.io/favicon.ico"
+  favicon: 'https://flowhub.io/favicon.ico'
   domain: flowhub.io
 keywords:
   - flowhub
@@ -17,16 +17,19 @@ keywords:
   - visual
   - open-source
   - noflo
-description: "Coding starts on the white-board. Keep it that way with Flowhub! The \"graph\" displays your software clearly, concisely and beautifully."
+description: 'Coding starts on the white-board. Keep it that way with Flowhub! The "graph" displays your software clearly, concisely and beautifully.'
 inLanguage: English
 app_links: []
-isBasedOnUrl: "https://flowhub.io/"
-title: "Flowhub | Peer-to-peer full-stack visual programming for your fingers"
-datePublished: "2015-04-27T17:15:04.108Z"
-dateModified: "2015-04-27T17:15:04.108Z"
+isBasedOnUrl: 'https://flowhub.io/'
+title: 'Flowhub | Peer-to-peer full-stack visual programming for your fingers'
+datePublished: '2015-11-06T23:41:22.517Z'
+dateModified: '2015-04-27T17:15:04.108Z'
 sourcePath: _posts/2015-04-27-flowhub-or-peer-to-peer-full-stack-visual-programming-for-you.md
 published: true
-_context: "http://schema.org"
+inFeed: true
+hasPage: false
+inNav: false
+_context: 'http://schema.org'
 _type: MediaObject
 
 ---
