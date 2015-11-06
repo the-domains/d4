@@ -29,14 +29,14 @@ collections:
       navigable: true
 color:
   saturation: 0.7
-  brandStrength: 0.04255319
   lightness: 0.6574468
+  brandStrength: 0.9276596
   brandColors:
-    - '#2c2e3a'
-    - '#f4eae1'
-    - '#b20c19'
-    - '#877e8e'
-    - '#beb1a9'
+    - '#171317'
+    - '#FFFFFF'
+    - '#2F4277'
+    - '#88644B'
+    - '#FF76D7'
   rhythmicContrast: 1
 cta:
   bucket: null
@@ -52,5 +52,5 @@ opengraph:
   image: null
   type: null
   appId: null
-typography_spectrum: 0.97271
-layout_spectrum: 0.03404255
+typography_spectrum: 1
+layout_spectrum: 0.4297872
