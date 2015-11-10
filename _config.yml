@@ -46,11 +46,11 @@ analytics:
   twitter: null
   google: UA-61994900-1
   facebook: null
-favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 name: D4
+favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 opengraph:
   image: null
   type: null
   appId: null
 typography_spectrum: 1
-layout_spectrum: 0.4
+layout_spectrum: 0.4276596
