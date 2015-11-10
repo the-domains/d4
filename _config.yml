@@ -48,7 +48,7 @@ color:
     - '#FF76D7'
   brandStrength: 0.375
   lightness: 0.9
-  saturation: 0.8914894
+  saturation: 0.75
   rhythmicContrast: 1
 purpose:
   - name: follow
