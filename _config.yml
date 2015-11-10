@@ -29,8 +29,8 @@ collections:
       navigable: true
 color:
   saturation: 0.5510638
+  brandStrength: 0
   lightness: 0.812766
-  brandStrength: 0.687234
   brandColors:
     - '#FFFFFF'
     - '#0E0D16'
