@@ -29,15 +29,15 @@ collections:
       navigable: true
 color:
   saturation: 0.8914894
-  brandStrength: 0.4375
-  rhythmicContrast: 1
+  brandStrength: 0.1425532
+  lightness: 0.9
   brandColors:
     - '#171317'
     - '#FFFFFF'
     - '#2F4277'
     - '#88644B'
     - '#FF76D7'
-  lightness: 0.9
+  rhythmicContrast: 1
 cta:
   bucket: null
   version: null
@@ -46,8 +46,8 @@ analytics:
   twitter: null
   google: UA-61994900-1
   facebook: null
-name: D4
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
+name: D4
 opengraph:
   image: null
   type: null
