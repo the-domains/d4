@@ -4,7 +4,7 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Sat, 14 Nov 2015 00:13:33 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 14 Nov 2015 00:14:33 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Google's Open Source AI Engine, TensorFlow, Points to a Fast-Changing Hardware World]]></title>
@@ -54,13 +54,6 @@
             <link>http://www.sciencedaily.com/releases/2015/10/151027123147.htm</link>
             <guid isPermaLink="false">7696601c-a8a7-45c0-962c-2f46dbaea67f</guid>
             <pubDate>Fri, 30 Oct 2015 00:30:37 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The Grid Is The Website Of The Future: It Builds Itself]]></title>
-            <description><![CDATA[<article><h1>The Grid Is The Website Of The Future: It Builds Itself</h1><p>Making the process of building websites less complicated is a growth industry. Just look at the success of WordPress and Squarespace. Yet with all the templates and customization available from these platforms, it still leaves humans to do most of the decision-making-should you put that checkout button in the middle or top right?</p><img src="http://g.fastcompany.net/multisite_files/fastcompany/imagecache/1280/poster/2014/10/3037187-poster-p-2-the-grid-is-building-the-website-of-the-future-it-designs-itself.jpg"></article>]]></description>
-            <link>http://www.fastcompany.com/3037187/the-grid-is-building-the-website-of-the-future-it-designs-itself</link>
-            <guid isPermaLink="false">5544038a-5070-41ec-843a-9a7890fe9cf8</guid>
-            <pubDate>Thu, 29 Oct 2015 22:10:45 GMT</pubDate>
         </item>
     </channel>
 </rss>
