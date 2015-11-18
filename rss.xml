@@ -4,8 +4,15 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Tue, 17 Nov 2015 21:06:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2015 19:23:02 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[I Turned Off JavaScript in My Web Browser for a Whole Week and It Was Glorious]]></title>
+            <description><![CDATA[<article><h1>I Turned Off JavaScript in My Web Browser for a Whole Week and It Was Glorious</h1><p>There's another web out there, a better web hiding just below the surface of the one we surf from our phones and tablets and laptops every day. A web with no ads, no endlessly scrolling pages, and no annoying modal windows begging you to share the site on social media or sign up for a newsletter.</p><img src="http://www.wired.com/wp-content/uploads/2015/11/JS2-1200x630-e1447811844337.jpg"></article>]]></description>
+            <link>http://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/</link>
+            <guid isPermaLink="false">e002ca44-80a3-4693-943b-467b424ee2f3</guid>
+            <pubDate>Wed, 18 Nov 2015 19:21:36 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[The Grid Website Platform Automatically Adapts Design To Make Your Content Shine]]></title>
             <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="http://blogs-images.forbes.com/anthonykosner/files/2014/10/the_grid-designs_tiled_logo.jpg"></article>]]></description>
