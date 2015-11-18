@@ -29,14 +29,14 @@ collections:
       navigable: true
 color:
   saturation: 0.5510638
-  lightness: 0.812766
   brandStrength: 0.906383
+  lightness: 0.812766
   brandColors:
-    - '#0E0C0B'
-    - '#E0B4CF'
-    - '#9A775B'
-    - '#4A413A'
-    - '#BC9B80'
+    - '#271F20'
+    - '#B39A88'
+    - '#FFFFFF'
+    - '#CFC7BC'
+    - '#A3655B'
   rhythmicContrast: 0.7212766
 cta:
   bucket: null
