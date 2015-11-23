@@ -4,8 +4,22 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 18 Nov 2015 22:33:57 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 23 Nov 2015 00:33:12 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[The other part of Artificial Intelligence]]></title>
+            <description><![CDATA[<article><h1>The other part of Artificial Intelligence</h1><p>"Machine" + "Learning" ... Oh, the beauty, the contrast, the tension of mechanical hardness possessed with the infinite fluidness of mind.  ("Constraint" || "Logic") + ("Programming" || "Satisfaction" || "Solvers") ... No contrast, no inspiration inducing tension.</p><img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/f6ad548b-4961-414d-ad3c-903df01781d4.png"></article>]]></description>
+            <link>http://d4.io/the-other-part-of-artificial-intelligence/index.html</link>
+            <guid isPermaLink="false">629620b2-2b0e-46bf-bab2-559910d96f36</guid>
+            <pubDate>Mon, 23 Nov 2015 00:33:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[<img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/3a43960a-0209-4ad0-bc17-db43f4106a2c.png">]]></description>
+            <link>http://d4.io/8a18ff47-0003-4131-9ce1-31331245a22c/index.html</link>
+            <guid isPermaLink="false">8a18ff47-0003-4131-9ce1-31331245a22c</guid>
+            <pubDate>Thu, 19 Nov 2015 00:15:38 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[How Malala Yousafzai's "Magic Pencil" Inspires Her To Change The World]]></title>
             <description><![CDATA[<article><h1>How Malala Yousafzai's "Magic Pencil" Inspires Her To Change The World</h1><p>It might take time, but things will change, the 18-year-old Nobel peace prize winner says about her fight for women's education rights.</p><img src="http://f.fastcompany.net/multisite_files/fastcompany/imagecache/620x350/poster/2015/11/3053345-teaser-malala-teaser.jpg"></article>]]></description>
@@ -60,13 +74,6 @@
             <description><![CDATA[<img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/e82f1c1c-b3db-4223-a724-582779ef041b.png">]]></description>
             <link>http://d4.io/aab5b6b9-fccc-42ee-af76-d656bf76d0f2/index.html</link>
             <guid isPermaLink="false">aab5b6b9-fccc-42ee-af76-d656bf76d0f2</guid>
-            <pubDate>Fri, 06 Nov 2015 23:41:22 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The Grid - an unconventional startup]]></title>
-            <description><![CDATA[<article><h1>The Grid - an unconventional startup</h1><p>I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional.</p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*1I-PNso0E8oXXywbN7bAIQ.jpeg"></article>]]></description>
-            <link>https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d</link>
-            <guid isPermaLink="false">85c06800-65dc-4b3e-bc61-05f5330a3c62</guid>
             <pubDate>Fri, 06 Nov 2015 23:41:22 GMT</pubDate>
         </item>
     </channel>
