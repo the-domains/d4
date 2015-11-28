@@ -4,8 +4,15 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Sat, 28 Nov 2015 19:27:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2015 19:39:09 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[How Humans Ended Up With Freakishly Huge Brains]]></title>
+            <description><![CDATA[<article><h1>How Humans Ended Up With Freakishly Huge Brains</h1><p>There it was, sitting on the mantelpiece, staring at her with hollow eyes and a naked grin. She could not stop staring back. It looked distinctly like the fossilized skull of an extinct baboon. That was the sort of thing Josephine Salmons was likely to know.</p><img src="http://www.wired.com/wp-content/uploads/2015/11/GettyImages-100390210_HPA-1200x630-e1448397344516.jpg"></article>]]></description>
+            <link>http://www.wired.com/2015/11/how-humans-ended-up-with-freakishly-huge-brains/</link>
+            <guid isPermaLink="false">4579f075-f8f8-44c0-b9d0-fac28ca8faff</guid>
+            <pubDate>Sat, 28 Nov 2015 19:38:08 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[Menu]]></title>
             <description><![CDATA[<article><h1>Menu</h1><p>Lunch 11-3pm</p><img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/5fe5b017-62d6-4c7c-a604-62e220eb60e7.JPG"></article>]]></description>
@@ -67,13 +74,6 @@
             <description><![CDATA[<article><h1>Flowhub | Peer-to-peer full-stack visual programming for your fingers</h1><p>Coding starts on the white-board. Keep it that way with Flowhub! The "graph" displays your software clearly, concisely and beautifully.</p><img src="https://flowhub.io/assets/bg-finger-w1600q70.jpg"></article>]]></description>
             <link>https://flowhub.io/</link>
             <guid isPermaLink="false">99acefd5-ccb7-455d-92d8-04c2b6340d16</guid>
-            <pubDate>Fri, 06 Nov 2015 23:41:22 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Inside the Secret World of Russia's Cold War Mapmakers]]></title>
-            <description><![CDATA[<article><h1>Inside the Secret World of Russia's Cold War Mapmakers</h1><p>Nick Ballon for WIRED A military helicopter was on the ground when Russell Guy arrived at the helipad near Tallinn, Estonia, with a briefcase filled with $250,000 in cash. The place made him uncomfortable. It didn't look like a military base, not exactly, but there were men who looked like soldiers standing around.</p><img src="http://www.wired.com/wp-content/uploads/2015/07/ff_sovietmaps_1_hero2.jpg"></article>]]></description>
-            <link>http://www.wired.com/2015/07/secret-cold-war-maps/</link>
-            <guid isPermaLink="false">dea75e11-3fc1-4670-a443-15a24a37d46a</guid>
             <pubDate>Fri, 06 Nov 2015 23:41:22 GMT</pubDate>
         </item>
     </channel>
