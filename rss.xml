@@ -4,8 +4,15 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Mon, 23 Nov 2015 00:33:12 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Nov 2015 19:27:11 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Menu]]></title>
+            <description><![CDATA[<article><h1>Menu</h1><p>Lunch 11-3pm</p><img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/5fe5b017-62d6-4c7c-a604-62e220eb60e7.JPG"></article>]]></description>
+            <link>http://d4.io/menu/index.html</link>
+            <guid isPermaLink="false">69eab6e8-6742-4f23-ba66-39d18fd800fb</guid>
+            <pubDate>Sat, 28 Nov 2015 19:26:19 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[The other part of Artificial Intelligence]]></title>
             <description><![CDATA[<article><h1>The other part of Artificial Intelligence</h1><p>"Machine" + "Learning" ... Oh, the beauty, the contrast, the tension of mechanical hardness possessed with the infinite fluidness of mind.  ("Constraint" || "Logic") + ("Programming" || "Satisfaction" || "Solvers") ... No contrast, no inspiration inducing tension.</p><img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/f6ad548b-4961-414d-ad3c-903df01781d4.png"></article>]]></description>
@@ -67,13 +74,6 @@
             <description><![CDATA[<article><h1>Inside the Secret World of Russia's Cold War Mapmakers</h1><p>Nick Ballon for WIRED A military helicopter was on the ground when Russell Guy arrived at the helipad near Tallinn, Estonia, with a briefcase filled with $250,000 in cash. The place made him uncomfortable. It didn't look like a military base, not exactly, but there were men who looked like soldiers standing around.</p><img src="http://www.wired.com/wp-content/uploads/2015/07/ff_sovietmaps_1_hero2.jpg"></article>]]></description>
             <link>http://www.wired.com/2015/07/secret-cold-war-maps/</link>
             <guid isPermaLink="false">dea75e11-3fc1-4670-a443-15a24a37d46a</guid>
-            <pubDate>Fri, 06 Nov 2015 23:41:22 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[<img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/e82f1c1c-b3db-4223-a724-582779ef041b.png">]]></description>
-            <link>http://d4.io/aab5b6b9-fccc-42ee-af76-d656bf76d0f2/index.html</link>
-            <guid isPermaLink="false">aab5b6b9-fccc-42ee-af76-d656bf76d0f2</guid>
             <pubDate>Fri, 06 Nov 2015 23:41:22 GMT</pubDate>
         </item>
     </channel>
