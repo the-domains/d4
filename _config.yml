@@ -47,9 +47,9 @@ color:
     - '#fdd5cd'
     - '#fe8175'
   brandStrength: 1
-  lightness: 0.9375
-  saturation: 0.5
-  rhythmicContrast: 0.75
+  lightness: 0.125
+  saturation: 0.375
+  rhythmicContrast: 1
 purpose:
   - name: follow
     url: 'https://twitter.com/d4tocchini'
