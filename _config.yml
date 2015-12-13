@@ -28,16 +28,16 @@ collections:
       path: '/:title/'
       navigable: true
 color:
-  saturation: 0.5625
+  saturation: 0.8319149
   brandStrength: 1
-  rhythmicContrast: 1
+  lightness: 1
   brandColors:
-    - '#181d23'
-    - '#314b2a'
-    - '#49627f'
-    - '#5e8235'
-    - '#82a98d'
-  lightness: 0.1875
+    - '#EAE9E7'
+    - '#BD7F66'
+    - '#C6AC9A'
+    - '#D03252'
+    - '#F07F8F'
+  rhythmicContrast: 1
 cta:
   bucket: null
   version: null
@@ -53,4 +53,4 @@ opengraph:
   type: null
   appId: null
 typography_spectrum: 1
-layout_spectrum: 0.1638298
+layout_spectrum: 0.3914894
