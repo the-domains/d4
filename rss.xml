@@ -4,8 +4,15 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 27 Apr 2016 23:20:08 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 27 Apr 2016 23:20:11 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[The Grid Website Platform Automatically Adapts Design To Make Your Content Shine]]></title>
+            <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/a641327632168559cfea2e7f75c97a58c8104399.jpg"></article>]]></description>
+            <link>http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/</link>
+            <guid isPermaLink="false">cd0b9ad2-e914-42ae-b6c1-7be8dd98732f</guid>
+            <pubDate>Wed, 27 Apr 2016 23:19:21 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[How Humans Ended Up With Freakishly Huge Brains]]></title>
             <description><![CDATA[<article><h1>How Humans Ended Up With Freakishly Huge Brains</h1><p>There it was, sitting on the mantelpiece, staring at her with hollow eyes and a naked grin. She could not stop staring back. It looked distinctly like the fossilized skull of an extinct baboon. That was the sort of thing Josephine Salmons was likely to know.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/86aa518b83cbd6374c95b6e16a1bfe5316fb1dc2.jpg"></article>]]></description>
@@ -54,13 +61,6 @@
             <link>http://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/</link>
             <guid isPermaLink="false">e002ca44-80a3-4693-943b-467b424ee2f3</guid>
             <pubDate>Wed, 18 Nov 2015 19:21:36 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The Grid Website Platform Automatically Adapts Design To Make Your Content Shine]]></title>
-            <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/a26ec1882977ff316c5b36fbf92f311086b06af4.jpg"></article>]]></description>
-            <link>http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/</link>
-            <guid isPermaLink="false">cd0b9ad2-e914-42ae-b6c1-7be8dd98732f</guid>
-            <pubDate>Tue, 17 Nov 2015 21:05:53 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Google's Open Source AI Engine, TensorFlow, Points to a Fast-Changing Hardware World]]></title>
