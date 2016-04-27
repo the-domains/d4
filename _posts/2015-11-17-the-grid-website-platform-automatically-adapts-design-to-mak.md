@@ -11,10 +11,11 @@ description: 'Video Do websites dream of electric designers? Can web content kno
 app_links: []
 isBasedOnUrl: 'http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/'
 title: The Grid Website Platform Automatically Adapts Design To Make Your Content Shine
-datePublished: '2015-11-17T21:05:53.072Z'
-dateModified: '2015-11-17T21:02:40.300Z'
+datePublished: '2016-04-27T23:19:21.475Z'
+dateModified: '2016-04-23T12:49:27.481Z'
 sourcePath: _posts/2015-11-17-the-grid-website-platform-automatically-adapts-design-to-mak.md
 published: true
+starred: true
 inFeed: true
 hasPage: false
 inNav: false
