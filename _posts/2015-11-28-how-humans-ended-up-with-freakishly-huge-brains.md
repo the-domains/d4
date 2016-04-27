@@ -1,11 +1,10 @@
 ---
-author: []
-related: []
-publisher:
-  url: 'http://www.wired.com'
-  name: WIRED
-  favicon: 'http://www.wired.com/wp-content/themes/Phoenix/assets/images/favicon.ico'
-  domain: www.wired.com
+inFeed: true
+hasPage: false
+inNav: false
+isBasedOnUrl: 'http://www.wired.com/2015/11/how-humans-ended-up-with-freakishly-huge-brains/'
+inLanguage: en
+starred: true
 keywords:
   - brain
   - human
@@ -18,17 +17,20 @@ keywords:
   - taung
   - muscles
 description: 'There it was, sitting on the mantelpiece, staring at her with hollow eyes and a naked grin. She could not stop staring back. It looked distinctly like the fossilized skull of an extinct baboon. That was the sort of thing Josephine Salmons was likely to know.'
-inLanguage: en
+datePublished: '2016-04-27T23:19:20.879Z'
+dateModified: '2015-12-07T12:59:29.969Z'
+author: []
+related: []
 app_links: []
-isBasedOnUrl: 'http://www.wired.com/2015/11/how-humans-ended-up-with-freakishly-huge-brains/'
 title: How Humans Ended Up With Freakishly Huge Brains
-datePublished: '2015-11-28T19:38:08.191Z'
-dateModified: '2015-11-28T19:37:43.179Z'
 sourcePath: _posts/2015-11-28-how-humans-ended-up-with-freakishly-huge-brains.md
 published: true
-inFeed: true
-hasPage: false
-inNav: false
+authors: []
+publisher:
+  name: WIRED
+  domain: www.wired.com
+  url: 'http://www.wired.com'
+  favicon: 'http://www.wired.com/wp-content/themes/Phoenix/assets/images/favicon.ico'
 _context: 'http://schema.org'
 _type: MediaObject
 
