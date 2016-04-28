@@ -4,7 +4,7 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 28 Apr 2016 20:04:20 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Apr 2016 20:04:31 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[The Grid Website Platform Automatically Adapts Design To Make Your Content Shine]]></title>
@@ -19,6 +19,13 @@
             <link>http://www.wired.com/2015/11/how-humans-ended-up-with-freakishly-huge-brains/</link>
             <guid isPermaLink="false">4579f075-f8f8-44c0-b9d0-fac28ca8faff</guid>
             <pubDate>Wed, 27 Apr 2016 23:19:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[33 Women Doing Amazing Things in Graphic Design]]></title>
+            <description><![CDATA[<article><h1>33 Women Doing Amazing Things in Graphic Design</h1><p>These talented women have unleashed their creativity and skills on the world of graphic design. Paula Scher is an American graphic designer, illustrator, and educator, and the first female Principal at . She started experimenting with typography in the early 1980s and looked to historic design sources such as Russian Constructivism, obscure and little-used typefaces, and her seemingly unlimited imagination.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/5a84e55d2234e7ad3075d42c0c39e066f0189319.jpg"></article>]]></description>
+            <link>https://designschool.canva.com/blog/women-graphic-designers/</link>
+            <guid isPermaLink="false">800411c5-e851-4e06-adb8-a77031bb9953</guid>
+            <pubDate>Thu, 28 Apr 2016 20:03:24 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[No title]]></title>
@@ -68,13 +75,6 @@
             <link>http://d4.io/the-other-part-of-artificial-intelligence/index.html</link>
             <guid isPermaLink="false">629620b2-2b0e-46bf-bab2-559910d96f36</guid>
             <pubDate>Mon, 23 Nov 2015 00:33:09 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[<img src="https://the-grid-user-content.s3-us-west-2.amazonaws.com/3a43960a-0209-4ad0-bc17-db43f4106a2c.png">]]></description>
-            <link>http://d4.io/8a18ff47-0003-4131-9ce1-31331245a22c/index.html</link>
-            <guid isPermaLink="false">8a18ff47-0003-4131-9ce1-31331245a22c</guid>
-            <pubDate>Thu, 19 Nov 2015 00:15:38 GMT</pubDate>
         </item>
     </channel>
 </rss>
