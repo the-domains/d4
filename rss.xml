@@ -4,11 +4,11 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Wed, 27 Apr 2016 23:20:11 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Apr 2016 19:56:46 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[The Grid Website Platform Automatically Adapts Design To Make Your Content Shine]]></title>
-            <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/a641327632168559cfea2e7f75c97a58c8104399.jpg"></article>]]></description>
+            <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/d0f95538d0e34532175c74368f42d0448921e738.jpg"></article>]]></description>
             <link>http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/</link>
             <guid isPermaLink="false">cd0b9ad2-e914-42ae-b6c1-7be8dd98732f</guid>
             <pubDate>Wed, 27 Apr 2016 23:19:21 GMT</pubDate>
@@ -19,6 +19,13 @@
             <link>http://www.wired.com/2015/11/how-humans-ended-up-with-freakishly-huge-brains/</link>
             <guid isPermaLink="false">4579f075-f8f8-44c0-b9d0-fac28ca8faff</guid>
             <pubDate>Wed, 27 Apr 2016 23:19:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Why Facebook Is Killing It-Even When Nobody Else Is]]></title>
+            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="http://www.wired.com/wp-content/uploads/2016/04/mark-zuckerberg-facebook-511572184-1200x630-e1461801427316.jpg"></article>]]></description>
+            <link>http://www.wired.com/2016/04/facebook-killing-even-nobody-else/</link>
+            <guid isPermaLink="false">b865cf39-3961-4166-9fd6-3894ff462bdc</guid>
+            <pubDate>Thu, 28 Apr 2016 19:56:23 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Here Are 11 Epic Drinks Your Science Teacher Should've Taught You How To Make]]></title>
@@ -68,13 +75,6 @@
             <link>http://www.wired.com/2015/11/googles-open-source-ai-tensorflow-signals-fast-changing-hardware-world/</link>
             <guid isPermaLink="false">77727478-d186-4722-9042-ac3fdb6cc6d4</guid>
             <pubDate>Tue, 10 Nov 2015 19:02:51 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The Grid Has Over 11,900 Founding Members as AME Cloud Ventures Leads $4.6 Million Funding Round]]></title>
-            <description><![CDATA[<article><h1>The Grid Has Over 11,900 Founding Members as AME Cloud Ventures Leads $4.6 Million Funding Round</h1><p>The Grid, a content platform that wants to be the list software to meet "today's real time, anywhere" web site creation demands packaged with cool design has raised $4.6 million in a Series A round led by Jerry Yang's AME Cloud Ventures.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/197b3e4a5642c9c250c28aa52aa3aa2c6c042632.png"></article>]]></description>
-            <link>http://www.crowdfundinsider.com/2014/12/58302-the-grid-has-over-11900-founding-members-as-ame-cloud-ventures-leads-4-6-million-funding-round/</link>
-            <guid isPermaLink="false">4866f13a-697f-487a-8c31-eefb5f0704ba</guid>
-            <pubDate>Fri, 06 Nov 2015 23:41:23 GMT</pubDate>
         </item>
     </channel>
 </rss>
