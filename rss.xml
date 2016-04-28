@@ -4,11 +4,11 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 28 Apr 2016 19:56:46 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 28 Apr 2016 20:03:28 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[The Grid Website Platform Automatically Adapts Design To Make Your Content Shine]]></title>
-            <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/d0f95538d0e34532175c74368f42d0448921e738.jpg"></article>]]></description>
+            <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/af8fcc26a125a143cfe5264e253f245da5716aa5.jpg"></article>]]></description>
             <link>http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/</link>
             <guid isPermaLink="false">cd0b9ad2-e914-42ae-b6c1-7be8dd98732f</guid>
             <pubDate>Wed, 27 Apr 2016 23:19:21 GMT</pubDate>
@@ -21,8 +21,15 @@
             <pubDate>Wed, 27 Apr 2016 23:19:20 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Projections in the Forest]]></title>
+            <description><![CDATA[<article><h1>Projections in the Forest</h1><p>Behind the scenes: http://vimeo.com/3hund/behindthescenes The projection mapping "bioluminescent forest" is made by artists Friedrich van Schoor and Tarek Mawad. The artists spent six weeks in the forest fascinated by the silence and natural occurrences in nature, especially the phenomenon "bioluminescence".</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/9b83965374a2c848c4c534c3cde750be2d2a50c9.jpg"></article>]]></description>
+            <link>https://vimeo.com/115082758</link>
+            <guid isPermaLink="false">4309fe17-1afd-49f2-9819-1c5908bf1a81</guid>
+            <pubDate>Thu, 28 Apr 2016 20:03:24 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Why Facebook Is Killing It-Even When Nobody Else Is]]></title>
-            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="http://www.wired.com/wp-content/uploads/2016/04/mark-zuckerberg-facebook-511572184-1200x630-e1461801427316.jpg"></article>]]></description>
+            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/96b54bd15fc06e3d768797498c40738c3b46ae7a.jpg"></article>]]></description>
             <link>http://www.wired.com/2016/04/facebook-killing-even-nobody-else/</link>
             <guid isPermaLink="false">b865cf39-3961-4166-9fd6-3894ff462bdc</guid>
             <pubDate>Thu, 28 Apr 2016 19:56:23 GMT</pubDate>
@@ -68,13 +75,6 @@
             <link>http://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/</link>
             <guid isPermaLink="false">e002ca44-80a3-4693-943b-467b424ee2f3</guid>
             <pubDate>Wed, 18 Nov 2015 19:21:36 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Google's Open Source AI Engine, TensorFlow, Points to a Fast-Changing Hardware World]]></title>
-            <description><![CDATA[<article><h1>Google's Open Source AI Engine, TensorFlow, Points to a Fast-Changing Hardware World</h1><p>In open sourcing its artificial intelligence engine-freely sharing one of its most important creations with the rest of the Internet- Google showed how the world of computer software is changing. These days, the big Internet giants frequently share the software sitting at the heart of their online operations.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/b0250dab5666d6550ef30c8db2a5ee4e954cb854.jpg"></article>]]></description>
-            <link>http://www.wired.com/2015/11/googles-open-source-ai-tensorflow-signals-fast-changing-hardware-world/</link>
-            <guid isPermaLink="false">77727478-d186-4722-9042-ac3fdb6cc6d4</guid>
-            <pubDate>Tue, 10 Nov 2015 19:02:51 GMT</pubDate>
         </item>
     </channel>
 </rss>
