@@ -32,10 +32,10 @@ inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/'
 title: I Turned Off JavaScript in My Web Browser for a Whole Week and It Was Glorious
-datePublished: '2015-11-18T19:21:36.124Z'
-dateModified: '2015-11-18T19:21:03.082Z'
+datePublished: '2016-05-12T05:52:06.763Z'
+dateModified: '2016-04-23T12:49:37.696Z'
 sourcePath: _posts/2015-11-18-i-turned-off-javascript-in-my-web-browser-for-a-whole-week-a.md
-published: true
+starred: true
 inFeed: true
 hasPage: false
 inNav: false
