@@ -4,8 +4,15 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 28 Apr 2016 20:04:31 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 12 May 2016 05:52:40 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[I Turned Off JavaScript in My Web Browser for a Whole Week and It Was Glorious]]></title>
+            <description><![CDATA[<article><h1>I Turned Off JavaScript in My Web Browser for a Whole Week and It Was Glorious</h1><p>There's another web out there, a better web hiding just below the surface of the one we surf from our phones and tablets and laptops every day. A web with no ads, no endlessly scrolling pages, and no annoying modal windows begging you to share the site on social media or sign up for a newsletter.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/9f655e90b1496df04e65ee0b965013b792427e94.jpg"></article>]]></description>
+            <link>http://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/</link>
+            <guid isPermaLink="false">e002ca44-80a3-4693-943b-467b424ee2f3</guid>
+            <pubDate>Thu, 12 May 2016 05:52:06 GMT</pubDate>
+        </item>
         <item>
             <title><![CDATA[The Grid Website Platform Automatically Adapts Design To Make Your Content Shine]]></title>
             <description><![CDATA[<article><h1>The Grid Website Platform Automatically Adapts Design To Make Your Content Shine</h1><p>Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/7e94b9a94d3e7cde42cd47e8323035d871ae04c0.jpg"></article>]]></description>
@@ -43,7 +50,7 @@
         </item>
         <item>
             <title><![CDATA[Why Facebook Is Killing It-Even When Nobody Else Is]]></title>
-            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/96b54bd15fc06e3d768797498c40738c3b46ae7a.jpg"></article>]]></description>
+            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/87451abd45ca421837cfd3edec1d1a86/croprotate.jpg?cropheight=424&cropwidth=217&degrees=0&input=http%3A%2F%2Fwww.wired.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fmark-zuckerberg-facebook-511572184-1200x630-e1461801427316.jpg&x=486&y=206"></article>]]></description>
             <link>http://www.wired.com/2016/04/facebook-killing-even-nobody-else/</link>
             <guid isPermaLink="false">b865cf39-3961-4166-9fd6-3894ff462bdc</guid>
             <pubDate>Thu, 28 Apr 2016 19:56:23 GMT</pubDate>
@@ -68,13 +75,6 @@
             <link>http://www.wired.com/insights/2015/01/the-evolution-of-artificial-intelligence/</link>
             <guid isPermaLink="false">817daa93-5db5-4bcc-91de-e8b08d1c1ed0</guid>
             <pubDate>Mon, 21 Dec 2015 23:58:18 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[The other part of Artificial Intelligence]]></title>
-            <description><![CDATA[<article><h1>The other part of Artificial Intelligence</h1><p>"Machine" + "Learning" ... Oh, the beauty, the contrast, the tension of mechanical hardness possessed with the infinite fluidness of mind.  ("Constraint" || "Logic") + ("Programming" || "Satisfaction" || "Solvers") ... No contrast, no inspiration inducing tension.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/9ad31ebe4f5d006332fadafcc7c745bc3a3699ca.png"></article>]]></description>
-            <link>http://d4.io/the-other-part-of-artificial-intelligence/index.html</link>
-            <guid isPermaLink="false">629620b2-2b0e-46bf-bab2-559910d96f36</guid>
-            <pubDate>Mon, 23 Nov 2015 00:33:09 GMT</pubDate>
         </item>
     </channel>
 </rss>
