@@ -4,7 +4,7 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 12 May 2016 05:52:40 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 24 May 2016 16:55:29 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[I Turned Off JavaScript in My Web Browser for a Whole Week and It Was Glorious]]></title>
@@ -26,6 +26,13 @@
             <link>http://www.wired.com/2015/11/how-humans-ended-up-with-freakishly-huge-brains/</link>
             <guid isPermaLink="false">4579f075-f8f8-44c0-b9d0-fac28ca8faff</guid>
             <pubDate>Wed, 27 Apr 2016 23:19:20 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Our Favorite Design Upgrades Coming to Android N, From Emoji to VR]]></title>
+            <description><![CDATA[<article><h1>Our Favorite Design Upgrades Coming to Android N, From Emoji to VR</h1><p>When Google releases Android N later this summer, it'll come with more than 250 new features. A lot of them are geared toward making the Android experience faster, more pleasant, and more productive. Here are the ten we're most looking forward to.</p><img src="http://www.wired.com/wp-content/uploads/2016/05/n-bg-generic-1200x630.jpg"></article>]]></description>
+            <link>http://www.wired.com/2016/05/promising-ui-upgrades-coming-android-n/</link>
+            <guid isPermaLink="false">06a9ed14-9601-48fd-b385-4a6835cd90eb</guid>
+            <pubDate>Tue, 24 May 2016 16:55:02 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[33 Women Doing Amazing Things in Graphic Design]]></title>
@@ -50,7 +57,7 @@
         </item>
         <item>
             <title><![CDATA[Why Facebook Is Killing It-Even When Nobody Else Is]]></title>
-            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/87451abd45ca421837cfd3edec1d1a86/croprotate.jpg?cropheight=424&cropwidth=217&degrees=0&input=http%3A%2F%2Fwww.wired.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fmark-zuckerberg-facebook-511572184-1200x630-e1461801427316.jpg&x=486&y=206"></article>]]></description>
+            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/96b54bd15fc06e3d768797498c40738c3b46ae7a.jpg"></article>]]></description>
             <link>http://www.wired.com/2016/04/facebook-killing-even-nobody-else/</link>
             <guid isPermaLink="false">b865cf39-3961-4166-9fd6-3894ff462bdc</guid>
             <pubDate>Thu, 28 Apr 2016 19:56:23 GMT</pubDate>
@@ -68,13 +75,6 @@
             <link>http://www.wired.com/2015/12/elon-musks-billion-dollar-ai-plan-is-about-far-more-than-saving-the-world/</link>
             <guid isPermaLink="false">c48a8bc9-ba5c-40d3-843c-4242de057cc5</guid>
             <pubDate>Fri, 08 Jan 2016 00:58:11 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[From Science Fiction to Reality: The Evolution of Artificial Intelligence]]></title>
-            <description><![CDATA[<article><h1>From Science Fiction to Reality: The Evolution of Artificial Intelligence</h1><p>What was once just a figment of the imagination of some our most famous science fiction writers, artificial intelligence (AI) is taking root in our everyday lives. We're still a few years away from having robots at our beck and call, but AI has already had a profound impact in more subtle ways.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/4aa2301b99122b38246b6716f5d4ed530d52ee70.jpg"></article>]]></description>
-            <link>http://www.wired.com/insights/2015/01/the-evolution-of-artificial-intelligence/</link>
-            <guid isPermaLink="false">817daa93-5db5-4bcc-91de-e8b08d1c1ed0</guid>
-            <pubDate>Mon, 21 Dec 2015 23:58:18 GMT</pubDate>
         </item>
     </channel>
 </rss>
