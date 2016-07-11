@@ -1,8 +1,34 @@
-name: D4
-favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
-layout_spectrum: 0.6775344042107463
 typography_spectrum: 1
-title: Dan Tocchini
+color:
+  brandColors:
+    - '#181d23'
+    - '#314b2a'
+    - '#49627f'
+    - '#5e8235'
+    - '#82a98d'
+  brandStrength: 0.7131612475495785
+  lightness: 0.1875
+  saturation: 0.5625
+  rhythmicContrast: 1
+opengraph:
+  image: null
+  type: null
+  appId: null
+layout_spectrum: 0.6775344042107463
+analytics:
+  google: UA-61994900-1
+  facebook: null
+  twitter: null
+name: D4
+cta:
+  domain: null
+  bucket: null
+  version: null
+navigation:
+  - url: >-
+      https://github.com/the-grid/webapp/commit/34350c04c24f2be321aaae5d4d4a9a5e2b2b2d99
+    title: home
+favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 collections:
   - filter:
       notType:
@@ -27,29 +53,7 @@ collections:
     permalink:
       path: '/:title/'
       navigable: true
-cta:
-  domain: null
-  bucket: null
-  version: null
-analytics:
-  google: UA-61994900-1
-  facebook: null
-  twitter: null
-opengraph:
-  image: null
-  type: null
-  appId: null
-color:
-  brandColors:
-    - '#181d23'
-    - '#314b2a'
-    - '#49627f'
-    - '#5e8235'
-    - '#82a98d'
-  brandStrength: 0.7131612475495785
-  lightness: 0.1875
-  saturation: 0.5625
-  rhythmicContrast: 1
+title: Dan Tocchini
 purpose:
   - name: follow
     url: 'https://twitter.com/d4tocchini'
