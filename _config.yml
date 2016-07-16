@@ -28,6 +28,10 @@ navigation:
   - url: >-
       https://github.com/the-grid/webapp/commit/34350c04c24f2be321aaae5d4d4a9a5e2b2b2d99
     title: home
+  - id: 4579f075-f8f8-44c0-b9d0-fac28ca8faff
+    url: 2015-11-28-how-humans-ended-up-with-freakishly-huge-brains.html
+    name: Things I love
+    type: content
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 collections:
   - filter:
