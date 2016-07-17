@@ -1,9 +1,7 @@
 ---
-datePublished: '2016-07-11T21:22:26.711Z'
+datePublished: '2016-07-17T01:24:55.149Z'
 sourcePath: >-
   _posts/2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.md
-isBasedOnUrl: >-
-  http://www.wired.com/insights/2015/01/the-evolution-of-artificial-intelligence/
 keywords:
   - machine-learning
   - machines
@@ -17,7 +15,7 @@ keywords:
   - data
 related: []
 author: []
-dateModified: '2016-07-11T19:10:25.858Z'
+dateModified: '2016-07-17T01:24:54.693Z'
 title: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
 app_links: []
 publisher:
@@ -32,10 +30,11 @@ description: >-
   and call, but AI has already had a profound impact in more subtle ways.
 inLanguage: en
 inFeed: true
-hasPage: false
+hasPage: true
 inNav: false
 authors: []
 starred: true
+url: from-science-fiction-to-reality-the-evolution-of-artificial/index.html
 _context: 'http://schema.org'
 _type: MediaObject
 
