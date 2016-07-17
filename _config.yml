@@ -34,6 +34,10 @@ navigation:
       2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.html
     name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
     type: content
+  - id: 'https://projects.invisionapp.com/d/main#/projects/6191786'
+    url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
+    name: Super Awesome
+    type: external
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 collections:
   - filter:
