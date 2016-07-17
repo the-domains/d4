@@ -38,6 +38,10 @@ navigation:
     url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
     name: Super Awesome
     type: external
+  - id: 4579f075-f8f8-44c0-b9d0-fac28ca8faff
+    url: 2015-11-28-how-humans-ended-up-with-freakishly-huge-brains.html
+    name: How Humans Ended Up With Freakishly Huge Brains
+    type: content
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 collections:
   - filter:
