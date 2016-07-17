@@ -25,10 +25,6 @@ cta:
   bucket: null
   version: null
 navigation:
-  - id: 4579f075-f8f8-44c0-b9d0-fac28ca8faff
-    url: 2015-11-28-how-humans-ended-up-with-freakishly-huge-brains.html
-    name: Things I lovkhkhbjkhe
-    type: content
   - id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
     url: >-
       2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.html
@@ -38,10 +34,6 @@ navigation:
     url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
     name: Super Awesome
     type: external
-  - id: 4579f075-f8f8-44c0-b9d0-fac28ca8faff
-    url: 2015-11-28-how-humans-ended-up-with-freakishly-huge-brains.html
-    name: How Humans Ended Up With Freakishly Huge Brains
-    type: content
   - id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
     url: 2016-05-14-this-is-a-new-post.html
     name: Head over heals for AI
