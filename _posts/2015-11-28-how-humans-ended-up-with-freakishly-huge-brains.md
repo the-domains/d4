@@ -19,8 +19,8 @@ description: >-
   a naked grin. She could not stop staring back. It looked distinctly like the
   fossilized skull of an extinct baboon. That was the sort of thing Josephine
   Salmons was likely to know.
-datePublished: '2016-07-16T00:08:08.364Z'
-dateModified: '2016-07-16T00:08:07.993Z'
+datePublished: '2016-07-17T02:59:58.294Z'
+dateModified: '2016-07-17T02:59:57.699Z'
 author: []
 related: []
 app_links: []
