@@ -29,6 +29,11 @@ navigation:
     url: 2015-11-28-how-humans-ended-up-with-freakishly-huge-brains.html
     name: Things I love
     type: content
+  - id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
+    url: >-
+      2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.html
+    name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
+    type: content
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 collections:
   - filter:
