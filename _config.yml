@@ -25,14 +25,14 @@ cta:
   bucket: null
   version: null
 navigation:
-  - id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
-    url: 2016-05-14-this-is-a-new-post.html
-    name: Head over heals for AI
-    type: content
   - id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
     url: >-
       2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.html
     name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
+    type: content
+  - id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
+    url: 2016-05-14-this-is-a-new-post.html
+    name: Head over heals for AI
     type: content
   - id: 'https://projects.invisionapp.com/d/main#/projects/6191786'
     url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
