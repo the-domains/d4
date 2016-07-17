@@ -42,6 +42,10 @@ navigation:
     url: 2015-11-28-how-humans-ended-up-with-freakishly-huge-brains.html
     name: How Humans Ended Up With Freakishly Huge Brains
     type: content
+  - id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
+    url: 2016-05-14-this-is-a-new-post.html
+    name: Head over heals for AI
+    type: content
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 collections:
   - filter:
