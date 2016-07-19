@@ -38,6 +38,11 @@ navigation:
     url: 2016-05-14-this-is-a-new-post.html
     name: Head over heals for AI
     type: content
+  - id: 5ef37f68-f878-4cb1-8626-f255ab2f12fb
+    url: >-
+      2014-10-08-ex-googler-launches-the-grid-preordering-campaign-for-ai-web.html
+    name: Ex-Googler...
+    type: content
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
 collections:
   - filter:
@@ -68,4 +73,3 @@ purpose:
   - name: follow
     url: 'https://twitter.com/d4tocchini'
     item: 86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d
-style: the-composer
