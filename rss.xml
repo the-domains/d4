@@ -4,7 +4,7 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Sun, 17 Jul 2016 01:24:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 21 Jul 2016 20:37:50 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[From Science Fiction to Reality: The Evolution of Artificial Intelligence]]></title>
@@ -18,7 +18,7 @@
             <description><![CDATA[<article><h1>How Humans Ended Up With Freakishly Huge Brains</h1><p>There it was, sitting on the mantelpiece, staring at her with hollow eyes and a naked grin. She could not stop staring back. It looked distinctly like the fossilized skull of an extinct baboon. That was the sort of thing Josephine Salmons was likely to know.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/86aa518b83cbd6374c95b6e16a1bfe5316fb1dc2.jpg"></article>]]></description>
             <link>http://d4.io/how-humans-ended-up-with-freakishly-huge-brains/index.html</link>
             <guid isPermaLink="false">4579f075-f8f8-44c0-b9d0-fac28ca8faff</guid>
-            <pubDate>Sat, 16 Jul 2016 00:08:08 GMT</pubDate>
+            <pubDate>Sun, 17 Jul 2016 02:59:58 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[I Turned Off JavaScript in My Web Browser for a Whole Week and It Was Glorious]]></title>
@@ -33,6 +33,13 @@
             <link>http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/</link>
             <guid isPermaLink="false">cd0b9ad2-e914-42ae-b6c1-7be8dd98732f</guid>
             <pubDate>Wed, 27 Apr 2016 23:19:21 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[The Grid - an unconventional startup]]></title>
+            <description><![CDATA[<article><h1>The Grid - an unconventional startup</h1><p>I'm in Hawaii right now, but I'm not here with family nor am I on a company boondoggle, well not really... but sort of... allow me to explain. When I joined Google in 2002 (500 employees), I thought Google was unconventional.</p><img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*1I-PNso0E8oXXywbN7bAIQ.jpeg"></article>]]></description>
+            <link>https://medium.com/@brianaxe/the-grid-an-unconventional-startup-b823f544449d</link>
+            <guid isPermaLink="false">85c06800-65dc-4b3e-bc61-05f5330a3c62</guid>
+            <pubDate>Thu, 21 Jul 2016 20:37:46 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Save the Galapagos With GMO Rats. What Could Go Wrong?]]></title>
@@ -68,13 +75,6 @@
             <link>https://vimeo.com/115082758</link>
             <guid isPermaLink="false">4309fe17-1afd-49f2-9819-1c5908bf1a81</guid>
             <pubDate>Thu, 28 Apr 2016 20:03:24 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Why Facebook Is Killing It-Even When Nobody Else Is]]></title>
-            <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/05c7962e803967c6cfe1e8fd3c01a547/noop.jpg?input=http%3A%2F%2Fwww.wired.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fmark-zuckerberg-facebook-511572184-1200x630-e1461801427316.jpg"></article>]]></description>
-            <link>http://www.wired.com/2016/04/facebook-killing-even-nobody-else/</link>
-            <guid isPermaLink="false">b865cf39-3961-4166-9fd6-3894ff462bdc</guid>
-            <pubDate>Thu, 28 Apr 2016 19:56:23 GMT</pubDate>
         </item>
     </channel>
 </rss>
