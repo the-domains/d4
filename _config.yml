@@ -68,6 +68,7 @@ collections:
       path: '/:title/'
       navigable: true
 title: Dan Tocchini
+style: the-composer
 purpose:
   - name: follow
     url: 'https://twitter.com/d4tocchini'
