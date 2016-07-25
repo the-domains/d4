@@ -4,7 +4,7 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Thu, 21 Jul 2016 20:37:50 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 25 Jul 2016 09:01:10 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[From Science Fiction to Reality: The Evolution of Artificial Intelligence]]></title>
@@ -42,6 +42,13 @@
             <pubDate>Thu, 21 Jul 2016 20:37:46 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[GSS: Layout Reimagined]]></title>
+            <description><![CDATA[<article><h1>GSS: Layout Reimagined</h1><p>Layout on the web is certainly an extremely time consuming process and the most outdated. Floats and such still don't cut it. At it's core, Grid Style Sheets (GSS) reimagines CSS layout and harnesses the Cassowary Constraint Solver - the same algorithm Apple uses to compute native layout.</p></article>]]></description>
+            <link>http://www.artsmc.net/content/gss-layout-reimagined</link>
+            <guid isPermaLink="false">fd6f1934-de70-419e-b774-4224501ede33</guid>
+            <pubDate>Mon, 25 Jul 2016 08:59:23 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Save the Galapagos With GMO Rats. What Could Go Wrong?]]></title>
             <description><![CDATA[<article><h1>Save the Galapagos With GMO Rats. What Could Go Wrong?</h1><p>The Galapagos Islands are famous for exotic birds, tortoises, and iguanas, but recently the archipelago had become overrun with more prosaic animals: rats and mice. Rodents that came on old sailing ships. Rodents that stowed away on modern cruises. Wherever they came from, rodents that eat the eggs and chicks and hatchlings of the animals that so dazzled Charles Darwin.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/6afa5ce0efaf82b5055dbbf26be5527fc65e81ef.jpg"></article>]]></description>
             <link>http://www.wired.com/2016/06/save-galapagos-gmo-rats-go-wrong/</link>
@@ -67,13 +74,6 @@
             <description><![CDATA[<img alt="Swedish-American actress&comma; singer&comma; and dancer&comma; Ann Margret&comma; 1966&period;" src="https://pbs.twimg.com/media/CKU9iQFWEAArcWU.jpg:large">]]></description>
             <link>https://twitter.com/HistoryInPics/status/622971782304264192</link>
             <guid isPermaLink="false">bf23b9c3-3846-4349-be7d-11b8e42195b1</guid>
-            <pubDate>Thu, 28 Apr 2016 20:03:24 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Projections in the Forest]]></title>
-            <description><![CDATA[<article><h1>Projections in the Forest</h1><p>Behind the scenes: http://vimeo.com/3hund/behindthescenes The projection mapping "bioluminescent forest" is made by artists Friedrich van Schoor and Tarek Mawad. The artists spent six weeks in the forest fascinated by the silence and natural occurrences in nature, especially the phenomenon "bioluminescence".</p><img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/0a31891eedb71af5d711b6e868598fa4/croprotate.jpg?cropheight=823&cropwidth=1920&degrees=0&input=http%3A%2F%2Fi.vimeocdn.com%2Fvideo%2F501176019_1920x1080.jpg&x=0&y=129"></article>]]></description>
-            <link>https://vimeo.com/115082758</link>
-            <guid isPermaLink="false">4309fe17-1afd-49f2-9819-1c5908bf1a81</guid>
             <pubDate>Thu, 28 Apr 2016 20:03:24 GMT</pubDate>
         </item>
     </channel>
