@@ -14,7 +14,7 @@ opengraph:
   image: null
   type: null
   appId: null
-layout_spectrum: 0.6775344042107461
+layout_spectrum: 0.6775344042107462
 analytics:
   google: UA-61994900-1
   facebook: null
@@ -24,22 +24,18 @@ cta:
   domain: null
   bucket: null
   version: null
+style: the-composer
 navigation:
-  - id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
-    url: >-
-      2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.html
-    name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
-    type: content
   - url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
     name: Super Awesome
     type: external
+  - id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
+    name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
+    type: content
   - id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
-    url: 2016-05-14-this-is-a-new-post.html
     name: Head over heals for AI
     type: content
   - id: 5ef37f68-f878-4cb1-8626-f255ab2f12fb
-    url: >-
-      2014-10-08-ex-googler-launches-the-grid-preordering-campaign-for-ai-web.html
     name: Ex-Googler...
     type: content
 favicon: 'https://s3-us-west-2.amazonaws.com/cdn.thegrid.io/favlogos/d-favicon.png'
@@ -68,7 +64,6 @@ collections:
       path: '/:title/'
       navigable: true
 title: Dan Tocchini
-style: the-composer
 purpose:
   - name: follow
     url: 'https://twitter.com/d4tocchini'
