@@ -26,12 +26,12 @@ cta:
   version: null
 style: the-composer
 navigation:
-  - id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
-    name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
-    type: content
   - url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
     name: Super Awesome
     type: external
+  - id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
+    name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
+    type: content
   - id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
     name: Head over heals for AI
     type: content
