@@ -69,3 +69,7 @@ purpose:
     type: external
     value: 'https://thegrid.io/'
     label: Get on the Grid
+  - id: dba2f10d-a5af-42d1-a538-a20a68d82443
+    type: external
+    value: 'https://github.com/d4tocchini'
+    label: Follow my code
