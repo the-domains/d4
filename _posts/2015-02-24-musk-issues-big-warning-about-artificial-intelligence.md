@@ -35,10 +35,10 @@ description: >-
   technology. "I think we should be very careful about artificial intelligence,"
   the CEO of both SpaceX and Tesla, said Friday in a talk at MIT in Cambridge,
   Mass.
-datePublished: '2016-09-04T03:38:06.277Z'
+datePublished: '2016-09-04T13:16:23.371Z'
 app_links: []
 title: Musk Issues Big Warning About Artificial Intelligence
-dateModified: '2016-07-15T01:24:02.894Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: _posts/2015-02-24-musk-issues-big-warning-about-artificial-intelligence.md
 authors: []
 publisher:
@@ -46,6 +46,7 @@ publisher:
   domain: www.huffingtonpost.com
   url: 'http://www.huffingtonpost.com'
   favicon: 'http://www.huffingtonpost.com/favicon.ico'
+via: {}
 starred: false
 inFeed: true
 hasPage: false
