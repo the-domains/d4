@@ -36,10 +36,11 @@ description: 'Swedish-American actress, singer, and dancer, Ann Margret, 1966.'
 inLanguage: da
 app_links: []
 isBasedOnUrl: 'https://twitter.com/HistoryInPics/status/622971782304264192'
-datePublished: '2016-09-04T03:38:06.177Z'
+datePublished: '2016-09-04T13:15:50.176Z'
 title: ''
-dateModified: '2016-07-15T01:24:04.615Z'
+dateModified: '2016-09-04T13:15:49.905Z'
 sourcePath: _posts/2016-04-20-swedish-american-actress-singer-and-dancer-ann-margret-1.md
+via: {}
 starred: false
 inFeed: true
 hasPage: false
