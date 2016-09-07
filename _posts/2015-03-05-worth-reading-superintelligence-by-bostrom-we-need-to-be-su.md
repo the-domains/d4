@@ -1,9 +1,10 @@
 ---
 author:
   - name: elonmusk
-    url: "http://twitter.com/elonmusk"
+    url: 'http://twitter.com/elonmusk'
     avatar:
-      src: "https://pbs.twimg.com/profile_images/420314816444502016/xj5TnUsx_bigger.jpeg"
+      src: >-
+        https://pbs.twimg.com/profile_images/420314816444502016/xj5TnUsx_bigger.jpeg
       width: 73
       height: 73
       colors:
@@ -24,9 +25,9 @@ author:
           - 119
 related: []
 publisher:
-  url: "http://twitter.com"
+  url: 'http://twitter.com'
   name: Twitter
-  favicon: "https://abs.twimg.com/favicons/favicon.ico"
+  favicon: 'https://abs.twimg.com/favicons/favicon.ico'
   domain: twitter.com
 keywords:
   - elonmusk
@@ -39,16 +40,23 @@ keywords:
   - careful
   - robot
   - peer
-description: Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.
+description: >-
+  Worth reading Superintelligence by Bostrom. We need to be super careful with
+  AI. Potentially more dangerous than nukes.
 inLanguage: English
 app_links: []
-isBasedOnUrl: "https://twitter.com/elonmusk/status/495759307346952192"
-datePublished: "2015-03-05T20:46:21.589Z"
-dateModified: "2015-04-27T22:53:38.719Z"
-sourcePath: _posts/2015-03-05-worth-reading-superintelligence-by-bostrom-we-need-to-be-su.md
-published: true
+isBasedOnUrl: 'https://twitter.com/elonmusk/status/495759307346952192'
+datePublished: '2016-09-04T03:38:06.261Z'
+dateModified: '2016-07-15T01:24:02.268Z'
+sourcePath: >-
+  _posts/2015-03-05-worth-reading-superintelligence-by-bostrom-we-need-to-be-su.md
+title: ''
+starred: false
+inFeed: true
+hasPage: false
+inNav: false
 _type: Comment
-_context: "http://schema.org"
+_context: 'http://schema.org'
 
 ---
 > Worth reading Superintelligence by Bostrom. We need to be super careful with AI. Potentially more dangerous than nukes.
