@@ -20,15 +20,11 @@ author:
           - 145
           - 137
 related: []
-publisher:
-  url: 'https://vimeo.com/'
-  name: Vimeo
-  favicon: 'https://f.vimeocdn.com/images_v6/favicon_32.ico'
-  domain: vimeo.com
+publisher: {}
 keywords: []
 description: ''
 inLanguage: Danish
-datePublished: '2016-09-04T03:38:06.279Z'
+datePublished: '2016-09-04T13:16:23.371Z'
 app_links:
   - url: 'vimeo://91393694'
     type: ios
@@ -36,8 +32,9 @@ app_links:
     app_name: Vimeo
 isBasedOnUrl: 'https://vimeo.com/91393694'
 title: ''
-dateModified: '2016-07-15T01:24:02.932Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: _posts/2014-04-08-gss-layouts-not-possible-with-tomorrows-css-oreilly-f.md
+via: {}
 starred: false
 inFeed: true
 hasPage: false
