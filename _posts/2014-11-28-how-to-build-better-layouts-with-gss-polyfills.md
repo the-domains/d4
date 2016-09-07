@@ -2,9 +2,10 @@
 author: []
 related: []
 publisher:
-  url: "http://www.creativebloq.com"
+  url: 'http://www.creativebloq.com'
   name: Creativebloq
-  favicon: "http://media.creativebloq.futurecdn.net/sites/all/themes/creativebloq_redesign/favicon.ico"
+  favicon: >-
+    http://media.creativebloq.futurecdn.net/sites/all/themes/creativebloq_redesign/favicon.ico
   domain: www.creativebloq.com
 keywords:
   - gss
@@ -17,16 +18,25 @@ keywords:
   - width
   - vfl
   - center-x
-description: "CSS has made it somewhat easier for developers to work with things like typography and colours, but it never truly solved one fundamental problem: layout. CSS's dominant layout mechanism, the float, was first published over a decade ago, when most web pages were just that: static pages, not interactive, responsive web apps."
+description: >-
+  CSS has made it somewhat easier for developers to work with things like
+  typography and colours, but it never truly solved one fundamental problem:
+  layout. CSS's dominant layout mechanism, the float, was first published over a
+  decade ago, when most web pages were just that: static pages, not interactive,
+  responsive web apps.
 inLanguage: English
-datePublished: "2014-11-28T15:07:57.000Z"
+datePublished: '2016-09-04T03:38:06.233Z'
 app_links: []
-isBasedOnUrl: "http://www.creativebloq.com/css3/how-build-better-layouts-gss-polyfills-111413489"
+isBasedOnUrl: >-
+  http://www.creativebloq.com/css3/how-build-better-layouts-gss-polyfills-111413489
 title: How to build better layouts with GSS polyfills
-dateModified: "2015-04-27T19:29:41.443Z"
+dateModified: '2016-07-15T01:24:00.008Z'
 sourcePath: _posts/2014-11-28-how-to-build-better-layouts-with-gss-polyfills.md
-published: true
-_context: "http://schema.org"
+starred: false
+inFeed: true
+hasPage: false
+inNav: false
+_context: 'http://schema.org'
 _type: MediaObject
 
 ---
