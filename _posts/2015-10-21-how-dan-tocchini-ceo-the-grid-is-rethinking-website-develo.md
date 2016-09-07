@@ -30,8 +30,8 @@ isBasedOnUrl: 'http://m.huffpost.com/us/entry/8245456'
 title: >-
   How Dan Tocchini, CEO The Grid, Is Rethinking Website Development. I Love His
   First Answer.
-datePublished: '2016-09-04T13:16:35.746Z'
-dateModified: '2016-09-04T13:16:35.327Z'
+datePublished: '2016-09-04T13:20:15.057Z'
+dateModified: '2016-09-04T13:20:14.657Z'
 sourcePath: >-
   _posts/2015-10-21-how-dan-tocchini-ceo-the-grid-is-rethinking-website-develo.md
 via: {}
