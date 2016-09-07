@@ -1,7 +1,6 @@
 ---
-isBasedOnUrl: "https://twitter.com/d4tocchini/status/572593744517595136"
+isBasedOnUrl: 'https://twitter.com/d4tocchini/status/572593744517595136'
 inLanguage: English
-starred: false
 keywords:
   - jordannovet
   - location
@@ -11,43 +10,57 @@ keywords:
   - tocchini
   - sesh
   - nerd-out
-  - website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping
+  - >-
+    website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping
   - d4tocchini
 author:
   - name: d4tocchini
-    url: "http://twitter.com/d4tocchini"
+    url: 'http://twitter.com/d4tocchini'
     avatar:
-      src: "https://pbs.twimg.com/profile_images/536229475680522240/FmTU1D6I_bigger.jpeg"
+      src: >-
+        https://s3-us-west-2.amazonaws.com/the-grid-img/p/e67c0489319785f1b27187fe6843594307fe2d8d.jpg
+      original: >-
+        https://s3-us-west-2.amazonaws.com/the-grid-img/p/e67c0489319785f1b27187fe6843594307fe2d8d.jpg
       width: 73
       height: 73
       colors:
+        - - 25
+          - 23
+          - 36
         - - 211
-          - 206
-          - 191
-        - - 55
-          - 39
-          - 42
-        - - 108
-          - 84
-          - 80
-        - - 165
-          - 147
-          - 139
+          - 200
+          - 180
+        - - 175
+          - 151
+          - 149
+        - - 124
+          - 109
+          - 90
+        - - 255
+          - 255
+          - 220
 related: []
-description: "\"That helps explain why Tocchini isn't worried...\" http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/ ... enjoyed the nerd-out sesh, @jordannovet!"
+description: >-
+  "That helps explain why Tocchini isn't worried..."
+  http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/
+  ... enjoyed the nerd-out sesh, @jordannovet!
 app_links: []
-datePublished: "2015-03-05T20:46:21.536Z"
-dateModified: "2015-04-28T00:05:04.646Z"
+datePublished: '2016-09-04T03:38:06.255Z'
+dateModified: '2016-07-15T01:24:00.502Z'
 sourcePath: _posts/2015-03-05-that-helps-explain-why-tocchini-isnt-worried-httpve.md
-published: true
 authors: []
 publisher:
   name: Twitter
   domain: twitter.com
-  url: "http://twitter.com"
-  favicon: "https://abs.twimg.com/favicons/favicon.ico"
+  url: 'http://twitter.com'
+  favicon: 'https://abs.twimg.com/favicons/favicon.ico'
+title: ''
+starred: false
+inFeed: true
+hasPage: false
+inNav: false
 _type: MediaObject
-_context: "http://schema.org"
+_context: 'http://schema.org'
 
 ---
 ![](https://pbs.twimg.com/media/B_JC-fUVIAA9xHz.png:large)
