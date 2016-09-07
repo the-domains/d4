@@ -42,11 +42,7 @@ related:
     thumbnail_url: >-
       http://blog.hootsuite.com/wp-content/uploads/2014/12/design-tips-header.jpg
     thumbnail_width: 600
-publisher:
-  url: 'https://iwantmyname.com'
-  name: Iwantmyname
-  favicon: 'https://iwantmyname.com/blog/assets/images/favicon-64x64.png'
-  domain: iwantmyname.com
+publisher: {}
 keywords:
   - website
   - grid
@@ -65,14 +61,15 @@ description: >-
   we consider that almost every common behavior on the big social networks is a
   subset of what we originally thought blogging might be."
 inLanguage: English
-datePublished: '2016-09-04T03:38:06.255Z'
+datePublished: '2016-09-04T13:16:23.171Z'
 app_links: []
 isBasedOnUrl: >-
   https://iwantmyname.com/blog/2014/10/an-interview-with-dan-tocchini-founder-and-ceo-of-the-grid.html
 title: 'An interview with Dan Tocchini, Founder and CEO of The Grid'
-dateModified: '2016-07-15T01:24:00.570Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: >-
   _posts/2014-10-17-an-interview-with-dan-tocchini-founder-and-ceo-of-the-grid.md
+via: {}
 starred: false
 inFeed: true
 hasPage: false
