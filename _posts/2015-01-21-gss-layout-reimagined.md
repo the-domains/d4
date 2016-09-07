@@ -1,5 +1,5 @@
 ---
-datePublished: '2016-07-25T08:59:23.748Z'
+datePublished: '2016-09-04T13:15:48.123Z'
 sourcePath: _posts/2015-01-21-gss-layout-reimagined.md
 isBasedOnUrl: 'http://www.artsmc.net/content/gss-layout-reimagined'
 authors: []
@@ -17,7 +17,7 @@ keywords:
 related: []
 author:
   - name: Mark Campbell
-dateModified: '2016-07-25T08:59:22.709Z'
+dateModified: '2016-09-04T13:15:47.784Z'
 title: 'GSS: Layout Reimagined'
 app_links: []
 publisher:
