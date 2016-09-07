@@ -19,10 +19,11 @@ isBasedOnUrl: >-
 title: >-
   The Grid Website Platform Automatically Adapts Design To Make Your Content
   Shine
-datePublished: '2016-09-04T03:38:06.280Z'
-dateModified: '2016-07-15T01:24:03.449Z'
+datePublished: '2016-09-04T13:16:23.371Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: >-
   _posts/2015-11-17-the-grid-website-platform-automatically-adapts-design-to-mak.md
+via: {}
 starred: true
 inFeed: true
 hasPage: false
