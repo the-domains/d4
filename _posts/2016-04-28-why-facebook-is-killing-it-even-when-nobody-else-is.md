@@ -20,16 +20,19 @@ keywords:
   - stock
   - class
   - whatsapp
-description: "Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month."
+description: >-
+  Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat
+  Wall Street's expectations when it released its earnings yesterday. The
+  company said that it now reaches more than a billion people every day and 1.65
+  billion people every month.
 inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.wired.com/2016/04/facebook-killing-even-nobody-else/'
 title: Why Facebook Is Killing It-Even When Nobody Else Is
-datePublished: '2016-04-28T19:56:23.403Z'
-dateModified: '2016-04-28T19:56:23.347Z'
-starred: false
+datePublished: '2016-09-04T03:38:06.267Z'
+dateModified: '2016-07-15T01:24:00.963Z'
 sourcePath: _posts/2016-04-28-why-facebook-is-killing-it-even-when-nobody-else-is.md
-published: true
+starred: false
 inFeed: true
 hasPage: false
 inNav: false
