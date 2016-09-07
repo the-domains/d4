@@ -39,9 +39,9 @@ related:
     thumbnail_width: 2838
     url: 'http://news.nationalgeographic.com/2015/07/20150709-data-points-steampunk/'
 publisher:
-  favicon: 'http://www.wired.com/wp-content/themes/Phoenix/assets/images/favicon.ico'
   url: 'http://www.wired.com'
   name: WIRED
+  favicon: 'http://www.wired.com/wp-content/themes/Phoenix/assets/images/favicon.ico'
   domain: www.wired.com
 keywords:
   - maps
@@ -64,9 +64,10 @@ inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.wired.com/2015/07/secret-cold-war-maps/'
 title: Inside the Secret World of Russia's Cold War Mapmakers
-datePublished: '2016-09-04T03:38:06.268Z'
-dateModified: '2016-07-15T01:24:00.355Z'
+datePublished: '2016-09-04T13:16:23.159Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: _posts/2015-11-06-inside-the-secret-world-of-russias-cold-war-mapmakers.md
+via: {}
 starred: false
 inFeed: true
 hasPage: false
