@@ -20,8 +20,8 @@ description: >-
   at work or over the weekend with friends. It's the drink you're comfortable
   with that you know you'll enjoy. But maybe it's time you get a little
   adventurous. Take a step into the brave new world of molecular mixology.
-datePublished: '2016-09-04T03:38:06.271Z'
-dateModified: '2016-07-15T01:24:02.558Z'
+datePublished: '2016-09-04T13:20:15.058Z'
+dateModified: '2016-09-04T13:20:14.657Z'
 author:
   - name: ''
     url: ''
@@ -36,6 +36,7 @@ publisher:
   domain: www.viralnova.com
   url: 'http://www.viralnova.com'
   favicon: 'http://media.galaxant.com/000/446/704/favicon.ico'
+via: {}
 starred: false
 _context: 'http://schema.org'
 _type: MediaObject
