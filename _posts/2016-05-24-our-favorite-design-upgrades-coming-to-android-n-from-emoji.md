@@ -17,15 +17,20 @@ keywords:
   - experience
   - forward
   - features
-description: "When Google releases Android N later this summer, it'll come with more than 250 new features. A lot of them are geared toward making the Android experience faster, more pleasant, and more productive. Here are the ten we're most looking forward to."
+description: >-
+  When Google releases Android N later this summer, it'll come with more than
+  250 new features. A lot of them are geared toward making the Android
+  experience faster, more pleasant, and more productive. Here are the ten we're
+  most looking forward to.
 inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.wired.com/2016/05/promising-ui-upgrades-coming-android-n/'
 title: 'Our Favorite Design Upgrades Coming to Android N, From Emoji to VR'
-datePublished: '2016-05-24T16:55:02.996Z'
-dateModified: '2016-05-24T16:55:02.849Z'
+datePublished: '2016-09-04T03:38:06.278Z'
+dateModified: '2016-07-15T01:24:02.648Z'
+sourcePath: >-
+  _posts/2016-05-24-our-favorite-design-upgrades-coming-to-android-n-from-emoji.md
 starred: false
-sourcePath: _posts/2016-05-24-our-favorite-design-upgrades-coming-to-android-n-from-emoji.md
 inFeed: true
 hasPage: false
 inNav: false
