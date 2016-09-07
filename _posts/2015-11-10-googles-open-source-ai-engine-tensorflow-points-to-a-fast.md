@@ -45,9 +45,10 @@ isBasedOnUrl: >-
 title: >-
   Google's Open Source AI Engine, TensorFlow, Points to a Fast-Changing Hardware
   World
-datePublished: '2016-09-04T03:38:06.279Z'
-dateModified: '2016-07-15T01:24:03.229Z'
+datePublished: '2016-09-04T13:16:23.338Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: _posts/2015-11-10-googles-open-source-ai-engine-tensorflow-points-to-a-fast.md
+via: {}
 starred: false
 inFeed: true
 hasPage: false
