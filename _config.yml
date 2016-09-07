@@ -24,7 +24,6 @@ cta:
   domain: null
   bucket: null
   version: null
-style: the-composer
 navigation:
   - name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
     id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
@@ -66,6 +65,7 @@ collections:
 title: Dan Tocchini
 description: Respect the Grid
 purpose:
-  - name: follow
-    url: 'https://twitter.com/d4tocchini'
-    item: 86dafa44-5930-4ca9-9ebe-9e3b5a1f5e6d
+  - id: cfe83a4a-835c-4bbb-a62f-d1a17f064e18
+    type: external
+    value: 'https://thegrid.io/'
+    label: Get on the Grid
