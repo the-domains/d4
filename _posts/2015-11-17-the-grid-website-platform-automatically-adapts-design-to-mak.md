@@ -7,14 +7,22 @@ publisher:
   favicon: 'http://i.forbesimg.com/favicon.ico'
   domain: www.forbes.com
 keywords: []
-description: 'Video Do websites dream of electric designers? Can web content know itself? The Grid, a San Francisco startup, is changing the way websites are designed by radically changing the role of the designer. This new platform uses machine learning combined with constraint-based design and flow-based programming to make form dynamically adapt to content.'
+description: >-
+  Video Do websites dream of electric designers? Can web content know itself?
+  The Grid, a San Francisco startup, is changing the way websites are designed
+  by radically changing the role of the designer. This new platform uses machine
+  learning combined with constraint-based design and flow-based programming to
+  make form dynamically adapt to content.
 app_links: []
-isBasedOnUrl: 'http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/'
-title: The Grid Website Platform Automatically Adapts Design To Make Your Content Shine
-datePublished: '2016-04-27T23:19:21.475Z'
-dateModified: '2016-04-23T12:49:27.481Z'
-sourcePath: _posts/2015-11-17-the-grid-website-platform-automatically-adapts-design-to-mak.md
-published: true
+isBasedOnUrl: >-
+  http://www.forbes.com/sites/anthonykosner/2014/10/15/the-grid-website-platform-automatically-adapts-design-to-make-your-content-shine/
+title: >-
+  The Grid Website Platform Automatically Adapts Design To Make Your Content
+  Shine
+datePublished: '2016-09-04T03:38:06.280Z'
+dateModified: '2016-07-15T01:24:03.449Z'
+sourcePath: >-
+  _posts/2015-11-17-the-grid-website-platform-automatically-adapts-design-to-mak.md
 starred: true
 inFeed: true
 hasPage: false
