@@ -39,10 +39,11 @@ description: >-
 inLanguage: ca
 app_links: []
 isBasedOnUrl: 'https://twitter.com/AIGAdesign/status/623124103302676481'
-datePublished: '2016-09-04T03:38:06.174Z'
+datePublished: '2016-09-04T13:20:09.109Z'
 title: ''
-dateModified: '2016-07-15T01:24:04.552Z'
+dateModified: '2016-09-04T13:20:08.774Z'
 sourcePath: _posts/2015-07-21-istanbul-design-biennial-poster-by-aigasfs-kaanbeyhan-m.md
+via: {}
 starred: false
 inFeed: true
 hasPage: false
