@@ -46,11 +46,12 @@ description: >-
 inLanguage: English
 app_links: []
 isBasedOnUrl: 'https://twitter.com/elonmusk/status/495759307346952192'
-datePublished: '2016-09-04T03:38:06.261Z'
-dateModified: '2016-07-15T01:24:02.268Z'
+datePublished: '2016-09-04T13:16:23.363Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: >-
   _posts/2015-03-05-worth-reading-superintelligence-by-bostrom-we-need-to-be-su.md
 title: ''
+via: {}
 starred: false
 inFeed: true
 hasPage: false
