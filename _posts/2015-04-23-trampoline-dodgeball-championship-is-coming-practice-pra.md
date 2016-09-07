@@ -13,8 +13,8 @@ description: >-
   looping videos in a simple and fun way for your friends and family to see.
 app_links: []
 title: 'Trampoline dodgeball championship is coming... Practice, practice, practice'
-datePublished: '2016-09-04T03:38:06.233Z'
-dateModified: '2016-07-15T01:24:00.165Z'
+datePublished: '2016-09-04T13:16:07.758Z'
+dateModified: '2016-09-04T13:16:07.340Z'
 sourcePath: _posts/2015-04-23-trampoline-dodgeball-championship-is-coming-practice-pra.md
 authors: []
 publisher:
@@ -22,6 +22,7 @@ publisher:
   domain: vine.co
   url: 'https://vine.co'
   favicon: 'https://v.cdn.vine.co/w/c01da11f-assets/images/favicon.ico'
+via: {}
 starred: false
 inFeed: true
 hasPage: false
