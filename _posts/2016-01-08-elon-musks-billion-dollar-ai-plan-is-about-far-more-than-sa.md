@@ -1,14 +1,9 @@
 ---
-author:
-  - name: Cade Metz
-    url: 'http://www.wired.com/author/cade_metz/'
-    avatar: {}
-related: []
-publisher:
-  url: 'http://www.wired.com'
-  name: WIRED
-  favicon: 'http://www.wired.com/wp-content/themes/Phoenix/assets/images/favicon.ico'
-  domain: www.wired.com
+datePublished: '2016-09-04T03:38:06.234Z'
+sourcePath: >-
+  _posts/2016-01-08-elon-musks-billion-dollar-ai-plan-is-about-far-more-than-sa.md
+isBasedOnUrl: >-
+  http://www.wired.com/2015/12/elon-musks-billion-dollar-ai-plan-is-about-far-more-than-saving-the-world/
 keywords:
   - openai
   - altman
@@ -20,18 +15,30 @@ keywords:
   - tesla
   - facebooks
   - learning
-description: 'Elon Musk and Sam Altman worry that artificial intelligence will take over the world. So, the two entrepreneurs are creating a billion-dollar not-for-profit company that will maximize the power of AI-and then share it with anyone who wants it.'
-inLanguage: en
+related: []
+author:
+  - name: Cade Metz
+    url: 'http://www.wired.com/author/cade_metz/'
+    avatar: {}
+dateModified: '2016-07-15T01:24:00.031Z'
+title: Elon Musk's Billion-Dollar AI Plan Is About Far More Than Saving the World
 app_links: []
-isBasedOnUrl: 'http://www.wired.com/2015/12/elon-musks-billion-dollar-ai-plan-is-about-far-more-than-saving-the-world/'
-title: "Elon Musk's Billion-Dollar AI Plan Is About Far More Than Saving the World"
-datePublished: '2016-01-08T00:58:11.965Z'
-dateModified: '2016-01-08T00:57:58.788Z'
-sourcePath: _posts/2016-01-08-elon-musks-billion-dollar-ai-plan-is-about-far-more-than-sa.md
-published: true
+publisher:
+  name: WIRED
+  domain: www.wired.com
+  url: 'http://www.wired.com'
+  favicon: 'http://www.wired.com/wp-content/themes/Phoenix/assets/images/favicon.ico'
+description: >-
+  Elon Musk and Sam Altman worry that artificial intelligence will take over the
+  world. So, the two entrepreneurs are creating a billion-dollar not-for-profit
+  company that will maximize the power of AI-and then share it with anyone who
+  wants it.
+inLanguage: en
 inFeed: true
 hasPage: false
 inNav: false
+authors: []
+starred: false
 _context: 'http://schema.org'
 _type: MediaObject
 
