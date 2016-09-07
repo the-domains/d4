@@ -49,10 +49,10 @@ description: >-
   templates and customization available from these platforms, it still leaves
   humans to do most of the decision-making-should you put that checkout button
   in the middle or top right?
-datePublished: '2016-09-04T03:38:06.278Z'
+datePublished: '2016-09-04T13:16:23.340Z'
 app_links: []
 title: 'The Grid Is The Website Of The Future: It Builds Itself'
-dateModified: '2016-07-15T01:24:04.053Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: _posts/2014-10-20-the-grid-is-the-website-of-the-future-it-builds-itself.md
 authors: []
 publisher:
@@ -60,6 +60,7 @@ publisher:
   domain: www.fastcolabs.com
   url: 'http://www.fastcolabs.com'
   favicon: 'http://www.fastcolabs.com/favicon.ico'
+via: {}
 starred: false
 inFeed: true
 hasPage: false
