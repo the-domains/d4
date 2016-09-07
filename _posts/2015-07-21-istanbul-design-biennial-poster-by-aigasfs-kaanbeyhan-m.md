@@ -3,22 +3,28 @@ author:
   - name: aigadesign
     url: 'http://twitter.com/aigadesign'
     avatar:
-      src: 'https://pbs.twimg.com/profile_images/609041906153172992/Vkv_j218_bigger.jpg'
-      width: 73
-      height: 73
+      src: >-
+        https://s3-us-west-2.amazonaws.com/the-grid-img/p/5dfc9bbd10e12261890c866b403a20bb69164886.jpg
+      original: >-
+        https://s3-us-west-2.amazonaws.com/the-grid-img/p/5dfc9bbd10e12261890c866b403a20bb69164886.jpg
+      width: 400
+      height: 400
       colors:
-        - - 78
-          - 79
-          - 55
-        - - 26
-          - 29
-          - 22
-        - - 130
-          - 137
-          - 119
-        - - 210
-          - 216
-          - 213
+        - - 233
+          - 33
+          - 44
+        - - 255
+          - 254
+          - 255
+        - - 255
+          - 211
+          - 214
+        - - 255
+          - 168
+          - 172
+        - - 232
+          - 120
+          - 118
 related: []
 publisher:
   url: 'http://twitter.com'
@@ -26,15 +32,21 @@ publisher:
   favicon: 'https://abs.twimg.com/favicons/favicon.ico'
   domain: twitter.com
 keywords: []
-description: "Istanbul #Design Biennial poster by @aigasf's @kaanbeyhan #MemberMonday #typography #lettering http://portfolios.aiga.org/gallery/19105311/Imperfection ..."
+description: >-
+  Istanbul #Design Biennial poster by @aigasf's @kaanbeyhan #MemberMonday
+  #typography #lettering
+  http://portfolios.aiga.org/gallery/19105311/Imperfection ...
 inLanguage: ca
 app_links: []
 isBasedOnUrl: 'https://twitter.com/AIGAdesign/status/623124103302676481'
-datePublished: '2015-07-21T06:42:33.251Z'
+datePublished: '2016-09-04T03:38:06.174Z'
 title: ''
-dateModified: '2015-07-21T06:42:33.251Z'
+dateModified: '2016-07-15T01:24:04.552Z'
 sourcePath: _posts/2015-07-21-istanbul-design-biennial-poster-by-aigasfs-kaanbeyhan-m.md
-published: true
+starred: false
+inFeed: true
+hasPage: false
+inNav: false
 _type: Photograph
 _context: 'http://schema.org'
 
