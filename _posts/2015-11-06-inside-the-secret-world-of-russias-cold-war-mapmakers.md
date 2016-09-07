@@ -64,8 +64,8 @@ inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.wired.com/2015/07/secret-cold-war-maps/'
 title: Inside the Secret World of Russia's Cold War Mapmakers
-datePublished: '2016-09-04T13:16:23.159Z'
-dateModified: '2016-09-04T13:16:22.398Z'
+datePublished: '2016-09-04T13:21:06.915Z'
+dateModified: '2016-09-04T13:21:06.472Z'
 sourcePath: _posts/2015-11-06-inside-the-secret-world-of-russias-cold-war-mapmakers.md
 via: {}
 starred: false
