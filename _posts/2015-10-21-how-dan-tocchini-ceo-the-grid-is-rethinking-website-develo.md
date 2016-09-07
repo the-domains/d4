@@ -20,15 +20,21 @@ keywords:
   - design
   - manage
   - cassowary
-description: 'Dan Tocchini is the founder and CEO of The Grid where he gets a lot of mentorship from D3 AKA, Daniel the 3rd, his dad. You might find that having your dad as a founder is a bit well - odd.'
+description: >-
+  Dan Tocchini is the founder and CEO of The Grid where he gets a lot of
+  mentorship from D3 AKA, Daniel the 3rd, his dad. You might find that having
+  your dad as a founder is a bit well - odd.
 inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://m.huffpost.com/us/entry/8245456'
-title: 'How Dan Tocchini, CEO The Grid, Is Rethinking Website Development. I Love His First Answer.'
-datePublished: '2015-10-21T18:51:14.877Z'
-dateModified: '2015-10-21T18:49:39.449Z'
-sourcePath: _posts/2015-10-21-how-dan-tocchini-ceo-the-grid-is-rethinking-website-develo.md
-published: true
+title: >-
+  How Dan Tocchini, CEO The Grid, Is Rethinking Website Development. I Love His
+  First Answer.
+datePublished: '2016-09-04T03:38:06.175Z'
+dateModified: '2016-07-15T01:24:05.651Z'
+sourcePath: >-
+  _posts/2015-10-21-how-dan-tocchini-ceo-the-grid-is-rethinking-website-develo.md
+starred: false
 inFeed: true
 hasPage: false
 inNav: false
