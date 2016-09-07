@@ -17,15 +17,22 @@ keywords:
   - analysed
   - program
   - winds
-description: An astrophysics student has turned to artificial intelligence to help her to see into the hearts of galaxies. She was inspired by neural networks to create a program to single out from thousands of galaxies the subjects of her study -- the most turbulent and messy galaxies.
+description: >-
+  An astrophysics student has turned to artificial intelligence to help her to
+  see into the hearts of galaxies. She was inspired by neural networks to create
+  a program to single out from thousands of galaxies the subjects of her study
+  -- the most turbulent and messy galaxies.
 inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.sciencedaily.com/releases/2015/10/151027123147.htm'
-title: 'Artificial intelligence finds messy galaxies: Artificial intelligence helps see astronomers see into the hearts of galaxies'
-datePublished: '2015-10-30T00:30:37.343Z'
-dateModified: '2015-10-30T00:30:11.294Z'
-sourcePath: _posts/2015-10-30-artificial-intelligence-finds-messy-galaxies-artificial-int.md
-published: true
+title: >-
+  Artificial intelligence finds messy galaxies: Artificial intelligence helps
+  see astronomers see into the hearts of galaxies
+datePublished: '2016-09-04T03:38:06.272Z'
+dateModified: '2016-07-15T01:24:02.383Z'
+sourcePath: >-
+  _posts/2015-10-30-artificial-intelligence-finds-messy-galaxies-artificial-int.md
+starred: false
 inFeed: true
 hasPage: false
 inNav: false
