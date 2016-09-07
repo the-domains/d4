@@ -61,12 +61,12 @@ description: >-
   we consider that almost every common behavior on the big social networks is a
   subset of what we originally thought blogging might be."
 inLanguage: English
-datePublished: '2016-09-04T13:16:23.171Z'
+datePublished: '2016-09-04T13:20:01.271Z'
 app_links: []
 isBasedOnUrl: >-
   https://iwantmyname.com/blog/2014/10/an-interview-with-dan-tocchini-founder-and-ceo-of-the-grid.html
 title: 'An interview with Dan Tocchini, Founder and CEO of The Grid'
-dateModified: '2016-09-04T13:16:22.398Z'
+dateModified: '2016-09-04T13:20:00.813Z'
 sourcePath: >-
   _posts/2014-10-17-an-interview-with-dan-tocchini-founder-and-ceo-of-the-grid.md
 via: {}
