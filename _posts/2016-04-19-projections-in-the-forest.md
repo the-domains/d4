@@ -1,5 +1,5 @@
 ---
-datePublished: '2016-09-04T03:38:06.271Z'
+datePublished: '2016-09-04T13:16:23.273Z'
 sourcePath: _posts/2016-04-19-projections-in-the-forest.md
 inFeed: true
 isBasedOnUrl: 'https://vimeo.com/115082758'
@@ -10,7 +10,7 @@ author:
   - name: 3hund
     url: 'http://vimeo.com/3hund'
     avatar: {}
-dateModified: '2016-07-15T01:24:00.617Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 title: Projections in the Forest
 app_links:
   - url: 'vimeo://app.vimeo.com/videos/115082758'
@@ -51,6 +51,7 @@ description: >-
   silence and natural occurrences in nature, especially the phenomenon
   "bioluminescence".
 inNav: false
+via: {}
 starred: false
 _context: 'http://schema.org'
 _type: VideoObject
