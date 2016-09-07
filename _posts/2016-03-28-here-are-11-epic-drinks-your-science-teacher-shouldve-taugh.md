@@ -15,17 +15,21 @@ keywords:
   - ingredients
   - delicious
   - mix
-description: "Most people have their go-to mixed drink that they love sipping after a long at work or over the weekend with friends. It's the drink you're comfortable with that you know you'll enjoy. But maybe it's time you get a little adventurous. Take a step into the brave new world of molecular mixology."
-datePublished: '2016-04-23T23:48:47.590Z'
-dateModified: '2016-04-23T23:48:47.508Z'
+description: >-
+  Most people have their go-to mixed drink that they love sipping after a long
+  at work or over the weekend with friends. It's the drink you're comfortable
+  with that you know you'll enjoy. But maybe it's time you get a little
+  adventurous. Take a step into the brave new world of molecular mixology.
+datePublished: '2016-09-04T03:38:06.271Z'
+dateModified: '2016-07-15T01:24:02.558Z'
 author:
   - name: ''
     url: ''
 related: []
 app_links: []
-title: "Here Are 11 Epic Drinks Your Science Teacher Should've Taught You How To Make"
-sourcePath: _posts/2016-03-28-here-are-11-epic-drinks-your-science-teacher-shouldve-taugh.md
-published: true
+title: Here Are 11 Epic Drinks Your Science Teacher Should've Taught You How To Make
+sourcePath: >-
+  _posts/2016-03-28-here-are-11-epic-drinks-your-science-teacher-shouldve-taugh.md
 authors: []
 publisher:
   name: ViralNova.com
