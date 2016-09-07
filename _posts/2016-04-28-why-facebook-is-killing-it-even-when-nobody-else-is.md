@@ -29,9 +29,10 @@ inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.wired.com/2016/04/facebook-killing-even-nobody-else/'
 title: Why Facebook Is Killing It-Even When Nobody Else Is
-datePublished: '2016-09-04T03:38:06.267Z'
-dateModified: '2016-07-15T01:24:00.963Z'
+datePublished: '2016-09-04T13:16:23.373Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: _posts/2016-04-28-why-facebook-is-killing-it-even-when-nobody-else-is.md
+via: {}
 starred: false
 inFeed: true
 hasPage: false
