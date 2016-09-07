@@ -45,8 +45,8 @@ description: >-
   http://venturebeat.com/2015/03/02/website-builder-the-grid-gets-chrome-extension-ios-app-automatic-image-cropping/
   ... enjoyed the nerd-out sesh, @jordannovet!
 app_links: []
-datePublished: '2016-09-04T03:38:06.255Z'
-dateModified: '2016-07-15T01:24:00.502Z'
+datePublished: '2016-09-04T13:16:23.292Z'
+dateModified: '2016-09-04T13:16:22.398Z'
 sourcePath: _posts/2015-03-05-that-helps-explain-why-tocchini-isnt-worried-httpve.md
 authors: []
 publisher:
@@ -55,6 +55,7 @@ publisher:
   url: 'http://twitter.com'
   favicon: 'https://abs.twimg.com/favicons/favicon.ico'
 title: ''
+via: {}
 starred: false
 inFeed: true
 hasPage: false
