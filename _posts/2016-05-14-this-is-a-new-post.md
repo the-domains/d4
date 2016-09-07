@@ -1,7 +1,7 @@
 ---
 description: Thasdf asdfhasdifhads asd akdj djfh
-dateModified: '2016-07-17T03:00:29.283Z'
-datePublished: '2016-07-17T03:00:29.794Z'
+dateModified: '2016-09-04T13:17:13.265Z'
+datePublished: '2016-09-04T13:17:13.717Z'
 title: Head over heals for AI
 author: []
 sourcePath: _posts/2016-05-14-this-is-a-new-post.md
