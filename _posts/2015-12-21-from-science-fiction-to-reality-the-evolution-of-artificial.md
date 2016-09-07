@@ -1,5 +1,5 @@
 ---
-datePublished: '2016-09-04T13:17:13.715Z'
+datePublished: '2016-09-04T13:20:28.218Z'
 sourcePath: >-
   _posts/2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.md
 keywords:
@@ -15,14 +15,14 @@ keywords:
   - data
 related: []
 author: []
-dateModified: '2016-09-04T13:17:13.265Z'
+dateModified: '2016-09-04T13:20:27.912Z'
 title: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
 app_links: []
 publisher:
-  name: WIRED
-  domain: www.wired.com
   url: 'http://www.wired.com'
+  name: WIRED
   favicon: 'http://www.wired.com/wp-content/themes/Phoenix/assets/images/favicon.ico'
+  domain: www.wired.com
 description: >-
   What was once just a figment of the imagination of some our most famous
   science fiction writers, artificial intelligence (AI) is taking root in our
@@ -33,6 +33,7 @@ inFeed: true
 hasPage: true
 inNav: false
 authors: []
+via: {}
 starred: true
 url: from-science-fiction-to-reality-the-evolution-of-artificial/index.html
 _context: 'http://schema.org'
