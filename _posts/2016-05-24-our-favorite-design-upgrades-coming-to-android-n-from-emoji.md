@@ -26,8 +26,8 @@ inLanguage: en
 app_links: []
 isBasedOnUrl: 'http://www.wired.com/2016/05/promising-ui-upgrades-coming-android-n/'
 title: 'Our Favorite Design Upgrades Coming to Android N, From Emoji to VR'
-datePublished: '2016-09-04T13:16:23.365Z'
-dateModified: '2016-09-04T13:16:22.398Z'
+datePublished: '2016-09-04T13:15:38.742Z'
+dateModified: '2016-09-04T13:15:38.490Z'
 sourcePath: >-
   _posts/2016-05-24-our-favorite-design-upgrades-coming-to-android-n-from-emoji.md
 via: {}
