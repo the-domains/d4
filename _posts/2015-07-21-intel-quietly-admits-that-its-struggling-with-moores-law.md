@@ -78,13 +78,12 @@ app_links: []
 isBasedOnUrl: >-
   http://thenextweb.com/insider/2015/07/16/intel-quietly-admits-that-its-struggling-with-moores-law/
 title: Intel quietly admits that it's struggling with Moore's Law
-datePublished: '2016-09-04T03:38:06.268Z'
-dateModified: '2016-07-15T01:24:01.304Z'
+datePublished: '2016-09-12T08:44:03.767Z'
+dateModified: '2016-09-12T08:44:03.426Z'
 sourcePath: _posts/2015-07-21-intel-quietly-admits-that-its-struggling-with-moores-law.md
+via: {}
 starred: false
 inFeed: true
-hasPage: false
-inNav: false
 _context: 'http://schema.org'
 _type: MediaObject
 
