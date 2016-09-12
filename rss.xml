@@ -4,9 +4,9 @@
         <description><![CDATA[Dan Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Mon, 12 Sep 2016 08:43:59 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Sep 2016 08:44:08 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 12 Sep 2016 08:43:57 GMT</pubDate>
+        <pubDate>Mon, 12 Sep 2016 08:44:06 GMT</pubDate>
         <item>
             <title><![CDATA[No title]]></title>
             <description><![CDATA[<img alt="" src="https://pbs.twimg.com/media/B_JC-fUVIAA9xHz.png:large">]]></description>
@@ -36,6 +36,13 @@
             <pubDate>Sun, 04 Sep 2016 13:20:09 GMT</pubDate>
         </item>
         <item>
+            <title><![CDATA[Intel quietly admits that it's struggling with Moore's Law]]></title>
+            <description><![CDATA[<article><h1>Intel quietly admits that it's struggling with Moore's Law</h1><p>Is Moore's Law finally faltering? Intel has confirmed today that its next generation of processors called "Kaby Lake" will be built using its existing 14-nanometer process. It was expected the company would shrink its processor size down to 10-nanometers next year after the release of the next-generation 'Skylake' chipset.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/d29b3770d941b419696c137ccf64736dce0d93cd.jpg"></article>]]></description>
+            <link>http://thenextweb.com/insider/2015/07/16/intel-quietly-admits-that-its-struggling-with-moores-law/</link>
+            <guid isPermaLink="false">fe5850f2-18d1-4943-9e4f-1db5a8ffc11a</guid>
+            <pubDate>Mon, 12 Sep 2016 08:44:03 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[Here Are 11 Epic Drinks Your Science Teacher Should've Taught You How To Make]]></title>
             <description><![CDATA[<article><h1>Here Are 11 Epic Drinks Your Science Teacher Should've Taught You How To Make</h1><p>Most people have their go-to mixed drink that they love sipping after a long at work or over the weekend with friends. It's the drink you're comfortable with that you know you'll enjoy. But maybe it's time you get a little adventurous. Take a step into the brave new world of molecular mixology.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/953ac3be5a9ff4019deb286e2e351994a70ab2fc.jpg"></article>]]></description>
             <link>http://www.viralnova.com/molecular-mixology/</link>
@@ -61,7 +68,7 @@
             <description><![CDATA[<article><h1>FP049: Changing the World (Wide Web) with Dan Tocchini founder of the Grid.io - Foundr</h1><p>Dan Tocchini wants to change how we use the web. His website design startup The Grid have had almost 50,000 founding members and they might just pull it off. For all of the advances in how we use the Internet in recent years, the options for the average person who needs to make a website can still be simultaneously dizzying and uninspiring.</p><img src="https://imgflo.herokuapp.com/graph/2b2431f8e7ba7b0/8dad85c5cfa41174bbe6cc79cf303b8e/noop.jpg?input=https%3A%2F%2Ffoundrmag.com%2Fwp-content%2Fuploads%2F2015%2F07%2Fdan-tocchini.jpg"></article>]]></description>
             <link>https://foundrmag.com/fp049-changing-the-world-wide-web-with-dan-tocchini-founder-of-the-grid-io/</link>
             <guid isPermaLink="false">031b59ae-aa97-4849-9a87-d535952c40d3</guid>
-            <pubDate>Mon, 12 Sep 2016 08:43:55 GMT</pubDate>
+            <pubDate>Mon, 12 Sep 2016 08:44:03 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[From Science Fiction to Reality: The Evolution of Artificial Intelligence]]></title>
@@ -69,13 +76,6 @@
             <link>http://d4.io/from-science-fiction-to-reality-the-evolution-of-artificial/index.html</link>
             <guid isPermaLink="false">817daa93-5db5-4bcc-91de-e8b08d1c1ed0</guid>
             <pubDate>Mon, 12 Sep 2016 08:38:45 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[Inside the Secret World of Russia's Cold War Mapmakers]]></title>
-            <description><![CDATA[<article><h1>Inside the Secret World of Russia's Cold War Mapmakers</h1><p>Nick Ballon for WIRED A military helicopter was on the ground when Russell Guy arrived at the helipad near Tallinn, Estonia, with a briefcase filled with $250,000 in cash. The place made him uncomfortable. It didn't look like a military base, not exactly, but there were men who looked like soldiers standing around.</p><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/ea44b536f4fe2210d7eceaef6e7ea6c25addfc5d.jpg"></article>]]></description>
-            <link>http://www.wired.com/2015/07/secret-cold-war-maps/</link>
-            <guid isPermaLink="false">dea75e11-3fc1-4670-a443-15a24a37d46a</guid>
-            <pubDate>Sun, 04 Sep 2016 13:21:06 GMT</pubDate>
         </item>
     </channel>
 </rss>
