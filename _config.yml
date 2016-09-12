@@ -26,12 +26,12 @@ cta:
   bucket: null
   version: null
 navigation:
-  - name: Super Awesome
-    url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
-    type: external
   - name: Head over heals for AI
     id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
     type: content
+  - name: Super Awesome
+    url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
+    type: external
   - name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
     id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
     type: content
