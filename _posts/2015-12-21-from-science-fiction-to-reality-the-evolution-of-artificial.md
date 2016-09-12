@@ -1,5 +1,5 @@
 ---
-datePublished: '2016-09-04T13:20:28.218Z'
+datePublished: '2016-09-12T08:38:33.632Z'
 sourcePath: >-
   _posts/2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.md
 keywords:
@@ -15,7 +15,7 @@ keywords:
   - data
 related: []
 author: []
-dateModified: '2016-09-04T13:20:27.912Z'
+dateModified: '2016-09-12T08:38:33.337Z'
 title: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
 app_links: []
 publisher:
@@ -31,7 +31,6 @@ description: >-
 inLanguage: en
 inFeed: true
 hasPage: true
-inNav: false
 authors: []
 via: {}
 starred: true
