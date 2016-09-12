@@ -1,7 +1,10 @@
 ---
-datePublished: '2016-09-12T08:38:33.632Z'
+datePublished: '2016-09-12T08:38:45.783Z'
 sourcePath: >-
   _posts/2015-12-21-from-science-fiction-to-reality-the-evolution-of-artificial.md
+inFeed: true
+authors: []
+hasPage: true
 keywords:
   - machine-learning
   - machines
@@ -15,7 +18,8 @@ keywords:
   - data
 related: []
 author: []
-dateModified: '2016-09-12T08:38:33.337Z'
+via: {}
+dateModified: '2016-09-12T08:38:45.259Z'
 title: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
 app_links: []
 publisher:
@@ -29,14 +33,10 @@ description: >-
   everyday lives. We're still a few years away from having robots at our beck
   and call, but AI has already had a profound impact in more subtle ways.
 inLanguage: en
-inFeed: true
-hasPage: true
-authors: []
-via: {}
 starred: true
 url: from-science-fiction-to-reality-the-evolution-of-artificial/index.html
 _context: 'http://schema.org'
 _type: MediaObject
 
 ---
-<article style=""><h1>From Science Fiction to Reality&amp;colon; The Evolution of Artificial Intelligence</h1><p>What was once just a figment of the imagination of some our most famous science fiction writers&amp;comma; artificial intelligence &amp;lpar;AI&amp;rpar; is taking root in our everyday lives&amp;period; We're still a few years away from having robots at our beck and call&amp;comma; but AI has already had a profound impact in more subtle ways&amp;period;</p><img src="http://www.wired.com/wp-content/uploads/2015/01/robots-AI-400.jpg" /></article>
+<article style=""><img src="https://s3-us-west-2.amazonaws.com/the-grid-img/p/f54cd0789e871eb11dfd0ee5cd8f20c64f2ca128.jpg" /><h1>From Science Fiction to Reality: The Evolution of Artificial Intelligence</h1><p>What was once just a figment of the imagination of some our most famous science fiction writers, artificial intelligence (AI) is taking root in our everyday lives. We're still a few years away from having robots at our beck and call, but AI has already had a profound impact in more subtle ways.</p></article>
