@@ -10,6 +10,7 @@ color:
   lightness: 0.1875
   saturation: 0.5625
   rhythmicContrast: 1
+github: true
 opengraph:
   image: null
   type: null
@@ -25,12 +26,12 @@ cta:
   bucket: null
   version: null
 navigation:
-  - name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
-    id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
-    type: content
   - name: Super Awesome
     url: 'https://projects.invisionapp.com/d/main#/projects/6191786'
     type: external
+  - name: 'From Science Fiction to Reality: The Evolution of Artificial Intelligence'
+    id: 817daa93-5db5-4bcc-91de-e8b08d1c1ed0
+    type: content
   - name: Head over heals for AI
     id: cf8bc19e-d023-4246-93ad-84dfdf47ce58
     type: content
@@ -73,4 +74,3 @@ purpose:
     type: external
     value: 'https://github.com/d4tocchini'
     label: Follow my code
-github: true
