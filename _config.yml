@@ -63,7 +63,7 @@ collections:
     permalink:
       path: '/:title/'
       navigable: true
-title: Dan Tocchini
+title: D4 Tocchini
 description: Respect the Grid
 purpose:
   - id: cfe83a4a-835c-4bbb-a62f-d1a17f064e18
