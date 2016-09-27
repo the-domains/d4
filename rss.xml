@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title><![CDATA[Dan Tocchini]]></title>
-        <description><![CDATA[Dan Tocchini]]></description>
+        <title><![CDATA[D4 Tocchini]]></title>
+        <description><![CDATA[D4 Tocchini]]></description>
         <link>http://d4.io/</link>
         <generator>The Grid</generator>
-        <lastBuildDate>Mon, 12 Sep 2016 08:44:21 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 27 Sep 2016 20:21:24 GMT</lastBuildDate>
         <atom:link href="http://d4.io/rss.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Mon, 12 Sep 2016 08:44:11 GMT</pubDate>
-        <item>
-            <title><![CDATA[No title]]></title>
-            <description><![CDATA[<img alt="" src="https://pbs.twimg.com/media/B_JC-fUVIAA9xHz.png:large">]]></description>
-            <link>https://twitter.com/d4tocchini/status/572593744517595136</link>
-            <guid isPermaLink="false">2f4afb84-83fd-4fd2-a8db-1e801cdea62f</guid>
-            <pubDate>Sun, 04 Sep 2016 13:16:23 GMT</pubDate>
-        </item>
+        <pubDate>Tue, 27 Sep 2016 20:18:34 GMT</pubDate>
         <item>
             <title><![CDATA[Why Facebook Is Killing It-Even When Nobody Else Is]]></title>
             <description><![CDATA[<article><h1>Why Facebook Is Killing It-Even When Nobody Else Is</h1><p>Facebook is killing it. As its biggest rivals stumble, Facebook wildly beat Wall Street's expectations when it released its earnings yesterday. The company said that it now reaches more than a billion people every day and 1.65 billion people every month.</p><img src="https://imgflo.herokuapp.com/graph/vahj1ThiexotieMo/05c7962e803967c6cfe1e8fd3c01a547/noop.jpg?input=http%3A%2F%2Fwww.wired.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fmark-zuckerberg-facebook-511572184-1200x630-e1461801427316.jpg"></article>]]></description>
@@ -34,6 +27,13 @@
             <link>http://d4.io/how-humans-ended-up-with-freakishly-huge-brains/index.html</link>
             <guid isPermaLink="false">4579f075-f8f8-44c0-b9d0-fac28ca8faff</guid>
             <pubDate>Sun, 04 Sep 2016 13:20:09 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[<img alt="" src="https://pbs.twimg.com/media/B_JC-fUVIAA9xHz.png:large">]]></description>
+            <link>https://twitter.com/d4tocchini/status/572593744517595136</link>
+            <guid isPermaLink="false">2f4afb84-83fd-4fd2-a8db-1e801cdea62f</guid>
+            <pubDate>Tue, 27 Sep 2016 20:18:33 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[Elon Musk's Billion-Dollar AI Plan Is About Far More Than Saving the World]]></title>
